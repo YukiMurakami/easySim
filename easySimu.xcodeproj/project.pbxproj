@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6EDC0CD19503B30004A19EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC0CC19503B30004A19EF /* main.cpp */; };
+		B6EDC0CF19503B30004A19EF /* easySimu.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6EDC0CE19503B30004A19EF /* easySimu.1 */; };
+		B6EDC0D719503CF6004A19EF /* place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC0D519503CF6004A19EF /* place.cpp */; };
+		B6EDC0DA19503D37004A19EF /* person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC0D819503D37004A19EF /* person.cpp */; };
+		B6EDC116195AA0B9004A19EF /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC114195AA0B9004A19EF /* utility.cpp */; };
+		B6EDC119195AA2DB004A19EF /* constraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC117195AA2DB004A19EF /* constraints.cpp */; };
+		B6EDC11C195AA826004A19EF /* episode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC11A195AA826004A19EF /* episode.cpp */; };
+		B6EDC15C19614ECE004A19EF /* question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC15A19614ECE004A19EF /* question.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6EDC0C719503B30004A19EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B6EDC0CF19503B30004A19EF /* easySimu.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B6EDC0C919503B30004A19EF /* easySimu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = easySimu; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EDC0CC19503B30004A19EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6EDC0CE19503B30004A19EF /* easySimu.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = easySimu.1; sourceTree = "<group>"; };
+		B6EDC0D519503CF6004A19EF /* place.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = place.cpp; sourceTree = "<group>"; };
+		B6EDC0D619503CF6004A19EF /* place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = place.h; sourceTree = "<group>"; };
+		B6EDC0D819503D37004A19EF /* person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = person.cpp; sourceTree = "<group>"; };
+		B6EDC0D919503D37004A19EF /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		B6EDC114195AA0B9004A19EF /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility.cpp; sourceTree = "<group>"; };
+		B6EDC115195AA0B9004A19EF /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		B6EDC117195AA2DB004A19EF /* constraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = constraints.cpp; sourceTree = "<group>"; };
+		B6EDC118195AA2DB004A19EF /* constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraints.h; sourceTree = "<group>"; };
+		B6EDC11A195AA826004A19EF /* episode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = episode.cpp; sourceTree = "<group>"; };
+		B6EDC11B195AA826004A19EF /* episode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = episode.h; sourceTree = "<group>"; };
+		B6EDC15A19614ECE004A19EF /* question.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = question.cpp; sourceTree = "<group>"; };
+		B6EDC15B19614ECE004A19EF /* question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = question.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6EDC0C619503B30004A19EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6EDC0C019503B30004A19EF = {
+			isa = PBXGroup;
+			children = (
+				B6EDC0CB19503B30004A19EF /* easySimu */,
+				B6EDC0CA19503B30004A19EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6EDC0CA19503B30004A19EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EDC0C919503B30004A19EF /* easySimu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6EDC0CB19503B30004A19EF /* easySimu */ = {
+			isa = PBXGroup;
+			children = (
+				B6EDC0CC19503B30004A19EF /* main.cpp */,
+				B6EDC118195AA2DB004A19EF /* constraints.h */,
+				B6EDC117195AA2DB004A19EF /* constraints.cpp */,
+				B6EDC15B19614ECE004A19EF /* question.h */,
+				B6EDC15A19614ECE004A19EF /* question.cpp */,
+				B6EDC11B195AA826004A19EF /* episode.h */,
+				B6EDC11A195AA826004A19EF /* episode.cpp */,
+				B6EDC0D619503CF6004A19EF /* place.h */,
+				B6EDC0D519503CF6004A19EF /* place.cpp */,
+				B6EDC0D919503D37004A19EF /* person.h */,
+				B6EDC0D819503D37004A19EF /* person.cpp */,
+				B6EDC115195AA0B9004A19EF /* utility.h */,
+				B6EDC114195AA0B9004A19EF /* utility.cpp */,
+				B6EDC0CE19503B30004A19EF /* easySimu.1 */,
+			);
+			path = easySimu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6EDC0C819503B30004A19EF /* easySimu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6EDC0D219503B30004A19EF /* Build configuration list for PBXNativeTarget "easySimu" */;
+			buildPhases = (
+				B6EDC0C519503B30004A19EF /* Sources */,
+				B6EDC0C619503B30004A19EF /* Frameworks */,
+				B6EDC0C719503B30004A19EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = easySimu;
+			productName = easySimu;
+			productReference = B6EDC0C919503B30004A19EF /* easySimu */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6EDC0C119503B30004A19EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = B6EDC0C419503B30004A19EF /* Build configuration list for PBXProject "easySimu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6EDC0C019503B30004A19EF;
+			productRefGroup = B6EDC0CA19503B30004A19EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6EDC0C819503B30004A19EF /* easySimu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6EDC0C519503B30004A19EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EDC11C195AA826004A19EF /* episode.cpp in Sources */,
+				B6EDC116195AA0B9004A19EF /* utility.cpp in Sources */,
+				B6EDC0DA19503D37004A19EF /* person.cpp in Sources */,
+				B6EDC0CD19503B30004A19EF /* main.cpp in Sources */,
+				B6EDC119195AA2DB004A19EF /* constraints.cpp in Sources */,
+				B6EDC0D719503CF6004A19EF /* place.cpp in Sources */,
+				B6EDC15C19614ECE004A19EF /* question.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B6EDC0D019503B30004A19EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6EDC0D119503B30004A19EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6EDC0D319503B30004A19EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6EDC0D419503B30004A19EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6EDC0C419503B30004A19EF /* Build configuration list for PBXProject "easySimu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EDC0D019503B30004A19EF /* Debug */,
+				B6EDC0D119503B30004A19EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6EDC0D219503B30004A19EF /* Build configuration list for PBXNativeTarget "easySimu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EDC0D319503B30004A19EF /* Debug */,
+				B6EDC0D419503B30004A19EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6EDC0C119503B30004A19EF /* Project object */;
+}
