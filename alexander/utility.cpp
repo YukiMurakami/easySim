@@ -621,9 +621,12 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                    // showEpisode(randomEpisodes);
                  //   getVal = checkEpisodePerson(randomEpisodes, constraints, person._name);
                   //  showEpisodeWithPerson(current->episodes);
+                    /*
                     vector<Episode> TreeEpisodes;
                     makeEpisodesFromTree(&root, current, TreeEpisodes);
                     getVal = checkEpisodePersonWithArray(&TreeEpisodes, constraints, person._name, episodes);
+                     */
+                    getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes);
                     
                     if(round%50 == 0) {
                         /*
@@ -642,6 +645,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     }
                      */
                     if(getVal == 1.0) {
+                        vector<Episode> TreeEpisodes;
+                        makeEpisodesFromTree(&root, current, TreeEpisodes);
                         completeEpisodes = TreeEpisodes;
                         for(int s=0;s<I;s++) {
                             Episode addEpisode;
@@ -800,6 +805,84 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
                 }
             }
         }
+    }
+    
+    //cout << "this episode's result are " << correct << "/" << count << endl;
+    if(hitCount == 0) return 1.0;
+    val = (double)correct / (double)hitCount ;
+    
+    return val;
+}
+
+double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray) {
+    double val = 0;
+    int count = (int)constraints.size();
+    int correct = 0;
+    int hitCount = 0;
+    
+    vector<Episode*> episodes;
+    MCTREE *makeEpisodeCurrent = leaf;
+    while(true) {
+        episodes.insert(episodes.begin(), &makeEpisodeCurrent->episode);
+        if(makeEpisodeCurrent != root) {
+            makeEpisodeCurrent = makeEpisodeCurrent->parent;
+            continue;
+        } else {
+            break;
+        }
+    }
+    
+    for(int i=0;i<count;i++) {
+        int time = constraints[i]._time;
+        string personName = constraints[i]._personName;
+        if(personName != _personName) {
+            continue;
+        } else {
+            hitCount++;
+        }
+        
+        string placeName = constraints[i]._placeName;
+        CONSTRAINT constraint = constraints[i]._constraint;
+        
+        if(episodesArray[0]._time > time) {
+            for(int j=0;j<(int)episodes.size() ;j++) {
+                if(episodes.at(j)->_time == time) {
+                    
+                    if(constraint == there_is) {
+                        if(episodes.at(j)->_persons[personName]._nowPlace == placeName) {
+                            correct++;
+                            continue;
+                        }
+                    }
+                    if(constraint == there_is_no) {
+                        if(episodes.at(j)->_persons[personName]._nowPlace != placeName) {
+                            correct++;
+                            continue;
+                        }
+                    }
+                    
+                } else {
+                    continue;
+                }
+            }
+        } else {
+            for(int j=0;episodesArray[j]._time <= time;j++) {
+                if(episodesArray[j]._time != time) continue;
+                if(constraint == there_is) {
+                    if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
+                        correct++;
+                        continue;
+                    }
+                }
+                if(constraint == there_is_no) {
+                    if(episodesArray[j]._persons[personName]._nowPlace != placeName) {
+                        correct++;
+                        continue;
+                    }
+                }
+            }
+        }
+        
     }
     
     //cout << "this episode's result are " << correct << "/" << count << endl;

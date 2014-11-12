@@ -50,6 +50,7 @@ void initAgent(map<string,Person> &persons,map<string,Place> &places,string file
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
 double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName);
 double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> constraints,string _personName,Episode *episodesArray);
+
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);
 //設定された制約条件からランダムにcount個選んだ物を制約条件として設定する
@@ -98,7 +99,7 @@ MCTREE* makeTree(Episode _episode,MCTREE* _parent,int nowTime,int *sumCount,stri
 void showTree(MCTREE *root);
 void showTreeSub(MCTREE *current,int depth) ;
 void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &episodes);
-
+double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray) ;
 
 //おなじエージェントが複数存在したり、エージェントの位置情報とplaceのエージェント情報の一致を確認する
 void assertEpisode(const vector<Episode> &episodes);
