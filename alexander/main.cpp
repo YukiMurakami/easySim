@@ -47,7 +47,7 @@ int main(int argc, const char * argv[])
         initConstraints(constraints, "constraint.txt");
         
         
-  //      int sumPlayout = doActionMCTS(persons, places, constraints,140);
+        int sumPlayout = doActionMCTS(persons, places, constraints,140);
   //      int sumPlayout = randomAction(persons, places, constraints);
       //  allSearchAction(persons, places, constraints);
         //sum += sumPlayout;

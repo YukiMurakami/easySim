@@ -487,12 +487,10 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     
     map<string,Person> nowPersons(persons);
     map<string,Place> nowPlaces(places);
-    vector<Episode> nowEpisodes;
+ //   vector<Episode> nowEpisodes;
     Episode episode(0,nowPersons,nowPlaces);
-    nowEpisodes.push_back(episode);
-    
-    map<string,Person> tmpPersons;
-    map<string,Place> tmpPlaces;
+ //   nowEpisodes.push_back(episode);
+ 
     
     int sumPlayout = 0;
     
@@ -515,7 +513,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         root.ucb = 0;
         root.sumVal = 0;
         root.parent = NULL;
-        root.episodes = nowEpisodes;
+        root.episode = episode;
         root.sumCount = &sumCount;
         root.action = "nothing";
         root.childs.clear();
@@ -536,20 +534,19 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
             while(downFlag && !isFinish) {
                 //取れるアクションを取得
                 
-                if(current->episodes.back()._time >= endTime) {
+                if(current->episode._time >= endTime) {
                     downFlag = false;
-                    getVal = checkEpisodePerson(current->episodes, constraints, person._name);
                     
-                    if(round % 50000 == 0) {
-                        showEpisode(current->episodes);
-                    }
+                    vector<Episode> episodes;
+                    makeEpisodesFromTree(&root, current, episodes);
+                    getVal = checkEpisodePerson(episodes, constraints, person._name);
                     
                     break;
                 }
                 vector<string> actions;
                 actions.push_back("nothing");
-                for(int i=0;i<(int)current->episodes.back()._places[current->episodes.back()._persons[person._name]._nowPlace]._nextPlaces.size();i++) {
-                    string next = places[current->episodes.back()._persons[person._name]._nowPlace]._nextPlaces[i];
+                for(int i=0;i<(int)current->episode._places[current->episode._persons[person._name]._nowPlace]._nextPlaces.size();i++) {
+                    string next = places[current->episode._persons[person._name]._nowPlace]._nextPlaces[i];
                     actions.push_back("move:"+next);
                 }
                 //各アクションの対応する子ノードが全部存在すれば、UCB値を比較することにする
@@ -584,36 +581,24 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     continue;
                 } else {
                     //対応するアクションの子ノードがない場合は、子ノードを拡張し、プレイアウトを行いucb値を更新しながらrootに戻る
-                    MCTREE* child = makeTree(current->episodes.back()._persons, current->episodes.back()._places, current->episodes, current, current->episodes.back()._time + 1, current->sumCount, notFoundAction);
+                    MCTREE* child = makeTree(current->episode ,current, current->episode._time + 1, current->sumCount, notFoundAction);
                     current->childs.push_back(child);
                     current = child;
                 //    assertEpisode(current->episodes);
                     if(notFoundAction.substr(0,5) == "move:") {
                         string next = notFoundAction.substr(5);
-                        //cout << "before move" << endl;
-                        //showPersons(current->persons);
-                        //show(current->time, current->places);
-                        tmpPersons = current->episodes.back()._persons;
-                        tmpPlaces = current->episodes.back()._places;
                         
-                        move(person,tmpPersons,tmpPlaces,tmpPlaces[next]);
-                      //  showEpisodeWithPerson(current->episodes);
-                        //cout << "after move" << endl;
-                        //showPersons(current->persons);
-                        //show(current->time, current->places);
+                        move(person,current->episode._persons,current->episode._places,current->episode._places[next]);
                     }
                     if(notFoundAction == "nothing") {
-                        tmpPersons = current->episodes.back()._persons;
-                        tmpPlaces = current->episodes.back()._places;
+                       
                     }
-                    Episode tmpEpisode(current->episodes.back()._time+1,tmpPersons,tmpPlaces);
-                    current->episodes.push_back(tmpEpisode);
                  //   assertEpisode(current->episodes);
                     //あとはランダムに実行
-                    map<string,Person> randomPersons(current->episodes.back()._persons);
-                    map<string,Place> randomPlaces(current->episodes.back()._places);
+                    map<string,Person> randomPersons(current->episode._persons);
+                    map<string,Place> randomPlaces(current->episode._places);
                 //    vector<Episode> randomEpisodes(current->episodes);
-                    int time = current->episodes.back()._time;
+                    int time = current->episode._time;
                     
                     Episode episodes[150];
                     int I = 0;
@@ -636,7 +621,9 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                    // showEpisode(randomEpisodes);
                  //   getVal = checkEpisodePerson(randomEpisodes, constraints, person._name);
                   //  showEpisodeWithPerson(current->episodes);
-                    getVal = checkEpisodePersonWithArray(&(current->episodes), constraints, person._name, episodes);
+                    vector<Episode> TreeEpisodes;
+                    makeEpisodesFromTree(&root, current, TreeEpisodes);
+                    getVal = checkEpisodePersonWithArray(&TreeEpisodes, constraints, person._name, episodes);
                     
                     if(round%50 == 0) {
                         /*
@@ -655,7 +642,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     }
                      */
                     if(getVal == 1.0) {
-                        completeEpisodes = current->episodes;
+                        completeEpisodes = TreeEpisodes;
                         for(int s=0;s<I;s++) {
                             Episode addEpisode;
                             addEpisode._persons = episodes[s]._persons;
@@ -985,21 +972,17 @@ MCTNode makeNode(string _action,int _sum,int _count,double _ucb) {
     return node;
 }
 
-MCTREE* makeTree(map<string,Person> &_persons,map<string,Place> &_places,vector<Episode> _nowEpisodes,MCTREE* _parent,int nowTime,int *sumCount,string action) {
+MCTREE* makeTree(Episode _episode,MCTREE* _parent,int nowTime,int *sumCount,string action) {
     MCTREE *node = new MCTREE;
     node->count = 0;
     node->ucb = 0;
     node->sumVal = 0;
-    map<string,Place> places(_places);
-    map<string,Person> persons(_persons);
-  //  node->places = places;
-   // node->persons = persons;
     node->parent = _parent;
-   // node->time = nowTime;
-    node->episodes = _nowEpisodes;
+    node->episode = _episode;
     node->sumCount = sumCount;
     node->childs.clear();
     node->action = action;
+    node->episode._time = nowTime;
     return node;
 }
 
@@ -1036,6 +1019,20 @@ void showTreeSub(MCTREE *current,int depth) {
                 cout << "+----------------";
             }
             showTreeSub(current->childs[i],depth+1);
+        }
+    }
+}
+
+void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &episodes) {
+    MCTREE *makeEpisodeCurrent = leafNode;
+    while(true) {
+        episodes.insert(episodes.begin(), makeEpisodeCurrent->episode);
+        // episodes.push_back(makeEpisodeCurrent->episode);
+        if(makeEpisodeCurrent != rootNode) {
+            makeEpisodeCurrent = makeEpisodeCurrent->parent;
+            continue;
+        } else {
+            break;
         }
     }
 }

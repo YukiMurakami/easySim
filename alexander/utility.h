@@ -89,14 +89,15 @@ typedef struct mctree {
 
     vector<struct mctree*> childs;
     struct mctree *parent;
-    vector<Episode> episodes;
+    Episode episode;
     int *sumCount;
 } MCTREE;
 
 MCTNode makeNode(string _action,int _sum,int _count,double _ucb);
-MCTREE* makeTree(map<string,Person> &_persons,map<string,Place> &_places,vector<Episode> _nowEpisodes,MCTREE* _parent,int nowTime,int *sumCount,string action);
+MCTREE* makeTree(Episode _episode,MCTREE* _parent,int nowTime,int *sumCount,string action);
 void showTree(MCTREE *root);
 void showTreeSub(MCTREE *current,int depth) ;
+void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &episodes);
 
 
 //おなじエージェントが複数存在したり、エージェントの位置情報とplaceのエージェント情報の一致を確認する
