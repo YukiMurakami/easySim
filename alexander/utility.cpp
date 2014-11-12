@@ -520,7 +520,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 100000;
+        int playout = 1000000;
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
@@ -628,7 +628,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes);
                     
-                    if(round%50 == 0) {
+                    if(round%1000 == 0) {
                         /*
                          cout << person._name << ":" << round << endl;
                          showEpisodeWithPerson(randomEpisodes);
@@ -644,7 +644,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                        // cout << "name:" << person._name << " round:" << round << "val:" << getVal <<endl;
                     }
                      */
-                    if(getVal == 1.0) {
+                    if(round >= 500000) {
                         vector<Episode> TreeEpisodes;
                         makeEpisodesFromTree(&root, current, TreeEpisodes);
                         completeEpisodes = TreeEpisodes;
@@ -1018,7 +1018,7 @@ void showBC(int time) {
     string year = string(str);
     sprintf(str,"%d", bc[1]);
     string month = string(str);
-    cout << "BC." << year << " " << month << "月" << endl;
+    cout << "BC." << year << " " << month << "月 (" << time << ")" << endl;
 }
 
 #pragma mark -
