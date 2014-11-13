@@ -131,5 +131,6 @@ void EpisodesOutput(vector<Episode> &episodes,string filename,string personName)
         Person person = episodes[i]._persons[personName];
         ofs << time << " " << personName << " " << person._nowPlace << endl;
     }
+    ofs << "playoutEnd ----------------------------------------------" << endl;
     ofs.close();
 }

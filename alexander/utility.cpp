@@ -628,7 +628,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
-                    if(round%1000 == 0) {
+                    if(round%100 == 0) {
                         /*
                          cout << person._name << ":" << round << endl;
                          showEpisodeWithPerson(randomEpisodes);

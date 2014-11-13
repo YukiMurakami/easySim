@@ -10,7 +10,7 @@ place:Pella,Granikos,Sardes,Ephesos,Miletos,Halikarnassos,Side,Gordion,Andyra,Ta
 4:3,5
 5:4,6
 6:5,7,9
-7:2.6.8
+7:2,6,8
 8:7,9,24
 9:6,8,10
 10:9,11

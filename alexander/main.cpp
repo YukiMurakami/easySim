@@ -42,6 +42,9 @@ int main(int argc, const char * argv[])
         
         
         doActionMCTS(persons, places, constraints,140);
+        
+        question.show();
+        cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
     }
  
     return 0;
