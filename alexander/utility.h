@@ -100,6 +100,7 @@ void showTree(MCTREE *root);
 void showTreeSub(MCTREE *current,int depth) ;
 void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &episodes);
 double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray,bool isShowConstraints) ;
+void deleteTree(MCTREE *root);
 
 //おなじエージェントが複数存在したり、エージェントの位置情報とplaceのエージェント情報の一致を確認する
 void assertEpisode(const vector<Episode> &episodes);

@@ -121,7 +121,11 @@ vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess) {
 }
 
 void EpisodesOutput(vector<Episode> &episodes,string filename,string personName) {
-    ofstream ofs(filename.c_str());
+ 
+    ofstream ofs(filename.c_str(),ios::app );
+
+
+    ofs << "newPlayout ----------------------------------------------" << endl;
     for (int i=0; i<(int)episodes.size(); i++) {
         int time = episodes[i]._time;
         Person person = episodes[i]._persons[personName];

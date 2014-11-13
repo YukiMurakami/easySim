@@ -685,6 +685,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
         EpisodesOutput(completeEpisodes,"episodes.txt",person._name);
+        
+        deleteTree(&root);
     }
     
     //vector<Episode> resultEpisode = getFusionEpisode(completeEpisodess);
@@ -1093,6 +1095,22 @@ MCTREE* makeTree(Episode _episode,MCTREE* _parent,int nowTime,int *sumCount,stri
     node->action = action;
     node->episode._time = nowTime;
     return node;
+}
+
+void deleteTree(MCTREE *root) {
+    MCTREE *current = root;
+    while(root->childs.size() > 0) {
+        if(current->childs.size() > 0) {
+            current = current->childs[0];
+            continue;
+        } else {
+            current = current->parent;
+            delete current->childs[0];
+            current->childs.erase(current->childs.begin());
+            continue;
+        }
+    }
+    
 }
 
 void showTree(MCTREE *root) {
