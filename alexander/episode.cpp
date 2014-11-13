@@ -10,6 +10,8 @@
 
 #include <stdlib.h>
 
+#include <fstream>
+
 Episode::Episode(int time,map<string,Person> persons, map<string,Place> places) {
     _persons = persons;
     _places = places;
@@ -116,4 +118,14 @@ vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess) {
     }
     
     return fusionEpisodes;
+}
+
+void EpisodesOutput(vector<Episode> &episodes,string filename,string personName) {
+    ofstream ofs(filename.c_str());
+    for (int i=0; i<(int)episodes.size(); i++) {
+        int time = episodes[i]._time;
+        Person person = episodes[i]._persons[personName];
+        ofs << time << " " << personName << " " << person._nowPlace << endl;
+    }
+    ofs.close();
 }

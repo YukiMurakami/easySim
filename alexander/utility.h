@@ -48,7 +48,7 @@ void move(Person &person,map<string,Person> &persons,map<string,Place> &places,P
 void initAgent(map<string,Person> &persons,map<string,Place> &places,string filename);
 //エピソードの評価
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
-double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName);
+double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personNamebool ,bool isShowConstraints);
 double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> constraints,string _personName,Episode *episodesArray);
 
 //制約条件の初期化
@@ -99,7 +99,7 @@ MCTREE* makeTree(Episode _episode,MCTREE* _parent,int nowTime,int *sumCount,stri
 void showTree(MCTREE *root);
 void showTreeSub(MCTREE *current,int depth) ;
 void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &episodes);
-double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray) ;
+double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray,bool isShowConstraints) ;
 
 //おなじエージェントが複数存在したり、エージェントの位置情報とplaceのエージェント情報の一致を確認する
 void assertEpisode(const vector<Episode> &episodes);

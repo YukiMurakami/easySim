@@ -29,5 +29,5 @@ public:
 vector<Episode> findEpisodeFromTime(int time,vector<Episode> episodes);
 vector<Episode> getOnlyPersonEpisode(string name,vector<Episode> episodes);
 vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess);
-
+void EpisodesOutput(vector<Episode> &episodes,string filename,string personName);
 #endif /* defined(__easySimu__history__) */

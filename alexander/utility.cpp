@@ -290,7 +290,7 @@ void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTi
             }
             
             string personName = person._name;
-            double val = checkEpisodePerson(nowEpisodes, constraints,personName);
+            double val = checkEpisodePerson(nowEpisodes, constraints,personName,false);
             
             personsUCB[p][index].count++;
             personsUCB[p][index].sumValue += val;
@@ -375,7 +375,7 @@ int randomAction(map<string,Person> &persons,map<string,Place> &places,vector<Co
              */
             
             // showEpisode(randomEpisodes);
-            double getVal = checkEpisodePerson(randomEpisodes, constraints, person._name);
+            double getVal = checkEpisodePerson(randomEpisodes, constraints, person._name,false);
            
             if(getVal == 1.0) {
                 completeEpisodes = randomEpisodes;
@@ -448,7 +448,7 @@ void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Con
     
     if(step == 10) {
         //探索の底なので評価する
-        double getVal = checkEpisodePerson(episodes, constraints, person._name);
+        double getVal = checkEpisodePerson(episodes, constraints, person._name,false);
         
         if(getVal == 1.0) {
             isFinish = true;
@@ -520,7 +520,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 1000000;
+        int playout = 600000;
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
@@ -539,7 +539,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     
                     vector<Episode> episodes;
                     makeEpisodesFromTree(&root, current, episodes);
-                    getVal = checkEpisodePerson(episodes, constraints, person._name);
+                    getVal = checkEpisodePerson(episodes, constraints, person._name,false);
                     
                     break;
                 }
@@ -626,7 +626,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     makeEpisodesFromTree(&root, current, TreeEpisodes);
                     getVal = checkEpisodePersonWithArray(&TreeEpisodes, constraints, person._name, episodes);
                      */
-                    getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes);
+                    getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
                     if(round%1000 == 0) {
                         /*
@@ -644,7 +644,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                        // cout << "name:" << person._name << " round:" << round << "val:" << getVal <<endl;
                     }
                      */
-                    if(round >= 500000) {
+                    if(round >= playout-1 || getVal >= 1.0) {
                         vector<Episode> TreeEpisodes;
                         makeEpisodesFromTree(&root, current, TreeEpisodes);
                         completeEpisodes = TreeEpisodes;
@@ -679,10 +679,12 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                 }
             }
         }
-        
+        checkEpisodePerson(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, true);
         
         showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
+        
+        EpisodesOutput(completeEpisodes,"episodes.txt",person._name);
     }
     
     //vector<Episode> resultEpisode = getFusionEpisode(completeEpisodess);
@@ -770,7 +772,7 @@ double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints) {
     return val;
 }
 
-double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName) {
+double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName,bool isShowConstraints) {
     double val = 0;
     int count = (int)constraints.size();
     int correct = 0;
@@ -795,12 +797,20 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
             if(constraint == there_is) {
                 if(episode._persons[personName]._nowPlace == placeName) {
                     correct++;
+                    if(isShowConstraints) {
+                        constraints[i].show();
+                        cout << "ok" << endl;
+                    }
                     continue;
                 }
             }
             if(constraint == there_is_no) {
                 if(episode._persons[personName]._nowPlace != placeName) {
                     correct++;
+                    if(isShowConstraints) {
+                        constraints[i].show();
+                        cout << "ok" << endl;
+                    }
                     continue;
                 }
             }
@@ -814,7 +824,7 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
     return val;
 }
 
-double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray) {
+double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Constraint> constraints,string _personName,Episode *episodesArray,bool isShowConstraints) {
     double val = 0;
     int count = (int)constraints.size();
     int correct = 0;
@@ -851,12 +861,20 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
                     if(constraint == there_is) {
                         if(episodes.at(j)->_persons[personName]._nowPlace == placeName) {
                             correct++;
+                            if(isShowConstraints) {
+                                constraints[i].show();
+                                cout << "ok" << endl;
+                            }
                             continue;
                         }
                     }
                     if(constraint == there_is_no) {
                         if(episodes.at(j)->_persons[personName]._nowPlace != placeName) {
                             correct++;
+                            if(isShowConstraints) {
+                                constraints[i].show();
+                                cout << "ok" << endl;
+                            }
                             continue;
                         }
                     }
@@ -871,12 +889,20 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
                 if(constraint == there_is) {
                     if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
                         correct++;
+                        if(isShowConstraints) {
+                            constraints[i].show();
+                            cout << "ok" << endl;
+                        }
                         continue;
                     }
                 }
                 if(constraint == there_is_no) {
                     if(episodesArray[j]._persons[personName]._nowPlace != placeName) {
                         correct++;
+                        if(isShowConstraints) {
+                            constraints[i].show();
+                            cout << "ok" << endl;
+                        }
                         continue;
                     }
                 }
