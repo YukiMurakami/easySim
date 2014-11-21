@@ -72,6 +72,11 @@ double calcUcb1(double sumVal,int n,int N,double c);
 
 //時代換算関数  {紀元前年、月} 例{332,6}
 vector<int> getBCfromTime(int time);
+int getTimeFromBC(int bc,int month);
+int getMonthFromString(string mString);
+
+//大文字小文字の区別なく文字列の比較
+bool isEqualStringWithoutCapital(string &a,string &b);
 
 
 //モンテカルロ木ノード

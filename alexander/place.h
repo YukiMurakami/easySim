@@ -12,6 +12,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
 
 #include "person.h"
 
@@ -26,5 +27,7 @@ public:
     Place(string name,vector<string> next,vector<Person> persons);
     Place();
 };
+
+vector<string> makePlaceVectorFromMap(map<string,Place> &place);
 
 #endif /* defined(__easySimu__place__) */

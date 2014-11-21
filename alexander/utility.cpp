@@ -195,16 +195,17 @@ void doAction(map<string,Person> &persons,map<string,Place> &places) {
     
     for(map<string,Person>::iterator it = persons.begin();it != persons.end();it++) {
         Person person = (*it).second;
-        int id = rand() % 2;
+        Place place = places[person._nowPlace];
+        int nextSize = (int)place._nextPlaces.size();
+        int id = rand() % (nextSize+1);
+        
         if(id == 0) {
             //do nothing
+        } else {
+            move(person,persons,places,places[place._nextPlaces[id-1]]);
         }
-        if(id == 1) {
-            //move
-            Place place = places[person._nowPlace];
-            int next = rand() % (place._nextPlaces.size());
-            move(person,persons,places,places[place._nextPlaces[next]]);
-        }
+        
+      
     }
     
 }
@@ -494,7 +495,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     
     int sumPlayout = 0;
     
-    double cp = 0.1;
+    double cp = 0.2;
     
     vector< vector<Episode> >completeEpisodess;
     
@@ -685,6 +686,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
         EpisodesOutput(completeEpisodes,"episodes.txt",person._name);
+        
+        showTree(&root);
         
         deleteTree(&root);
     }
@@ -987,6 +990,19 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
     return val;
 }
 
+struct ToUpper {
+    char operator()(char c) { return toupper(c); }
+};
+bool isEqualStringWithoutCapital(string &a,string &b) {
+    string aa,bb;
+    aa.resize(a.size());
+    bb.resize(b.size());
+    transform(a.cbegin(), a.cend(), aa.begin(), ToUpper());
+    transform(b.cbegin(), b.cend(), bb.begin(), ToUpper());
+    
+    return (aa == bb);
+}
+
 #pragma mark -
 #pragma mark show
 
@@ -1069,6 +1085,23 @@ vector<int> getBCfromTime(int time) {
     bc.push_back(year);
     bc.push_back(month);
     return bc;
+}
+
+int getTimeFromBC(int bc,int month) {
+    return (334-bc)*12 + (month-1);
+}
+
+int getMonthFromString(string mString) {
+    int month = -1;
+    
+    vector<string>months = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+    for(unsigned int i=0;i<months.size();i++) {
+        if(isEqualStringWithoutCapital(mString, months[i])) {
+            month = i+1;
+        }
+    }
+    
+    return month;
 }
 
 #pragma mark -

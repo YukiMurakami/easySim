@@ -7,6 +7,8 @@
 //
 
 #include "person.h"
+#include <vector>
+#include <map>
 
 Person::Person(string name,string firstPlace,int apples) {
     _hasApples = apples;
@@ -18,4 +20,14 @@ Person::Person() {
     _hasApples = 0;
     _name = "";
     _nowPlace = "";
+}
+
+vector<string> makePersonVectorFromMap(map<string,Person> &person) {
+    vector<string> persons;
+    for(map<string,Person>::iterator it = person.begin();it != person.end();it++) {
+        string personName = (*it).second._name;
+        persons.push_back(personName);
+    }
+    
+    return persons;
 }

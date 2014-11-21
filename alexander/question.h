@@ -23,4 +23,6 @@ public:
     double getAnswerFromEpisodesFile(string filename);
 };
 
+Question makeQuestionFromString(string querry,vector<string> &persons ,vector<string> &places);
+
 #endif /* defined(__easySimu__question__) */

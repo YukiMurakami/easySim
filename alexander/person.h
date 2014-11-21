@@ -10,6 +10,8 @@
 #define __easySimu__person__
 
 #include <iostream>
+#include <vector>
+#include <map>
 
 using namespace std;
 
@@ -23,5 +25,7 @@ public:
     Person();
  
 };
+
+vector<string> makePersonVectorFromMap(map<string,Person> &person);
 
 #endif /* defined(__easySimu__person__) */
