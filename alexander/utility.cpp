@@ -1093,8 +1093,11 @@ int getTimeFromBC(int bc,int month) {
 
 int getMonthFromString(string mString) {
     int month = -1;
-    
-    vector<string>months = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+    string monthString[12] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+    vector<string>months;
+    for(unsigned int i=0;i<12;i++) {
+        months.push_back(monthString[i]);
+    }
     for(unsigned int i=0;i<months.size();i++) {
         if(isEqualStringWithoutCapital(mString, months[i])) {
             month = i+1;

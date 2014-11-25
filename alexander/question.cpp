@@ -87,7 +87,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
     
     vector<string> out = SpritString(querry, " ");
     for(int i=0;i<out.size();i++) {
-        cout << out[i] << endl;
+     //   cout << out[i] << endl;
         if(out[i] == "not" || out[i] == "no") constraint = there_is_no;
         
         int tmpmonth = getMonthFromString(out[i]);
@@ -96,8 +96,8 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         }
         
         if(out[i] == "BC") {
-            if(i != (int)out.size()-1) {
-                int bc = atoi(out[i+1].c_str());
+            if(i > 0) {
+                int bc = atoi(out[i-1].c_str());
                 if(month != -1) {
                     time = getTimeFromBC(bc, month);
                 } else {
@@ -120,6 +120,44 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
     question._personName = personName;
     question._placeName = placeName;
     question._constraint = constraint;
-    question.show();
+   // question.show();
     return question;
+}
+
+void solve4selectionQuestion(string filename,vector<string> &persons,vector<string> &places,string episodeFile) {
+    ifstream ifs(filename.c_str());
+    string buf;
+    vector<Question> questions;
+    vector<string> questionStrings;
+    vector<double> rates;
+    double maxRate = -100;
+    int answerIndex = -1;
+    int count = 0;
+    if(!ifs) {
+        cout << "error: not found file @solve4selectionQuestion" << endl;
+        exit(0);
+    }
+    while (getline(ifs,buf)) {
+      //  cout << buf << endl;
+        Question question = makeQuestionFromString(buf, persons, places);
+        questionStrings.push_back(buf);
+        questions.push_back(question);
+     //   question.show();
+        double answerRate = question.getAnswerFromEpisodesFile(episodeFile);
+       // cout <<  answerRate << endl;
+        rates.push_back(answerRate);
+        if(maxRate <= answerRate) {
+            answerIndex = count;
+        }
+        count++;
+    }
+    
+    for(unsigned int i=0;i<questions.size();i++) {
+        cout << "<" << i+1 << "> " << questionStrings[i] << endl;
+        questions[i].show();
+        cout << "point:" << rates[i] << endl;
+    }
+    cout << endl;
+    cout << "answer : " << answerIndex+1 << endl;
+    
 }

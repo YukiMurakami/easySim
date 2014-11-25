@@ -7,6 +7,9 @@
 //
 
 #include "constraints.h"
+#include "question.h"
+
+#include <fstream>
 
 Constraint::Constraint(int time,string person,string place,CONSTRAINT constraint) {
     _time = time;
@@ -23,6 +26,34 @@ CONSTRAINT getEnumFromString(string constraint) {
     return none;
 }
 
+string getStringFromEnum(CONSTRAINT constraint) {
+    if(constraint == there_is) return "there_is";
+    if(constraint == there_is_no) return "there_is_no";
+    return "";
+}
+
 void Constraint::show() {
-    cout << "constraint:" << _time << ":" << _personName << ":" << _placeName << ":" << _constraint << endl;
+    cout << "constraint:" << _time << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) << endl;
+}
+
+vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
+    cout << "now making constraints from file[" << filename << "]" << endl;
+    vector<Constraint> result;
+    
+    ifstream ifs(filename.c_str());
+    string buf;
+    while(getline(ifs,buf)) {
+        Constraint constraint = makeQuestionFromString(buf, persons, places);
+        result.push_back(constraint);
+    }
+    
+    return result;
+}
+
+void showConstraints(vector<Constraint> &constraints) {
+    cout << "constraints show ------" << endl;
+    for(unsigned i=0;i<constraints.size();i++) {
+        constraints[i].show();
+    }
+    cout << "constraints show end ---" << endl;
 }

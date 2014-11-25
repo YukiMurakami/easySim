@@ -38,18 +38,26 @@ int main(int argc, const char * argv[])
         map<string,Place> places;
         initAgent(persons,places,"initialize.txt");
         
-        vector<Constraint> constraints;
-        initConstraints(constraints, "constraint.txt");
+    
+    
     
         string querry = "Alexander the Great was starting the pella in February BC 334 .";
         vector<string> personVector = makePersonVectorFromMap(persons);
         vector<string> placeVector = makePlaceVectorFromMap(places);
         makeQuestionFromString(querry, personVector,placeVector);
+    /*
+        vector<Constraint> constraints;
+        constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
+    showConstraints(constraints);
+     */
+        // initConstraints(constraints, "constraint.txt");
     
        // doActionMCTS(persons, places, constraints,140);
         
-        question.show();
-        cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
+      //  question.show();
+    //    cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
+    
+    solve4selectionQuestion("question4.txt", personVector, placeVector, "episodes.txt");
 //    }
  
     return 0;

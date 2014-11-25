@@ -25,4 +25,6 @@ public:
 
 Question makeQuestionFromString(string querry,vector<string> &persons ,vector<string> &places);
 
+void solve4selectionQuestion(string filename,vector<string> &persons,vector<string> &places,string episodeFile);
+
 #endif /* defined(__easySimu__question__) */

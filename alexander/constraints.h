@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -33,5 +34,9 @@ public:
 };
 
 CONSTRAINT getEnumFromString(string constraint);
+
+vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
+
+void showConstraints(vector<Constraint> &constraints);
 
 #endif /* defined(__easySimu__constraints__) */

@@ -1,5 +1,5 @@
 human:Alexander
-place:Pella,Granikos,Sardes,Ephesos,Miletos,Halikarnassos,Side,Gordion,Andyra,Tarsos,Issos,Byblos,Sidon,Tyros,Gaza,Memphis,Aleksandria,Paraetonion,Amonin,Thebe,Syene,Petra,Damaskos,Nikephorion,Comana,Amida,Nisois,Gaugamela,Arbela,Opis,Babylon,Susa,A_in_Susiana,Persepolis,Pathragada,Aspardana,Ekbatana,Rbaga,Hekatompylos,Susia,A_in_Margiana,A_in_ARIA,Praphlasia,A_in_Arakhosia,Kahal,Orapsana,Baktra,Nautaca,Matakanca,A_in_Eskhate,A_in_Oxas,A_in_karmanien,Harmosia,Pura,Rhambasia,Pattala,A_in_Indas,Arigaeum,Texila,Nikara,A_in_Hyphasis
+place:Pella,Granicus,Sardes,Ephesos,Miletos,Halikarnassos,Side,Gordion,Andyra,Tarsos,Issus,Byblos,Sidon,Tyre,Gaza,Memphis,Alexandria,Paraetonion,Amonin,Thebe,Syene,Petra,Damaskos,Nikephorion,Comana,Amida,Nisois,Gaugamela,Arbela,Opis,Babylon,Susa,A_in_Susiana,Persepolis,Pathragada,Aspardana,Ekbatana,Rbaga,Hekatompylos,Susia,A_in_Margiana,A_in_ARIA,Praphlasia,A_in_Arakhosia,Kahal,Orapsana,Baktra,Nautaca,Matakanca,A_in_Eskhate,A_in_Oxas,A_in_karmanien,Harmosia,Pura,Rhambasia,Pattala,A_in_Indas,Arigaeum,Texila,Nikara,A_in_Hyphasis
 
 ---エリア連結定義---
 <area_start>
