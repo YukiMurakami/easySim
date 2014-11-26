@@ -39,7 +39,7 @@ void doAction(map<string,Person> &persons,map<string,Place> &places);
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes);
 //木を作成しながらシミュレーションを繰り返す
 //総プレイアウト回数を返す
-int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime);
+int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename);
 
 //移動アクションの処理
 void move(Person &person,map<string,Person> &persons,map<string,Place> &places,Place &nextplace);
@@ -70,6 +70,9 @@ void showBC(int time);
 //UDB1値の算出
 double calcUcb1(double sumVal,int n,int N,double c);
 
+//xorshift乱数生成
+uint32_t xor128(void) ;
+
 //時代換算関数  {紀元前年、月} 例{332,6}
 vector<int> getBCfromTime(int time);
 int getTimeFromBC(int bc,int month);
@@ -77,7 +80,8 @@ int getMonthFromString(string mString);
 
 //大文字小文字の区別なく文字列の比較
 bool isEqualStringWithoutCapital(string &a,string &b);
-
+//表記揺れを除去する（リストに該当する項目は、最も使われていると思われる表記に変換する）
+string removeOrthographicalVariant(const string &str);
 
 //モンテカルロ木ノード
 typedef struct mctnode {

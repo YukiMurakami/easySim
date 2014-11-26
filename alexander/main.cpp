@@ -21,14 +21,19 @@
 
 int main(int argc, const char * argv[])
 {
+    for(int n = 0; n < 100; n++)
+    {
+        cout << xor128() << endl;
+    }
     
+    /*
     srand((unsigned)time(NULL));
     int round = 0;
     
     Question question;
     initQuestion(question, "question.txt");
     
- //   for(int i=0;i<100;i++) {
+ //   for(int i=0;i<50;i++) {
     
         round++;
         vector<Episode> episodes;
@@ -38,26 +43,26 @@ int main(int argc, const char * argv[])
         map<string,Place> places;
         initAgent(persons,places,"initialize.txt");
         
-    
-    
-    
-        string querry = "Alexander the Great was starting the pella in February BC 334 .";
+  
         vector<string> personVector = makePersonVectorFromMap(persons);
         vector<string> placeVector = makePlaceVectorFromMap(places);
-        makeQuestionFromString(querry, personVector,placeVector);
+     */
     /*
         vector<Constraint> constraints;
         constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
-    showConstraints(constraints);
-     */
+ //   showConstraints(constraints);
+    cout << "made " << constraints.size() << " constraints" << endl;
+    */
         // initConstraints(constraints, "constraint.txt");
     
-       // doActionMCTS(persons, places, constraints,140);
-        
-      //  question.show();
-    //    cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
     
-    solve4selectionQuestion("question4.txt", personVector, placeVector, "episodes.txt");
+        //    doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes.txt");
+      /*
+        question.show();
+        cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
+    */
+      //  solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes.txt");
+//    }
 //    }
  
     return 0;

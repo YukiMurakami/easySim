@@ -188,6 +188,24 @@ vector<string> SpritString(const string &src,const string &delim) {
     return dest;
 }
 
+string removeOrthographicalVariant(const string &str) {
+    string result;
+    string filename = "orthographical_variants.txt";
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @removeOrthographicalVariant" << endl;
+        exit(0);
+    }
+    string buf;
+    while(getline(ifs,buf)) {
+        
+    }
+    
+    ifs.close();
+    
+    return result;
+}
+
 #pragma mark -
 #pragma mark Action
 
@@ -481,8 +499,8 @@ void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Con
     return;
 }
 
-int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime) {
-    
+int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename) {
+    cout << "start mcts" << endl;
     clock_t start,end;
     start = clock();
     
@@ -629,7 +647,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
-                    if(round%100 == 0) {
+                    if(round%10000 == 0) {
                         /*
                          cout << person._name << ":" << round << endl;
                          showEpisodeWithPerson(randomEpisodes);
@@ -645,7 +663,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                        // cout << "name:" << person._name << " round:" << round << "val:" << getVal <<endl;
                     }
                      */
-                    if(round >= playout-1 || getVal >= 1.0) {
+                    if(round >= playout-1 || getVal >= 0.7) {
                         vector<Episode> TreeEpisodes;
                         makeEpisodesFromTree(&root, current, TreeEpisodes);
                         completeEpisodes = TreeEpisodes;
@@ -685,7 +703,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
-        EpisodesOutput(completeEpisodes,"episodes.txt",person._name);
+        EpisodesOutput(completeEpisodes,outputFilename,person._name);
         
         showTree(&root);
         
@@ -990,17 +1008,17 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
     return val;
 }
 
-struct ToUpper {
-    char operator()(char c) { return toupper(c); }
-};
+
 bool isEqualStringWithoutCapital(string &a,string &b) {
-    string aa,bb;
-    aa.resize(a.size());
-    bb.resize(b.size());
-    transform(a.cbegin(), a.cend(), aa.begin(), ToUpper());
-    transform(b.cbegin(), b.cend(), bb.begin(), ToUpper());
-    
-    return (aa == bb);
+    if(a.size() != b.size()) return false;
+    bool flag = true;
+    for(unsigned i=0;i<a.size();i++) {
+        if( a.substr(i,1).c_str()[0] != b.substr(i,1).c_str()[0]) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
 }
 
 #pragma mark -
@@ -1067,6 +1085,25 @@ void showBC(int time) {
 
 #pragma mark -
 #pragma mark calc
+
+uint32_t xor128(void) {
+    uint32_t gSeed128[4];
+    uint32_t s = ((unsigned)time(NULL));
+    for( int i = 1; i <= 4; i++ )
+    {
+        gSeed128[ i - 1 ] = s = 1812433253U * ( s ^ ( s >> 30 ) ) + i;
+    }
+    
+    static uint32_t x = gSeed128[0];
+    static uint32_t y = gSeed128[1];
+    static uint32_t z = gSeed128[2];
+    static uint32_t w = gSeed128[3];
+    uint32_t t;
+    
+    t = x ^ (x << 11);
+    x = y; y = z; z = w;
+    return w = (w ^ (w >> 19)) ^ (t ^ (t >> 8));
+}
 
 double calcUcb1(double sumVal,int ni,int N,double c) {
     double x;

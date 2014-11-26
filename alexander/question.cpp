@@ -19,9 +19,9 @@ double Question::getAnswerFromEpisodess(const vector<vector<Episode> > &episodes
     int count = 0;
     int correct = 0;
     
-    for(int i=0;i<episodess.size();i++) {
+    for(unsigned int i=0;i<episodess.size();i++) {
         vector<Episode> personEpisode = getOnlyPersonEpisode(_personName, episodess[i]);
-        for(int j=0;j<personEpisode.size();j++) {
+        for(unsigned int j=0;j<personEpisode.size();j++) {
             if(personEpisode[j]._time == _time) {
                 if(_constraint == there_is && _placeName == personEpisode[j]._persons[_personName]._nowPlace) {
                     correct++;
@@ -45,6 +45,10 @@ double Question::getAnswerFromEpisodesFile(string filename) {
     int correct = 0;
     
     ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @getAnswerFromEpisodesFile" << endl;
+        exit(0);
+    }
     string buf;
     
     while (getline(ifs,buf)) {
@@ -86,7 +90,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
     
     
     vector<string> out = SpritString(querry, " ");
-    for(int i=0;i<out.size();i++) {
+    for(unsigned int i=0;i<out.size();i++) {
      //   cout << out[i] << endl;
         if(out[i] == "not" || out[i] == "no") constraint = there_is_no;
         
@@ -101,7 +105,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
                 if(month != -1) {
                     time = getTimeFromBC(bc, month);
                 } else {
-                    time = getTimeFromBC(bc, rand()%12);
+                    time = getTimeFromBC(bc,6/* rand()%12 */ );
                 }
             }
         }
@@ -148,6 +152,7 @@ void solve4selectionQuestion(string filename,vector<string> &persons,vector<stri
         rates.push_back(answerRate);
         if(maxRate <= answerRate) {
             answerIndex = count;
+            maxRate = answerRate;
         }
         count++;
     }
