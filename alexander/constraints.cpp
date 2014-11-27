@@ -37,17 +37,37 @@ void Constraint::show() {
 }
 
 vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
-    cout << "now making constraints from file[" << filename << "]" << endl;
+    cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
     ifstream ifs(filename.c_str());
     string buf;
+    
+    int personCount = 0;
+    int placeCount = 0;
+    int timeCount = 0;
+    
     while(getline(ifs,buf)) {
         Constraint constraint = makeQuestionFromString(buf, persons, places);
+        if(constraint._personName != "") personCount++;
+        if(constraint._placeName != "") placeCount++;
+        if(constraint._time >= 0 && constraint._time <= 140) timeCount++;
+        //result.push_back(constraint);
+        
         if(constraint._personName != "" && constraint._placeName != "" && constraint._time >= 0 && constraint._time <= 140) {
             result.push_back(constraint);
+            if(constraint._time < 0 || constraint._time > 140) {
+                cout << buf << endl;
+                constraint.show();
+                cout << endl;
+            }
         }
+        
+      //  cout << buf << endl;
+      //  constraint.show();
+       // cout << endl;
     }
     cout << "made " << result.size() << " constraints" << endl;
+    cout << "personOk:" << personCount << " placeOk:" << placeCount << " timeOk:" << timeCount << endl;
     return result;
 }
 

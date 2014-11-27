@@ -57,6 +57,8 @@ double Question::getAnswerFromEpisodesFile(string filename) {
             
         } else if(out[0] == "playoutEnd") {
             
+        } else if(out[0] == "score") {
+            
         } else if(out.size() == 3) {
             int time = atoi(out[0].c_str());
             string personName = out[1];
@@ -105,7 +107,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
                 if(month != -1) {
                     time = getTimeFromBC(bc, month);
                 } else {
-                    time = getTimeFromBC(bc,6/* rand()%12 */ );
+                    time = getTimeFromBC(bc,6/* xor128()%12 */ );
                 }
             }
         }

@@ -21,19 +21,16 @@
 
 int main(int argc, const char * argv[])
 {
-    for(int n = 0; n < 100; n++)
-    {
-        cout << xor128() << endl;
-    }
+  
     
-    /*
+    
     srand((unsigned)time(NULL));
     int round = 0;
     
     Question question;
     initQuestion(question, "question.txt");
     
- //   for(int i=0;i<50;i++) {
+ //   for(int i=0;i<100;i++) {
     
         round++;
         vector<Episode> episodes;
@@ -46,24 +43,24 @@ int main(int argc, const char * argv[])
   
         vector<string> personVector = makePersonVectorFromMap(persons);
         vector<string> placeVector = makePlaceVectorFromMap(places);
-     */
-    /*
+    
+    
         vector<Constraint> constraints;
-        constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
+        //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
+   constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
+    showConstraints(constraints);
+    
+     //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
-    cout << "made " << constraints.size() << " constraints" << endl;
-    */
-        // initConstraints(constraints, "constraint.txt");
     
-    
-        //    doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes.txt");
+      //  doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes1127.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
     */
-      //  solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes.txt");
+        solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes1127.txt");
 //    }
-//    }
+//   }
  
     return 0;
 }

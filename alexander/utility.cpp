@@ -143,7 +143,7 @@ void initConstraintsWithCount(vector<Constraint> &constraints,string filename,in
     }
     
     for(int i=0;i<count;i++) {
-       // int index = rand()%(tmp.size());
+       // int index = xor128()%(tmp.size());
         int index = 0;
         tmp[index].show();
         constraints.push_back(tmp[index]);
@@ -215,7 +215,7 @@ void doAction(map<string,Person> &persons,map<string,Place> &places) {
         Person person = (*it).second;
         Place place = places[person._nowPlace];
         int nextSize = (int)place._nextPlaces.size();
-        int id = rand() % (nextSize+1);
+        int id = xor128() % (nextSize+1);
         
         if(id == 0) {
             //do nothing
@@ -524,6 +524,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         bool isFinish = false;
         
   //      double maxValue = -100000;
+        double score = 0;
         
         //rootノードを作成
         int sumCount = 0;
@@ -540,6 +541,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         MCTREE *current = &root;
         
         int playout = 600000;
+        double finishRate = 0.8;
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
@@ -569,10 +571,11 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     actions.push_back("move:"+next);
                 }
                 //各アクションの対応する子ノードが全部存在すれば、UCB値を比較することにする
-                bool hasActions = true;
+                //なかったら、なかった者のなかからランダムで選ぶ
                 double maxUcb = -99999999;
-                int maxindex = -1;
-                string notFoundAction = "";
+             
+                vector<int> maxIndexs;
+                vector<string>notFoundActions;
                 for(int i=0;i<(int)actions.size();i++) {
                     string action = actions[i];
                     //actionと一致する子ノードがあるかどうか調べる
@@ -584,21 +587,28 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                         }
                     }
                     if(index == -1) {
-                        hasActions = false;
-                        notFoundAction = action;
-                        break;
+                        notFoundActions.push_back(action);
+                        continue;
                     } else {
                         current->childs[index]->ucb = calcUcb1(current->childs[index]->sumVal, current->childs[index]->count, *current->childs[index]->sumCount,cp);
-                        if(maxUcb < current->childs[index]->ucb) {
-                            maxindex = index;
+                        if(maxUcb <= current->childs[index]->ucb) {
+                            maxIndexs.push_back(index);
+                            if(maxUcb != current->childs[index]->ucb) {
+                                maxIndexs.clear();
+                                maxIndexs.push_back(index);
+                            }
                             maxUcb = current->childs[index]->ucb;
                         }
                     }
                 }
-                if(hasActions) {
+                if(notFoundActions.size() <= 0) {
+                    int randIndex = xor128() % maxIndexs.size();
+                    int maxindex = maxIndexs[randIndex];
                     current = current->childs[maxindex];
                     continue;
                 } else {
+                    int randIndex = xor128() % notFoundActions.size();
+                    string notFoundAction = notFoundActions[randIndex];
                     //対応するアクションの子ノードがない場合は、子ノードを拡張し、プレイアウトを行いucb値を更新しながらrootに戻る
                     MCTREE* child = makeTree(current->episode ,current, current->episode._time + 1, current->sumCount, notFoundAction);
                     current->childs.push_back(child);
@@ -647,7 +657,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
-                    if(round%10000 == 0) {
+                    if(round%100 == 0) {
                         /*
                          cout << person._name << ":" << round << endl;
                          showEpisodeWithPerson(randomEpisodes);
@@ -663,7 +673,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                        // cout << "name:" << person._name << " round:" << round << "val:" << getVal <<endl;
                     }
                      */
-                    if(round >= playout-1 || getVal >= 0.7) {
+                    if(round >= playout-1 || getVal >= finishRate) {
+                        score = getVal;
                         vector<Episode> TreeEpisodes;
                         makeEpisodesFromTree(&root, current, TreeEpisodes);
                         completeEpisodes = TreeEpisodes;
@@ -703,9 +714,9 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
-        EpisodesOutput(completeEpisodes,outputFilename,person._name);
+        EpisodesOutput(completeEpisodes,outputFilename,person._name,score);
         
-        showTree(&root);
+        //showTree(&root);
         
         deleteTree(&root);
     }

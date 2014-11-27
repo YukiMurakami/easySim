@@ -120,7 +120,7 @@ vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess) {
     return fusionEpisodes;
 }
 
-void EpisodesOutput(vector<Episode> &episodes,string filename,string personName) {
+void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,double score) {
  
     ofstream ofs(filename.c_str(),ios::app );
 
@@ -131,6 +131,7 @@ void EpisodesOutput(vector<Episode> &episodes,string filename,string personName)
         Person person = episodes[i]._persons[personName];
         ofs << time << " " << personName << " " << person._nowPlace << endl;
     }
+    ofs << "score " << score << endl;
     ofs << "playoutEnd ----------------------------------------------" << endl;
     ofs.close();
 }
