@@ -80,6 +80,7 @@ double Question::getAnswerFromEpisodesFile(string filename) {
         cout << "error: count <= 0 @Question/getAnswerFromEpisodess" << endl;
         exit(0);
     }
+    cout << "episode count:" << count << endl;
     return (double)correct/(double)count;
 }
 
@@ -113,10 +114,10 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         }
         
         for(unsigned int j=0;j<persons.size();j++) {
-            if(isEqualStringWithoutCapital(out[i], persons[j])) personName = out[i];
+            if(isEqualStringWithoutOrthographicalVariant(out[i], persons[j])) personName = out[i];
         }
         for(unsigned int j=0;j<places.size();j++) {
-            if(isEqualStringWithoutCapital(out[i], places[j])) placeName = out[i];
+            if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
         }
     }
 
@@ -166,5 +167,4 @@ void solve4selectionQuestion(string filename,vector<string> &persons,vector<stri
     }
     cout << endl;
     cout << "answer : " << answerIndex+1 << endl;
-    
 }

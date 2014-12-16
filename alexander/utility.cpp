@@ -188,23 +188,6 @@ vector<string> SpritString(const string &src,const string &delim) {
     return dest;
 }
 
-string removeOrthographicalVariant(const string &str) {
-    string result;
-    string filename = "orthographical_variants.txt";
-    ifstream ifs(filename.c_str());
-    if(!ifs) {
-        cout << "error: not found file '" << filename << "' @removeOrthographicalVariant" << endl;
-        exit(0);
-    }
-    string buf;
-    while(getline(ifs,buf)) {
-        
-    }
-    
-    ifs.close();
-    
-    return result;
-}
 
 #pragma mark -
 #pragma mark Action
@@ -510,6 +493,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     Episode episode(0,nowPersons,nowPlaces);
  //   nowEpisodes.push_back(episode);
  
+    int maxDepth = 0;
     
     int sumPlayout = 0;
     
@@ -540,14 +524,16 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 600000;
+        int playout = 1200000;
         double finishRate = 0.8;
+        
+        
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
             if(isFinish) break;
             bool downFlag = true;//trueなら木を潜り続ける
-            
+            int nowDepth = 0;
             //showTree(&root);
             
             double getVal = 0;//取得した報酬
@@ -605,6 +591,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     int randIndex = xor128() % maxIndexs.size();
                     int maxindex = maxIndexs[randIndex];
                     current = current->childs[maxindex];
+                    nowDepth++;
                     continue;
                 } else {
                     int randIndex = xor128() % notFoundActions.size();
@@ -657,14 +644,15 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
-                    if(round%100 == 0) {
+                    if(round%1000 == 0) {
                         /*
                          cout << person._name << ":" << round << endl;
                          showEpisodeWithPerson(randomEpisodes);
                          */
                         end = clock();
                         double time = (double)(end-start)/CLOCKS_PER_SEC / round;
-                        cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << endl;
+                        cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
+                        outputAverageReward("averageReward1202", round, getVal);
                     }
                     /*
                     if(maxValue < getVal) {
@@ -694,6 +682,10 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                 }
             }
             
+            if(maxDepth < nowDepth) {
+                maxDepth = nowDepth;
+            }
+            
             while(!downFlag && !isFinish) {
                 //rootに戻りながらucb値を更新していく
                 
@@ -714,7 +706,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
-        EpisodesOutput(completeEpisodes,outputFilename,person._name,score);
+        EpisodesOutput(completeEpisodes,outputFilename,person._name,score,maxDepth);
         
         //showTree(&root);
         
@@ -1032,6 +1024,46 @@ bool isEqualStringWithoutCapital(string &a,string &b) {
     return flag;
 }
 
+bool isEqualStringWithoutOrthographicalVariant(string &a,string &b) {
+    string A = removeOrthographicalVariantString(a);
+    string B = removeOrthographicalVariantString(b);
+    return (A == B);
+}
+
+string removeOrthographicalVariantString(string &a) {
+    string result = a;
+    string fileName = "orthographical_variants.txt";
+    fstream ifs(fileName);
+    if(!ifs) {
+        cout << "error: not found file '" << fileName << "' @removeOrthographicalVariantString" << endl;
+        exit(0);
+    }
+ 
+    string buf;
+    bool finishFlag = false;
+    while(getline(ifs,buf) && !finishFlag) {
+        vector<string> out = SpritString(buf, ",");
+        for(unsigned int i=0;i<out.size();i++) {
+            if(isEqualStringWithoutCapital(out[i], a)) {
+                result = out[0];
+                finishFlag = true;
+                break;
+            }
+        }
+    }
+    
+    ifs.close();
+    return result;
+}
+
+string processingOfAlexandria(string &a) {
+    string result = a;
+    
+    
+    
+    return result;
+}
+
 #pragma mark -
 #pragma mark show
 
@@ -1094,6 +1126,14 @@ void showBC(int time) {
     cout << "BC." << year << " " << month << "月 (" << time << ")" << endl;
 }
 
+void outputAverageReward(string filename,int playout,double reward) {
+    ofstream ofs(filename.c_str(),ios::app );
+  
+    ofs << playout << "," << reward << endl;
+    
+    ofs.close();
+}
+
 #pragma mark -
 #pragma mark calc
 
@@ -1147,7 +1187,7 @@ int getMonthFromString(string mString) {
         months.push_back(monthString[i]);
     }
     for(unsigned int i=0;i<months.size();i++) {
-        if(isEqualStringWithoutCapital(mString, months[i])) {
+        if(isEqualStringWithoutOrthographicalVariant(mString, months[i])) {
             month = i+1;
         }
     }

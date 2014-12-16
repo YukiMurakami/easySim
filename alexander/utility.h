@@ -66,6 +66,8 @@ void showEpisodeWithPerson(vector<Episode> episodes);
 void showPersons(map<string,Person> &persons);
 //BC換算の時間表示
 void showBC(int time);
+//プレイアウト回数毎の平均報酬値をファイルに書き出す
+void outputAverageReward(string filename,int playout,double reward);
 
 //UDB1値の算出
 double calcUcb1(double sumVal,int n,int N,double c);
@@ -81,7 +83,9 @@ int getMonthFromString(string mString);
 //大文字小文字の区別なく文字列の比較
 bool isEqualStringWithoutCapital(string &a,string &b);
 //表記揺れを除去する（リストに該当する項目は、最も使われていると思われる表記に変換する）
-string removeOrthographicalVariant(const string &str);
+string removeOrthographicalVariantString(string &a) ;
+//表記揺れを考慮した文字列の比較
+bool isEqualStringWithoutOrthographicalVariant(string &a,string &b);
 
 //モンテカルロ木ノード
 typedef struct mctnode {

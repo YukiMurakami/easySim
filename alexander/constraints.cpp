@@ -40,13 +40,21 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
     ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error:not found file '" << filename << "' @makeConstraintsFromTestfile" << endl;
+        exit(0);
+    }
     string buf;
     
     int personCount = 0;
     int placeCount = 0;
     int timeCount = 0;
     
+    int allCount = 0;
+    
     while(getline(ifs,buf)) {
+        allCount++;
+        cout << allCount << endl;
         Constraint constraint = makeQuestionFromString(buf, persons, places);
         if(constraint._personName != "") personCount++;
         if(constraint._placeName != "") placeCount++;
@@ -67,7 +75,7 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
        // cout << endl;
     }
     cout << "made " << result.size() << " constraints" << endl;
-    cout << "personOk:" << personCount << " placeOk:" << placeCount << " timeOk:" << timeCount << endl;
+    cout << "personOk:" << personCount << " placeOk:" << placeCount << " timeOk:" << timeCount << " allOk:" << result.size() << " all:" << allCount << endl;
     return result;
 }
 

@@ -30,7 +30,7 @@ int main(int argc, const char * argv[])
     Question question;
     initQuestion(question, "question.txt");
     
- //   for(int i=0;i<100;i++) {
+ //   for(int i=0;i<9;i++) {
     
         round++;
         vector<Episode> episodes;
@@ -46,19 +46,23 @@ int main(int argc, const char * argv[])
     
     
         vector<Constraint> constraints;
-        //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
-   constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
-    showConstraints(constraints);
+        constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
+ //  constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
+        showConstraints(constraints);
     
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-      //  doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes1127.txt");
+      //  doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes1128.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
     */
         solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes1127.txt");
+        //string a = removeOrthographicalVariantString("Ephesos");
+    string a = "Ephesos";
+    cout << removeOrthographicalVariantString(a) << endl;
+   // cout << removeOrthographicalVariantString("Ephesos") << endl;
 //    }
 //   }
  
