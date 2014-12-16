@@ -48,17 +48,17 @@ int main(int argc, const char * argv[])
         vector<Constraint> constraints;
         constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
  //  constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
-    
+        showConstraintsPlaceDistribution(constraints);
     
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes1217.txt");
+      //  doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes1217.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
     */
-      //  solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes1217.txt");
+        solve4selectionQuestion("question4.txt", personVector, placeVector, "wikipediaEpisodes1217.txt");
    
    
 //    }

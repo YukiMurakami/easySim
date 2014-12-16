@@ -1229,6 +1229,25 @@ void outputAverageReward(string filename,int playout,double reward) {
     ofs.close();
 }
 
+void showConstraintsPlaceDistribution(vector<Constraint> &constraints) {
+    cout << "show place distribution of constraints" << endl;
+    map<string,int> placeCount;
+    map<string,int>::iterator it;
+    for(unsigned int i=0;i<constraints.size();i++) {
+        string placeName = removeOrthographicalVariantString( constraints[i]._placeName );
+        it = placeCount.find(placeName);
+        if(it == placeCount.end()) {
+            placeCount.insert(make_pair(placeName, 1));
+        } else {
+            (*it).second++;
+        }
+    }
+    
+    for(it = placeCount.begin();it != placeCount.end();it++) {
+        cout << (*it).first << " " << (*it).second << endl;
+    }
+}
+
 #pragma mark -
 #pragma mark calc
 

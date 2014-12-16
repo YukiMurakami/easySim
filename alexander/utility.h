@@ -64,6 +64,8 @@ void showEpisode(vector<Episode> episodes);
 void showEpisodeWithPerson(vector<Episode> episodes);
 //エージェントの表示
 void showPersons(map<string,Person> &persons);
+//制約条件の地名分布を表示
+void showConstraintsPlaceDistribution(vector<Constraint> &constraints);
 //BC換算の時間表示
 void showBC(int time);
 //プレイアウト回数毎の平均報酬値をファイルに書き出す
