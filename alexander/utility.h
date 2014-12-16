@@ -81,11 +81,15 @@ int getTimeFromBC(int bc,int month);
 int getMonthFromString(string mString);
 
 //大文字小文字の区別なく文字列の比較
-bool isEqualStringWithoutCapital(string &a,string &b);
+bool isEqualStringWithoutCapital(string a,string b);
 //表記揺れを除去する（リストに該当する項目は、最も使われていると思われる表記に変換する）
 string removeOrthographicalVariantString(string &a) ;
 //表記揺れを考慮した文字列の比較
 bool isEqualStringWithoutOrthographicalVariant(string &a,string &b);
+
+//Alexandria of the S -> A S
+//A in S -> A S
+string processingOfAlexandria(string &a);
 
 //モンテカルロ木ノード
 typedef struct mctnode {

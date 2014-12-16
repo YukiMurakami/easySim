@@ -116,8 +116,42 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         for(unsigned int j=0;j<persons.size();j++) {
             if(isEqualStringWithoutOrthographicalVariant(out[i], persons[j])) personName = out[i];
         }
+        
+        
+        string anameString = "";
+        if(isEqualStringWithoutCapital(out[i], "A") || isEqualStringWithoutCapital(out[i], "Alexandria")) {
+            int size = out.size() - i;
+            for(unsigned n=4;n>=1;n--) {
+                if(size > n) size = n;
+                string aString = "";
+                for(unsigned k=0;k<size;k++) {
+                    aString += out[i+k];
+                    if(k != size-1) aString += " ";
+                }
+                string alexString = processingOfAlexandria(aString);
+                if(alexString != aString) {
+                    for(unsigned int j=0;j<places.size();j++) {
+                        cout << j << ":" << places[j] << endl;
+                    }
+                    anameString = alexString;
+                    break;
+                }
+            }
+        }
+        
         for(unsigned int j=0;j<places.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
+            if(anameString == "") {
+                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
+            } else {
+                if(isEqualStringWithoutOrthographicalVariant(anameString, places[j])) {
+                    placeName = anameString;
+                }
+            }
+        }
+        if(anameString != "" && placeName == "") {
+            for(unsigned int j=0;j<places.size();j++) {
+                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
+            }
         }
     }
 

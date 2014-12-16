@@ -524,7 +524,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 1200000;
+        int playout = 600000;
         double finishRate = 0.8;
         
         
@@ -652,7 +652,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                         end = clock();
                         double time = (double)(end-start)/CLOCKS_PER_SEC / round;
                         cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
-                        outputAverageReward("averageReward1202", round, getVal);
+                       // outputAverageReward("averageReward1202", round, getVal);
                     }
                     /*
                     if(maxValue < getVal) {
@@ -1012,7 +1012,7 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
 }
 
 
-bool isEqualStringWithoutCapital(string &a,string &b) {
+bool isEqualStringWithoutCapital(string a,string b) {
     if(a.size() != b.size()) return false;
     bool flag = true;
     for(unsigned i=0;i<a.size();i++) {
@@ -1031,16 +1031,83 @@ bool isEqualStringWithoutOrthographicalVariant(string &a,string &b) {
 }
 
 string removeOrthographicalVariantString(string &a) {
+    string dic = "";
+    dic += "Pella/";
+    dic += "Granicus,Granikos/";
+    dic += "Sardis,Sardes/";
+    dic += "Ephesus,Ephesos/";
+    dic += "Miletus,Miletos,Milet/";
+    dic += "Halicarnassus,Halikarnassos/";
+    dic += "Side/";
+    dic += "Gordion,Gordium/";
+    dic += "Ankara,Ancyra/";
+    dic += "Tarsus,Tarsa/";
+    dic += "Issus,Issos/";
+    dic += "Byblos/";
+    dic += "Sidon,Saida/";
+    dic += "Tyre,Tyrus,Tyros/";
+    dic += "Gaza/";
+    dic += "Memphis,Egypt/";
+    dic += "Alexandria,Aleksandria/";
+    dic += "Siwa,Siwa Oasis,Ammonium,Amonin/";
+    dic += "Thebes/";
+    dic += "Damascus,Damaskos/";
+    dic += "Comana,Comana Pontica/";
+    dic += "Nisibis,Nusaybin/";
+    dic += "Gaugamela/";
+    dic += "Arbela/";
+    dic += "Opis/";
+    dic += "Babylon/";
+    dic += "Susa,Shushan/";
+    dic += "Charax,Charax Spasinu,Spasinu Charax,A Susiana/";
+    dic += "Persepolis/";
+    dic += "Pasargadae,Pathragada/";
+    dic += "Ecbatana,Ekbatana/";
+    dic += "Ray,Rey,Rhagae/";
+    dic += "Hecatompylos,Qumis,Hekatompylos,Saddarvazeh/";
+    dic += "Herat,A Areion/";
+    dic += "A Prophthasia,A Drangiana/";
+    dic += "A Arachosia,A Arakhosia/";
+    dic += "A Caucasus,Cabul,Kabul/";
+    dic += "Drapsaca,Drapsaka/";
+    dic += "Bactra,Baktra/";
+    dic += "Samarkand,Maracanda/";
+    dic += "A Eschate,A Eskhate/";
+    dic += "Ai Khanoum,Ai-Khanoum,Ay Khanoum,Ay-Khanoum,A Oxus/";
+    dic += "A Carmania,A Karmania/";
+    dic += "Bela,A Rhambacia/";
+    dic += "Patala,Thatta/";
+    dic += "A Indus/";
+    dic += "Aornos,Aornus/";
+    dic += "Texila/";
+    dic += "Nicaea,Nicea/";
+    dic += "Sagala,Sakala,Sangala";
+    
+    
     string result = a;
+    /*
     string fileName = "orthographical_variants.txt";
     fstream ifs(fileName);
     if(!ifs) {
         cout << "error: not found file '" << fileName << "' @removeOrthographicalVariantString" << endl;
         exit(0);
     }
- 
+ */
     string buf;
     bool finishFlag = false;
+    
+    vector<string> out2 = SpritString(dic, "/");
+    for(unsigned int j=0;j<out2.size() && !finishFlag;j++) {
+        vector<string> out = SpritString(out2[j], ",");
+        for(unsigned int i=0;i<out.size();i++) {
+            if(isEqualStringWithoutCapital(out[i], a)) {
+                result = out[0];
+                finishFlag = true;
+                break;
+            }
+        }
+    }
+    /*
     while(getline(ifs,buf) && !finishFlag) {
         vector<string> out = SpritString(buf, ",");
         for(unsigned int i=0;i<out.size();i++) {
@@ -1051,15 +1118,43 @@ string removeOrthographicalVariantString(string &a) {
             }
         }
     }
-    
-    ifs.close();
+    */
+   // ifs.close();
     return result;
 }
 
 string processingOfAlexandria(string &a) {
     string result = a;
+    string alexandria = "Alexandria";
+    string stringA = "A";
+    string stringOf = "of";
+    string stringOn = "on";
+    string stringIn = "in";
+    string stringThe = "the";
+    vector<string> out = SpritString(a, " ");
+    if(out.size() == 4) {
+        if(isEqualStringWithoutCapital(out[0],alexandria) || isEqualStringWithoutCapital(out[0], stringA)) {
+            if(isEqualStringWithoutCapital(out[1], stringOf) || isEqualStringWithoutCapital(out[1], stringOn) || isEqualStringWithoutCapital(out[1], stringIn)) {
+                if(isEqualStringWithoutCapital(out[2], stringThe)) {
+                    result = "A " + out[3];
+                }
+            }
+        }
+    }
+    if(out.size() == 3) {
+        if(isEqualStringWithoutCapital(out[0],alexandria) || isEqualStringWithoutCapital(out[0], stringA)) {
+            if(isEqualStringWithoutCapital(out[1], stringOf) || isEqualStringWithoutCapital(out[1], stringOn) || isEqualStringWithoutCapital(out[1], stringIn)) {
+                result = "A " + out[2];
+            }
+        }
+    }
     
-    
+    if(out.size() == 2) {
+        if(isEqualStringWithoutCapital(out[0],alexandria) || isEqualStringWithoutCapital(out[0], stringA)) {
+            result = "A " + out[1];
+        }
+    }
+     
     
     return result;
 }
