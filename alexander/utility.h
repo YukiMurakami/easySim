@@ -51,6 +51,8 @@ double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
 double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personNamebool ,bool isShowConstraints);
 double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> constraints,string _personName,Episode *episodesArray);
 
+//生成された制約条件とアノテーションデータとの比較
+void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints);
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);
 //設定された制約条件からランダムにcount個選んだ物を制約条件として設定する

@@ -36,6 +36,25 @@ void Constraint::show() {
     cout << "constraint:" << _time << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) << endl;
 }
 
+vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
+    cout << "now making constraints from file '" << filename << "'" << endl;
+    vector<Constraint> result;
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error:not found file '" << filename << "' @makeConstraintsFromTestfile" << endl;
+        exit(0);
+    }
+    string buf;
+    
+    int count = 0;
+    while(getline(ifs,buf)) {
+        cout << count++ << endl;
+        Constraint constraint = makeQuestionFromString(buf, persons, places);
+        result.push_back(constraint);
+    }
+    return result;
+}
+
 vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;

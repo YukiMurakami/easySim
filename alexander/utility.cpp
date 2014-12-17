@@ -1248,6 +1248,46 @@ void showConstraintsPlaceDistribution(vector<Constraint> &constraints) {
     }
 }
 
+void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints) {
+    ifstream ifs(testFilename.c_str());
+    if(!ifs) {
+        cout << "error:not found file '" << testFilename << "' @checkConstraintGenerator" << endl;
+        exit(0);
+    }
+    string buf;
+    int count = 0;
+    int correct = 0;
+    while(getline(ifs,buf)) {
+        vector<string> out = SpritString(buf, ",");
+        string BCtime = out[0];
+        string month = out[1];
+        string personName = out[2];
+        string placeName = out[3];
+        CONSTRAINT c = getEnumFromString(out[4]);
+        Constraint constrain =constraints[count];
+        count++;
+        if(BCtime != "-" && personName != "-" && placeName != "-" && c != none) {
+            cout << count << "lines" << endl;
+            cout << "annotation:" << BCtime << " " << personName << " " << placeName << " " << getStringFromEnum(c) << endl;
+            constrain.show();
+            int time;
+            int bc = atoi(BCtime.c_str());
+            if(month != "") {
+                int mon = getMonthFromString(month);
+                time = getTimeFromBC(bc, mon);
+            } else {
+                time = getTimeFromBC(bc,6/* xor128()%12 */ );
+            }
+            if(constrain._constraint == c && constrain._personName == personName && constrain._placeName == placeName && constrain._time == time) {
+                cout << time << endl;
+                cout << "ok" << endl;
+                correct++;
+            }
+        }
+    }
+    cout << "correct" << correct << endl;
+}
+
 #pragma mark -
 #pragma mark calc
 
@@ -1290,6 +1330,7 @@ vector<int> getBCfromTime(int time) {
 }
 
 int getTimeFromBC(int bc,int month) {
+    if(month < 1 || month > 12) month = 6;
     return (334-bc)*12 + (month-1);
 }
 

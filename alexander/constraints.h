@@ -34,9 +34,12 @@ public:
 };
 
 CONSTRAINT getEnumFromString(string constraint);
+string getStringFromEnum(CONSTRAINT constraint);
 
 vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
 
+//条件にあわないもの、情報がそろってないものも制約条件として生成する
+vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
 void showConstraints(vector<Constraint> &constraints);
 
 #endif /* defined(__easySimu__constraints__) */
