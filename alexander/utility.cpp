@@ -114,7 +114,7 @@ void initConstraints(vector<Constraint> &constraints,string filename) {
         if(buf.c_str()[0] == '*') continue;
         vector<string> out = SpritString(buf, ",");
         int time = atoi(out[0].c_str());
-        Constraint con(time,out[1],out[2],getEnumFromString(out[3]));
+        Constraint con(time,time,out[1],out[2],getEnumFromString(out[3]));
         constraints.push_back(con);
     }
 }
@@ -133,7 +133,7 @@ void initConstraintsWithCount(vector<Constraint> &constraints,string filename,in
         if(buf.c_str()[0] == '*') continue;
         vector<string> out = SpritString(buf, ",");
         int time = atoi(out[0].c_str());
-        Constraint con(time,out[1],out[2],getEnumFromString(out[3]));
+        Constraint con(time,time,out[1],out[2],getEnumFromString(out[3]));
         tmp.push_back(con);
     }
     
@@ -161,7 +161,8 @@ void initQuestion(Question &question,string filename) {
     while(getline(ifs,buf)) {
         vector<string> out = SpritString(buf, ",");
         int time = atoi(out[0].c_str());
-        question._time = time;
+        question._beginTime = time;
+        question._endTime = time;
         question._personName = out[1];
         question._placeName = out[2];
         question._constraint = getEnumFromString(out[3]);
@@ -743,7 +744,7 @@ void move(Person &person,map<string,Person> &persons,map<string,Place> &places,P
 bool checkQuestion(vector<Episode> episodes,Question question) {
     bool flag = false;
     
-    vector<Episode> episodeT = findEpisodeFromTime(question._time, episodes);
+    vector<Episode> episodeT = findEpisodeFromTime(question._beginTime,question._endTime, episodes);
     for(int i=0;i<(int)episodeT.size();i++) {
         if(question._constraint == there_is) {
             if(episodeT[i]._persons[question._personName]._nowPlace == question._placeName) {
@@ -769,11 +770,12 @@ double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints) {
     
     
     for(int i=0;i<count;i++) {
-        int time = constraints[i]._time;
+        int beginTime = constraints[i]._beginTime;
+        int endTime = constraints[i]._endTime;
         string personName = constraints[i]._personName;
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
-        vector<Episode> episodeT = findEpisodeFromTime(time, episodes);
+        vector<Episode> episodeT = findEpisodeFromTime(beginTime,endTime, episodes);
         for(int j=0;j<(int)episodeT.size();j++) {
             Episode episode = episodeT[j];
          
@@ -806,7 +808,8 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
     
     
     for(int i=0;i<count;i++) {
-        int time = constraints[i]._time;
+        int beginTime = constraints[i]._beginTime;
+        int endTime = constraints[i]._endTime;
         string personName = constraints[i]._personName;
         if(personName != _personName) {
             continue;
@@ -816,7 +819,7 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
         
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
-        vector<Episode> episodeT = findEpisodeFromTime(time, episodes);
+        vector<Episode> episodeT = findEpisodeFromTime(beginTime,endTime, episodes);
         for(int j=0;j<(int)episodeT.size();j++) {
             Episode episode = episodeT[j];
             
@@ -869,7 +872,8 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
     }
     
     for(int i=0;i<count;i++) {
-        int time = constraints[i]._time;
+        int beginTime = constraints[i]._beginTime;
+        int endTime = constraints[i]._endTime;
         string personName = constraints[i]._personName;
         if(personName != _personName) {
             continue;
@@ -880,9 +884,9 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
         
-        if(episodesArray[0]._time > time) {
+        if(episodesArray[0]._time > endTime) {
             for(int j=0;j<(int)episodes.size() ;j++) {
-                if(episodes.at(j)->_time == time) {
+                if(episodes.at(j)->_time >= beginTime && episodes.at(j)->_time <= endTime) {
                     
                     if(constraint == there_is) {
                         if(episodes.at(j)->_persons[personName]._nowPlace == placeName) {
@@ -910,8 +914,8 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
                 }
             }
         } else {
-            for(int j=0;episodesArray[j]._time <= time;j++) {
-                if(episodesArray[j]._time != time) continue;
+            for(int j=0;episodesArray[j]._time <= endTime;j++) {
+                if(episodesArray[j]._time < beginTime || episodesArray[j]._time > endTime) continue;
                 if(constraint == there_is) {
                     if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
                         correct++;
@@ -952,7 +956,8 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
     
     
     for(int i=0;i<count;i++) {
-        int time = constraints[i]._time;
+        int beginTime = constraints[i]._beginTime;
+        int endTime = constraints[i]._endTime;
         string personName = constraints[i]._personName;
         if(personName != _personName) {
             continue;
@@ -963,9 +968,9 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
         
-        if(episodesArray[0]._time > time) {
+        if(episodesArray[0]._time > endTime) {
             for(int j=0;j<(int)episodes->size() ;j++) {
-                if(episodes->at(j)._time == time) {
+                if(episodes->at(j)._time >= beginTime && episodes->at(j)._time <= endTime) {
                     
                     if(constraint == there_is) {
                         if(episodes->at(j)._persons[personName]._nowPlace == placeName) {
@@ -985,8 +990,8 @@ double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> 
                 }
             }
         } else {
-            for(int j=0;episodesArray[j]._time <= time;j++) {
-                if(episodesArray[j]._time != time) continue;
+            for(int j=0;episodesArray[j]._time <= endTime;j++) {
+                if(episodesArray[j]._time < beginTime || episodesArray[j]._time > endTime) continue;
                 if(constraint == there_is) {
                     if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
                         correct++;
@@ -1270,16 +1275,19 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
             cout << count << "lines" << endl;
             cout << "annotation:" << BCtime << " " << personName << " " << placeName << " " << getStringFromEnum(c) << endl;
             constrain.show();
-            int time;
+            int beginTime;
+            int endTime;
             int bc = atoi(BCtime.c_str());
             if(month != "") {
                 int mon = getMonthFromString(month);
-                time = getTimeFromBC(bc, mon);
+                beginTime = getTimeFromBC(bc, mon);
+                endTime = getTimeFromBC(bc, mon);
             } else {
-                time = getTimeFromBC(bc,6/* xor128()%12 */ );
+                beginTime = getTimeFromBC(bc,1);
+                endTime = getTimeFromBC(bc, 12);
             }
-            if(constrain._constraint == c && constrain._personName == personName && constrain._placeName == placeName && constrain._time == time) {
-                cout << time << endl;
+            if(constrain._constraint == c && constrain._personName == personName && constrain._placeName == placeName && constrain._beginTime == beginTime && constrain._endTime == endTime) {
+                cout << beginTime << ":" << endTime << endl;
                 cout << "ok" << endl;
                 correct++;
             }
@@ -1330,7 +1338,7 @@ vector<int> getBCfromTime(int time) {
 }
 
 int getTimeFromBC(int bc,int month) {
-    if(month < 1 || month > 12) month = 6;
+    if(month < 1 || month > 12) month = xor128()%12+1;
     return (334-bc)*12 + (month-1);
 }
 

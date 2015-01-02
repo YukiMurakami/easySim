@@ -21,15 +21,15 @@ Episode::Episode(int time,map<string,Person> persons, map<string,Place> places) 
 Episode::Episode() {}
 
 
-vector<Episode> findEpisodeFromTime(int time,vector<Episode> episodes) {
+vector<Episode> findEpisodeFromTime(int beginTime,int endTime,vector<Episode> episodes) {
     vector<Episode> episode;
     bool flag = false;
     int size = (int)episodes.size();
     for(int i=0;i<size;i++) {
-        if(flag && episodes[i]._time > time) {
+        if(flag && episodes[i]._time > endTime) {
             break;
         }
-        if(episodes[i]._time == time) {
+        if(episodes[i]._time >= beginTime && episodes[i]._time <= endTime) {
             episode.push_back( episodes[i] );
             flag = true;
         }

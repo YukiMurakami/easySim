@@ -11,8 +11,9 @@
 
 #include <fstream>
 
-Constraint::Constraint(int time,string person,string place,CONSTRAINT constraint) {
-    _time = time;
+Constraint::Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint) {
+    _beginTime = beginTime;
+    _endTime = endTime;
     _personName = person;
     _placeName = place;
     _constraint = constraint;
@@ -33,7 +34,7 @@ string getStringFromEnum(CONSTRAINT constraint) {
 }
 
 void Constraint::show() {
-    cout << "constraint:" << _time << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) << endl;
+    cout << "constraint:" << _beginTime << ":" << _endTime << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) << endl;
 }
 
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
@@ -77,12 +78,12 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
         Constraint constraint = makeQuestionFromString(buf, persons, places);
         if(constraint._personName != "") personCount++;
         if(constraint._placeName != "") placeCount++;
-        if(constraint._time >= 0 && constraint._time <= 140) timeCount++;
+        if(constraint._beginTime >= 0 && constraint._beginTime <= 140 && constraint._endTime >= 0 && constraint._endTime <= 140) timeCount++;
         //result.push_back(constraint);
         
-        if(constraint._personName != "" && constraint._placeName != "" && constraint._time >= 0 && constraint._time <= 140) {
+        if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= 140 && constraint._endTime >= 0 && constraint._endTime <= 140) {
             result.push_back(constraint);
-            if(constraint._time < 0 || constraint._time > 140) {
+            if(constraint._beginTime < 0 || constraint._beginTime > 140 || constraint._endTime < 0 || constraint._endTime > 140) {
                 cout << buf << endl;
                 constraint.show();
                 cout << endl;

@@ -22,7 +22,7 @@ double Question::getAnswerFromEpisodess(const vector<vector<Episode> > &episodes
     for(unsigned int i=0;i<episodess.size();i++) {
         vector<Episode> personEpisode = getOnlyPersonEpisode(_personName, episodess[i]);
         for(unsigned int j=0;j<personEpisode.size();j++) {
-            if(personEpisode[j]._time == _time) {
+            if(personEpisode[j]._time >= _beginTime && personEpisode[j]._time <= _endTime) {
                 if(_constraint == there_is && _placeName == personEpisode[j]._persons[_personName]._nowPlace) {
                     correct++;
                 }
@@ -63,7 +63,7 @@ double Question::getAnswerFromEpisodesFile(string filename) {
             int time = atoi(out[0].c_str());
             string personName = out[1];
             string placeName = out[2];
-            if(time == _time) {
+            if(time >= _beginTime && time <= _endTime) {
                // cout << placeName << endl;
                 if(_constraint == there_is && _placeName == placeName) {
                     correct++;
@@ -85,7 +85,8 @@ double Question::getAnswerFromEpisodesFile(string filename) {
 }
 
 Question makeQuestionFromString(string querry,vector<string> &persons ,vector<string> &places) {
-    int time = -1;
+    int beginTime = -1;
+    int endTime = -1;
     int month = -1;
     string personName = "";
     string placeName = "";
@@ -106,9 +107,11 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
             if(i > 0) {
                 int bc = atoi(out[i-1].c_str());
                 if(month != -1) {
-                    time = getTimeFromBC(bc, month);
+                    beginTime = getTimeFromBC(bc, month);
+                    endTime = getTimeFromBC(bc,month);
                 } else {
-                    time = getTimeFromBC(bc,6/* xor128()%12 */ );
+                    beginTime = getTimeFromBC(bc, 1);
+                    endTime = getTimeFromBC(bc,12);
                 }
             }
         }
@@ -120,7 +123,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         
         string anameString = "";
         if(isEqualStringWithoutCapital(out[i], "A") || isEqualStringWithoutCapital(out[i], "Alexandria")) {
-            int size = out.size() - i;
+            int size = (int)out.size() - i;
             for(unsigned n=4;n>=1;n--) {
                 if(size > n) size = n;
                 string aString = "";
@@ -157,7 +160,8 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
 
     
     Question question;
-    question._time = time;
+    question._beginTime = beginTime;
+    question._endTime = endTime;
     question._personName = personName;
     question._placeName = placeName;
     question._constraint = constraint;

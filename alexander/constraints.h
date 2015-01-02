@@ -23,12 +23,13 @@ enum CONSTRAINT {
 
 class Constraint {
 public:
-    int _time;
+    int _beginTime;
+    int _endTime;
     string _personName;
     string _placeName;
     CONSTRAINT _constraint;
     
-    Constraint(int time,string person,string place,CONSTRAINT constraint);
+    Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint);
     Constraint();
     void show();
 };
