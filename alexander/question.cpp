@@ -51,12 +51,15 @@ double Question::getAnswerFromEpisodesFile(string filename) {
     }
     string buf;
     
+    bool okFlag = false;
+    
     while (getline(ifs,buf)) {
         vector<string> out = SpritString(buf, " ");
         if(out[0] == "newPlayout") {
-            
+            okFlag = false;
+            count++;
         } else if(out[0] == "playoutEnd") {
-            
+            if(okFlag) correct++;
         } else if(out[0] == "score") {
             
         } else if(out.size() == 3) {
@@ -66,12 +69,14 @@ double Question::getAnswerFromEpisodesFile(string filename) {
             if(time >= _beginTime && time <= _endTime) {
                // cout << placeName << endl;
                 if(_constraint == there_is && _placeName == placeName) {
-                    correct++;
+                    okFlag = true;
+                   // correct++;
                 }
                 if(_constraint == there_is_no && _placeName != placeName) {
-                    correct++;
+                  //  correct++;
+                    okFlag = true;
                 }
-                count++;
+               // count++;
             }
         }
     }
@@ -124,17 +129,17 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         string anameString = "";
         if(isEqualStringWithoutCapital(out[i], "A") || isEqualStringWithoutCapital(out[i], "Alexandria")) {
             int size = (int)out.size() - i;
-            for(unsigned n=4;n>=1;n--) {
+            for(int n=4;n>=1;n--) {
                 if(size > n) size = n;
                 string aString = "";
-                for(unsigned k=0;k<size;k++) {
+                for(unsigned int k=0;k<(unsigned int)size;k++) {
                     aString += out[i+k];
-                    if(k != size-1) aString += " ";
+                    if((int)k != size-1) aString += " ";
                 }
                 string alexString = processingOfAlexandria(aString);
                 if(alexString != aString) {
                     for(unsigned int j=0;j<places.size();j++) {
-                        cout << j << ":" << places[j] << endl;
+               //         cout << j << ":" << places[j] << endl;
                     }
                     anameString = alexString;
                     break;
@@ -167,6 +172,77 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
     question._constraint = constraint;
    // question.show();
     return question;
+}
+
+void solvePlaceQuestion(Constraint constraint,string episodeFile) {
+    map<string,int> places;
+    
+    string _personName = constraint._personName;
+    string _placeName = constraint._placeName;
+    int _beginTime = constraint._beginTime;
+    int _endTime = constraint._endTime;
+    CONSTRAINT _constraint = constraint._constraint;
+    
+    
+    ifstream ifs(episodeFile.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << episodeFile << "' @solvePlaceQuestion" << endl;
+        exit(0);
+    }
+    int sumCount = 0;
+    string buf;
+    while (getline(ifs,buf)) {
+        vector<string> out = SpritString(buf, " ");
+        if(out[0] == "newPlayout") {
+         
+        } else if(out[0] == "playoutEnd") {
+            
+        } else if(out[0] == "score") {
+            
+        } else if(out.size() == 3) {
+            int time = atoi(out[0].c_str());
+            string personName = out[1];
+            string placeName = out[2];
+            if(time >= _beginTime && time <= _endTime) {
+                // cout << placeName << endl;
+                if(_constraint == there_is) {
+                    // correct++;
+                    if(places.find(placeName) == places.end()) {
+                        places.insert(map<string,int>::value_type(placeName,1));
+                    } else {
+                        places[placeName]++;
+                    }
+                    sumCount++;
+                }
+                if(_constraint == there_is_no) {
+                    //  correct++;
+                }
+                // count++;
+            }
+        }
+    }
+    
+    vector< pair<string,int> > rank;
+    
+    while(places.size() > 0) {
+        int maxCount = -1;
+        string maxPlace = "";
+        for(map<string,int>::iterator it = places.begin();it != places.end();it++) {
+            int count = (*it).second;
+            if(count >= maxCount) {
+                maxCount = count;
+                maxPlace = (*it).first;
+            }
+        }
+        rank.push_back(make_pair(maxPlace, maxCount));
+        places.erase(maxPlace);
+    }
+    
+    cout << "show place count /all:" << sumCount << endl;
+    for(auto x:rank) {
+        cout << x.first << ":" << (double)x.second / sumCount << endl;
+    }
+    
 }
 
 void solve4selectionQuestion(string filename,vector<string> &persons,vector<string> &places,string episodeFile) {

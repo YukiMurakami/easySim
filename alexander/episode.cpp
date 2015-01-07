@@ -121,7 +121,7 @@ vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess) {
 }
 
 void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,double score,int maxDepth) {
- 
+    cout << "output episode : '" << filename << "'" << endl;
     ofstream ofs(filename.c_str(),ios::app );
 
 

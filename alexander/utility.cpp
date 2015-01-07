@@ -526,7 +526,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         MCTREE *current = &root;
         
         int playout = 600000;
-        double finishRate = 0.8;
+        double finishRate = 0.9;
         
         
         

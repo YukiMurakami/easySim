@@ -79,6 +79,11 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
         if(constraint._personName != "") personCount++;
         if(constraint._placeName != "") placeCount++;
         if(constraint._beginTime >= 0 && constraint._beginTime <= 140 && constraint._endTime >= 0 && constraint._endTime <= 140) timeCount++;
+        /*
+        if(constraint._personName != "" && constraint._placeName != "" && (constraint._beginTime < 0 || constraint._endTime > 140)) {
+            constraint.show();
+        }
+         */
         //result.push_back(constraint);
         
         if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= 140 && constraint._endTime >= 0 && constraint._endTime <= 140) {

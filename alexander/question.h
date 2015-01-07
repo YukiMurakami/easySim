@@ -27,4 +27,6 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
 
 void solve4selectionQuestion(string filename,vector<string> &persons,vector<string> &places,string episodeFile);
 
+void solvePlaceQuestion(Constraint constraint,string episodeFile);
+
 #endif /* defined(__easySimu__question__) */
