@@ -58,8 +58,8 @@ fourth century,-,Alexander,India,there_is
 -,-,-,-,-
 -,-,-,-,-
 -,-,Alexander,-,-
-330,-,Alexander,Persia,there_is
--,-,-,-,-
+330,-,Alexander,Persepolis,there_is
+331,-,Alexander,Gaugamela,there_is
 327,-,Alexander,Sogdiana,there_is
 -,-,-,-,-
 -,-,-,-,-
@@ -198,7 +198,7 @@ from 334 to 332,-,-,Syria,-
 -,-,-,-,-
 334,-,Alexander,-,there_is
 330,-,Alexander,it,there_is
-334,-,Alexander,the coast,there_is
+334,-,Alexander,Sardis,there_is
 330,-,Alexander,-,there_is
 331,-,Alexander,Alexandria,there_is
 356-323,-,Alexander,-,there_is
@@ -290,7 +290,7 @@ fourth century,-,Alexander,Sidon,there_is
 323,-,Alexander,-,there_is
 327,-,Alexander,-,there_is
 327,-,Alexander,-,there_is
-330,-,Alexander,Persian Gate,there_is
+330,-,Alexander,Persepolis,there_is
 332,-,Alexander,-,there_is
 -,-,Alexander,-,there_is
 -,-,Alexander,-,there_is
@@ -475,7 +475,7 @@ fourth century,-,Alexander,-,there_is
 -,-,Alexander,-,there_is
 4th century,-,Alexander,-,there_is
 333,-,Alexander,Issus,there_is
-329,-,Alexander,A Eschate
+329,-,Alexander,A Eschate,there_is
 324,-,Alexander,Susa,there_is
 323,-,Alexander,-,there_is
 -,-,-,-,-
