@@ -119,7 +119,7 @@ void initConstraints(vector<Constraint> &constraints,string filename) {
     }
 }
 
-void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places) {
+void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places,bool isSameMode) {
     constraints.clear();
     
     ifstream ifs(filename.c_str());
@@ -167,7 +167,21 @@ void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filena
         
         if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= 140 && endTime >= 0 && endTime <= 140 && constraint != "") {
             Constraint con(beginTime,endTime,personName,placeName,getEnumFromString(constraint),count);
-            constraints.push_back(con);
+            
+            if(isSameMode) {
+                bool isFind = false;
+                for(unsigned int i=0;i<constraints.size();i++) {
+                    if(isSameConstraint(constraints[i], con)) {
+                        isFind = true;
+                        break;
+                    }
+                }
+                if(!isFind) {
+                    constraints.push_back(con);
+                }
+            } else {
+                constraints.push_back(con);
+            }
         }
         
     }

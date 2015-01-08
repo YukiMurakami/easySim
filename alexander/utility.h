@@ -56,7 +56,7 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c);
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);
-void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places);
+void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places,bool isSameMode);
 //設定された制約条件からランダムにcount個選んだ物を制約条件として設定する
 void initConstraintsWithCount(vector<Constraint> &constraints,string filename,int count);
 //問題の初期化

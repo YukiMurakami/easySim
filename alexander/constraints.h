@@ -40,7 +40,10 @@ public:
 CONSTRAINT getEnumFromString(string constraint);
 string getStringFromEnum(CONSTRAINT constraint);
 
-vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
+bool isSameConstraint(Constraint a,Constraint b);
+
+//isSameModeはtrue　で　全く同じ制約条件を一つと見なすモードになる　falseで通常モード
+vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places,bool isSameMode);
 
 //条件にあわないもの、情報がそろってないものも制約条件として生成する
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);

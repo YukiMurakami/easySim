@@ -34,7 +34,7 @@ int main(int argc, const char * argv[])
     
     map<string,Person> persons;
     map<string,Place> places;
-    initAgent(persons,places,"initialize1127.txt");
+    initAgent(persons,places,"initialize0108.txt");
     
     vector<string> personVector = makePersonVectorFromMap(persons);
     vector<string> placeVector = makePlaceVectorFromMap(places);
@@ -43,10 +43,10 @@ int main(int argc, const char * argv[])
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
-    initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector);
+    initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector,true);
     showConstraints(constraints);
     cout << constraints.size() << endl;
-    
+    showConstraintsPlaceDistribution(constraints);
     /*
     vector<Constraint> constraints2;
     constraints2 = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
@@ -76,7 +76,7 @@ int main(int argc, const char * argv[])
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes0108.txt");
+        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes0108-2.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;

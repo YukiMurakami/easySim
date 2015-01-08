@@ -46,6 +46,10 @@ void Constraint::show() {
     cout << "constraint:" << _beginTime << ":" << _endTime << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) <<  ":" << _id << endl;
 }
 
+bool isSameConstraint(Constraint a,Constraint b) {
+    return (a._beginTime == b._beginTime) && (a._endTime == b._endTime) && (a._personName == b._personName) && (a._placeName == b._placeName) && (a._constraint == b._constraint);
+}
+
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
@@ -113,7 +117,7 @@ vector<Constraint> makeConstraintsFromAnnotationFile(string filename,vector<stri
     return result;
 }
 
-vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
+vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places,bool isSameMode) {
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
     ifstream ifs(filename.c_str());
@@ -145,12 +149,28 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
     //アノテーションチェックのときは、情報がそろってなくても制約条件を生成するようにする
         if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= 140 && constraint._endTime >= 0 && constraint._endTime <= 140) {
             constraint._id = allCount;
-            result.push_back(constraint);
+            
+            if(isSameMode) {
+                bool isFind = false;
+                for(unsigned int i=0;i<result.size();i++) {
+                    if(isSameConstraint(result[i],constraint)) {
+                        isFind = true;
+                        break;
+                    }
+                }
+                if(!isFind) {
+                    result.push_back(constraint);
+                }
+            } else {
+                result.push_back(constraint);
+            }
+            /*
             if(constraint._beginTime < 0 || constraint._beginTime > 140 || constraint._endTime < 0 || constraint._endTime > 140) {
                 cout << buf << endl;
                 constraint.show();
                 cout << endl;
             }
+             */
         }
         
       //  cout << buf << endl;
