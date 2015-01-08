@@ -14,12 +14,14 @@ Person::Person(string name,string firstPlace,int apples) {
     _hasApples = apples;
     _name = name;
     _nowPlace = firstPlace;
+    _lastPlace = "";
 }
 
 Person::Person() {
     _hasApples = 0;
     _name = "";
     _nowPlace = "";
+    _lastPlace = "";
 }
 
 vector<string> makePersonVectorFromMap(map<string,Person> &person) {

@@ -36,6 +36,7 @@ int randomAction(map<string,Person> &persons,map<string,Place> &places,vector<Co
 void allSearchAction(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints);
 void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Constraint> &constraints,vector<Episode>episodes,bool &isFinish,string action,Person person,int step,vector<Episode> &answerEpisodes);
 void doAction(map<string,Person> &persons,map<string,Place> &places);
+void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &places);
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes);
 //木を作成しながらシミュレーションを繰り返す
 //総プレイアウト回数を返す

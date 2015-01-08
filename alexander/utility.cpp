@@ -260,10 +260,67 @@ void doAction(map<string,Person> &persons,map<string,Place> &places) {
         } else {
             move(person,persons,places,places[place._nextPlaces[id-1]]);
         }
-        
-      
     }
+}
+
+void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &places) {
     
+    int nothingPoint = 2;
+    int moveNextPlacePoint = 2;
+    int moveLastPlacePoint = 1;
+    
+    for(map<string,Person>::iterator it = persons.begin();it != persons.end();it++) {
+        Person person = (*it).second;
+        Place place = places[person._nowPlace];
+        int nextSize = (int)place._nextPlaces.size();
+        
+        if(person._lastPlace == "") moveLastPlacePoint = moveNextPlacePoint;
+  
+        vector<string> actions((nextSize - 1)*moveNextPlacePoint + nothingPoint + moveLastPlacePoint);
+
+        int index = 0;
+        for(int i=0;i<nothingPoint;i++) {
+            actions[index] = "nothing";
+            index++;
+        }
+        for(unsigned int i=0;i<(unsigned int)nextSize;i++) {
+            string nextPlaceName = place._nextPlaces[i];
+            if(person._lastPlace != "") {
+                if(nextPlaceName == person._lastPlace) {
+                    actions[index] = "move:" + nextPlaceName;
+                    index++;
+                } else {
+                    for(int j=0;j<2;j++) {
+                        actions[index] = "move:" + nextPlaceName;
+                        index++;
+                    }
+                }
+            } else {
+                for(int j=0;j<2;j++) {
+                    actions[index] = "move:" + nextPlaceName;
+                    index++;
+                }
+            }
+        }
+        
+        int id = 0;
+        int actionArrayCount = (int)actions.size();
+        if(actionArrayCount != 0) {
+            id = xor128() % actionArrayCount;
+        }
+ 
+        
+        string action = actions[id];
+        if(action == "nothing") {
+            //do nothing
+        }
+        if(action.substr(0,5) == "move:") {
+            string nextPlaceString = action.substr(5);
+            move(person,persons,places,places[nextPlaceString]);
+        }
+        
+        
+    }
 }
 
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes) {
@@ -677,7 +734,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     while(time < endTime) {
                         time++;
                      
-                        doAction(randomPersons, randomPlaces);
+                        doActionWithHeuristics(randomPersons, randomPlaces);
                      
                     //    Episode episode(time,randomPersons,randomPlaces);
                      
@@ -686,6 +743,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                         episodes[I]._time = time;
                         I++;
                       //  randomEpisodes.push_back(episode);
+                        
+                   //     cout << randomPersons["Alexander"]._nowPlace << "," << randomPersons["Alexander"]._lastPlace << endl;
                     
                     }
                     
@@ -781,6 +840,12 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
 
 void move(Person &person,map<string,Person> &persons,map<string,Place> &places,Place &nextplace) {
     string movePersonName = person._name;
+    string nowPlaceName = persons[movePersonName]._nowPlace;
+    string nextPlaceName = nextplace._name;
+    if(nowPlaceName != nextPlaceName) {
+        persons[movePersonName]._lastPlace = nowPlaceName;
+    }
+    
     Place *place = &places[persons[movePersonName]._nowPlace];
 
   //  cout << "move:" << person._name << "(" << place->_name << "▶︎" << nextplace._name << ")" << endl;
@@ -1175,7 +1240,7 @@ void show(int time,map<string,Place> places) {
         cout << "<" << (*it).first << ">" ;
         for(int i=0;i<(int)(*it).second._persons.size();i++) {
             Person person = (*it).second._persons[i];
-            cout << "(" << person._name << "," << person._hasApples <<  ")";
+            cout << "(" << person._name << "," << person._lastPlace << ")";
         }
         cout << endl;
     }
@@ -1190,7 +1255,7 @@ void showOnlyPerson(int time,map<string,Place> places) {
         cout << "<" << (*it).first << ">" ;
         for(int i=0;i<(int)(*it).second._persons.size();i++) {
             Person person = (*it).second._persons[i];
-            cout << "(" << person._name << "," << person._hasApples <<  ")";
+            cout << "(" << person._name << "," << person._lastPlace <<  ")";
         }
         cout << endl;
     }

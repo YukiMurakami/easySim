@@ -20,6 +20,7 @@ public:
     int _hasApples;
     string _name;
     string _nowPlace;
+    string _lastPlace;
     
     Person(string name,string firstPlace,int apples);
     Person();

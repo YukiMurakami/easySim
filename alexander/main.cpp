@@ -76,7 +76,7 @@ int main(int argc, const char * argv[])
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes0107-3.txt");
+        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes0108.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
@@ -84,9 +84,9 @@ int main(int argc, const char * argv[])
     
  //   }
    }
-    
     /*
-    solve4selectionQuestion("question4-3.txt", personVector, placeVector, "wikipediaEpisodes0107.txt");
+
+    solve4selectionQuestion("question4-3.txt", personVector, placeVector, "wikipediaEpisodes0107-3.txt");
     
     Constraint constraint(getTimeFromBC(331, 1),getTimeFromBC(331, 12),"Alexander","the city",there_is);
     solvePlaceQuestion(constraint, "wikipediaEpisodes0107.txt");
@@ -96,7 +96,7 @@ int main(int argc, const char * argv[])
     solvePlaceQuestion(constraint3, "wikipediaEpisodes0107.txt");
     Constraint constraint4(getTimeFromBC(329, 1),getTimeFromBC(329, 12),"Alexander","this coast",there_is);
     solvePlaceQuestion(constraint4, "wikipediaEpisodes0107.txt");
-     */
+*/
      
     return 0;
 }
