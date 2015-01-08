@@ -119,6 +119,60 @@ void initConstraints(vector<Constraint> &constraints,string filename) {
     }
 }
 
+void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places) {
+    constraints.clear();
+    
+    ifstream ifs(filename.c_str());
+    string buf;
+    if(!ifs) {
+        cout << "not found constraint file" << endl;
+        exit(0);
+    }
+    int count = 0;
+    while(getline(ifs,buf)) {
+        count++;
+        if(buf.c_str()[0] == '*') continue;
+        vector<string> out = SpritString(buf, ",");
+        int bc = -1;
+        int month = -1;
+        if(out[0] != "-") {
+            bc = atoi(out[0].c_str());
+        }
+        if(out[1] != "-") {
+            month = getMonthFromString(out[1]);
+        }
+        
+        int beginTime=0;
+        int endTime = 0;
+        
+        if(month == -1) {
+            beginTime = getTimeFromBC(bc, 1);
+            endTime = getTimeFromBC(bc, 12);
+        } else {
+            beginTime = getTimeFromBC(bc, month);
+            endTime = getTimeFromBC(bc, month);
+        }
+        
+        string personName = "";
+        string placeName = "";
+        string constraint = out[4];
+        
+        for(unsigned int j=0;j<persons.size();j++) {
+            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = out[2];
+        }
+        
+        for(unsigned int j=0;j<places.size();j++) {
+            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
+        }
+        
+        if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= 140 && endTime >= 0 && endTime <= 140 && constraint != "") {
+            Constraint con(beginTime,endTime,personName,placeName,getEnumFromString(constraint),count);
+            constraints.push_back(con);
+        }
+        
+    }
+}
+
 void initConstraintsWithCount(vector<Constraint> &constraints,string filename,int count) {
     constraints.clear();
     
@@ -525,8 +579,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 600000;
-        double finishRate = 0.9;
+        int playout = 1000000;
+        double finishRate = 0.98;
         
         
         
@@ -617,7 +671,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                 //    vector<Episode> randomEpisodes(current->episodes);
                     int time = current->episode._time;
                     
-                    Episode episodes[150];
+                    Episode *episodes = new Episode[endTime - time];
+                    
                     int I = 0;
                     while(time < endTime) {
                         time++;
@@ -644,6 +699,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     getVal = checkEpisodePersonWithArray(&TreeEpisodes, constraints, person._name, episodes);
                      */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
+                    
+                    
                     
                     if(round%1000 == 0) {
                         /*
@@ -676,6 +733,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                         }
                         isFinish = true;
                     }
+                    
+                    delete [] episodes;
                     
                     downFlag = false;
                     sumCount++;
@@ -776,21 +835,31 @@ double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints) {
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
         vector<Episode> episodeT = findEpisodeFromTime(beginTime,endTime, episodes);
+        
+        bool okFlag = false;
+        
         for(int j=0;j<(int)episodeT.size();j++) {
             Episode episode = episodeT[j];
          
             if(constraint == there_is) {
                 if(episode._persons[personName]._nowPlace == placeName) {
-                    correct++;
-                    continue;
+                    okFlag = true;
+                    break;
                 }
             }
             if(constraint == there_is_no) {
                 if(episode._persons[personName]._nowPlace != placeName) {
-                    correct++;
-                    continue;
+                    okFlag = true;
+                    break;
                 }
             }
+        }
+        
+        if(constraint == there_is && okFlag) {
+            correct++;
+        }
+        if(constraint == there_is_no && !okFlag) {
+            correct++;
         }
     }
     
@@ -813,36 +882,46 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
         string personName = constraints[i]._personName;
         if(personName != _personName) {
             continue;
-        } else {
-            hitCount++;
         }
+        
+        hitCount++;
         
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
         vector<Episode> episodeT = findEpisodeFromTime(beginTime,endTime, episodes);
+        
+        bool okFlag = false;
+        
         for(int j=0;j<(int)episodeT.size();j++) {
             Episode episode = episodeT[j];
             
             if(constraint == there_is) {
                 if(episode._persons[personName]._nowPlace == placeName) {
-                    correct++;
+                    okFlag = true;
                     if(isShowConstraints) {
                         constraints[i].show();
                         cout << "ok" << endl;
                     }
-                    continue;
+                    break;
                 }
             }
             if(constraint == there_is_no) {
                 if(episode._persons[personName]._nowPlace != placeName) {
-                    correct++;
+                    okFlag = true;
                     if(isShowConstraints) {
                         constraints[i].show();
                         cout << "ok" << endl;
                     }
-                    continue;
+                    break;
                 }
             }
+        }
+        
+        if(constraint == there_is && okFlag) {
+            correct++;
+        }
+        if(constraint == there_is_no && !okFlag) {
+            correct++;
         }
     }
     
@@ -859,6 +938,8 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
     int correct = 0;
     int hitCount = 0;
     
+    int episodesSize = sizeof(episodesArray) / sizeof(Episode);
+    
     vector<Episode*> episodes;
     MCTREE *makeEpisodeCurrent = leaf;
     while(true) {
@@ -870,6 +951,9 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
             break;
         }
     }
+    for(int i=0;i<episodesSize;i++) {
+        episodes.push_back(&episodesArray[i]);
+    }
     
     for(int i=0;i<count;i++) {
         int beginTime = constraints[i]._beginTime;
@@ -877,66 +961,49 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
         string personName = constraints[i]._personName;
         if(personName != _personName) {
             continue;
-        } else {
-            hitCount++;
         }
+        
+        hitCount++;
         
         string placeName = constraints[i]._placeName;
         CONSTRAINT constraint = constraints[i]._constraint;
         
-        if(episodesArray[0]._time > endTime) {
-            for(int j=0;j<(int)episodes.size() ;j++) {
-                if(episodes.at(j)->_time >= beginTime && episodes.at(j)->_time <= endTime) {
-                    
-                    if(constraint == there_is) {
-                        if(episodes.at(j)->_persons[personName]._nowPlace == placeName) {
-                            correct++;
-                            if(isShowConstraints) {
-                                constraints[i].show();
-                                cout << "ok" << endl;
-                            }
-                            continue;
-                        }
-                    }
-                    if(constraint == there_is_no) {
-                        if(episodes.at(j)->_persons[personName]._nowPlace != placeName) {
-                            correct++;
-                            if(isShowConstraints) {
-                                constraints[i].show();
-                                cout << "ok" << endl;
-                            }
-                            continue;
-                        }
-                    }
-                    
-                } else {
-                    continue;
-                }
-            }
-        } else {
-            for(int j=0;episodesArray[j]._time <= endTime;j++) {
-                if(episodesArray[j]._time < beginTime || episodesArray[j]._time > endTime) continue;
+        bool okFlag = false;
+  
+        for(int j=0;j<(int)episodes.size() ;j++) {
+            if(episodes.at(j)->_time >= beginTime && episodes.at(j)->_time <= endTime) {
+                
                 if(constraint == there_is) {
-                    if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
-                        correct++;
+                    if(episodes.at(j)->_persons[personName]._nowPlace == placeName) {
+                        okFlag = true;
                         if(isShowConstraints) {
                             constraints[i].show();
                             cout << "ok" << endl;
                         }
-                        continue;
+                        break;
                     }
                 }
                 if(constraint == there_is_no) {
-                    if(episodesArray[j]._persons[personName]._nowPlace != placeName) {
-                        correct++;
+                    if(episodes.at(j)->_persons[personName]._nowPlace != placeName) {
+                        okFlag = true;
                         if(isShowConstraints) {
                             constraints[i].show();
                             cout << "ok" << endl;
                         }
-                        continue;
+                        break;
                     }
                 }
+            
+            } else {
+                continue;
             }
+        }
+        
+        if(constraint == there_is && okFlag) {
+            correct++;
+        }
+        if(constraint == there_is_no && !okFlag) {
+            correct++;
         }
         
     }
@@ -948,73 +1015,6 @@ double checkEpisodePersonWithArrayWithTree(MCTREE *root,MCTREE *leaf, vector<Con
     return val;
 }
 
-double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> constraints,string _personName,Episode *episodesArray) {
-    double val = 0;
-    int count = (int)constraints.size();
-    int correct = 0;
-    int hitCount = 0;
-    
-    
-    for(int i=0;i<count;i++) {
-        int beginTime = constraints[i]._beginTime;
-        int endTime = constraints[i]._endTime;
-        string personName = constraints[i]._personName;
-        if(personName != _personName) {
-            continue;
-        } else {
-            hitCount++;
-        }
-        
-        string placeName = constraints[i]._placeName;
-        CONSTRAINT constraint = constraints[i]._constraint;
-        
-        if(episodesArray[0]._time > endTime) {
-            for(int j=0;j<(int)episodes->size() ;j++) {
-                if(episodes->at(j)._time >= beginTime && episodes->at(j)._time <= endTime) {
-                    
-                    if(constraint == there_is) {
-                        if(episodes->at(j)._persons[personName]._nowPlace == placeName) {
-                            correct++;
-                            continue;
-                        }
-                    }
-                    if(constraint == there_is_no) {
-                        if(episodes->at(j)._persons[personName]._nowPlace != placeName) {
-                            correct++;
-                            continue;
-                        }
-                    }
-                    
-                } else {
-                    continue;
-                }
-            }
-        } else {
-            for(int j=0;episodesArray[j]._time <= endTime;j++) {
-                if(episodesArray[j]._time < beginTime || episodesArray[j]._time > endTime) continue;
-                if(constraint == there_is) {
-                    if(episodesArray[j]._persons[personName]._nowPlace == placeName) {
-                        correct++;
-                        continue;
-                    }
-                }
-                if(constraint == there_is_no) {
-                    if(episodesArray[j]._persons[personName]._nowPlace != placeName) {
-                        correct++;
-                        continue;
-                    }
-                }
-            }
-        }
-        
-    }
-    
-    //cout << "this episode's result are " << correct << "/" << count << endl;
-    if(hitCount == 0) return 1.0;
-    val = (double)correct / (double)hitCount ;
-    
-    return val;
-}
 
 
 bool isEqualStringWithoutCapital(string a,string b) {
@@ -1253,6 +1253,35 @@ void showConstraintsPlaceDistribution(vector<Constraint> &constraints) {
     }
 }
 
+void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c) {
+    int completeCount = 0;
+    int notCompleteCount = 0;
+    int onlyACount = 0;
+    int onlyCCount = 0;
+    unsigned int ia=0,ic=0;
+    while(ia < a.size() && ic < c.size()) {
+        if(a[ia]._id == c[ic]._id) {
+            if(a[ia]._beginTime == c[ic]._beginTime && a[ia]._endTime == c[ic]._endTime && a[ia]._personName == c[ic]._personName && a[ia]._personName == c[ic]._personName && a[ia]._constraint == c[ic]._constraint) {
+                completeCount++;
+            } else {
+                notCompleteCount++;
+            }
+            ia++;
+            ic++;
+        } else {
+            if(a[ia]._id < c[ic]._id) {
+                ia++;
+                onlyACount++;
+            } else {
+                ic++;
+                onlyCCount++;
+            }
+        }
+    }
+    
+    cout << "completeCount:" << completeCount << "notCompleteCount:" << notCompleteCount << " onlyRuleCount:" << onlyACount << " onlyAnnotateCount:" << onlyCCount << endl;
+}
+
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints) {
     ifstream ifs(testFilename.c_str());
     if(!ifs) {
@@ -1262,6 +1291,7 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
     string buf;
     int count = 0;
     int correct = 0;
+    int hitcount = 0;
     while(getline(ifs,buf)) {
         vector<string> out = SpritString(buf, ",");
         string BCtime = out[0];
@@ -1272,13 +1302,14 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
         Constraint constrain =constraints[count];
         count++;
         if(BCtime != "-" && personName != "-" && placeName != "-" && c != none) {
+            hitcount++;
             cout << count << "lines" << endl;
-            cout << "annotation:" << BCtime << " " << personName << " " << placeName << " " << getStringFromEnum(c) << endl;
+            cout << "annotation:" << BCtime << "/" << month << "/" << personName << "/" << placeName << "/" << getStringFromEnum(c) << endl;
             constrain.show();
             int beginTime;
             int endTime;
             int bc = atoi(BCtime.c_str());
-            if(month != "") {
+            if(month != "-") {
                 int mon = getMonthFromString(month);
                 beginTime = getTimeFromBC(bc, mon);
                 endTime = getTimeFromBC(bc, mon);
@@ -1286,6 +1317,7 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
                 beginTime = getTimeFromBC(bc,1);
                 endTime = getTimeFromBC(bc, 12);
             }
+            cout << "annotationTime:" << beginTime << ":" << endTime << endl;
             if(constrain._constraint == c && constrain._personName == personName && constrain._placeName == placeName && constrain._beginTime == beginTime && constrain._endTime == endTime) {
                 cout << beginTime << ":" << endTime << endl;
                 cout << "ok" << endl;
@@ -1294,6 +1326,7 @@ void checkConstraintGenerator(string testFilename,vector<Constraint> &constraint
         }
     }
     cout << "correct" << correct << endl;
+    cout << "hit" << hitcount << endl;
 }
 
 #pragma mark -

@@ -29,7 +29,10 @@ public:
     string _placeName;
     CONSTRAINT _constraint;
     
+    int _id;
+    
     Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint);
+    Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint,int id);
     Constraint();
     void show();
 };

@@ -49,12 +49,13 @@ void initAgent(map<string,Person> &persons,map<string,Place> &places,string file
 //エピソードの評価
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
 double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personNamebool ,bool isShowConstraints);
-double checkEpisodePersonWithArray(vector<Episode> *episodes,vector<Constraint> constraints,string _personName,Episode *episodesArray);
 
 //生成された制約条件とアノテーションデータとの比較
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints);
+void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c);
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);
+void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places);
 //設定された制約条件からランダムにcount個選んだ物を制約条件として設定する
 void initConstraintsWithCount(vector<Constraint> &constraints,string filename,int count);
 //問題の初期化

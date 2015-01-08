@@ -239,10 +239,11 @@ void solvePlaceQuestion(Constraint constraint,string episodeFile) {
     }
     
     cout << "show place count /all:" << sumCount << endl;
-    for(auto x:rank) {
-        cout << x.first << ":" << (double)x.second / sumCount << endl;
+    cout << "[" << _placeName << "]" << endl;
+    for(unsigned int i=0;i<rank.size();i++) {
+        cout << rank[i].first << ":" << (double)rank[i].second / sumCount << endl;
     }
-    
+    cout << endl;
 }
 
 void solve4selectionQuestion(string filename,vector<string> &persons,vector<string> &places,string episodeFile) {
