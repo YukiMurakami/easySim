@@ -119,6 +119,83 @@ void initConstraints(vector<Constraint> &constraints,string filename) {
     }
 }
 
+void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &persons,vector<string> &places,string outputFileName) {
+    ofstream ofs(outputFileName.c_str());
+    
+    vector< pair<string, int> > unknownPlaces;
+    
+    cout << "show unknownPlaceName From Annotation" << endl;
+    ifstream ifs(filename.c_str());
+    string buf;
+    if(!ifs) {
+        cout << "not found constraint file" << endl;
+        exit(0);
+    }
+    int count = 0;
+    while(getline(ifs,buf)) {
+        count++;
+        if(buf.c_str()[0] == '*') continue;
+        vector<string> out = SpritString(buf, ",");
+        int bc = -1;
+        int month = -1;
+        if(out[0] != "-") {
+            bc = atoi(out[0].c_str());
+        }
+        if(out[1] != "-") {
+            month = getMonthFromString(out[1]);
+        }
+        
+        int beginTime=0;
+        int endTime = 0;
+        
+        if(month == -1) {
+            beginTime = getTimeFromBC(bc, 1);
+            endTime = getTimeFromBC(bc, 12);
+        } else {
+            beginTime = getTimeFromBC(bc, month);
+            endTime = getTimeFromBC(bc, month);
+        }
+        
+        string personName = "";
+        string placeName = "";
+        string constraint = out[4];
+        
+        for(unsigned int j=0;j<persons.size();j++) {
+            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = out[2];
+        }
+        
+        for(unsigned int j=0;j<places.size();j++) {
+            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
+        }
+        
+        if(personName != "" && beginTime >= 0 && beginTime <= 143 && endTime >= 0 && endTime <= 143 && constraint != "") {
+            if(placeName == "" && out[3] != "-") {
+                cout << "unknownPlace:" << out[3] << endl;
+                ofs << out[3] << ":" << count << endl;
+                
+                bool isFind = false;
+                for(unsigned int k=0;k<unknownPlaces.size();k++) {
+                    if(unknownPlaces[k].first == out[3]) {
+                        unknownPlaces[k].second++;
+                        isFind = true;
+                        break;
+                    }
+                }
+                if(!isFind) {
+                    unknownPlaces.push_back(make_pair(out[3], 1));
+                }
+            }
+        }
+    }
+    
+    ifs.close();
+    ofs.close();
+    
+    for(unsigned int i=0;i<unknownPlaces.size();i++) {
+        cout << unknownPlaces[i].first << "/" << unknownPlaces[i].second << endl;
+    }
+}
+
 void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places,bool isSameMode) {
     constraints.clear();
     
@@ -165,7 +242,7 @@ void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filena
             if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
         }
         
-        if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= 140 && endTime >= 0 && endTime <= 140 && constraint != "") {
+        if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= 143 && endTime >= 0 && endTime <= 143 && constraint != "") {
             Constraint con(beginTime,endTime,personName,placeName,getEnumFromString(constraint),count);
             
             if(isSameMode) {
@@ -279,8 +356,8 @@ void doAction(map<string,Person> &persons,map<string,Place> &places) {
 
 void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &places) {
     
-    int nothingPoint = 2;
-    int moveNextPlacePoint = 2;
+    int nothingPoint = 3;
+    int moveNextPlacePoint = 3;
     int moveLastPlacePoint = 1;
     
     for(map<string,Person>::iterator it = persons.begin();it != persons.end();it++) {
@@ -1154,7 +1231,7 @@ string removeOrthographicalVariantString(string &a) {
     dic += "A Arachosia,A Arakhosia/";
     dic += "A Caucasus,Cabul,Kabul/";
     dic += "Drapsaca,Drapsaka/";
-    dic += "Bactra,Baktra/";
+    dic += "Bactra,Baktra,Bactria/";
     dic += "Samarkand,Maracanda/";
     dic += "A Eschate,A Eskhate/";
     dic += "Ai Khanoum,Ai-Khanoum,Ay Khanoum,Ay-Khanoum,A Oxus/";
@@ -1561,6 +1638,96 @@ void makeEpisodesFromTree(MCTREE *rootNode , MCTREE *leafNode,vector<Episode> &e
             break;
         }
     }
+}
+
+#pragma mark -
+string extractStringFromTextfileWithLine(string filename,int line) {
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "not found file '" << filename << "' @extractStringFromTextfileWithLine" << endl;
+        exit(0);
+    }
+    
+    string buf;
+    for(int i=0;i<line;i++) {
+        getline(ifs,buf);
+    }
+    return buf;
+}
+
+vector< vector<string> > extractAroundStringsFromTextfileWithString(string filename,string buf,int window) {
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "not found file '" << filename << "' @extractAroundStringFromTextfileWithString" << endl;
+        exit(0);
+    }
+    
+    vector< vector<string> > result;
+    string tmp[10];
+    
+    string tmpBuf;
+    while(getline(ifs,tmpBuf)) {
+        for(int i=0;i<window;i++) {
+            tmp[i] = tmp[i+1];
+        }
+        tmp[window] = tmpBuf;
+        if(tmpBuf == buf) {
+            vector<string> s;
+            for(int i=0;i<window;i++) {
+                s.push_back(tmp[i]);
+            }
+            s.push_back(tmpBuf);
+            result.push_back(s);
+        }
+    }
+    return result;
+}
+
+void outputCoreferenceTestFileFromUnknownPlaces(string outputFileName,string unknownPlaceFilename) {
+    string pronoun[8] = {"the city","there","it","It","the area","here","this coast","the island"};
+    
+    ofstream ofs(outputFileName.c_str());
+    
+    ifstream ifs(unknownPlaceFilename.c_str());
+    if(!ifs) {
+        cout << "not found file '" << unknownPlaceFilename << "' @outputCoreferenceTestFileFromUnknownPlaces" << endl;
+        exit(0);
+    }
+    string buf;
+    while(getline(ifs,buf)) {
+        vector<string> out = SpritString(buf, ":");
+        string name = out[0];
+        int id = atoi(out[1].c_str());
+        for(int i=0;i<8;i++) {
+            if(pronoun[i] == name) {
+                string sentence = extractStringFromTextfileWithLine("alexander_wikipedia_bc.txt", id);
+                vector< vector<string> > ss = extractAroundStringsFromTextfileWithString("alexander_wikipedia.txt", sentence, 8);
+                for(unsigned int j=0;j<ss.size();j++) {
+                    ofs << "coreference:" << id << ":-----------------------------" << endl;
+                    for(unsigned int k=0;k<ss[j].size();k++) {
+                        ofs << ss[j][k] << endl;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void outputCoreferenceTestFileFromWikipedia(string outputFileName,vector<Constraint> &constraints,string wikipediaFilename) {
+    ofstream ofs(outputFileName.c_str());
+    
+    for(unsigned int i=0;i<constraints.size();i++) {
+        int id = constraints[i]._id;
+        string buf = extractStringFromTextfileWithLine("alexander_wikipedia_bc.txt", id);
+        vector< vector<string> > ss = extractAroundStringsFromTextfileWithString(wikipediaFilename, buf, 8);
+        for(unsigned int j=0;j<ss.size();j++) {
+            ofs << "coreference:" << id << ":-----------------------------" << endl;
+            for(unsigned int k=0;k<ss[j].size();k++) {
+                ofs << ss[j][k] << endl;
+            }
+        }
+    }
+    ofs.close();
 }
 
 #pragma mark -

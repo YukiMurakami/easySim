@@ -54,6 +54,7 @@ double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraint
 //生成された制約条件とアノテーションデータとの比較
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints);
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c);
+void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &persons,vector<string> &places,string outputFileName);
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);
 void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filename,vector<string> &persons,vector<string> &places,bool isSameMode);
@@ -127,5 +128,11 @@ void deleteTree(MCTREE *root);
 
 //おなじエージェントが複数存在したり、エージェントの位置情報とplaceのエージェント情報の一致を確認する
 void assertEpisode(const vector<Episode> &episodes);
+
+//テキスト操作
+string extractStringFromTextfileWithLine(string filename,int line);
+vector< vector<string> > extractAroundStringsFromTextfileWithString(string filename,string buf,int window);
+void outputCoreferenceTestFileFromUnknownPlaces(string outputFileName,string unknownPlaceFilename);
+void outputCoreferenceTestFileFromWikipedia(string outputFileName,vector<Constraint> &constraints,string wikipediaFilename);
 
 #endif /* defined(__easySimu__utility__) */

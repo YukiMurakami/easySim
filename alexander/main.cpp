@@ -40,20 +40,21 @@ int main(int argc, const char * argv[])
     vector<string> placeVector = makePlaceVectorFromMap(places);
     
     vector<Constraint> constraints;
-    //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector);
+    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector,true);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
-    initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector,true);
+    //initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector,true);
     showConstraints(constraints);
     cout << constraints.size() << endl;
-    showConstraintsPlaceDistribution(constraints);
-    /*
+ //   showConstraintsPlaceDistribution(constraints);
+ //   showAndOutputUnknownPlaceFromAnnotation("annotation.txt", personVector, placeVector,"unknownPlaces.txt");
+    
     vector<Constraint> constraints2;
-    constraints2 = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
+    initConstraintsFromAnnotation(constraints2, "annotation(-Tyre).txt",personVector,placeVector,true);
     showConstraints(constraints2);
     cout << constraints2.size() << endl;
-    showDifferentConstraints(constraints2, constraints);
-    */
+    showDifferentConstraints(constraints, constraints2);
+    
     
     for(int i=0;i<100;i++) {
     
@@ -76,7 +77,7 @@ int main(int argc, const char * argv[])
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-        doActionMCTS(persons, places, constraints,140,"wikipediaEpisodes0108-2.txt");
+        doActionMCTS(persons, places, constraints,143,"wikipediaEpisodes0110.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
@@ -84,19 +85,21 @@ int main(int argc, const char * argv[])
     
  //   }
    }
-    /*
+    
 
-    solve4selectionQuestion("question4-3.txt", personVector, placeVector, "wikipediaEpisodes0107-3.txt");
+    solve4selectionQuestion("question4-3.txt", personVector, placeVector, "wikipediaEpisodes0110.txt");
     
     Constraint constraint(getTimeFromBC(331, 1),getTimeFromBC(331, 12),"Alexander","the city",there_is);
-    solvePlaceQuestion(constraint, "wikipediaEpisodes0107.txt");
+    solvePlaceQuestion(constraint, "wikipediaEpisodes0108-2.txt");
     Constraint constraint2(getTimeFromBC(330, 1),getTimeFromBC(330, 12),"Alexander","the region",there_is);
-    solvePlaceQuestion(constraint2, "wikipediaEpisodes0107.txt");
+    solvePlaceQuestion(constraint2, "wikipediaEpisodes0108-2.txt");
     Constraint constraint3(getTimeFromBC(333, 1),getTimeFromBC(333, 12),"Alexander","this coast",there_is);
-    solvePlaceQuestion(constraint3, "wikipediaEpisodes0107.txt");
+    solvePlaceQuestion(constraint3, "wikipediaEpisodes0108-2.txt");
     Constraint constraint4(getTimeFromBC(329, 1),getTimeFromBC(329, 12),"Alexander","this coast",there_is);
-    solvePlaceQuestion(constraint4, "wikipediaEpisodes0107.txt");
-*/
-     
+    solvePlaceQuestion(constraint4, "wikipediaEpisodes0108-2.txt");
+
+    //outputCoreferenceTestFileFromUnknownPlaces("coreference_output", "unknownPlaces.txt");
+    
+    //outputCoreferenceTestFileFromWikipedia("coreference_output2.txt",constraints , "./old_episodes/alexander_wikipedia.txt");
     return 0;
 }
