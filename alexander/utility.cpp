@@ -356,8 +356,8 @@ void doAction(map<string,Person> &persons,map<string,Place> &places) {
 
 void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &places) {
     
-    int nothingPoint = 3;
-    int moveNextPlacePoint = 3;
+    int nothingPoint = 2;
+    int moveNextPlacePoint = 2;
     int moveLastPlacePoint = 1;
     
     for(map<string,Person>::iterator it = persons.begin();it != persons.end();it++) {

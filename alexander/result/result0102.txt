@@ -1,0 +1,16 @@
+episode count:1098
+episode count:93
+episode count:1212
+episode count:100
+<1> In 326 BC Alexander 's army of the Hellenic League met the Persian army of Darius III near Gaugamela .
+constraint:96:107:Alexander:Gaugamela:there_is
+point:0.0364299
+<2> The Battle of Issus occurred in southern Anatolia , in November 324 BC between the Hellenic League led by Alexander the Great and the Achaemenid Persia , led by Darius III , in the second great battle of Alexander 's conquest of Asia .
+constraint:130:130:Alexander:Issus:there_is
+point:0.0107527
+<3> The Siege of Tyre was orchestrated by Alexander the Great in 332 BC during his campaigns against the Persians .
+constraint:24:35:Alexander:Tyre:there_is
+point:0.0544554
+<4> The Battle of the Granicus River in May 331 BC was the first of three major battles fought between Alexander the Great and the Persian Empire .
+constraint:40:40:Alexander:Granicus:there_is
+point:0.02

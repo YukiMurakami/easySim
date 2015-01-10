@@ -48,13 +48,13 @@ int main(int argc, const char * argv[])
     cout << constraints.size() << endl;
  //   showConstraintsPlaceDistribution(constraints);
  //   showAndOutputUnknownPlaceFromAnnotation("annotation.txt", personVector, placeVector,"unknownPlaces.txt");
-    
+   /*
     vector<Constraint> constraints2;
     initConstraintsFromAnnotation(constraints2, "annotation(-Tyre).txt",personVector,placeVector,true);
     showConstraints(constraints2);
     cout << constraints2.size() << endl;
     showDifferentConstraints(constraints, constraints2);
-    
+   */
     
     for(int i=0;i<100;i++) {
     
@@ -77,7 +77,7 @@ int main(int argc, const char * argv[])
      //    initConstraints(constraints, "constraint4.txt");
  //   showConstraints(constraints);
     
-        doActionMCTS(persons, places, constraints,143,"wikipediaEpisodes0110.txt");
+        doActionMCTS(persons, places, constraints,143,"wikipediaEpisodes0110-2.txt");
       /*
         question.show();
         cout << "ok:" << question.getAnswerFromEpisodesFile("episodes.txt") << endl;
@@ -86,7 +86,7 @@ int main(int argc, const char * argv[])
  //   }
    }
     
-
+/*
     solve4selectionQuestion("question4-3.txt", personVector, placeVector, "wikipediaEpisodes0110.txt");
     
     Constraint constraint(getTimeFromBC(331, 1),getTimeFromBC(331, 12),"Alexander","the city",there_is);
@@ -97,7 +97,7 @@ int main(int argc, const char * argv[])
     solvePlaceQuestion(constraint3, "wikipediaEpisodes0108-2.txt");
     Constraint constraint4(getTimeFromBC(329, 1),getTimeFromBC(329, 12),"Alexander","this coast",there_is);
     solvePlaceQuestion(constraint4, "wikipediaEpisodes0108-2.txt");
-
+*/
     //outputCoreferenceTestFileFromUnknownPlaces("coreference_output", "unknownPlaces.txt");
     
     //outputCoreferenceTestFileFromWikipedia("coreference_output2.txt",constraints , "./old_episodes/alexander_wikipedia.txt");
