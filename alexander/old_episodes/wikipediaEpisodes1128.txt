@@ -140,7 +140,7 @@ newPlayout ----------------------------------------------
 138 Alexander Granicus
 139 Alexander Sardes
 140 Alexander Sardes
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -284,7 +284,7 @@ newPlayout ----------------------------------------------
 138 Alexander Halikarnassos
 139 Alexander Miletos
 140 Alexander Ephesos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -428,7 +428,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nikephorion
 139 Alexander Nikephorion
 140 Alexander Nisois
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -572,7 +572,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gaza
 139 Alexander Tyre
 140 Alexander Damaskos
-score 0.351852
+score:0.351852
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -716,7 +716,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Paraetonion
 140 Alexander Paraetonion
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -860,7 +860,7 @@ newPlayout ----------------------------------------------
 138 Alexander Baktra
 139 Alexander A_in_Oxas
 140 Alexander Baktra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1004,7 +1004,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Memphis
 140 Alexander Gaza
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1148,7 +1148,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Paraetonion
 140 Alexander Alexandria
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1292,7 +1292,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Alexandria
 140 Alexander Memphis
-score 0.407407
+score:0.407407
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1436,7 +1436,7 @@ newPlayout ----------------------------------------------
 138 Alexander Granicus
 139 Alexander Granicus
 140 Alexander Pella
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1580,7 +1580,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Amonin
 140 Alexander Paraetonion
-score 0.388889
+score:0.388889
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1724,7 +1724,7 @@ newPlayout ----------------------------------------------
 138 Alexander Pella
 139 Alexander Granicus
 140 Alexander Granicus
-score 0.388889
+score:0.388889
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -1868,7 +1868,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gordion
 139 Alexander Andyra
 140 Alexander Andyra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2012,7 +2012,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Amonin
 140 Alexander Memphis
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2156,7 +2156,7 @@ newPlayout ----------------------------------------------
 138 Alexander Thebe
 139 Alexander Memphis
 140 Alexander Gaza
-score 0.425926
+score:0.425926
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2300,7 +2300,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Ephesos
 140 Alexander Miletos
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2444,7 +2444,7 @@ newPlayout ----------------------------------------------
 138 Alexander Pella
 139 Alexander Pella
 140 Alexander Pella
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2588,7 +2588,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gaugamela
 139 Alexander Gaugamela
 140 Alexander Nisois
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2732,7 +2732,7 @@ newPlayout ----------------------------------------------
 138 Alexander Comana
 139 Alexander Amida
 140 Alexander Comana
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -2876,7 +2876,7 @@ newPlayout ----------------------------------------------
 138 Alexander A_in_Arakhosia
 139 Alexander Kahal
 140 Alexander A_in_Arakhosia
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3020,7 +3020,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Miletos
 140 Alexander Miletos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3164,7 +3164,7 @@ newPlayout ----------------------------------------------
 138 Alexander Kahal
 139 Alexander A_in_Arakhosia
 140 Alexander Kahal
-score 0.351852
+score:0.351852
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3308,7 +3308,7 @@ newPlayout ----------------------------------------------
 138 Alexander Sardes
 139 Alexander Sardes
 140 Alexander Gordion
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3452,7 +3452,7 @@ newPlayout ----------------------------------------------
 138 Alexander Babylon
 139 Alexander Opis
 140 Alexander Babylon
-score 0.407407
+score:0.407407
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3596,7 +3596,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Paraetonion
 140 Alexander Alexandria
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3740,7 +3740,7 @@ newPlayout ----------------------------------------------
 138 Alexander Side
 139 Alexander Halikarnassos
 140 Alexander Halikarnassos
-score 0.388889
+score:0.388889
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -3884,7 +3884,7 @@ newPlayout ----------------------------------------------
 138 Alexander Thebe
 139 Alexander Syene
 140 Alexander Thebe
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4028,7 +4028,7 @@ newPlayout ----------------------------------------------
 138 Alexander Memphis
 139 Alexander Memphis
 140 Alexander Thebe
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4172,7 +4172,7 @@ newPlayout ----------------------------------------------
 138 Alexander Thebe
 139 Alexander Thebe
 140 Alexander Thebe
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4316,7 +4316,7 @@ newPlayout ----------------------------------------------
 138 Alexander Sidon
 139 Alexander Byblos
 140 Alexander Byblos
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4460,7 +4460,7 @@ newPlayout ----------------------------------------------
 138 Alexander Petra
 139 Alexander Petra
 140 Alexander Gaza
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4604,7 +4604,7 @@ newPlayout ----------------------------------------------
 138 Alexander Syene
 139 Alexander Syene
 140 Alexander Syene
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4748,7 +4748,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Comana
 140 Alexander Comana
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -4892,7 +4892,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Gordion
 140 Alexander Gordion
-score 0.388889
+score:0.388889
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5036,7 +5036,7 @@ newPlayout ----------------------------------------------
 138 Alexander A_in_ARIA
 139 Alexander Praphlasia
 140 Alexander A_in_Arakhosia
-score 0.351852
+score:0.351852
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5180,7 +5180,7 @@ newPlayout ----------------------------------------------
 138 Alexander Pella
 139 Alexander Granicus
 140 Alexander Granicus
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5324,7 +5324,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nisois
 139 Alexander Nikephorion
 140 Alexander Nisois
-score 0.388889
+score:0.388889
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5468,7 +5468,7 @@ newPlayout ----------------------------------------------
 138 Alexander A_in_karmanien
 139 Alexander Pura
 140 Alexander Pura
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5612,7 +5612,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Ephesos
 140 Alexander Miletos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5756,7 +5756,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Miletos
 140 Alexander Ephesos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -5900,7 +5900,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Paraetonion
 140 Alexander Amonin
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6044,7 +6044,7 @@ newPlayout ----------------------------------------------
 138 Alexander Opis
 139 Alexander Arbela
 140 Alexander Arbela
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6188,7 +6188,7 @@ newPlayout ----------------------------------------------
 138 Alexander Memphis
 139 Alexander Gaza
 140 Alexander Gaza
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6332,7 +6332,7 @@ newPlayout ----------------------------------------------
 138 Alexander Amonin
 139 Alexander Memphis
 140 Alexander Memphis
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6476,7 +6476,7 @@ newPlayout ----------------------------------------------
 138 Alexander Susa
 139 Alexander Susa
 140 Alexander Arbela
-score 0.407407
+score:0.407407
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6620,7 +6620,7 @@ newPlayout ----------------------------------------------
 138 Alexander Petra
 139 Alexander Gaza
 140 Alexander Tyre
-score 0.351852
+score:0.351852
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6764,7 +6764,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Tarsos
 140 Alexander Issus
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -6908,7 +6908,7 @@ newPlayout ----------------------------------------------
 138 Alexander Arbela
 139 Alexander Susa
 140 Alexander A_in_Susiana
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7052,7 +7052,7 @@ newPlayout ----------------------------------------------
 138 Alexander A_in_Susiana
 139 Alexander Susa
 140 Alexander Babylon
-score 0.351852
+score:0.351852
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7196,7 +7196,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Ephesos
 140 Alexander Miletos
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7340,7 +7340,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nikephorion
 139 Alexander Damaskos
 140 Alexander Damaskos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7484,7 +7484,7 @@ newPlayout ----------------------------------------------
 138 Alexander Amonin
 139 Alexander Amonin
 140 Alexander Memphis
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7628,7 +7628,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Paraetonion
 140 Alexander Alexandria
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7772,7 +7772,7 @@ newPlayout ----------------------------------------------
 138 Alexander Side
 139 Alexander Gordion
 140 Alexander Side
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -7916,7 +7916,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gaugamela
 139 Alexander Amida
 140 Alexander Comana
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8060,7 +8060,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tyre
 139 Alexander Gaza
 140 Alexander Petra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8204,7 +8204,7 @@ newPlayout ----------------------------------------------
 138 Alexander Thebe
 139 Alexander Memphis
 140 Alexander Alexandria
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8348,7 +8348,7 @@ newPlayout ----------------------------------------------
 138 Alexander Pathragada
 139 Alexander Pathragada
 140 Alexander Aspardana
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8492,7 +8492,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gordion
 139 Alexander Andyra
 140 Alexander Gordion
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8636,7 +8636,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Andyra
 140 Alexander Tarsos
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8780,7 +8780,7 @@ newPlayout ----------------------------------------------
 138 Alexander Side
 139 Alexander Tarsos
 140 Alexander Andyra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -8924,7 +8924,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Paraetonion
 140 Alexander Alexandria
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9068,7 +9068,7 @@ newPlayout ----------------------------------------------
 138 Alexander Pella
 139 Alexander Pella
 140 Alexander Granicus
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9212,7 +9212,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tyre
 139 Alexander Gaza
 140 Alexander Petra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9356,7 +9356,7 @@ newPlayout ----------------------------------------------
 138 Alexander Praphlasia
 139 Alexander A_in_ARIA
 140 Alexander Praphlasia
-score 0.425926
+score:0.425926
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9500,7 +9500,7 @@ newPlayout ----------------------------------------------
 138 Alexander Susa
 139 Alexander Babylon
 140 Alexander Opis
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9644,7 +9644,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Alexandria
 140 Alexander Alexandria
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9788,7 +9788,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Paraetonion
 140 Alexander Amonin
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -9932,7 +9932,7 @@ newPlayout ----------------------------------------------
 138 Alexander Syene
 139 Alexander Thebe
 140 Alexander Thebe
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10076,7 +10076,7 @@ newPlayout ----------------------------------------------
 138 Alexander Arbela
 139 Alexander Opis
 140 Alexander Arbela
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10220,7 +10220,7 @@ newPlayout ----------------------------------------------
 138 Alexander Paraetonion
 139 Alexander Paraetonion
 140 Alexander Amonin
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10364,7 +10364,7 @@ newPlayout ----------------------------------------------
 138 Alexander Byblos
 139 Alexander Issus
 140 Alexander Issus
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10508,7 +10508,7 @@ newPlayout ----------------------------------------------
 138 Alexander Miletos
 139 Alexander Halikarnassos
 140 Alexander Side
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10652,7 +10652,7 @@ newPlayout ----------------------------------------------
 138 Alexander Comana
 139 Alexander Andyra
 140 Alexander Comana
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10796,7 +10796,7 @@ newPlayout ----------------------------------------------
 138 Alexander Amida
 139 Alexander Gaugamela
 140 Alexander Gaugamela
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -10940,7 +10940,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gaza
 139 Alexander Memphis
 140 Alexander Thebe
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11084,7 +11084,7 @@ newPlayout ----------------------------------------------
 138 Alexander Sidon
 139 Alexander Byblos
 140 Alexander Sidon
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11228,7 +11228,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Andyra
 140 Alexander Andyra
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11372,7 +11372,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nisois
 139 Alexander Nisois
 140 Alexander Nisois
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11516,7 +11516,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tarsos
 139 Alexander Tarsos
 140 Alexander Issus
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11660,7 +11660,7 @@ newPlayout ----------------------------------------------
 138 Alexander Side
 139 Alexander Halikarnassos
 140 Alexander Halikarnassos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11804,7 +11804,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tarsos
 139 Alexander Side
 140 Alexander Tarsos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -11948,7 +11948,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nisois
 139 Alexander Gaugamela
 140 Alexander Nisois
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12092,7 +12092,7 @@ newPlayout ----------------------------------------------
 138 Alexander Damaskos
 139 Alexander Damaskos
 140 Alexander Damaskos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12236,7 +12236,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tyre
 139 Alexander Gaza
 140 Alexander Memphis
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12380,7 +12380,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nikephorion
 139 Alexander Nikephorion
 140 Alexander Damaskos
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12524,7 +12524,7 @@ newPlayout ----------------------------------------------
 138 Alexander Susia
 139 Alexander Hekatompylos
 140 Alexander Hekatompylos
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12668,7 +12668,7 @@ newPlayout ----------------------------------------------
 138 Alexander A_in_karmanien
 139 Alexander Pura
 140 Alexander Rhambasia
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12812,7 +12812,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gordion
 139 Alexander Andyra
 140 Alexander Andyra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -12956,7 +12956,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Andyra
 140 Alexander Tarsos
-score 0.333333
+score:0.333333
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13100,7 +13100,7 @@ newPlayout ----------------------------------------------
 138 Alexander Harmosia
 139 Alexander A_in_karmanien
 140 Alexander A_in_karmanien
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13244,7 +13244,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tarsos
 139 Alexander Issus
 140 Alexander Byblos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13388,7 +13388,7 @@ newPlayout ----------------------------------------------
 138 Alexander Gaugamela
 139 Alexander Arbela
 140 Alexander Gaugamela
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13532,7 +13532,7 @@ newPlayout ----------------------------------------------
 138 Alexander Syene
 139 Alexander Syene
 140 Alexander Syene
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13676,7 +13676,7 @@ newPlayout ----------------------------------------------
 138 Alexander Alexandria
 139 Alexander Paraetonion
 140 Alexander Paraetonion
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13820,7 +13820,7 @@ newPlayout ----------------------------------------------
 138 Alexander Nautaca
 139 Alexander Nautaca
 140 Alexander Baktra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -13964,7 +13964,7 @@ newPlayout ----------------------------------------------
 138 Alexander Tarsos
 139 Alexander Tarsos
 140 Alexander Andyra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -14108,7 +14108,7 @@ newPlayout ----------------------------------------------
 138 Alexander Issus
 139 Alexander Tarsos
 140 Alexander Issus
-score 0.37037
+score:0.37037
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -14252,7 +14252,7 @@ newPlayout ----------------------------------------------
 138 Alexander Andyra
 139 Alexander Andyra
 140 Alexander Andyra
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -14396,7 +14396,7 @@ newPlayout ----------------------------------------------
 138 Alexander Side
 139 Alexander Tarsos
 140 Alexander Tarsos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
@@ -14540,7 +14540,7 @@ newPlayout ----------------------------------------------
 138 Alexander Damaskos
 139 Alexander Damaskos
 140 Alexander Damaskos
-score 0.314815
+score:0.314815
 playoutEnd ----------------------------------------------
 newPlayout ----------------------------------------------
 0 Alexander Pella
