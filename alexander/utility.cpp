@@ -730,7 +730,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 2000000;
+        int playout = 1000000;
         double finishRate = 0.98;
         
         
@@ -758,6 +758,15 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                     Episode *episodes = NULL;
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
+                    if(round >= playout-1 || getVal >= finishRate) {
+                        score = getVal;
+                        vector<Episode> TreeEpisodes;
+                        makeEpisodesFromTree(&root, current, TreeEpisodes);
+                        completeEpisodes = TreeEpisodes;
+                        isFinish = true;
+                    }
+                    downFlag = false;
+                    sumCount++;
                     break;
                 }
                 vector<string> actions;
@@ -834,39 +843,16 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                      
                         doActionWithHeuristics(randomPersons, randomPlaces);
                      
-                    //    Episode episode(time,randomPersons,randomPlaces);
-                     
                         episodes[I]._persons = randomPersons;
                         episodes[I]._places = randomPlaces;
                         episodes[I]._time = time;
                         I++;
-                      //  randomEpisodes.push_back(episode);
-                        
-                   //     cout << randomPersons["Alexander"]._nowPlace << "," << randomPersons["Alexander"]._lastPlace << endl;
                     
                     }
                     
-                    
-                   // showEpisode(randomEpisodes);
-                 //   getVal = checkEpisodePerson(randomEpisodes, constraints, person._name);
-                  //  showEpisodeWithPerson(current->episodes);
-                    /*
-                    vector<Episode> TreeEpisodes;
-                    makeEpisodesFromTree(&root, current, TreeEpisodes);
-                    getVal = checkEpisodePersonWithArray(&TreeEpisodes, constraints, person._name, episodes);
-                     */
                     getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
                     
                     
-                    
-                   
-                    /*
-                    if(maxValue < getVal) {
-                        maxValue = getVal;
-                        completeEpisodes = randomEpisodes;
-                       // cout << "name:" << person._name << " round:" << round << "val:" << getVal <<endl;
-                    }
-                     */
                     if(round >= playout-1 || getVal >= finishRate) {
                         score = getVal;
                         vector<Episode> TreeEpisodes;
@@ -920,12 +906,17 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                 // outputAverageReward("averageReward1202", round, getVal);
             }
         }
+
+        
+        
         checkEpisodePerson(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, true);
         
         showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
         EpisodesOutput(completeEpisodes,outputFilename,person._name,score,maxDepth);
+        
+        checkEpisodePersonAndOutput(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, outputFilename, true);
         
         //showTree(&root);
         
@@ -1033,11 +1024,14 @@ double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints) {
     
     return val;
 }
-void checkEpisodePersonAndOutput(vector<Episode> &episodes,vector<Constraint> &constraints,string _personName,string filename,bool isShowConstraints) {
+void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> constraints,string _personName, string filename , bool isShowConstraints) {
     int count = (int)constraints.size();
     int correct = 0;
     int hitCount = 0;
     
+    ofstream ofs(filename.c_str(),ios::app );
+    
+    ofs << "outputStart -------" << endl;
     
     for(int i=0;i<count;i++) {
         int beginTime = constraints[i]._beginTime;
@@ -1084,7 +1078,7 @@ void checkEpisodePersonAndOutput(vector<Episode> &episodes,vector<Constraint> &c
             if(okFlag) {
                 correct++;
             } else {
-                
+                ofs << constraints[i].getString() << endl;
             }
         }
         if(constraint == there_is_no) {
@@ -1095,6 +1089,10 @@ void checkEpisodePersonAndOutput(vector<Episode> &episodes,vector<Constraint> &c
             }
         }
     }
+    
+    ofs << "outputEnd --------" << endl;
+    
+    ofs.close();
     
     return;
 }

@@ -48,6 +48,10 @@ void Constraint::show() {
     cout << "constraint:" << _beginTime << ":" << _endTime << ":" << _personName << ":" << _placeName << ":" << getStringFromEnum(_constraint) <<  ":" << _id << endl;
 }
 
+string Constraint::getString() {
+    return "constraint:" + to_string(_beginTime) + ":" + to_string(_endTime) + ":" + _personName + ":" + _placeName + ":" + getStringFromEnum(_constraint) + ":" + to_string(_id);
+}
+
 bool isSameConstraint(Constraint a,Constraint b) {
     return (a._beginTime == b._beginTime) && (a._endTime == b._endTime) && (a._personName == b._personName) && (a._placeName == b._placeName) && (a._constraint == b._constraint);
 }

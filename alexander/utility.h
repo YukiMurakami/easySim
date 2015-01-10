@@ -51,6 +51,8 @@ void initAgent(map<string,Person> &persons,map<string,Place> &places,string file
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
 double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personNamebool ,bool isShowConstraints);
 
+void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> constraints,string _personName,string filename,bool isShowConstraints);
+
 //生成された制約条件とアノテーションデータとの比較
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints);
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c);

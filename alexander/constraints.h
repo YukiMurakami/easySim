@@ -36,6 +36,7 @@ public:
     Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint,int id);
     Constraint();
     void show();
+    string getString();
 };
 
 CONSTRAINT getEnumFromString(string constraint);
