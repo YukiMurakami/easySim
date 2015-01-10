@@ -19,6 +19,8 @@
 #include "question.h"
 
 
+
+
 int main(int argc, const char * argv[])
 {
   
@@ -40,8 +42,8 @@ int main(int argc, const char * argv[])
     vector<string> placeVector = makePlaceVectorFromMap(places);
     
     vector<Constraint> constraints;
-    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector,true);
-    //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector);
+    //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector,true);
+    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector,true);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector);
     //initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector,true);
     showConstraints(constraints);
@@ -55,7 +57,7 @@ int main(int argc, const char * argv[])
     cout << constraints2.size() << endl;
     showDifferentConstraints(constraints, constraints2);
    */
-    
+ 
     for(int i=0;i<100;i++) {
     
         round++;

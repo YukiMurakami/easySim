@@ -19,6 +19,8 @@
 
 using namespace std;
 
+int ENDSTEP2 = 71;
+
 #pragma mark -
 #pragma mark initalize
 
@@ -168,7 +170,7 @@ void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &per
             if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
         }
         
-        if(personName != "" && beginTime >= 0 && beginTime <= 143 && endTime >= 0 && endTime <= 143 && constraint != "") {
+        if(personName != "" && beginTime >= 0 && beginTime <= ENDSTEP2 && endTime >= 0 && endTime <= ENDSTEP2 && constraint != "") {
             if(placeName == "" && out[3] != "-") {
                 cout << "unknownPlace:" << out[3] << endl;
                 ofs << out[3] << ":" << count << endl;
@@ -242,7 +244,7 @@ void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filena
             if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
         }
         
-        if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= 143 && endTime >= 0 && endTime <= 143 && constraint != "") {
+        if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= ENDSTEP2 && endTime >= 0 && endTime <= ENDSTEP2 && constraint != "") {
             Constraint con(beginTime,endTime,personName,placeName,getEnumFromString(constraint),count);
             
             if(isSameMode) {
@@ -1517,8 +1519,9 @@ double calcUcb1(double sumVal,int ni,int N,double c) {
 }
 
 vector<int> getBCfromTime(int time) {
-    int year = 334 - time / 12;
-    int month = time % 12 + 1;
+    int nMonth = (ENDSTEP2+1)/12;
+    int year = 334 - time / nMonth;
+    int month = (time % nMonth)*(12/nMonth) + 1;
     
     vector<int> bc;
     bc.push_back(year);
@@ -1527,8 +1530,11 @@ vector<int> getBCfromTime(int time) {
 }
 
 int getTimeFromBC(int bc,int month) {
-    if(month < 1 || month > 12) month = xor128()%12+1;
-    return (334-bc)*12 + (month-1);
+    int nMonth = (ENDSTEP2+1)/12;
+    int minMonth = 12/nMonth;
+    if(month == 12) month = 13-12/nMonth;
+    if(month < 1 || month > (13-12/nMonth)) month = (xor128()%nMonth)*(12/nMonth)+1;
+    return (334-bc)*nMonth + (month-1)/minMonth;
 }
 
 int getMonthFromString(string mString) {
@@ -1541,6 +1547,17 @@ int getMonthFromString(string mString) {
     for(unsigned int i=0;i<months.size();i++) {
         if(isEqualStringWithoutOrthographicalVariant(mString, months[i])) {
             month = i+1;
+        }
+    }
+    
+    int nMonth = (ENDSTEP2 + 1)/12;
+    int minMonth = 12/nMonth;
+    for(int i=0;i<nMonth;i++) {
+        int min = i*minMonth+1;
+        int max = (i+1)*minMonth+1-1;
+        if(min <= month && month <= max) {
+            month = min;
+            break;
         }
     }
     

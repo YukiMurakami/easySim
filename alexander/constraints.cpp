@@ -11,6 +11,8 @@
 
 #include <fstream>
 
+int ENDSTEP = 71;
+
 Constraint::Constraint(int beginTime,int endTime,string person,string place,CONSTRAINT constraint) {
     _beginTime = beginTime;
     _endTime = endTime;
@@ -91,17 +93,17 @@ vector<Constraint> makeConstraintsFromAnnotationFile(string filename,vector<stri
         Constraint constraint = makeQuestionFromString(buf, persons, places);
         if(constraint._personName != "") personCount++;
         if(constraint._placeName != "") placeCount++;
-        if(constraint._beginTime >= 0 && constraint._beginTime <= 143 && constraint._endTime >= 0 && constraint._endTime <= 143) timeCount++;
+        if(constraint._beginTime >= 0 && constraint._beginTime <= ENDSTEP && constraint._endTime >= 0 && constraint._endTime <= ENDSTEP) timeCount++;
         /*
-         if(constraint._personName != "" && constraint._placeName != "" && (constraint._beginTime < 0 || constraint._endTime > 143)) {
+         if(constraint._personName != "" && constraint._placeName != "" && (constraint._beginTime < 0 || constraint._endTime > ENDSTEP)) {
          constraint.show();
          }
          */
         //result.push_back(constraint);
         
-        if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= 143 && constraint._endTime >= 0 && constraint._endTime <= 143) {
+        if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= ENDSTEP && constraint._endTime >= 0 && constraint._endTime <= ENDSTEP) {
             result.push_back(constraint);
-            if(constraint._beginTime < 0 || constraint._beginTime > 143 || constraint._endTime < 0 || constraint._endTime > 143) {
+            if(constraint._beginTime < 0 || constraint._beginTime > ENDSTEP || constraint._endTime < 0 || constraint._endTime > ENDSTEP) {
                 cout << buf << endl;
                 constraint.show();
                 cout << endl;
@@ -139,15 +141,15 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
         Constraint constraint = makeQuestionFromString(buf, persons, places);
         if(constraint._personName != "") personCount++;
         if(constraint._placeName != "") placeCount++;
-        if(constraint._beginTime >= 0 && constraint._beginTime <= 143 && constraint._endTime >= 0 && constraint._endTime <= 143) timeCount++;
+        if(constraint._beginTime >= 0 && constraint._beginTime <= ENDSTEP && constraint._endTime >= 0 && constraint._endTime <= ENDSTEP) timeCount++;
         /*
-        if(constraint._personName != "" && constraint._placeName != "" && (constraint._beginTime < 0 || constraint._endTime > 143)) {
+        if(constraint._personName != "" && constraint._placeName != "" && (constraint._beginTime < 0 || constraint._endTime > ENDSTEP)) {
             constraint.show();
         }
          */
         //result.push_back(constraint);
     //アノテーションチェックのときは、情報がそろってなくても制約条件を生成するようにする
-        if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= 143 && constraint._endTime >= 0 && constraint._endTime <= 143) {
+        if(constraint._personName != "" && constraint._placeName != "" && constraint._beginTime >= 0 && constraint._beginTime <= ENDSTEP && constraint._endTime >= 0 && constraint._endTime <= ENDSTEP) {
             constraint._id = allCount;
             
             if(isSameMode) {
@@ -165,7 +167,7 @@ vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &p
                 result.push_back(constraint);
             }
             /*
-            if(constraint._beginTime < 0 || constraint._beginTime > 143 || constraint._endTime < 0 || constraint._endTime > 143) {
+            if(constraint._beginTime < 0 || constraint._beginTime > ENDSTEP || constraint._endTime < 0 || constraint._endTime > ENDSTEP) {
                 cout << buf << endl;
                 constraint.show();
                 cout << endl;
