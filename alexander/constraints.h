@@ -46,9 +46,26 @@ bool isSameConstraint(Constraint a,Constraint b);
 
 //isSameModeはtrue　で　全く同じ制約条件を一つと見なすモードになる　falseで通常モード
 vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places,bool isSameMode);
+vector<Constraint> makeConstraintsFromTestfileWithError(string filename,vector<string> &persons,vector<string> &places,double rate,bool isSameMode);
 
 //条件にあわないもの、情報がそろってないものも制約条件として生成する
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
 void showConstraints(vector<Constraint> &constraints);
+
+
+class Coreference {
+public:
+    string _title;
+    Constraint _constraint;
+    vector<string> _candidates;
+    string _answer;
+    
+    Coreference(string title,Constraint constraint,vector<string> candidates);
+    void show();
+};
+
+vector<Coreference> makeCoreferencesFromTextfile(string filename);
+
+void solveCoreference(Coreference coreference,string episodeFileName);
 
 #endif /* defined(__easySimu__constraints__) */

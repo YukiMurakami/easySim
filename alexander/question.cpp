@@ -62,10 +62,16 @@ double Question::getAnswerFromEpisodesFile(string filename) {
             if(okFlag) correct++;
         } else if(out[0] == "score") {
             
-        } else if(out.size() == 3) {
+        } else if(out.size() >= 3) {
             int time = atoi(out[0].c_str());
             string personName = out[1];
-            string placeName = out[2];
+            string placeName = "";
+            for(unsigned int i=0;i<out.size() - 2;i++) {
+                placeName += out[i+2];
+                if(i != out.size()-3) {
+                    placeName += " ";
+                }
+            }
             if(time >= _beginTime && time <= _endTime) {
                // cout << placeName << endl;
                 if(_constraint == there_is && _placeName == placeName) {
@@ -122,7 +128,7 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         }
         
         for(unsigned int j=0;j<persons.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[i], persons[j])) personName = out[i];
+            if(isEqualStringWithoutOrthographicalVariant(out[i], persons[j])) personName = persons[j];
         }
         
         
@@ -149,16 +155,16 @@ Question makeQuestionFromString(string querry,vector<string> &persons ,vector<st
         
         for(unsigned int j=0;j<places.size();j++) {
             if(anameString == "") {
-                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
+                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = places[j];
             } else {
                 if(isEqualStringWithoutOrthographicalVariant(anameString, places[j])) {
-                    placeName = anameString;
+                    placeName = places[j];
                 }
             }
         }
         if(anameString != "" && placeName == "") {
             for(unsigned int j=0;j<places.size();j++) {
-                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = out[i];
+                if(isEqualStringWithoutOrthographicalVariant(out[i], places[j])) placeName = places[j];
             }
         }
     }
@@ -202,7 +208,19 @@ void solvePlaceQuestion(Constraint constraint,string episodeFile) {
         } else if(out.size() == 3) {
             int time = atoi(out[0].c_str());
             string personName = out[1];
-            string placeName = out[2];
+            string placeName = "";
+            for(unsigned int i=0;i<out.size() - 2;i++) {
+                placeName += out[i+2];
+                if(i != out.size()-3) {
+                    placeName += " ";
+                }
+            }string placeName = "";
+            for(unsigned int i=0;i<out.size() - 2;i++) {
+                placeName += out[i+2];
+                if(i != out.size()-3) {
+                    placeName += " ";
+                }
+            }
             if(time >= _beginTime && time <= _endTime) {
                 // cout << placeName << endl;
                 if(_constraint == there_is) {

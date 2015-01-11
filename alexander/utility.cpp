@@ -163,11 +163,11 @@ void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &per
         string constraint = out[4];
         
         for(unsigned int j=0;j<persons.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = out[2];
+            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = persons[j];
         }
         
         for(unsigned int j=0;j<places.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
+            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = places[j];
         }
         
         if(personName != "" && beginTime >= 0 && beginTime <= ENDSTEP2 && endTime >= 0 && endTime <= ENDSTEP2 && constraint != "") {
@@ -237,11 +237,11 @@ void initConstraintsFromAnnotation(vector<Constraint> &constraints,string filena
         string constraint = out[4];
         
         for(unsigned int j=0;j<persons.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = out[2];
+            if(isEqualStringWithoutOrthographicalVariant(out[2], persons[j])) personName = persons[j];
         }
         
         for(unsigned int j=0;j<places.size();j++) {
-            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = out[3];
+            if(isEqualStringWithoutOrthographicalVariant(out[3], places[j])) placeName = places[j];
         }
         
         if(personName != "" && placeName != "" && beginTime >= 0 && beginTime <= ENDSTEP2 && endTime >= 0 && endTime <= ENDSTEP2 && constraint != "") {
