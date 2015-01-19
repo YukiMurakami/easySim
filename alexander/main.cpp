@@ -43,6 +43,10 @@ int main(int argc, const char * argv[])
     initQuestion(question, "question.txt");
     */
     
+    vector<FourChoiceQuestion> qqq = readFourChoiceQuestions("fourChoiceQuestions.txt");
+    outputFourChoiceQuestions(qqq, "fourChoiceQuestions2.txt");
+    return 0;
+    
     
     map<string,Person> persons;
     map<string,Place> places;
@@ -69,10 +73,11 @@ int main(int argc, const char * argv[])
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
     
-    for(unsigned int i=0;i<annotationConstraints.size();i++) {
-        FourChoiceQuestion fourChoiceQuestion = makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(annotationConstraints[i], annotationConstraints, placeVector);
-        fourChoiceQuestion.show();
+    vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(100, annotationConstraints, placeVector);
+    for(unsigned int i=0;i<questions.size();i++) {
+        questions[i].show();
     }
+    outputFourChoiceQuestions(questions, "fourChoiceQuestions.txt");
     return 0;
     
   //  return 0;

@@ -85,4 +85,8 @@ public:
 
 FourChoiceQuestion makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(Constraint correctConstriant,vector<Constraint> annotationConstraints,vector<string> placeVector);
 
+vector<FourChoiceQuestion> makeFourChoiceQuestionsWithCount(int count,vector<Constraint> annotationConstraints,vector<string> placeVector);
+
+void outputFourChoiceQuestions(vector<FourChoiceQuestion> questions,string filename);
+vector<FourChoiceQuestion> readFourChoiceQuestions(string filename);
 #endif /* defined(__easySimu__constraints__) */

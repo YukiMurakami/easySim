@@ -508,3 +508,79 @@ FourChoiceQuestion makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstra
     return fourChoiceQuestion;
 }
 
+
+vector<FourChoiceQuestion> makeFourChoiceQuestionsWithCount(int count,vector<Constraint> annotationConstraints,vector<string> placeVector) {
+    vector<FourChoiceQuestion> questions;
+    
+    for(unsigned int i=0;i<count;i++) {
+        int annotationIndex = xor128() % annotationConstraints.size();
+        FourChoiceQuestion fourChoiceQuestion = makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(annotationConstraints[annotationIndex], annotationConstraints, placeVector);
+        questions.push_back(fourChoiceQuestion);
+    }
+    
+    return questions;
+}
+
+void outputFourChoiceQuestions(vector<FourChoiceQuestion> questions,string filename) {
+    ofstream ofs(filename.c_str());
+    
+    for(unsigned int i=0;i<questions.size();i++) {
+        ofs << "fourChoiceQuestionStart ----------------------" << endl;
+        for(unsigned int j=0;j < questions[i]._constraints.size();j++) {
+            ofs << questions[i]._constraints[j].getString() << endl;
+        }
+        ofs << "answer " << questions[i]._answerIndex << endl;
+        ofs << "fourChoiceQuestionEnd -----------------------" << endl;
+    }
+    
+    ofs.close();
+}
+
+vector<FourChoiceQuestion> readFourChoiceQuestions(string filename) {
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @readFourChoiceQuestions" << endl;
+        exit(0);
+    }
+    
+    vector<FourChoiceQuestion> questions;
+    
+    string buf;
+    int answerIndex = -1;
+    vector<Constraint> tmpConstraints;
+    
+    bool isStart = false;
+    while(getline(ifs, buf)) {
+        vector<string> out = SpritString(buf, " ");
+        if(out[0] == "fourChoiceQuestionStart") {
+            isStart = true;
+            continue;
+        }
+        if(out[0] == "fourChoiceQuestionEnd") {
+            FourChoiceQuestion question;
+            question._answerIndex = answerIndex;
+            copy(tmpConstraints.begin(),tmpConstraints.end(),back_inserter(question._constraints));
+            questions.push_back(question);
+            
+            isStart = false;
+            answerIndex = -1;
+            tmpConstraints.clear();
+            continue;
+        }
+        if(out[0] == "answer") {
+            answerIndex = atoi(out[1].c_str());
+            continue;
+        }
+        vector<string> out2 = SpritString(buf, ":");
+        int beginTime = atoi(out2[1].c_str());
+        int endTime = atoi(out2[2].c_str());
+        string personName = out2[3];
+        string placeName = out2[4];
+        CONSTRAINT constraint = getEnumFromString(out2[5]);
+        int id = atoi(out2[6].c_str());
+        Constraint con(beginTime,endTime,personName,placeName,constraint,id);
+        tmpConstraints.push_back(con);
+    }
+    
+    return questions;
+}
