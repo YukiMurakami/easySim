@@ -25,6 +25,7 @@ int ENDSTEP2 = 71;
 #pragma mark initalize
 
 void initAgent(map<string,Person> &persons,map<string,Place> &places,string filename) {
+    cout << "initAgent: '" << filename << "'" << endl;
     persons.clear();
     places.clear();
     
@@ -120,6 +121,7 @@ void initConstraints(vector<Constraint> &constraints,string filename) {
         constraints.push_back(con);
     }
 }
+
 
 void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &persons,vector<string> &places,string outputFileName) {
     ofstream ofs(outputFileName.c_str());
@@ -909,9 +911,9 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
 
         
         
-        checkEpisodePerson(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, true);
+    //    checkEpisodePerson(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, true);
         
-        showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
+     //   showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
         completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
         
         EpisodesOutput(completeEpisodes,outputFilename,person._name,score,maxDepth);
@@ -1030,6 +1032,12 @@ void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> con
     int hitCount = 0;
     
     ofstream ofs(filename.c_str(),ios::app );
+    
+    ofs << "selectedConstraintsStart --------" << endl;
+    for(unsigned int i=0;i<constraints.size();i++) {
+        ofs << constraints[i].getString() << endl;
+    }
+    ofs << "selectedConstraintsEnd ---------" << endl;
     
     ofs << "outputStart -------" << endl;
     
@@ -1815,6 +1823,70 @@ void outputCoreferenceTestFileFromWikipedia(string outputFileName,vector<Constra
         }
     }
     ofs.close();
+}
+
+void showErrorConstraintsFromEpisodeFiles(vector<string> episodeFileNames) {
+    vector< pair<Constraint, int> > errorConstraints;
+    
+    for(unsigned int i=0;i<episodeFileNames.size();i++) {
+        string filename = episodeFileNames[i];
+        
+        ifstream ifs(filename.c_str());
+        if(!ifs) {
+            cout << "error: not found file '" << filename << "' @showErrorConstraintsFromEpisodeFiles" << endl;
+            exit(0);
+        }
+        
+        string buf;
+        bool isInnerErrorConstraints = false;
+        while(getline(ifs, buf)) {
+            vector<string> out = SpritString(buf, " ");
+            if(out[0] == "outputStart") {
+                isInnerErrorConstraints = true;
+            } else if(out[0] == "outputEnd") {
+                isInnerErrorConstraints = false;
+            } else if(out[0].substr(0,10) == "constraint" && isInnerErrorConstraints) {
+                vector<string> out2 = SpritString(buf,":" );
+                int beginTime = atoi(out2[1].c_str());
+                int endTime = atoi(out2[2].c_str());
+                string personName = out2[3];
+                string placeName = out2[4];
+                CONSTRAINT constraint = getEnumFromString(out2[5]);
+                int id = atoi(out2[6].c_str());
+                Constraint con(beginTime,endTime,personName,placeName,constraint,id);
+                bool isFind = false;
+                for(unsigned int i=0;i<errorConstraints.size();i++) {
+                    if(isSameConstraint( errorConstraints[i].first , con)) {
+                        isFind = true;
+                        errorConstraints[i].second++;
+                        break;
+                    }
+                }
+                if(!isFind) {
+                    errorConstraints.push_back(make_pair(con,1));
+                }
+            }
+        }
+    }
+    
+    vector< pair<Constraint, int> > sortConstraints;
+    
+    while(errorConstraints.size() > 0) {
+        int maxCount = -1;
+        int maxIndex = -1;
+        for(unsigned int i=0;i<errorConstraints.size();i++) {
+            if(errorConstraints[i].second >= maxCount) {
+                maxCount = errorConstraints[i].second;
+                maxIndex = i;
+            }
+        }
+        sortConstraints.push_back(errorConstraints[maxIndex]);
+        errorConstraints.erase(errorConstraints.begin()+maxIndex);
+    }
+    
+    for(unsigned int i=0;i<sortConstraints.size();i++) {
+        cout << sortConstraints[i].first.getString() << "/" << sortConstraints[i].second << endl;
+    }
 }
 
 #pragma mark -

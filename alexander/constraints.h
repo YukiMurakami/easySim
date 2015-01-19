@@ -52,6 +52,10 @@ vector<Constraint> makeConstraintsFromTestfileWithError(string filename,vector<s
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places);
 void showConstraints(vector<Constraint> &constraints);
 
+vector<Constraint> selectRandomConstraintsWithRate(vector<Constraint> constraints,double rate);
+vector<Constraint> removeConstraintsWithPlaceName(vector<Constraint> constraints,vector<string> removePlaceName);
+
+double getCorrectRateWithConstraintAndEpisodeFile(Constraint con,string episodeFileName);
 
 class Coreference {
 public:
@@ -67,5 +71,7 @@ public:
 vector<Coreference> makeCoreferencesFromTextfile(string filename);
 
 void solveCoreference(Coreference coreference,string episodeFileName);
+
+vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLine,int endLine);
 
 #endif /* defined(__easySimu__constraints__) */

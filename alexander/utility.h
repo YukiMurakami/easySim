@@ -136,5 +136,6 @@ string extractStringFromTextfileWithLine(string filename,int line);
 vector< vector<string> > extractAroundStringsFromTextfileWithString(string filename,string buf,int window);
 void outputCoreferenceTestFileFromUnknownPlaces(string outputFileName,string unknownPlaceFilename);
 void outputCoreferenceTestFileFromWikipedia(string outputFileName,vector<Constraint> &constraints,string wikipediaFilename);
+void showErrorConstraintsFromEpisodeFiles(vector<string> episodeFileNames);
 
 #endif /* defined(__easySimu__utility__) */

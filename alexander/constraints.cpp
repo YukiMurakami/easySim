@@ -82,6 +82,62 @@ vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string>
     return result;
 }
 
+double getCorrectRateWithConstraintAndEpisodeFile(Constraint con,string episodeFileName) {
+    int count = 0;
+    int correct = 0;
+    
+    ifstream ifs(episodeFileName.c_str());
+    if(!ifs) {
+        cout << "not found file '" << episodeFileName << "' @getCorrectRateWithConstraintAndEpisodeFile" << endl;
+        return -1.0;
+    }
+    string buf;
+    
+    bool okFlag = false;
+    
+    while (getline(ifs,buf)) {
+        vector<string> out = SpritString(buf, " ");
+        if(out[0] == "newPlayout") {
+            okFlag = false;
+            count++;
+        } else if(out[0] == "playoutEnd") {
+            if(okFlag && con._constraint == there_is) correct++;
+            if(!okFlag && con._constraint == there_is_no) correct++;
+        } else if(out[0] == "score") {
+            
+        } else if(out.size() >= 3) {
+            int time = atoi(out[0].c_str());
+            string personName = out[1];
+            string placeName = "";
+            for(unsigned int i=0;i<out.size() - 2;i++) {
+                placeName += out[i+2];
+                if(i != out.size()-3) {
+                    placeName += " ";
+                }
+            }
+            if(time >= con._beginTime && time <= con._endTime) {
+                // cout << placeName << endl;
+                if(con._constraint == there_is && con._placeName == placeName) {
+                    okFlag = true;
+                    // correct++;
+                }
+                if(con._constraint == there_is_no && con._placeName == placeName) {
+                    //  correct++;
+                    okFlag = true;
+                }
+                // count++;
+            }
+        }
+    }
+    
+    if(count <= 0) {
+        cout << "error: count <= 0 @getCorrectRateWithConstraintAndEpisodeFile" << endl;
+        return -1.0;
+    }
+    cout << "episode count:" << count << endl;
+    return (double)correct/(double)count;
+}
+
 vector<Constraint> makeConstraintsFromAnnotationFile(string filename,vector<string> &persons,vector<string> &places) {
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
@@ -280,6 +336,40 @@ vector<Coreference> makeCoreferencesFromTextfile(string filename) {
     return coreferences;
 }
 
+vector<Constraint> removeConstraintsWithPlaceName(vector<Constraint> constraints,vector<string> removePlaceName) {
+    vector<Constraint> result;
+    
+    for(unsigned int i=0;i<constraints.size();i++) {
+        string placeName = constraints[i]._placeName;
+        bool isEqualFlag = false;
+        for(unsigned int j=0;j<removePlaceName.size();j++) {
+            if(isEqualStringWithoutOrthographicalVariant(placeName, removePlaceName[j])) {
+                isEqualFlag = true;
+                break;
+            }
+        }
+        if(!isEqualFlag) {
+            result.push_back(constraints[i]);
+        }
+    }
+    return result;
+}
+
+vector<Constraint> selectRandomConstraintsWithRate(vector<Constraint> constraints,double rate) {
+    vector<Constraint> result;
+    
+    int count = (int)(constraints.size() * rate);
+    
+    for(int i=0;i<count;i++) {
+        unsigned int size = constraints.size();
+        int index = xor128() % size;
+        result.push_back(constraints[index]);
+        constraints.erase(constraints.begin()+index);
+    }
+    
+    return result;
+}
+
 void solveCoreference(Coreference coreference,string episodeFileName) {
     int sumCount = 0;
     map<string,int> places;
@@ -342,3 +432,32 @@ void solveCoreference(Coreference coreference,string episodeFileName) {
     
     cout << coreference._constraint._placeName << " is " << maxPlace << endl;
 }
+
+vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLine,int endLine) {
+    cout << "makeConstraintsFromConstraintFile '" << filename << "' begin:" << beginLine << " end:" << endLine << endl;
+    vector<Constraint> result;
+    
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @makeConstraintsFromConstraintFile" << endl;
+        exit(0);
+    }
+    
+    string buf;
+    int count = 0;
+    while(getline(ifs,buf)) {
+        count++;
+        if(count < beginLine || count > endLine) continue;
+        vector<string> out = SpritString(buf, ":");
+        int beginTime = atoi(out[1].c_str());
+        int endTime = atoi(out[2].c_str());
+        string personName = out[3];
+        string placeName = out[4];
+        CONSTRAINT constraint = getEnumFromString(out[5]);
+        int id = atoi(out[6].c_str());
+        Constraint con(beginTime,endTime,personName,placeName,constraint,id);
+        result.push_back(con);
+    }
+    return result;
+}
+

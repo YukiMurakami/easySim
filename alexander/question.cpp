@@ -205,16 +205,10 @@ void solvePlaceQuestion(Constraint constraint,string episodeFile) {
             
         } else if(out[0] == "score") {
             
-        } else if(out.size() == 3) {
+        } else if(out.size() >= 3) {
             int time = atoi(out[0].c_str());
             string personName = out[1];
             string placeName = "";
-            for(unsigned int i=0;i<out.size() - 2;i++) {
-                placeName += out[i+2];
-                if(i != out.size()-3) {
-                    placeName += " ";
-                }
-            }string placeName = "";
             for(unsigned int i=0;i<out.size() - 2;i++) {
                 placeName += out[i+2];
                 if(i != out.size()-3) {
