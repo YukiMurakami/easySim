@@ -55,7 +55,7 @@ int main(int argc, const char * argv[])
   //  constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector,true);
   //  constraints = makeConstraintsFromTestfileWithError("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector, 0.8, true);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector,true);
-    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
+//    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
  //   showConstraints(constraints);
     cout << constraints.size() << endl;
     /*
@@ -65,9 +65,15 @@ int main(int argc, const char * argv[])
     cout << annotationConstraints.size() << endl;
      */
     
-    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",29,32);
+    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",1,32);
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
+    
+    for(unsigned int i=0;i<annotationConstraints.size();i++) {
+        FourChoiceQuestion fourChoiceQuestion = makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(annotationConstraints[i], annotationConstraints, placeVector);
+        fourChoiceQuestion.show();
+    }
+    return 0;
     
   //  return 0;
     /*

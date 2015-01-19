@@ -74,4 +74,15 @@ void solveCoreference(Coreference coreference,string episodeFileName);
 
 vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLine,int endLine);
 
+
+class FourChoiceQuestion {
+public:
+    vector<Constraint> _constraints;
+    int _answerIndex;//0 - 3
+    
+    void show();
+};
+
+FourChoiceQuestion makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(Constraint correctConstriant,vector<Constraint> annotationConstraints,vector<string> placeVector);
+
 #endif /* defined(__easySimu__constraints__) */

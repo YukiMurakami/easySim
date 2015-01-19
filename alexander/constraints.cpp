@@ -461,3 +461,50 @@ vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLi
     return result;
 }
 
+void FourChoiceQuestion::show() {
+    for(unsigned int i=0;i<_constraints.size();i++) {
+        cout << i+1 << " / " << _constraints[i].getString() << endl;
+    }
+    cout << "answer: " << _answerIndex+1 << endl;
+}
+
+FourChoiceQuestion makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstraints(Constraint correctConstriant,vector<Constraint> annotationConstraints,vector<string> placeVector) {
+    FourChoiceQuestion fourChoiceQuestion;
+    
+    //不正解選択肢を３つ作る だたしannotationConstraintsには正しい条件が入っているので、それを満たしていないか確認する
+    for(int i=0;i<3;i++) {
+        int randomBC=-1,beginTime=-1,endTime=-1;
+        string randomPlace;
+        
+        bool okFlag = false;
+        while(!okFlag) {
+            randomBC = xor128()%12 + 323;
+            
+            beginTime = getTimeFromBC(randomBC, 1);
+            endTime = getTimeFromBC(randomBC, 12);
+        
+            randomPlace = placeVector[ xor128() % placeVector.size() ];
+            
+            okFlag = true;
+            for(unsigned int j=0;j<annotationConstraints.size();j++) {
+                if(isEqualStringWithoutOrthographicalVariant(randomPlace, annotationConstraints[j]._placeName)) {
+                    if(beginTime <= annotationConstraints[j]._endTime && endTime >= annotationConstraints[j]._beginTime) {
+                        okFlag = false;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        Constraint constraint(beginTime,endTime,"Alexander",randomPlace,there_is);
+        
+        fourChoiceQuestion._constraints.push_back(constraint);
+    }
+    
+    int answerIndex = xor128() % 4;
+    fourChoiceQuestion._constraints.insert(fourChoiceQuestion._constraints.begin()+answerIndex, correctConstriant);
+    fourChoiceQuestion._answerIndex = answerIndex;
+    
+    return fourChoiceQuestion;
+}
+
