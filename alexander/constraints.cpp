@@ -134,7 +134,7 @@ double getCorrectRateWithConstraintAndEpisodeFile(Constraint con,string episodeF
         cout << "error: count <= 0 @getCorrectRateWithConstraintAndEpisodeFile" << endl;
         return -1.0;
     }
-    cout << "episode count:" << count << endl;
+   // cout << "episode count:" << count << endl;
     return (double)correct/(double)count;
 }
 
@@ -479,6 +479,7 @@ FourChoiceQuestion makeFourChoiceQuestionByCorrectConstraintAndAnnotationConstra
         bool okFlag = false;
         while(!okFlag) {
             randomBC = xor128()%12 + 323;
+            //randomBC = getBCfromTime(correctConstriant._beginTime)[0];
             
             beginTime = getTimeFromBC(randomBC, 1);
             endTime = getTimeFromBC(randomBC, 12);
@@ -583,4 +584,82 @@ vector<FourChoiceQuestion> readFourChoiceQuestions(string filename) {
     }
     
     return questions;
+}
+
+void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints) {
+    cout << "rate:" << rate << endl;
+    int count = 0;
+    int correct = 0;
+    
+    for(unsigned int qi=0;qi<questions.size();qi++) {
+        int answerIndex = questions[qi]._answerIndex;
+        Constraint answerConstraint = questions[qi]._constraints[answerIndex];
+        
+        vector<Constraint> hitConstraints;
+        for(int n=0;n<annotationConstraints.size();n++) {
+            if(isSameConstraint(answerConstraint, annotationConstraints[n])) {
+                hitConstraints.push_back(annotationConstraints[n]);
+            }
+        }
+        if(hitConstraints.size() <= 0) {
+           // cout << "error: not found annotationConstraints @solveFourChoiceQuestions" << endl;
+            continue;
+        }
+        
+        double maxVal = -0.1;
+        vector<int> maxIndexs;
+        vector<double> values;
+        for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+            //cout << hitConstraints.size() << endl;
+            for(unsigned int hi=0;hi<hitConstraints.size();hi++) {
+                char fileChara[40];
+                sprintf(fileChara,"%s-%d",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id);
+                string filename = fileChara;
+                char rateChara[10];
+                sprintf(rateChara, "%2.1f",rate);
+                string ratename = rateChara;
+                
+                string placeString = "place";
+                if(prefix != "") placeString = "Place";
+                
+                double val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], "./" + prefix + placeString + ratename + "Episodes/wikipediaEpisodes" + filename + ".txt");
+                values.push_back(val);
+             //   cout << ci << ":" << val << endl;
+                if(val >= maxVal) {
+                    if(val != maxVal) {
+                        maxIndexs.clear();
+                    }
+                    maxVal = val;
+                    maxIndexs.push_back(ci);
+                }
+            }
+        }
+        int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
+  //      cout << answerIndex << endl;
+        count++;
+        if(maxIndex == answerIndex) {
+            //正解
+            correct++;
+            /*
+            cout << count << endl;
+            int isShowCount = 0;
+            for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+                if(values[ci] > 0) isShowCount++;
+            }
+            if(isShowCount >= 3) {
+            for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+                questions[qi]._constraints[ci].show();
+                cout << values[ci] << endl;
+            }
+             
+            }
+             */
+        } else {
+            //不正解
+            
+        }
+    }
+    double correctRate = (double)correct / (double)count;
+    cout << "correct:" << correct << " count:" << count << endl;
+    cout << "correctRate:" << correctRate << endl;
 }

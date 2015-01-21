@@ -91,7 +91,7 @@ double Question::getAnswerFromEpisodesFile(string filename) {
         cout << "error: count <= 0 @Question/getAnswerFromEpisodess" << endl;
         exit(0);
     }
-    cout << "episode count:" << count << endl;
+   // cout << "episode count:" << count << endl;
     return (double)correct/(double)count;
 }
 

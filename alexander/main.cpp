@@ -42,10 +42,7 @@ int main(int argc, const char * argv[])
     Question question;
     initQuestion(question, "question.txt");
     */
-    
-    vector<FourChoiceQuestion> qqq = readFourChoiceQuestions("fourChoiceQuestions.txt");
-    outputFourChoiceQuestions(qqq, "fourChoiceQuestions2.txt");
-    return 0;
+
     
     
     map<string,Person> persons;
@@ -59,8 +56,9 @@ int main(int argc, const char * argv[])
   //  constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector,true);
   //  constraints = makeConstraintsFromTestfileWithError("alexander_wikipedia_bc(-Tyre).txt", personVector, placeVector, 0.8, true);
     //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc130.txt", personVector, placeVector,true);
-//    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
+    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
  //   showConstraints(constraints);
+    //constraints = makeConstraintsFromConstraintFile("constraint0114.txt", 1, 32);
     cout << constraints.size() << endl;
     /*
     vector<Constraint> annotationConstraints;
@@ -68,33 +66,42 @@ int main(int argc, const char * argv[])
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
      */
-    
-    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",1,32);
+    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",16,16);
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
+    /*
+    showDifferentConstraints(constraints, annotationConstraints);
+    return 0;
+    */
     
-    vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(100, annotationConstraints, placeVector);
+//    vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(200, annotationConstraints, placeVector);
+ //   vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions58-52.txt");
+    /*
     for(unsigned int i=0;i<questions.size();i++) {
         questions[i].show();
     }
+     
     outputFourChoiceQuestions(questions, "fourChoiceQuestions.txt");
+     */
+    //vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions.txt");
+    /*
+    solveFourChoiceQuestions("",questions, 0.6, annotationConstraints);
+    solveFourChoiceQuestions("",questions, 0.8, annotationConstraints);
+    solveFourChoiceQuestions("",questions, 1.0, annotationConstraints);
+    solveFourChoiceQuestions("annotation", questions, 1.0, annotationConstraints);
     return 0;
-    
+    */
   //  return 0;
     /*
     vector<Coreference> coreferences = makeCoreferencesFromTextfile("co-reference.txt");
     for(unsigned int i=0;i<coreferences.size();i++) {
         coreferences[i].show();
-        solveCoreference(coreferences[i], "./old_episodes/wikipediaEpisodes0111-3.txt");
-        solveCoreference(coreferences[i], "./old_episodes/wikipediaEpisodes0113.txt");
-        solveCoreference(coreferences[i], "./old_episodes/wikipediaEpisodes0113-2.txt");
-        solveCoreference(coreferences[i], "./old_episodes/wikipediaEpisodes0113-3.txt");
-        solveCoreference(coreferences[i], "./old_episodes/wikipediaEpisodes0113-4.txt");
+        solveCoreference(coreferences[i], "./place1.0Episodes/wikipediaEpisodesBabylon-52.txt");
     }
      
     
-    */
-   
+    return 0;
+   */
     
   //  return 0;
     
@@ -133,7 +140,7 @@ int main(int argc, const char * argv[])
         
         for(int i=0;i<50;i++) {
             cout << filename << ":" << (i+1) << "/50 round" << endl;
-            vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 0.6);
+            vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 1.0);
             cout << tmpConstraints.size() << endl;
             round++;
             vector<Episode> episodes;

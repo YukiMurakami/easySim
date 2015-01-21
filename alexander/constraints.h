@@ -89,4 +89,5 @@ vector<FourChoiceQuestion> makeFourChoiceQuestionsWithCount(int count,vector<Con
 
 void outputFourChoiceQuestions(vector<FourChoiceQuestion> questions,string filename);
 vector<FourChoiceQuestion> readFourChoiceQuestions(string filename);
+void solveFourChoiceQuestions(string prefix,vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints) ;
 #endif /* defined(__easySimu__constraints__) */
