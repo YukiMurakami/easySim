@@ -40,7 +40,10 @@ void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &place
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes);
 //木を作成しながらシミュレーションを繰り返す
 //総プレイアウト回数を返す
-int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename);
+int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename,double Cp);
+
+//プレイアウト回数で打ち切るまでまわし、そのなかで報酬値が高かったものトップ１０のエピソードを出力する
+int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp);
 
 //移動アクションの処理
 void move(Person &person,map<string,Person> &persons,map<string,Place> &places,Place &nextplace);
@@ -137,5 +140,9 @@ vector< vector<string> > extractAroundStringsFromTextfileWithString(string filen
 void outputCoreferenceTestFileFromUnknownPlaces(string outputFileName,string unknownPlaceFilename);
 void outputCoreferenceTestFileFromWikipedia(string outputFileName,vector<Constraint> &constraints,string wikipediaFilename);
 void showErrorConstraintsFromEpisodeFiles(vector<string> episodeFileNames);
+
+map<string, map<string,int> > getShortestLengthToNextConstraint(map<string,Place> &places) ;
+void enqueue(vector< vector<string> > &queue,vector<string> &data);
+vector<string> dequeue(vector< vector<string> > &queue);
 
 #endif /* defined(__easySimu__utility__) */

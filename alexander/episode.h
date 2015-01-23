@@ -30,4 +30,6 @@ vector<Episode> findEpisodeFromTime(int beginTime,int endTime,vector<Episode> ep
 vector<Episode> getOnlyPersonEpisode(string name,vector<Episode> episodes);
 vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess);
 void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,double score,int maxDepth);
+
+bool isSameEpisodesAlexander(vector<Episode> &a,vector<Episode> &b);
 #endif /* defined(__easySimu__history__) */

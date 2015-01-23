@@ -49,6 +49,11 @@ int main(int argc, const char * argv[])
     map<string,Place> places;
     initAgent(persons,places,"initialize0110.txt");
     
+    map<string, map<string,int> > shortestInfo = getShortestLengthToNextConstraint(places);
+    string a = "Samarkand";
+    string b = "Granicus";
+    cout << a << ":" << b << ":" << shortestInfo[a][b] << endl;
+    return 0;
     vector<string> personVector = makePersonVectorFromMap(persons);
     vector<string> placeVector = makePlaceVectorFromMap(places);
     
@@ -73,24 +78,36 @@ int main(int argc, const char * argv[])
     showDifferentConstraints(constraints, annotationConstraints);
     return 0;
     */
-    
-//    vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(200, annotationConstraints, placeVector);
- //   vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions58-52.txt");
     /*
-    for(unsigned int i=0;i<questions.size();i++) {
-        questions[i].show();
-    }
-     
-    outputFourChoiceQuestions(questions, "fourChoiceQuestions.txt");
-     */
-    //vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions.txt");
-    /*
-    solveFourChoiceQuestions("",questions, 0.6, annotationConstraints);
-    solveFourChoiceQuestions("",questions, 0.8, annotationConstraints);
-    solveFourChoiceQuestions("",questions, 1.0, annotationConstraints);
-    solveFourChoiceQuestions("annotation", questions, 1.0, annotationConstraints);
-    return 0;
+    for(int i=0;i<32;i++) {
+        annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",i+1,i+1);
     */
+//        vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(100, annotationConstraints, placeVector);
+     
+     //   vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions58-52.txt");
+        /*
+        for(unsigned int i=0;i<questions.size();i++) {
+            questions[i].show();
+        }
+         
+        outputFourChoiceQuestions(questions, "fourChoiceQuestions.txt");
+         */
+        //vector<FourChoiceQuestion> questions = readFourChoiceQuestions("fourChoiceQuestions.txt");
+        
+      //  solveFourChoiceQuestions("",questions, 0.6, annotationConstraints);
+     //   solveFourChoiceQuestions("",questions, 0.8, annotationConstraints);
+     //   solveFourChoiceQuestions("",questions, 1.0, annotationConstraints);
+     //   solveFourChoiceQuestions("annotation", questions, 1.0, annotationConstraints,-1);
+    /*
+        solveFourChoiceQuestions("question16", questions, 1.0, annotationConstraints,0.5);
+    solveFourChoiceQuestions("question16", questions, 1.0, annotationConstraints,1.0);
+    solveFourChoiceQuestions("question16", questions, 1.0, annotationConstraints,1.4);
+    solveFourChoiceQuestions("question16", questions, 1.0, annotationConstraints,2.0);
+    return 0;
+     */
+  //  }
+ //   return 0;
+    
   //  return 0;
     /*
     vector<Coreference> coreferences = makeCoreferencesFromTextfile("co-reference.txt");
@@ -134,12 +151,13 @@ int main(int argc, const char * argv[])
         //showConstraints(constraints2);
         cout << constraints2.size() << endl;
         
+        double cp = 0.2;
         char fileChara[40];
-        sprintf(fileChara,"%s-%d",(annotationConstraints[n]._placeName).c_str(),annotationConstraints[n]._id);
+        sprintf(fileChara,"%s-%d-%3.2f",(annotationConstraints[n]._placeName).c_str(),annotationConstraints[n]._id,cp);
         string filename = fileChara;
         
-        for(int i=0;i<50;i++) {
-            cout << filename << ":" << (i+1) << "/50 round" << endl;
+    //    for(int i=0;i<20;i++) {
+        //    cout << filename << ":" << (i+1) << "/20 round" << endl;
             vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 1.0);
             cout << tmpConstraints.size() << endl;
             round++;
@@ -147,9 +165,10 @@ int main(int argc, const char * argv[])
             episodes.clear();
             
         
-            doActionMCTS(persons, places, tmpConstraints,71,"wikipediaEpisodes" + filename + ".txt");
+     //       doActionMCTS(persons, places, tmpConstraints,71,"wikipediaEpisodes" + filename + ".txt",cp);
+        doActionMCTSWithRank(persons, places, tmpConstraints, 71, "wikipediaEpisodes" + filename + ".txt", cp);
 
-        }
+  //      }
         
         /*
         double val = getCorrectRateWithConstraintAndEpisodeFile(annotationConstraints[n], "./place1.0Episodes/wikipediaEpisodes" + filename + ".txt");

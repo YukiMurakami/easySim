@@ -135,3 +135,14 @@ void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,
     ofs << "playoutEnd ----------------------------------------------" << endl;
     ofs.close();
 }
+
+bool isSameEpisodesAlexander(vector<Episode> &a,vector<Episode> &b) {
+    if(a.size() != b.size()) return false;
+    
+    for(unsigned int i=0;i<a.size();i++) {
+        if(a[i]._persons["Alexander"]._nowPlace != b[i]._persons["Alexander"]._nowPlace) {
+            return false;
+        }
+    }
+    return true;
+}

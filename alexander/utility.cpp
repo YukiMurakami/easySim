@@ -413,8 +413,6 @@ void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &place
             string nextPlaceString = action.substr(5);
             move(person,persons,places,places[nextPlaceString]);
         }
-        
-        
     }
 }
 
@@ -689,7 +687,7 @@ void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Con
     return;
 }
 
-int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename) {
+int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp) {
     
     cout << "start mcts" << endl;
     clock_t start,end;
@@ -705,7 +703,10 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     
     int sumPlayout = 0;
     
-    double cp = 0.2;
+    //double cp = 0.2;
+    double cp = Cp;
+    
+    cout << "cp:" << cp << endl;
     
     vector< vector<Episode> >completeEpisodess;
     
@@ -929,6 +930,295 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     //showEpisode(resultEpisode);
     return sumPlayout;
 }
+
+
+
+int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp) {
+    
+    cout << "start mcts" << endl;
+    clock_t start,end;
+    start = clock();
+    
+    int highRanker = 100;
+    
+    vector< pair< vector<Episode>  , double> > topEpisodesList;
+    for(int i=0;i<highRanker;i++) {
+        pair<vector<Episode> , double> tmpEpisode = make_pair((vector<Episode>)NULL, -1.0);
+        topEpisodesList.push_back(tmpEpisode);
+    }
+    
+    map<string,Person> nowPersons(persons);
+    map<string,Place> nowPlaces(places);
+    //   vector<Episode> nowEpisodes;
+    Episode episode(0,nowPersons,nowPlaces);
+    //   nowEpisodes.push_back(episode);
+    
+    int maxDepth = 0;
+    
+    int sumPlayout = 0;
+    
+    //double cp = 0.2;
+    double cp = Cp;
+    
+    cout << "cp:" << cp << endl;
+    
+    vector< vector<Episode> >completeEpisodess;
+    
+    for(map<string,Person>::iterator it = nowPersons.begin();it != nowPersons.end();it++) {
+        Person person = (*it).second;
+        
+        vector<Episode> completeEpisodes;
+        bool isFinish = false;
+        
+        //      double maxValue = -100000;
+        double score = 0;
+        
+        //rootノードを作成
+        int sumCount = 0;
+        MCTREE root;
+        root.count = 0;
+        root.ucb = 0;
+        root.sumVal = 0;
+        root.parent = NULL;
+        root.episode = episode;
+        root.sumCount = &sumCount;
+        root.action = "nothing";
+        root.childs.clear();
+        
+        MCTREE *current = &root;
+        
+        int playout = 1000000;
+        double finishRate = 0.98;
+        
+        
+        
+        for(int round=0;round<playout;round++) {
+            sumPlayout++;
+            if(isFinish) break;
+            bool downFlag = true;//trueなら木を潜り続ける
+            int nowDepth = 0;
+            //showTree(&root);
+            
+            double getVal = 0;//取得した報酬
+            
+            while(downFlag && !isFinish) {
+                
+                //取れるアクションを取得
+                
+                if(current->episode._time >= endTime) {
+                    downFlag = false;
+                    /*
+                     vector<Episode> episodes;
+                     makeEpisodesFromTree(&root, current, episodes);
+                     getVal = checkEpisodePerson(episodes, constraints, person._name,false);
+                     */
+                    Episode *episodes = NULL;
+                    getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
+                    
+                    if(round >= playout-1 || getVal >= finishRate) {
+                        score = getVal;
+                        vector<Episode> TreeEpisodes;
+                        makeEpisodesFromTree(&root, current, TreeEpisodes);
+                        completeEpisodes = TreeEpisodes;
+                        isFinish = true;
+                    }
+                    downFlag = false;
+                    sumCount++;
+                    break;
+                }
+                vector<string> actions;
+                actions.push_back("nothing");
+                for(int i=0;i<(int)current->episode._places[current->episode._persons[person._name]._nowPlace]._nextPlaces.size();i++) {
+                    string next = places[current->episode._persons[person._name]._nowPlace]._nextPlaces[i];
+                    actions.push_back("move:"+next);
+                }
+                //各アクションの対応する子ノードが全部存在すれば、UCB値を比較することにする
+                //なかったら、なかった者のなかからランダムで選ぶ
+                double maxUcb = -99999999;
+                
+                vector<int> maxIndexs;
+                vector<string>notFoundActions;
+                for(int i=0;i<(int)actions.size();i++) {
+                    string action = actions[i];
+                    //actionと一致する子ノードがあるかどうか調べる
+                    int index = -1;
+                    for(int j=0;j<(int)current->childs.size();j++) {
+                        if(current->childs[j]->action == action) {
+                            index = j;
+                            break;
+                        }
+                    }
+                    if(index == -1) {
+                        notFoundActions.push_back(action);
+                        continue;
+                    } else {
+                        current->childs[index]->ucb = calcUcb1(current->childs[index]->sumVal, current->childs[index]->count, *current->childs[index]->sumCount,cp);
+                        if(maxUcb <= current->childs[index]->ucb) {
+                            maxIndexs.push_back(index);
+                            if(maxUcb != current->childs[index]->ucb) {
+                                maxIndexs.clear();
+                                maxIndexs.push_back(index);
+                            }
+                            maxUcb = current->childs[index]->ucb;
+                        }
+                    }
+                }
+                if(notFoundActions.size() <= 0) {
+                    int randIndex = xor128() % maxIndexs.size();
+                    int maxindex = maxIndexs[randIndex];
+                    current = current->childs[maxindex];
+                    nowDepth++;
+                    continue;
+                } else {
+                    int randIndex = xor128() % notFoundActions.size();
+                    string notFoundAction = notFoundActions[randIndex];
+                    //対応するアクションの子ノードがない場合は、子ノードを拡張し、プレイアウトを行いucb値を更新しながらrootに戻る
+                    MCTREE* child = makeTree(current->episode ,current, current->episode._time + 1, current->sumCount, notFoundAction);
+                    current->childs.push_back(child);
+                    current = child;
+                    //    assertEpisode(current->episodes);
+                    if(notFoundAction.substr(0,5) == "move:") {
+                        string next = notFoundAction.substr(5);
+                        
+                        move(person,current->episode._persons,current->episode._places,current->episode._places[next]);
+                    }
+                    if(notFoundAction == "nothing") {
+                        
+                    }
+                    //   assertEpisode(current->episodes);
+                    //あとはランダムに実行
+                    map<string,Person> randomPersons(current->episode._persons);
+                    map<string,Place> randomPlaces(current->episode._places);
+                    //    vector<Episode> randomEpisodes(current->episodes);
+                    int time = current->episode._time;
+                    
+                    Episode *episodes = new Episode[endTime - time];
+                    
+                    int I = 0;
+                    while(time < endTime) {
+                        time++;
+                        
+                        doActionWithHeuristics(randomPersons, randomPlaces);
+                        
+                        episodes[I]._persons = randomPersons;
+                        episodes[I]._places = randomPlaces;
+                        episodes[I]._time = time;
+                        I++;
+                        
+                    }
+                    
+                    getVal = checkEpisodePersonWithArrayWithTree(&root, current, constraints, person._name, episodes,false);
+                    
+                    for(int ei=0;ei<highRanker;ei++) {
+                        if(topEpisodesList[ei].second < getVal) {
+                            //トップhightRankerに入っていた、かつ他のエピソードとかぶってなかったらランキングに追加
+                            vector<Episode> TreeEpisodes;
+                            makeEpisodesFromTree(&root, current, TreeEpisodes);
+                            for(int s=0;s<I;s++) {
+                                Episode addEpisode;
+                                addEpisode._persons = episodes[s]._persons;
+                                addEpisode._places = episodes[s]._places;
+                                addEpisode._time = episodes[s]._time;
+                                TreeEpisodes.push_back(addEpisode);
+                            }
+                            
+                            bool sameFlag = false;
+                            for(int pi=0;pi<highRanker;pi++) {
+                                if(isSameEpisodesAlexander(topEpisodesList[pi].first,TreeEpisodes)) {
+                                    sameFlag = true;
+                                    break;
+                                }
+                            }
+                            
+                            if(!sameFlag) {
+                            
+                                topEpisodesList.insert(topEpisodesList.begin() + ei, make_pair(TreeEpisodes, getVal));
+                                topEpisodesList.erase(topEpisodesList.end());
+                        
+                            }
+                            break;
+                        }
+                    }
+                    
+                    if(round >= playout-1 || getVal >= finishRate) {
+                        score = getVal;
+                        vector<Episode> TreeEpisodes;
+                        makeEpisodesFromTree(&root, current, TreeEpisodes);
+                        completeEpisodes = TreeEpisodes;
+                        for(int s=0;s<I;s++) {
+                            Episode addEpisode;
+                            addEpisode._persons = episodes[s]._persons;
+                            addEpisode._places = episodes[s]._places;
+                            addEpisode._time = episodes[s]._time;
+                            completeEpisodes.push_back(addEpisode);
+                        }
+                        isFinish = true;
+                    }
+                    
+                    delete [] episodes;
+                    
+                    downFlag = false;
+                    sumCount++;
+                    break;
+                }
+            }
+            
+            if(maxDepth < nowDepth) {
+                maxDepth = nowDepth;
+            }
+            
+            while(!downFlag && !isFinish) {
+                //rootに戻りながらucb値を更新していく
+                
+                current->sumVal += getVal;
+                current->count++;
+                current->ucb = calcUcb1(current->sumVal, current->count, *current->sumCount,cp);
+                if(current != &root) {
+                    current = current->parent;
+                    continue;
+                } else {
+                    downFlag = true;
+                    break;
+                }
+            }
+            
+            if(round%1000 == 0) {
+                /*
+                 cout << person._name << ":" << round << endl;
+                 showEpisodeWithPerson(randomEpisodes);
+                 */
+                end = clock();
+                double time = (double)(end-start)/CLOCKS_PER_SEC / round;
+                cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
+                // outputAverageReward("averageReward1202", round, getVal);
+            }
+        }
+        
+        
+        
+        //    checkEpisodePerson(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, true);
+        
+        //   showEpisodeWithPerson(getOnlyPersonEpisode(person._name, completeEpisodes));
+        completeEpisodess.push_back(getOnlyPersonEpisode(person._name, completeEpisodes));
+        
+    //    EpisodesOutput(completeEpisodes,outputFilename,person._name,score,maxDepth);
+        
+        for(int ei=0;ei<highRanker;ei++) {
+            EpisodesOutput(topEpisodesList[ei].first, outputFilename, person._name, topEpisodesList[ei].second, maxDepth);
+        }
+        
+        checkEpisodePersonAndOutput(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, outputFilename, true);
+        
+        //showTree(&root);
+        
+        deleteTree(&root);
+    }
+    
+    //vector<Episode> resultEpisode = getFusionEpisode(completeEpisodess);
+    //showEpisode(resultEpisode);
+    return sumPlayout;
+}
+
 
 
 void move(Person &person,map<string,Person> &persons,map<string,Place> &places,Place &nextplace) {
@@ -1640,6 +1930,83 @@ int getMonthFromString(string mString) {
     }
     
     return month;
+}
+
+#pragma mark - getShortestLength
+
+map<string, map<string,int> > getShortestLengthToNextConstraint(map<string,Place> &places) {
+    
+    map<string, map<string,int> > result;
+    for(map<string,Place>::iterator it = places.begin();it != places.end();it++) {
+        string placeName = (*it).first;
+        
+        map<string,int> tmpResult;
+        for(map<string,Place>::iterator it2 = places.begin();it2 != places.end();it2++) {
+            string toPlaceName = (*it2).first;
+            unsigned int length = 0;
+            
+            vector< vector<string> > queue;
+            vector<string> data;
+            data.push_back(placeName);
+            enqueue(queue, data);
+            
+            bool finishFlag = false;
+            if(placeName == toPlaceName) {
+                finishFlag = true;
+                length = 0;
+            }
+            while (!finishFlag) {
+                vector<string> data = dequeue(queue);
+                
+                for(unsigned int i=0;i<places[data.back()]._nextPlaces.size();i++) {
+                    string childPlaceName = places[data.back()]._nextPlaces[i];
+                    if(childPlaceName == toPlaceName) {
+                        length = data.size();
+                        finishFlag = true;
+                        break;
+                    }
+                    
+                    bool isFind = false;
+                    for(unsigned int j=0;j<data.size();j++) {
+                        if(data[j] == childPlaceName) {
+                            isFind = true;
+                            break;
+                        }
+                    }
+                    if(!isFind) {
+                        vector<string> tmpData;
+                        copy(data.begin(),data.end(),back_inserter(tmpData));
+                        tmpData.push_back(childPlaceName);
+                        enqueue(queue, tmpData);
+                    }
+                }
+            }
+            
+            tmpResult.insert(map<string,int>::value_type(toPlaceName,length));
+        }
+        
+        result.insert(map<string, map<string,int> >::value_type(placeName,tmpResult));
+       // cout << result.size() << endl;
+    }
+    return result;
+}
+
+void enqueue(vector< vector<string> > &queue,vector<string> &data) {
+    queue.push_back(data);
+}
+
+vector<string> dequeue(vector< vector<string> > &queue) {
+    if(queue.size() == 0) {
+        cout << "error: not data in queue @dequeue" << endl;
+        exit(0);
+    }
+    vector<string> data;
+    
+    copy(queue[0].begin(),queue[0].end(),back_inserter(data));
+    
+    queue.erase(queue.begin());
+    
+    return data;
 }
 
 #pragma mark -

@@ -586,7 +586,7 @@ vector<FourChoiceQuestion> readFourChoiceQuestions(string filename) {
     return questions;
 }
 
-void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints) {
+void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints,double Cp) {
     cout << "rate:" << rate << endl;
     int count = 0;
     int correct = 0;
@@ -613,7 +613,11 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
             //cout << hitConstraints.size() << endl;
             for(unsigned int hi=0;hi<hitConstraints.size();hi++) {
                 char fileChara[40];
-                sprintf(fileChara,"%s-%d",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id);
+                if(Cp >= 0) {
+                    sprintf(fileChara,"%s-%d-%3.2f",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id,Cp);
+                } else {
+                    sprintf(fileChara,"%s-%d",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id);
+                }
                 string filename = fileChara;
                 char rateChara[10];
                 sprintf(rateChara, "%2.1f",rate);
@@ -624,7 +628,7 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
                 
                 double val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], "./" + prefix + placeString + ratename + "Episodes/wikipediaEpisodes" + filename + ".txt");
                 values.push_back(val);
-             //   cout << ci << ":" << val << endl;
+                cout << ci << ":" << val << endl;
                 if(val >= maxVal) {
                     if(val != maxVal) {
                         maxIndexs.clear();
@@ -635,7 +639,8 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
             }
         }
         int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
-  //      cout << answerIndex << endl;
+        cout << answerIndex << endl;
+//        cout << values[answerIndex] << endl;
         count++;
         if(maxIndex == answerIndex) {
             //正解
