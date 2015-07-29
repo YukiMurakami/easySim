@@ -90,4 +90,22 @@ vector<FourChoiceQuestion> makeFourChoiceQuestionsWithCount(int count,vector<Con
 void outputFourChoiceQuestions(vector<FourChoiceQuestion> questions,string filename);
 vector<FourChoiceQuestion> readFourChoiceQuestions(string filename);
 void solveFourChoiceQuestions(string prefix,vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints,double Cp) ;
+void solveFourChoiceQuestionsWithFilename(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,string filename);
+
+void solveFourChoiceQuestionsByPlayout(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,double Cp,int playout,bool isAnnotation,bool isAnnealed,int annealingIter);
+
+
+vector< pair<string,int> > getMostAppearPlaceByEpisode(string episodeFilename,Constraint constraint,string initFilename, vector<string> &placeVector);//エピソードごとに同じ地名は一回しかカウントしない。つまり最大値がエピソード数となる
+vector<string> getMostAppearPlace(string episodeFilename,Constraint constraint,string initFilename,vector<string> &placeVector);
+vector<string> getMostAppearPlace(string episodeFilename,Constraint constraint,string initFilename,vector<string> &placeVector,vector<Constraint> &annotationConstraints);//アノテーションデータに含まれるハイランク地名はannotationと表示する(処理が重いのでdebugよう）
+void answerPlaceFromTimeConstraint(string episodeFilePath,int maxIter,vector<Constraint> annotationConstraints,string initFilename,vector<string> &placeVector) ;
+
+void answerPlaceFromTimeConstraintByEpisode(string episodeFilePath,int maxIter,vector<Constraint> annotationConstraints,string initFilename,vector<string> &placeVector);//getMostAppearPlaceByEpisodeを使ったバージョン
+void answerPlaceFromTimeConstraintWithBaseline(vector<Constraint> annotationConstraints,vector<Constraint> constraints);
+
+
+//SAによって求めたエピソードを正解データに対して制約の時間に正しく出現しているエピソードの割合を求める
+void getArccuracyWithAnnotationData(vector<Constraint> annotationConstraints,int maxIter,string episodeFilePath,string initializeFilename);
+//SA rulebase専用
+void solveFourChoiceQuestionsBySAWithIter(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,int maxIter,string episodeFilePath,string resultPath);
 #endif /* defined(__easySimu__constraints__) */

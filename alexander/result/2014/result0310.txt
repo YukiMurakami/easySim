@@ -1,0 +1,215 @@
+Yuki-no-MacBook-Pro:alexander Yuki$ ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+playouts:10000
+RULE BASE
+correct:2465 count:10000
+correctRate:0.2465
+missZeroCorrect:9238 missCount:30000
+missCorrectRate:0.307933
+95%confidence: 0.237881 - 0.255119
+playouts:20000
+RULE BASE
+correct:3144 count:10000
+correctRate:0.3144
+missZeroCorrect:8968 missCount:30000
+missCorrectRate:0.298933
+95%confidence: 0.305114 - 0.323686
+playouts:50000
+RULE BASE
+correct:3486 count:10000
+correctRate:0.3486
+missZeroCorrect:12433 missCount:30000
+missCorrectRate:0.414433
+95%confidence: 0.339069 - 0.358131
+playouts:100000
+RULE BASE
+correct:2531 count:10000
+correctRate:0.2531
+missZeroCorrect:13455 missCount:30000
+missCorrectRate:0.4485
+95%confidence: 0.244404 - 0.261796
+playouts:200000
+RULE BASE
+correct:2652 count:10000
+correctRate:0.2652
+missZeroCorrect:15002 missCount:30000
+missCorrectRate:0.500067
+95%confidence: 0.256371 - 0.274029
+playouts:500000
+RULE BASE
+correct:4797 count:10000
+correctRate:0.4797
+missZeroCorrect:23400 missCount:30000
+missCorrectRate:0.78
+95%confidence: 0.469708 - 0.489692
+playouts:1000000
+RULE BASE
+correct:4722 count:10000
+correctRate:0.4722
+missZeroCorrect:25223 missCount:30000
+missCorrectRate:0.840767
+95%confidence: 0.462215 - 0.482185
+playouts:10000
+RULE BASE
+ANNEALED
+correct:5425 count:10000
+correctRate:0.5425
+missZeroCorrect:24151 missCount:30000
+missCorrectRate:0.805033
+95%confidence: 0.532536 - 0.552464
+playouts:20000
+RULE BASE
+ANNEALED
+correct:5300 count:10000
+correctRate:0.53
+missZeroCorrect:24251 missCount:30000
+missCorrectRate:0.808367
+95%confidence: 0.520018 - 0.539982
+playouts:50000
+RULE BASE
+ANNEALED
+correct:5950 count:10000
+correctRate:0.595
+missZeroCorrect:24221 missCount:30000
+missCorrectRate:0.807367
+95%confidence: 0.585182 - 0.604818
+playouts:100000
+RULE BASE
+ANNEALED
+correct:5775 count:10000
+correctRate:0.5775
+missZeroCorrect:24257 missCount:30000
+missCorrectRate:0.808567
+95%confidence: 0.567621 - 0.587379
+playouts:200000
+RULE BASE
+ANNEALED
+correct:5922 count:10000
+correctRate:0.5922
+missZeroCorrect:24384 missCount:30000
+missCorrectRate:0.8128
+95%confidence: 0.582371 - 0.602029
+playouts:500000
+RULE BASE
+ANNEALED
+correct:6179 count:10000
+correctRate:0.6179
+missZeroCorrect:24521 missCount:30000
+missCorrectRate:0.817367
+95%confidence: 0.608182 - 0.627618
+playouts:1000000
+RULE BASE
+ANNEALED
+correct:5772 count:10000
+correctRate:0.5772
+missZeroCorrect:24707 missCount:30000
+missCorrectRate:0.823567
+95%confidence: 0.56732 - 0.58708
+playouts:10000
+ANNOTATION
+correct:2620 count:10000
+correctRate:0.262
+missZeroCorrect:8978 missCount:30000
+missCorrectRate:0.299267
+95%confidence: 0.253206 - 0.270794
+playouts:20000
+ANNOTATION
+correct:3692 count:10000
+correctRate:0.3692
+missZeroCorrect:9505 missCount:30000
+missCorrectRate:0.316833
+95%confidence: 0.359548 - 0.378852
+playouts:50000
+ANNOTATION
+correct:2616 count:10000
+correctRate:0.2616
+missZeroCorrect:13276 missCount:30000
+missCorrectRate:0.442533
+95%confidence: 0.25281 - 0.27039
+playouts:100000
+ANNOTATION
+correct:2391 count:10000
+correctRate:0.2391
+missZeroCorrect:13657 missCount:30000
+missCorrectRate:0.455233
+95%confidence: 0.230569 - 0.247631
+playouts:200000
+ANNOTATION
+correct:4153 count:10000
+correctRate:0.4153
+missZeroCorrect:18131 missCount:30000
+missCorrectRate:0.604367
+95%confidence: 0.405445 - 0.425155
+playouts:500000
+ANNOTATION
+correct:4767 count:10000
+correctRate:0.4767
+missZeroCorrect:23987 missCount:30000
+missCorrectRate:0.799567
+95%confidence: 0.466711 - 0.486689
+playouts:1000000
+ANNOTATION
+correct:4878 count:10000
+correctRate:0.4878
+missZeroCorrect:26390 missCount:30000
+missCorrectRate:0.879667
+95%confidence: 0.477803 - 0.497797
+playouts:10000
+ANNOTATION
+ANNEALED
+correct:5881 count:10000
+correctRate:0.5881
+missZeroCorrect:23677 missCount:30000
+missCorrectRate:0.789233
+95%confidence: 0.578256 - 0.597944
+playouts:20000
+ANNOTATION
+ANNEALED
+correct:5729 count:10000
+correctRate:0.5729
+missZeroCorrect:23660 missCount:30000
+missCorrectRate:0.788667
+95%confidence: 0.563007 - 0.582793
+playouts:50000
+ANNOTATION
+ANNEALED
+correct:5946 count:10000
+correctRate:0.5946
+missZeroCorrect:23579 missCount:30000
+missCorrectRate:0.785967
+95%confidence: 0.584781 - 0.604419
+playouts:100000
+ANNOTATION
+ANNEALED
+correct:5859 count:10000
+correctRate:0.5859
+missZeroCorrect:23346 missCount:30000
+missCorrectRate:0.7782
+95%confidence: 0.576049 - 0.595751
+playouts:200000
+ANNOTATION
+ANNEALED
+correct:6083 count:10000
+correctRate:0.6083
+missZeroCorrect:23902 missCount:30000
+missCorrectRate:0.796733
+95%confidence: 0.598537 - 0.618063
+playouts:500000
+ANNOTATION
+ANNEALED
+correct:6057 count:10000
+correctRate:0.6057
+missZeroCorrect:23735 missCount:30000
+missCorrectRate:0.791167
+95%confidence: 0.595926 - 0.615474
+playouts:1000000
+ANNOTATION
+ANNEALED
+correct:5675 count:10000
+correctRate:0.5675
+missZeroCorrect:25476 missCount:30000
+missCorrectRate:0.8492
+95%confidence: 0.557592 - 0.577408

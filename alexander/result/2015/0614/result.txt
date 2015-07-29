@@ -1,0 +1,984 @@
+2015.06.14
+四択問題を１−３２のアノテーションデータについて、maxIterごとに正解のplaceが制約の直に現れているものの割合を求める実験
+
+
+10:    4276/32000 rate:0.133625
+20:    4450/32000 rate:0.139063
+50:    4863/32000 rate:0.151969
+100:   5377/32000 rate:0.168031
+200:   5974/32000 rate:0.186688
+500:   6786/32000 rate:0.212062
+1000:  7448/32000 rate:0.23275
+2000:  8429/32000 rate:0.263406
+5000:  9559/32000 rate:0.298719
+10000: 10065/32000 rate:0.314531
+20000: 10593/32000 rate:0.331031
+50000: 11306/32000 rate:0.353312
+100000:11671/32000 rate:0.364719
+200000:11734/32000 rate:0.366687
+
+
+以下実験ログ
+
+
+murakami@crane0:~/2015/getArccuracy2$ time ./alexander
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+
+maxIter = 10
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 39/1000 rate:0.039
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 12/1000 rate:0.012
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 47/1000 rate:0.047
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 86/1000 rate:0.086
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 495/1000 rate:0.495
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 22/1000 rate:0.022
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 45/1000 rate:0.045
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 134/1000 rate:0.134
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 3/1000 rate:0.003
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 8/1000 rate:0.008
+constraint:6:11:Alexander:Issus:there_is:121
+result: 79/1000 rate:0.079
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 970/1000 rate:0.97
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 219/1000 rate:0.219
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 8/1000 rate:0.008
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 11/1000 rate:0.011
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 52/1000 rate:0.052
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 449/1000 rate:0.449
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 623/1000 rate:0.623
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 38/1000 rate:0.038
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 79/1000 rate:0.079
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 112/1000 rate:0.112
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 283/1000 rate:0.283
+constraint:12:17:Alexander:Issus:there_is:372
+result: 135/1000 rate:0.135
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 85/1000 rate:0.085
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 9/1000 rate:0.009
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 35/1000 rate:0.035
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 35/1000 rate:0.035
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 41/1000 rate:0.041
+constraint:60:65:Alexander:Susa:there_is:455
+result: 80/1000 rate:0.08
+constraint:54:59:Alexander:Patala:there_is:462
+result: 42/1000 rate:0.042
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 4276/32000 rate:0.133625
+
+maxIter = 20
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 31/1000 rate:0.031
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 8/1000 rate:0.008
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 35/1000 rate:0.035
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 94/1000 rate:0.094
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 529/1000 rate:0.529
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 22/1000 rate:0.022
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 50/1000 rate:0.05
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 130/1000 rate:0.13
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 2/1000 rate:0.002
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 7/1000 rate:0.007
+constraint:6:11:Alexander:Issus:there_is:121
+result: 66/1000 rate:0.066
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 964/1000 rate:0.964
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 201/1000 rate:0.201
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 5/1000 rate:0.005
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 13/1000 rate:0.013
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 69/1000 rate:0.069
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 460/1000 rate:0.46
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 637/1000 rate:0.637
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 48/1000 rate:0.048
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 85/1000 rate:0.085
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 119/1000 rate:0.119
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 358/1000 rate:0.358
+constraint:12:17:Alexander:Issus:there_is:372
+result: 154/1000 rate:0.154
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 97/1000 rate:0.097
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 13/1000 rate:0.013
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 39/1000 rate:0.039
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 28/1000 rate:0.028
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 45/1000 rate:0.045
+constraint:60:65:Alexander:Susa:there_is:455
+result: 91/1000 rate:0.091
+constraint:54:59:Alexander:Patala:there_is:462
+result: 50/1000 rate:0.05
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 4450/32000 rate:0.139063
+
+maxIter = 50
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 40/1000 rate:0.04
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 14/1000 rate:0.014
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 39/1000 rate:0.039
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 111/1000 rate:0.111
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 605/1000 rate:0.605
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 27/1000 rate:0.027
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 49/1000 rate:0.049
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 144/1000 rate:0.144
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 1/1000 rate:0.001
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 7/1000 rate:0.007
+constraint:6:11:Alexander:Issus:there_is:121
+result: 88/1000 rate:0.088
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 980/1000 rate:0.98
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 254/1000 rate:0.254
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 6/1000 rate:0.006
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 16/1000 rate:0.016
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 82/1000 rate:0.082
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 449/1000 rate:0.449
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 670/1000 rate:0.67
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 50/1000 rate:0.05
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 78/1000 rate:0.078
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 133/1000 rate:0.133
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 480/1000 rate:0.48
+constraint:12:17:Alexander:Issus:there_is:372
+result: 176/1000 rate:0.176
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 114/1000 rate:0.114
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 8/1000 rate:0.008
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 37/1000 rate:0.037
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 26/1000 rate:0.026
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 47/1000 rate:0.047
+constraint:60:65:Alexander:Susa:there_is:455
+result: 71/1000 rate:0.071
+constraint:54:59:Alexander:Patala:there_is:462
+result: 61/1000 rate:0.061
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 4863/32000 rate:0.151969
+
+maxIter = 100
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 47/1000 rate:0.047
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 19/1000 rate:0.019
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 42/1000 rate:0.042
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 129/1000 rate:0.129
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 666/1000 rate:0.666
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 27/1000 rate:0.027
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 54/1000 rate:0.054
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 141/1000 rate:0.141
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 3/1000 rate:0.003
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 4/1000 rate:0.004
+constraint:6:11:Alexander:Issus:there_is:121
+result: 85/1000 rate:0.085
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 974/1000 rate:0.974
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 306/1000 rate:0.306
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 4/1000 rate:0.004
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 32/1000 rate:0.032
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 110/1000 rate:0.11
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 451/1000 rate:0.451
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 753/1000 rate:0.753
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 56/1000 rate:0.056
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 91/1000 rate:0.091
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 146/1000 rate:0.146
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 599/1000 rate:0.599
+constraint:12:17:Alexander:Issus:there_is:372
+result: 173/1000 rate:0.173
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 122/1000 rate:0.122
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 14/1000 rate:0.014
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 63/1000 rate:0.063
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 47/1000 rate:0.047
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 50/1000 rate:0.05
+constraint:60:65:Alexander:Susa:there_is:455
+result: 99/1000 rate:0.099
+constraint:54:59:Alexander:Patala:there_is:462
+result: 70/1000 rate:0.07
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 5377/32000 rate:0.168031
+
+maxIter = 200
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 62/1000 rate:0.062
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 26/1000 rate:0.026
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 48/1000 rate:0.048
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 144/1000 rate:0.144
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 748/1000 rate:0.748
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 28/1000 rate:0.028
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 61/1000 rate:0.061
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 143/1000 rate:0.143
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 4/1000 rate:0.004
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 7/1000 rate:0.007
+constraint:6:11:Alexander:Issus:there_is:121
+result: 98/1000 rate:0.098
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 991/1000 rate:0.991
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 357/1000 rate:0.357
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 3/1000 rate:0.003
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 46/1000 rate:0.046
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 121/1000 rate:0.121
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 463/1000 rate:0.463
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 856/1000 rate:0.856
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 66/1000 rate:0.066
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 97/1000 rate:0.097
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 181/1000 rate:0.181
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 712/1000 rate:0.712
+constraint:12:17:Alexander:Issus:there_is:372
+result: 194/1000 rate:0.194
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 127/1000 rate:0.127
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 27/1000 rate:0.027
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 82/1000 rate:0.082
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 55/1000 rate:0.055
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 62/1000 rate:0.062
+constraint:60:65:Alexander:Susa:there_is:455
+result: 80/1000 rate:0.08
+constraint:54:59:Alexander:Patala:there_is:462
+result: 85/1000 rate:0.085
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 5974/32000 rate:0.186688
+
+maxIter = 500
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 96/1000 rate:0.096
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 35/1000 rate:0.035
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 44/1000 rate:0.044
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 194/1000 rate:0.194
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 827/1000 rate:0.827
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 26/1000 rate:0.026
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 82/1000 rate:0.082
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 151/1000 rate:0.151
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 11/1000 rate:0.011
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 14/1000 rate:0.014
+constraint:6:11:Alexander:Issus:there_is:121
+result: 128/1000 rate:0.128
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 999/1000 rate:0.999
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 410/1000 rate:0.41
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 0/1000 rate:0
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 42/1000 rate:0.042
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 163/1000 rate:0.163
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 418/1000 rate:0.418
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 963/1000 rate:0.963
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 89/1000 rate:0.089
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 123/1000 rate:0.123
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 239/1000 rate:0.239
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 824/1000 rate:0.824
+constraint:12:17:Alexander:Issus:there_is:372
+result: 219/1000 rate:0.219
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 180/1000 rate:0.18
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 44/1000 rate:0.044
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 102/1000 rate:0.102
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 88/1000 rate:0.088
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 84/1000 rate:0.084
+constraint:60:65:Alexander:Susa:there_is:455
+result: 84/1000 rate:0.084
+constraint:54:59:Alexander:Patala:there_is:462
+result: 107/1000 rate:0.107
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 0/1000 rate:0
+All result: 6786/32000 rate:0.212062
+
+real	10m1.031s
+user	9m57.897s
+sys	0m1.216s
+
+
+
+murakami@crane2:~/2015/getArccuracy$ time ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+
+maxIter = 1000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 104/1000 rate:0.104
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 57/1000 rate:0.057
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 66/1000 rate:0.066
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 260/1000 rate:0.26
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 861/1000 rate:0.861
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 32/1000 rate:0.032
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 98/1000 rate:0.098
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 158/1000 rate:0.158
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 9/1000 rate:0.009
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 15/1000 rate:0.015
+constraint:6:11:Alexander:Issus:there_is:121
+result: 165/1000 rate:0.165
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 419/1000 rate:0.419
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 0/1000 rate:0
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 65/1000 rate:0.065
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 210/1000 rate:0.21
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 324/1000 rate:0.324
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 993/1000 rate:0.993
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 146/1000 rate:0.146
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 134/1000 rate:0.134
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 328/1000 rate:0.328
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 885/1000 rate:0.885
+constraint:12:17:Alexander:Issus:there_is:372
+result: 247/1000 rate:0.247
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 208/1000 rate:0.208
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 103/1000 rate:0.103
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 121/1000 rate:0.121
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 102/1000 rate:0.102
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 96/1000 rate:0.096
+constraint:60:65:Alexander:Susa:there_is:455
+result: 117/1000 rate:0.117
+constraint:54:59:Alexander:Patala:there_is:462
+result: 124/1000 rate:0.124
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 1/1000 rate:0.001
+All result: 7448/32000 rate:0.23275
+
+maxIter = 2000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 177/1000 rate:0.177
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 102/1000 rate:0.102
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 88/1000 rate:0.088
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 314/1000 rate:0.314
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 861/1000 rate:0.861
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 28/1000 rate:0.028
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 136/1000 rate:0.136
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 185/1000 rate:0.185
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 34/1000 rate:0.034
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 13/1000 rate:0.013
+constraint:6:11:Alexander:Issus:there_is:121
+result: 222/1000 rate:0.222
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 376/1000 rate:0.376
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 4/1000 rate:0.004
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 94/1000 rate:0.094
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 266/1000 rate:0.266
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 274/1000 rate:0.274
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 998/1000 rate:0.998
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 245/1000 rate:0.245
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 178/1000 rate:0.178
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 430/1000 rate:0.43
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 929/1000 rate:0.929
+constraint:12:17:Alexander:Issus:there_is:372
+result: 254/1000 rate:0.254
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 254/1000 rate:0.254
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 195/1000 rate:0.195
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 167/1000 rate:0.167
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 133/1000 rate:0.133
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 140/1000 rate:0.14
+constraint:60:65:Alexander:Susa:there_is:455
+result: 158/1000 rate:0.158
+constraint:54:59:Alexander:Patala:there_is:462
+result: 169/1000 rate:0.169
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 5/1000 rate:0.005
+All result: 8429/32000 rate:0.263406
+
+maxIter = 5000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 285/1000 rate:0.285
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 107/1000 rate:0.107
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 114/1000 rate:0.114
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 464/1000 rate:0.464
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 831/1000 rate:0.831
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 30/1000 rate:0.03
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 232/1000 rate:0.232
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 226/1000 rate:0.226
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 69/1000 rate:0.069
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 33/1000 rate:0.033
+constraint:6:11:Alexander:Issus:there_is:121
+result: 268/1000 rate:0.268
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 316/1000 rate:0.316
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 7/1000 rate:0.007
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 154/1000 rate:0.154
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 372/1000 rate:0.372
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 198/1000 rate:0.198
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 1000/1000 rate:1
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 243/1000 rate:0.243
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 235/1000 rate:0.235
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 530/1000 rate:0.53
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 902/1000 rate:0.902
+constraint:12:17:Alexander:Issus:there_is:372
+result: 243/1000 rate:0.243
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 338/1000 rate:0.338
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 299/1000 rate:0.299
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 241/1000 rate:0.241
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 223/1000 rate:0.223
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 132/1000 rate:0.132
+constraint:60:65:Alexander:Susa:there_is:455
+result: 247/1000 rate:0.247
+constraint:54:59:Alexander:Patala:there_is:462
+result: 215/1000 rate:0.215
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 5/1000 rate:0.005
+All result: 9559/32000 rate:0.298719
+
+maxIter = 10000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 320/1000 rate:0.32
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 60/1000 rate:0.06
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 113/1000 rate:0.113
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 521/1000 rate:0.521
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 809/1000 rate:0.809
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 16/1000 rate:0.016
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 366/1000 rate:0.366
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 278/1000 rate:0.278
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 118/1000 rate:0.118
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 21/1000 rate:0.021
+constraint:6:11:Alexander:Issus:there_is:121
+result: 274/1000 rate:0.274
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 283/1000 rate:0.283
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 9/1000 rate:0.009
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 180/1000 rate:0.18
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 435/1000 rate:0.435
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 159/1000 rate:0.159
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 999/1000 rate:0.999
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 154/1000 rate:0.154
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 300/1000 rate:0.3
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 591/1000 rate:0.591
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 918/1000 rate:0.918
+constraint:12:17:Alexander:Issus:there_is:372
+result: 245/1000 rate:0.245
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 346/1000 rate:0.346
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 400/1000 rate:0.4
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 257/1000 rate:0.257
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 239/1000 rate:0.239
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 107/1000 rate:0.107
+constraint:60:65:Alexander:Susa:there_is:455
+result: 298/1000 rate:0.298
+constraint:54:59:Alexander:Patala:there_is:462
+result: 219/1000 rate:0.219
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 30/1000 rate:0.03
+All result: 10065/32000 rate:0.314531
+
+maxIter = 20000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 369/1000 rate:0.369
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 41/1000 rate:0.041
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 114/1000 rate:0.114
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 553/1000 rate:0.553
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 785/1000 rate:0.785
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 16/1000 rate:0.016
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 484/1000 rate:0.484
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 366/1000 rate:0.366
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 195/1000 rate:0.195
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 15/1000 rate:0.015
+constraint:6:11:Alexander:Issus:there_is:121
+result: 280/1000 rate:0.28
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 267/1000 rate:0.267
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 23/1000 rate:0.023
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 161/1000 rate:0.161
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 471/1000 rate:0.471
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 138/1000 rate:0.138
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 1000/1000 rate:1
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 95/1000 rate:0.095
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 293/1000 rate:0.293
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 591/1000 rate:0.591
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 922/1000 rate:0.922
+constraint:12:17:Alexander:Issus:there_is:372
+result: 245/1000 rate:0.245
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 406/1000 rate:0.406
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 437/1000 rate:0.437
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 297/1000 rate:0.297
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 285/1000 rate:0.285
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 86/1000 rate:0.086
+constraint:60:65:Alexander:Susa:there_is:455
+result: 381/1000 rate:0.381
+constraint:54:59:Alexander:Patala:there_is:462
+result: 246/1000 rate:0.246
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 31/1000 rate:0.031
+All result: 10593/32000 rate:0.331031
+
+maxIter = 50000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 397/1000 rate:0.397
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 6/1000 rate:0.006
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 58/1000 rate:0.058
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 656/1000 rate:0.656
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 716/1000 rate:0.716
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 4/1000 rate:0.004
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 679/1000 rate:0.679
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 516/1000 rate:0.516
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 324/1000 rate:0.324
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 6/1000 rate:0.006
+constraint:6:11:Alexander:Issus:there_is:121
+result: 292/1000 rate:0.292
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 222/1000 rate:0.222
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 17/1000 rate:0.017
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 170/1000 rate:0.17
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 468/1000 rate:0.468
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 113/1000 rate:0.113
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 1000/1000 rate:1
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 32/1000 rate:0.032
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 316/1000 rate:0.316
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 608/1000 rate:0.608
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 939/1000 rate:0.939
+constraint:12:17:Alexander:Issus:there_is:372
+result: 215/1000 rate:0.215
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 534/1000 rate:0.534
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 532/1000 rate:0.532
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 341/1000 rate:0.341
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 311/1000 rate:0.311
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 70/1000 rate:0.07
+constraint:60:65:Alexander:Susa:there_is:455
+result: 470/1000 rate:0.47
+constraint:54:59:Alexander:Patala:there_is:462
+result: 260/1000 rate:0.26
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 34/1000 rate:0.034
+All result: 11306/32000 rate:0.353312
+
+maxIter = 100000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 409/1000 rate:0.409
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 1/1000 rate:0.001
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 47/1000 rate:0.047
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 727/1000 rate:0.727
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 678/1000 rate:0.678
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 3/1000 rate:0.003
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 788/1000 rate:0.788
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 638/1000 rate:0.638
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 413/1000 rate:0.413
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 5/1000 rate:0.005
+constraint:6:11:Alexander:Issus:there_is:121
+result: 264/1000 rate:0.264
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 192/1000 rate:0.192
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 23/1000 rate:0.023
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 147/1000 rate:0.147
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 432/1000 rate:0.432
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 119/1000 rate:0.119
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 1000/1000 rate:1
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 9/1000 rate:0.009
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 321/1000 rate:0.321
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 603/1000 rate:0.603
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 912/1000 rate:0.912
+constraint:12:17:Alexander:Issus:there_is:372
+result: 220/1000 rate:0.22
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 608/1000 rate:0.608
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 540/1000 rate:0.54
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 368/1000 rate:0.368
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 330/1000 rate:0.33
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 87/1000 rate:0.087
+constraint:60:65:Alexander:Susa:there_is:455
+result: 497/1000 rate:0.497
+constraint:54:59:Alexander:Patala:there_is:462
+result: 262/1000 rate:0.262
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 28/1000 rate:0.028
+All result: 11671/32000 rate:0.364719
+
+real	11m44.741s
+user	11m43.088s
+sys	0m1.696s
+
+
+
+maxIter = 200000
+constraint:12:17:Alexander:Memphis:there_is:5
+result: 438/1000 rate:0.438
+constraint:19:19:Alexander:Alexandria:there_is:11
+result: 2/1000 rate:0.002
+constraint:66:71:Alexander:Babylon:there_is:19
+result: 40/1000 rate:0.04
+constraint:12:17:Alexander:Tyre:there_is:30
+result: 827/1000 rate:0.827
+constraint:6:11:Alexander:Gordion:there_is:45
+result: 523/1000 rate:0.523
+constraint:68:68:Alexander:Babylon:there_is:52
+result: 3/1000 rate:0.003
+constraint:24:29:Alexander:Persepolis:there_is:61
+result: 880/1000 rate:0.88
+constraint:18:23:Alexander:Gaugamela:there_is:62
+result: 713/1000 rate:0.713
+constraint:30:35:Alexander:Bactra:there_is:88
+result: 528/1000 rate:0.528
+constraint:42:47:Alexander:Sagala:there_is:103
+result: 1/1000 rate:0.001
+constraint:6:11:Alexander:Issus:there_is:121
+result: 235/1000 rate:0.235
+constraint:0:5:Alexander:Granicus:there_is:136
+result: 1000/1000 rate:1
+constraint:0:5:Alexander:Miletus:there_is:146
+result: 159/1000 rate:0.159
+constraint:42:47:Alexander:Samarkand:there_is:158
+result: 13/1000 rate:0.013
+constraint:0:5:Alexander:Alexandria:there_is:173
+result: 0/1000 rate:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+result: 165/1000 rate:0.165
+constraint:54:59:Alexander:A Indus:there_is:179
+result: 365/1000 rate:0.365
+constraint:2:2:Alexander:Granicus:there_is:196
+result: 90/1000 rate:0.09
+constraint:0:5:Alexander:Sardis:there_is:201
+result: 1000/1000 rate:1
+constraint:18:23:Alexander:Alexandria:there_is:203
+result: 15/1000 rate:0.015
+constraint:18:23:Alexander:Memphis:there_is:297
+result: 321/1000 rate:0.321
+constraint:12:17:Alexander:Sidon:there_is:341
+result: 547/1000 rate:0.547
+constraint:6:11:Alexander:Ankara:there_is:356
+result: 874/1000 rate:0.874
+constraint:12:17:Alexander:Issus:there_is:372
+result: 164/1000 rate:0.164
+constraint:18:23:Alexander:Arbela:there_is:378
+result: 670/1000 rate:0.67
+constraint:12:17:Alexander:Alexandria:there_is:413
+result: 568/1000 rate:0.568
+constraint:48:53:Alexander:Aornos:there_is:414
+result: 350/1000 rate:0.35
+constraint:42:47:Alexander:Nicaea:there_is:422
+result: 400/1000 rate:0.4
+constraint:18:23:Alexander:Babylon:there_is:436
+result: 52/1000 rate:0.052
+constraint:60:65:Alexander:Susa:there_is:455
+result: 530/1000 rate:0.53
+constraint:54:59:Alexander:Patala:there_is:462
+result: 236/1000 rate:0.236
+constraint:30:35:Alexander:A Eschate:there_is:478
+result: 25/1000 rate:0.025
+All result: 11734/32000 rate:0.366687

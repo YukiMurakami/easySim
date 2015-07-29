@@ -1,0 +1,10 @@
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:5000
+correct:5963 count:10000
+correctRate:0.5963
+missZeroCorrect:7113 missCount:30000
+missCorrectRate:0.2371
+95%confidence: 0.586487 - 0.606113
+sigma:0.00490639

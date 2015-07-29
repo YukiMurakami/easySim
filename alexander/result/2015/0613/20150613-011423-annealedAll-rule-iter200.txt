@@ -1,0 +1,9 @@
+RULE BASE
+ANNEALED
+maxIter:200
+correct:3596 count:10000
+correctRate:0.3596
+missZeroCorrect:5395 missCount:30000
+missCorrectRate:0.179833
+95%confidence: 0.350002 - 0.369198
+sigma:0.00479883

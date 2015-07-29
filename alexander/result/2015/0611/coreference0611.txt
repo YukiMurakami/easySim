@@ -1,0 +1,47 @@
+共参照解析結果
+Bactriaは制約として入ってしまっているので、削除
+さらに、初期解をランダム５０個のまま、SAによるトップ１００をトップ１のみにして５０個のエピソードで実験 2015.6.11
+
+(SA iter=100000のみの結果 ）
+
+murakami@crane2:~/2015/ex0531$ ./alexander 
+Aria
+constraint:24:29:Alexander:the capital:there_is:32579
+Hecatompylos,Bactra,A Arachosia,Persepolis
+Hecatompylos
+Bactra
+A Arachosia
+Persepolis
+
+A Arachosia:45
+Bactra:5
+Hecatompylos:44
+Persepolis:46
+
+the capital is Persepolis
+Perga
+constraint:6:11:Alexander:Perga:there_is:32579
+Side,Gordion
+Side
+Gordion
+
+Gordion:50
+Side:10
+
+Perga is Gordion
+Gedrosia
+constraint:54:59:Alexander:the area:there_is:32579
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:27
+A Carmania:28
+Babylon:0
+Bactra:0
+Bela:33
+
+the area is Bela

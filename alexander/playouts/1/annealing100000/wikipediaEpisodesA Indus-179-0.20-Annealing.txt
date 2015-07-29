@@ -1,0 +1,7500 @@
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Babylon
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Babylon
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Memphis
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Babylon
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Siwa
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Arbela
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Siwa
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander A Carmania
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Arbela
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Granicus
+4 Alexander Sardis
+5 Alexander Miletus
+6 Alexander Side
+7 Alexander Gordion
+8 Alexander Ankara
+9 Alexander Comana
+10 Alexander Gaugamela
+11 Alexander Damascus
+12 Alexander Tyre
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander A Arachosia
+37 Alexander A Indus
+38 Alexander Nicaea
+39 Alexander Aornos
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Susa
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Granicus
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Comana
+9 Alexander Gaugamela
+10 Alexander Damascus
+11 Alexander Tyre
+12 Alexander Sidon
+13 Alexander Tyre
+14 Alexander Memphis
+15 Alexander Alexandria
+16 Alexander Siwa
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Tyre
+20 Alexander Damascus
+21 Alexander Gaugamela
+22 Alexander Arbela
+23 Alexander Babylon
+24 Alexander Susa
+25 Alexander Persepolis
+26 Alexander Ecbatana
+27 Alexander Hecatompylos
+28 Alexander A Arachosia
+29 Alexander A Caucasus
+30 Alexander Bactra
+31 Alexander Samarkand
+32 Alexander A Eschate
+33 Alexander Samarkand
+34 Alexander Bactra
+35 Alexander A Caucasus
+36 Alexander Aornos
+37 Alexander Nicaea
+38 Alexander A Indus
+39 Alexander A Arachosia
+40 Alexander A Caucasus
+41 Alexander Bactra
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Carmania
+53 Alexander Bela
+54 Alexander Patala
+55 Alexander Bela
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Susa
+59 Alexander Babylon
+60 Alexander Susa
+61 Alexander Persepolis
+62 Alexander A Carmania
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Persepolis
+71 Alexander Ecbatana
+score:0.775 maxDepth:-1
+playoutEnd ----------------------------------------------

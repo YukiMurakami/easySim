@@ -1,0 +1,138 @@
+murakami@crane2:~/experiment0422$ ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:1000
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+7%
+8%
+9%
+correct:3615 count:10000
+correctRate:0.3615
+missZeroCorrect:23951 missCount:30000
+missCorrectRate:0.798367
+95%confidence: 0.351891 - 0.371109
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:2000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:3676 count:10000
+correctRate:0.3676
+missZeroCorrect:24299 missCount:30000
+missCorrectRate:0.809967
+95%confidence: 0.357957 - 0.377243
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:5000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:4092 count:10000
+correctRate:0.4092
+missZeroCorrect:23887 missCount:30000
+missCorrectRate:0.796233
+95%confidence: 0.399366 - 0.419034
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:10000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:4934 count:10000
+correctRate:0.4934
+missZeroCorrect:24158 missCount:30000
+missCorrectRate:0.805267
+95%confidence: 0.483401 - 0.503399
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:20000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:4931 count:10000
+correctRate:0.4931
+missZeroCorrect:23805 missCount:30000
+missCorrectRate:0.7935
+95%confidence: 0.483101 - 0.503099
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:50000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:4328 count:10000
+correctRate:0.4328
+missZeroCorrect:24640 missCount:30000
+missCorrectRate:0.821333
+95%confidence: 0.422891 - 0.442709
+playouts:1
+RULE BASE
+ANNEALED
+maxIter:100000
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+correct:4329 count:10000
+correctRate:0.4329
+missZeroCorrect:24488 missCount:30000
+missCorrectRate:0.816267
+95%confidence: 0.42299 - 0.44281

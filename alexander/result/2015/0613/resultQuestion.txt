@@ -1,0 +1,11 @@
+questionId:22
+0:0.349
+constraint:6:11:Alexander:Tyre:there_is:32767
+1:0.001
+constraint:36:41:Alexander:Pella:there_is:32767
+2:0.608
+constraint:18:23:Alexander:Arbela:there_is:378
+3:0.155
+constraint:36:41:Alexander:A Eschate:there_is:32767
+2
+0.608

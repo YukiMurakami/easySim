@@ -11,6 +11,8 @@
 #include "utility.h"
 
 #include <fstream>
+#include <math.h>
+#include <algorithm>
 
 int ENDSTEP = 71;
 
@@ -370,10 +372,311 @@ vector<Constraint> selectRandomConstraintsWithRate(vector<Constraint> constraint
     return result;
 }
 
+void answerPlaceFromTimeConstraintWithBaseline(vector<Constraint> annotationConstraints,vector<Constraint> constraints) {
+    int count = 0;
+    int correct[10] = {0};
+    
+    for(int i=0;i<annotationConstraints.size();i++) {
+        Constraint aCon = annotationConstraints[i];
+        string answer = aCon._placeName;
+        
+        vector< pair<int,string> > scores;
+        for(int ci=0;ci<constraints.size();ci++) {
+            Constraint con = constraints[ci];
+            int score = 0;
+            if(con._id == aCon._id) continue;//same information should be removed.
+            if(con._beginTime >= aCon._beginTime && con._endTime <= aCon._endTime) {
+                if(con._placeName == aCon._placeName) continue;//same information should be removed.
+                score = 0;
+            } else {
+                score = abs(con._beginTime - aCon._beginTime);
+            }
+            scores.push_back(make_pair(score, con._placeName));
+        }
+        
+        sort(scores.begin(),scores.end());
+        
+        for(int rank=1;rank<=10;rank++) {
+            bool isCorrect = false;
+            for(int j=0;j<rank;j++) {
+                if(scores[j].second == answer){
+                    isCorrect = true;
+                    break;
+                }
+            }
+            if(isCorrect) {
+                correct[rank-1]++;
+                if(rank==1) aCon.show();
+            }
+        }
+        count++;
+    }
+    
+    cout << "Baseline" << endl;
+    for(int rank=1;rank<=10;rank++) {
+        double rate = (double)correct[rank-1] / (double)count;
+        cout << "result: rank=" << rank << " :" << correct[rank-1] << "/" << count << " rate:" << rate << endl;
+    }
+}
+
+void answerPlaceFromTimeConstraintByEpisode(string episodeFilePath,int maxIter,vector<Constraint> annotationConstraints,string initFilename,vector<string> &placeVector) {
+    int count = 0;
+    int correct[10] = {0};
+    for(int i=0;i<annotationConstraints.size();i++) {
+        annotationConstraints[i].show();
+        
+        char iter[50];
+        sprintf(iter, "annealingAll%d/", maxIter);
+        string iterPath = iter;
+        char filename[100];
+        sprintf(filename, "wikipediaEpisodes%s-%d-0.20-Annealing.txt",annotationConstraints[i]._placeName.c_str(),annotationConstraints[i]._id);
+        string filenameString = filename;
+        string episodeFilename = episodeFilePath + iterPath + filenameString;
+        
+        vector< pair<string,int> > answers = getMostAppearPlaceByEpisode(episodeFilename, annotationConstraints[i], initFilename, placeVector);
+        for(int rank=1;rank<=10;rank++) {
+            bool isCorrect = false;
+            for(int j=0;j<(int)answers.size();j++) {
+                if(answers[j].second > rank) break;
+                if(answers[j].first == annotationConstraints[i]._placeName){
+                    isCorrect = true;
+                    break;
+                }
+            }
+            if(isCorrect) {
+                correct[rank-1]++;
+            }
+        }
+        count++;
+    }
+    
+    cout << "maxIter=" << maxIter << endl;
+    for(int rank=1;rank<=10;rank++) {
+        double rate = (double)correct[rank-1] / (double)count;
+        cout << "result: rank=" << rank << " :" << correct[rank-1] << "/" << count << " rate:" << rate << endl;
+    }
+}
+
+void answerPlaceFromTimeConstraint(string episodeFilePath,int maxIter,vector<Constraint> annotationConstraints,string initFilename,vector<string> &placeVector) {
+    int count = 0;
+    int correct[10] = {0};
+    for(int i=0;i<annotationConstraints.size();i++) {
+        annotationConstraints[i].show();
+        
+        char iter[50];
+        sprintf(iter, "annealingAll%d/", maxIter);
+        string iterPath = iter;
+        char filename[100];
+        sprintf(filename, "wikipediaEpisodes%s-%d-0.20-Annealing.txt",annotationConstraints[i]._placeName.c_str(),annotationConstraints[i]._id);
+        string filenameString = filename;
+        string episodeFilename = episodeFilePath + iterPath + filenameString;
+        
+        vector<string> answers = getMostAppearPlace(episodeFilename, annotationConstraints[i], initFilename, placeVector,annotationConstraints);
+        for(int rank=1;rank<=10;rank++) {
+            bool isCorrect = false;
+            for(int j=0;j<rank;j++) {
+                if(answers[j] == annotationConstraints[i]._placeName){
+                    isCorrect = true;
+                    break;
+                }
+            }
+            if(isCorrect) {
+                correct[rank-1]++;
+            }
+        }
+        count++;
+    }
+    
+    
+    cout << "maxIter=" << maxIter << endl;
+    for(int rank=1;rank<=10;rank++) {
+        double rate = (double)correct[rank-1] / (double)count;
+        cout << "result: rank=" << rank << " :" << correct[rank-1] << "/" << count << " rate:" << rate << endl;
+    }
+}
+
+vector< pair<string,int> > getMostAppearPlaceByEpisode(string episodeFilename,Constraint constraint,string initFilename, vector<string> &placeVector) {
+    bool isDebug = true;
+    
+    map<string,int> counter;
+    for(unsigned int i=0;i<placeVector.size();i++) {
+        counter.insert(map<string,int>::value_type(placeVector[i],0));
+    }
+    
+    //cout << "ccc" << endl;
+    
+    vector< pair< vector<Episode>,vector<Constraint> > > episodesInfo = readEpisodesAndConstraintsFromEpisodeFile(episodeFilename, initFilename);
+    for(int ei = 0;ei < episodesInfo.size();ei++) {
+        vector<string> alreadyCountPlacenames;
+        vector<Episode> episode = episodesInfo[ei].first;
+        for(int t=0;t<episode.size();t++) {
+            if(episode[t]._time >= constraint._beginTime && episode[t]._time <= constraint._endTime) {
+                bool isFind = false;
+                for(unsigned int i=0;i<alreadyCountPlacenames.size();i++) {
+                    if(alreadyCountPlacenames[i] == episode[t]._persons[constraint._personName]._nowPlace) {
+                        isFind = true;
+                        break;
+                    }
+                }
+                if(!isFind) {
+                    counter[episode[t]._persons[constraint._personName]._nowPlace]++;
+                    alreadyCountPlacenames.push_back(episode[t]._persons[constraint._personName]._nowPlace);
+                }
+            }
+        }
+    }
+    
+    vector< pair<int,string> > ranker;
+    for(map<string,int>::iterator it = counter.begin();it != counter.end();it++) {
+        ranker.push_back(make_pair((*it).second, (*it).first));
+    }
+    sort(ranker.begin(),ranker.end());
+    
+    //一時的にトップ１０のみ表示
+    for(unsigned int i=(int)ranker.size()-1;i>(int)ranker.size()-11/*ranker.size()*/;i--) {
+        if(isDebug) {
+            cout << ranker[i].second << ":" << ranker[i].first << endl;
+        }
+    }
+    
+    vector< pair<string,int> > result;
+    int nowRank = 0;
+    int nowFrequency = 10000000;
+    for(int i=(int)ranker.size()-1;i>=0;i--) {
+        int frequency = ranker[i].first;
+        string placename = ranker[i].second;
+        if(nowFrequency > frequency) {
+            nowRank = (int)result.size()+1;
+            nowFrequency = frequency;
+        }
+        result.push_back(make_pair(placename, nowRank));
+    }
+    
+    //一時的にトップ１０のみ表示
+    /*
+    for(unsigned int i=0;i<(int)result.size();i++) {
+        if(isDebug) {
+            cout << result[i].first << ":" << result[i].second << endl;
+        }
+    }
+     */
+    
+    return result;
+}
+
+vector<string> getMostAppearPlace(string episodeFilename,Constraint constraint,string initFilename,vector<string> &placeVector,vector<Constraint> &annotationConstraints) {
+    
+    bool isDebug = true;
+    
+    map<string,int> counter;
+    for(unsigned int i=0;i<placeVector.size();i++) {
+        counter.insert(map<string,int>::value_type(placeVector[i],0));
+    }
+    
+    //cout << "ccc" << endl;
+    
+    vector< pair< vector<Episode>,vector<Constraint> > > episodesInfo = readEpisodesAndConstraintsFromEpisodeFile(episodeFilename, initFilename);
+    for(int ei = 0;ei < episodesInfo.size();ei++) {
+        vector<Episode> episode = episodesInfo[ei].first;
+        for(int t=0;t<episode.size();t++) {
+            if(episode[t]._time >= constraint._beginTime && episode[t]._time <= constraint._endTime) {
+                counter[episode[t]._persons[constraint._personName]._nowPlace]++;
+            }
+        }
+    }
+    
+    vector< pair<int,string> > ranker;
+    for(map<string,int>::iterator it = counter.begin();it != counter.end();it++) {
+        ranker.push_back(make_pair((*it).second, (*it).first));
+    }
+    sort(ranker.begin(),ranker.end());
+    
+    //一時的にトップ１０のみ表示
+    for(unsigned int i=(int)ranker.size()-1;i>(int)ranker.size()-11/*ranker.size()*/;i--) {
+        if(isDebug) {
+            bool isFind = false;
+            for(unsigned int j=0;j<annotationConstraints.size();j++) {
+                if(annotationConstraints[j]._beginTime >= constraint._beginTime && annotationConstraints[j]._endTime <= constraint._endTime) {
+                    string annotationPlacename = annotationConstraints[j]._placeName;
+                    if(ranker[i].second == annotationPlacename) {
+                        isFind = true;
+                        break;
+                    }
+                }
+            }
+            if(isFind) {
+                cout << ranker[i].second << ":" << ranker[i].first << "is included in annotation data" << endl;
+            } else {
+                cout << ranker[i].second << ":" << ranker[i].first << endl;
+            }
+        }
+    }
+    
+    vector<string> result;
+    for(int i=(int)ranker.size()-1;i>=0;i--) {
+        result.push_back(ranker[i].second);
+    }
+    //cout << "aaa" << endl;
+    return result;
+}
+
+vector<string> getMostAppearPlace(string episodeFilename,Constraint constraint,string initFilename,vector<string> &placeVector) {
+    
+    bool isDebug = true;
+    
+    map<string,int> counter;
+    for(unsigned int i=0;i<placeVector.size();i++) {
+        counter.insert(map<string,int>::value_type(placeVector[i],0));
+    }
+    
+    //cout << "ccc" << endl;
+    
+    vector< pair< vector<Episode>,vector<Constraint> > > episodesInfo = readEpisodesAndConstraintsFromEpisodeFile(episodeFilename, initFilename);
+    for(int ei = 0;ei < episodesInfo.size();ei++) {
+        vector<Episode> episode = episodesInfo[ei].first;
+        for(int t=0;t<episode.size();t++) {
+            if(episode[t]._time >= constraint._beginTime && episode[t]._time <= constraint._endTime) {
+                counter[episode[t]._persons[constraint._personName]._nowPlace]++;
+            }
+        }
+    }
+    
+    vector< pair<int,string> > ranker;
+    for(map<string,int>::iterator it = counter.begin();it != counter.end();it++) {
+        ranker.push_back(make_pair((*it).second, (*it).first));
+    }
+    sort(ranker.begin(),ranker.end());
+    
+    //一時的にトップ１０のみ表示
+    for(unsigned int i=(int)ranker.size()-1;i>(int)ranker.size()-11/*ranker.size()*/;i--) {
+        if(isDebug) {
+            cout << ranker[i].second << ":" << ranker[i].first << endl;
+        }
+    }
+    
+    vector<string> result;
+    for(int i=(int)ranker.size()-1;i>=0;i--) {
+        result.push_back(ranker[i].second);
+    }
+    //cout << "aaa" << endl;
+    return result;
+}
+
 void solveCoreference(Coreference coreference,string episodeFileName) {
     int sumCount = 0;
-    map<string,int> places;
+
     Constraint con = coreference._constraint;
+    
+    map<string,bool> isFindMap;
+    for(unsigned int i=0;i<coreference._candidates.size();i++) {
+        isFindMap.insert(map<string,bool>::value_type(coreference._candidates[i],false));
+        cout << coreference._candidates[i] << endl;
+    }
+    
+    map<string,int> countMap;
+    for(unsigned int i=0;i<coreference._candidates.size();i++) {
+        countMap.insert(map<string,int>::value_type(coreference._candidates[i],0));
+    }
     
     ifstream ifs(episodeFileName.c_str());
     if(!ifs) {
@@ -384,8 +687,16 @@ void solveCoreference(Coreference coreference,string episodeFileName) {
     while(getline(ifs,buf)) {
         vector<string> out = SpritString(buf, " ");
         if(out[0] == "newPlayout") {
-            
+            isFindMap.clear();
+            for(unsigned int i=0;i<coreference._candidates.size();i++) {
+                isFindMap.insert(map<string,bool>::value_type(coreference._candidates[i],false));
+            }
         } else if(out[0] == "playoutEnd") {
+            for(unsigned int i=0;i<coreference._candidates.size();i++) {
+                if(isFindMap[coreference._candidates[i]]) {
+                    countMap[coreference._candidates[i]]++;
+                }
+            }
             
         } else if(out[0] == "score") {
             
@@ -403,12 +714,9 @@ void solveCoreference(Coreference coreference,string episodeFileName) {
                 // cout << placeName << endl;
                 if(con._constraint == there_is) {
                     // correct++;
-                    if(places.find(placeName) == places.end()) {
-                        places.insert(map<string,int>::value_type(placeName,1));
-                    } else {
-                        places[placeName]++;
+                    if(isFindMap.find(placeName) != isFindMap.end()) {
+                        isFindMap[placeName] = true;
                     }
-                    sumCount++;
                 }
                 if(con._constraint == there_is_no) {
                     //  correct++;
@@ -417,18 +725,18 @@ void solveCoreference(Coreference coreference,string episodeFileName) {
             }
         }
     }
-    
-    
+    cout << endl;
     int maxCount = -1;
     string maxPlace = "";
-    for(unsigned int i=0;i<coreference._candidates.size();i++) {
-        string placeName = coreference._candidates[i];
-        cout << placeName << " hits " << places[placeName] << endl;
-        if(maxCount <= places[placeName]) {
-            maxCount = places[placeName];
-            maxPlace = placeName;
+    for(map<string,int>::iterator it = countMap.begin();it != countMap.end();it++) {
+        int count = (*it).second;
+        cout << (*it).first << ":" << (*it).second << endl;
+        if(maxCount <= count) {
+            maxCount = count;
+            maxPlace = (*it).first;
         }
     }
+    cout << endl;
     
     cout << coreference._constraint._placeName << " is " << maxPlace << endl;
 }
@@ -586,10 +894,92 @@ vector<FourChoiceQuestion> readFourChoiceQuestions(string filename) {
     return questions;
 }
 
+void solveFourChoiceQuestionsWithFilename(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,string filename) {
+    int count = 0;
+    int correct = 0;
+    
+    int missCount = 0;
+    int missZeroCorrect = 0;
+    
+    for(unsigned int qi=0;qi<questions.size();qi++) {
+        int answerIndex = questions[qi]._answerIndex;
+        Constraint answerConstraint = questions[qi]._constraints[answerIndex];
+        
+        vector<Constraint> hitConstraints;
+        for(int n=0;n<annotationConstraints.size();n++) {
+            if(isSameConstraint(answerConstraint, annotationConstraints[n])) {
+                hitConstraints.push_back(annotationConstraints[n]);
+            }
+        }
+        if(hitConstraints.size() <= 0) {
+            // cout << "error: not found annotationConstraints @solveFourChoiceQuestions" << endl;
+            continue;
+        }
+        
+        double maxVal = -0.1;
+        vector<int> maxIndexs;
+        vector<double> values;
+        for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+            //cout << hitConstraints.size() << endl;
+            for(unsigned int hi=0;hi<hitConstraints.size();hi++) {
+                
+                double val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], filename);
+                values.push_back(val);
+                //    cout << ci << ":" << val << endl;
+                if(ci != answerIndex) {
+                    missCount++;
+                    if(val == 0) missZeroCorrect++;
+                }
+                if(val >= maxVal) {
+                    if(val != maxVal) {
+                        maxIndexs.clear();
+                    }
+                    maxVal = val;
+                    maxIndexs.push_back(ci);
+                }
+            }
+        }
+        int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
+        //   cout << answerIndex << endl;
+        //        cout << values[answerIndex] << endl;
+        count++;
+        if(maxIndex == answerIndex) {
+            //正解
+            correct++;
+            /*
+             cout << count << endl;
+             int isShowCount = 0;
+             for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+             if(values[ci] > 0) isShowCount++;
+             }
+             if(isShowCount >= 3) {
+             for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+             questions[qi]._constraints[ci].show();
+             cout << values[ci] << endl;
+             }
+             
+             }
+             */
+        } else {
+            //不正解
+            
+        }
+    }
+    double correctRate = (double)correct / (double)count;
+    cout << "correct:" << correct << " count:" << count << endl;
+    cout << "correctRate:" << correctRate << endl;
+    
+    cout << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    cout << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
+}
+
 void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> questions,double rate,vector<Constraint> annotationConstraints,double Cp) {
     cout << "rate:" << rate << endl;
     int count = 0;
     int correct = 0;
+    
+    int missCount = 0;
+    int missZeroCorrect = 0;
     
     for(unsigned int qi=0;qi<questions.size();qi++) {
         int answerIndex = questions[qi]._answerIndex;
@@ -628,7 +1018,11 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
                 
                 double val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], "./" + prefix + placeString + ratename + "Episodes/wikipediaEpisodes" + filename + ".txt");
                 values.push_back(val);
-                cout << ci << ":" << val << endl;
+            //    cout << ci << ":" << val << endl;
+                if(ci != answerIndex) {
+                    missCount++;
+                    if(val == 0) missZeroCorrect++;
+                }
                 if(val >= maxVal) {
                     if(val != maxVal) {
                         maxIndexs.clear();
@@ -639,7 +1033,7 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
             }
         }
         int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
-        cout << answerIndex << endl;
+     //   cout << answerIndex << endl;
 //        cout << values[answerIndex] << endl;
         count++;
         if(maxIndex == answerIndex) {
@@ -667,4 +1061,383 @@ void solveFourChoiceQuestions(string prefix, vector<FourChoiceQuestion> question
     double correctRate = (double)correct / (double)count;
     cout << "correct:" << correct << " count:" << count << endl;
     cout << "correctRate:" << correctRate << endl;
+    
+    cout << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    cout << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
 }
+
+void getArccuracyWithAnnotationData(vector<Constraint> annotationConstraints,int maxIter,string episodeFilePath,string initializeFilename) {
+    int sumCount = 0;
+    int sumCorrect = 0;
+    
+    for(int i=0;i<annotationConstraints.size();i++) {
+        annotationConstraints[i].show();
+        int count = 0;
+        int correct = 0;
+        
+        char iter[50];
+        sprintf(iter, "annealingAll%d/", maxIter);
+        string iterPath = iter;
+        char filename[100];
+        sprintf(filename, "wikipediaEpisodes%s-%d-0.20-Annealing.txt",annotationConstraints[i]._placeName.c_str(),annotationConstraints[i]._id);
+        string filenameString = filename;
+        string episodeFilename = episodeFilePath + iterPath + filenameString;
+        //cout << episodeFilename << endl;
+        
+        vector< pair< vector<Episode>,vector<Constraint> > > episodesInfo = readEpisodesAndConstraintsFromEpisodeFile(episodeFilename, initializeFilename);
+        for(int ei = 0;ei < episodesInfo.size();ei++) {
+            vector<Episode> episode = episodesInfo[ei].first;
+            if(isEpisodeSatisfyWithConstraint(episode, annotationConstraints[i])) {
+                correct++;
+            }
+            count++;
+        }
+        double rate = (double)correct / (double)count;
+        cout << "result: " << correct << "/" << count << " rate:" << rate << endl;
+        sumCount += count;
+        sumCorrect += correct;
+    }
+    
+    double allrate = (double)sumCorrect / (double)sumCount;
+    cout << "All result: " << sumCorrect << "/" << sumCount << " rate:" << allrate << endl;
+}
+
+void solveFourChoiceQuestionsBySAWithIter(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,int maxIter,string episodeFilePath,string resultPath) {
+    int count = 0;
+    int correct = 0;
+    
+    int missCount = 0;
+    int missZeroCorrect = 0;
+    
+    cout << "RULE BASE" << endl;
+    
+    
+    cout << "ANNEALED" << endl;
+    char iter[30];
+    sprintf(iter, "%d",maxIter);
+    string iterString = iter;
+    cout << "maxIter:" << iterString << endl;
+    
+    bool isFirstQuestion = true;
+    bool isShow = false;
+    int finishRate = 0;
+    
+    bool isDebug = true;
+    
+    for(unsigned int qi=0;qi<questions.size();qi++) {
+        if(qi > 23) exit(0);
+        if(isDebug) cout << "questionId:" << qi << endl;
+        
+        if(!isShow) {
+            finishRate = (int)((double)qi / (double)questions.size() * 100);
+            cout << finishRate/1.0 << "%" << endl;
+            isShow = true;
+        } else {
+            if((int)((double)qi / (double)questions.size() * 100) != finishRate) {
+                isShow = false;
+            }
+        }
+        bool canUseQuestionFlag = true;
+        int answerIndex = questions[qi]._answerIndex;
+        Constraint answerConstraint = questions[qi]._constraints[answerIndex];
+        
+        vector<Constraint> hitConstraints;
+        for(int n=0;n<annotationConstraints.size();n++) {
+            if(isSameConstraint(answerConstraint, annotationConstraints[n])) {
+                hitConstraints.push_back(annotationConstraints[n]);
+            }
+        }
+        if(hitConstraints.size() <= 0) {
+            // cout << "error: not found annotationConstraints @solveFourChoiceQuestions" << endl;
+            continue;
+        }
+        
+        double maxVal = -0.1;
+        vector<int> maxIndexs;
+        vector<double> values;
+        for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+            //cout << hitConstraints.size() << endl;
+            for(unsigned int hi=0;hi<hitConstraints.size();hi++) {
+                char fileChara[40];
+                sprintf(fileChara,"wikipediaEpisodes%s-%d-0.20-Annealing.txt",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id);
+                string filename = fileChara;
+                
+                char iter[30];
+                sprintf(iter, "%d",maxIter);
+                string iterString = iter;
+                string episodeFilename = episodeFilePath + "annealingAll" + iterString + "/" + filename;
+                
+                double val = -1;
+                
+                val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], episodeFilename);
+                if(isFirstQuestion) {
+                    isFirstQuestion = false;
+                    cout << "using episode file :" << episodeFilename << endl;
+                }
+                
+                if(val < 0) {
+                    canUseQuestionFlag = false;
+                    break;
+                }
+                values.push_back(val);
+                
+                if(isDebug) {
+                    cout << ci << ":" << val << endl;
+                    questions[qi]._constraints[ci].show();
+                }
+                if(ci != answerIndex) {
+                    missCount++;
+                    if(val == 0) missZeroCorrect++;
+                }
+                if(val >= maxVal) {
+                    if(val != maxVal) {
+                        maxIndexs.clear();
+                    }
+                    maxVal = val;
+                    maxIndexs.push_back(ci);
+                }
+            }
+            if(!canUseQuestionFlag) break;
+        }
+        if(!canUseQuestionFlag) continue;
+        int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
+        
+        if(isDebug) {
+            cout << answerIndex << endl;
+            cout << values[answerIndex] << endl;
+        }
+        
+        count++;
+        if(maxIndex == answerIndex) {
+            //正解
+            correct++;
+            
+        } else {
+            //不正解
+            
+        }
+    }
+    double correctRate = (double)correct / (double)count;
+    cout << "correct:" << correct << " count:" << count << endl;
+    cout << "correctRate:" << correctRate << endl;
+    
+    cout << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    cout << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
+    
+    double sigma = sqrt( count * correctRate * (1 - correctRate) ) / count;
+    cout << "95%confidence: " << correctRate - 2*sigma << " - " << correctRate + 2*sigma << endl;
+    cout << "sigma:" << sigma << endl;
+    
+    
+    time_t now = time(NULL);
+    struct tm *pnow = localtime(&now);
+    char dateChara[100];
+    sprintf(dateChara,"%04d%02d%02d-%02d%02d%02d-annealedAll-rule-iter%d.txt",pnow->tm_year+1900
+            ,pnow->tm_mon+1
+            ,pnow->tm_mday
+            ,pnow->tm_hour
+            ,pnow->tm_min
+            ,pnow->tm_sec
+            ,maxIter);
+    string dateString = resultPath + dateChara;
+    string outputFilename = dateString;
+    
+    ofstream ofs(outputFilename.c_str());
+    
+    ofs << "RULE BASE" << endl;
+    
+   
+    ofs << "ANNEALED" << endl;
+    char iter2[30];
+    sprintf(iter2, "%d",maxIter);
+    string iterString2 = iter2;
+    ofs << "maxIter:" << iterString2 << endl;
+    
+    ofs << "correct:" << correct << " count:" << count << endl;
+    ofs << "correctRate:" << correctRate << endl;
+    
+    ofs << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    ofs << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
+    
+    ofs << "95%confidence: " << correctRate - 2*sigma << " - " << correctRate + 2*sigma << endl;
+    ofs << "sigma:" << sigma << endl;
+    
+    ofs.close();
+}
+
+void solveFourChoiceQuestionsByPlayout(vector<FourChoiceQuestion> questions,vector<Constraint> annotationConstraints,double Cp,int playout,bool isAnnotation,bool isAnnealed,int annealingIter) {
+    int count = 0;
+    int correct = 0;
+    
+    int missCount = 0;
+    int missZeroCorrect = 0;
+    
+    cout << "playouts:" << playout << endl;
+    if(isAnnotation) {
+        cout << "ANNOTATION" << endl;
+    } else {
+        cout << "RULE BASE" << endl;
+    }
+    if(isAnnealed) {
+        cout << "ANNEALED" << endl;
+        char iter[30];
+        sprintf(iter, "%d",annealingIter);
+        string iterString = iter;
+        cout << "maxIter:" << iterString << endl;
+    }
+    bool isFirstQuestion = true;
+    bool isShow = false;
+    int finishRate = 0;
+    for(unsigned int qi=0;qi<questions.size();qi++) {
+        
+        cout << "questionId:" << qi << " (" << correct << "/" << count << ")" << endl;
+        //cout << "questionId:" << qi << endl;
+        if(!isShow) {
+            finishRate = (int)((double)qi / (double)questions.size() * 100);
+            cout << finishRate/1.0 << "%" << endl;
+            isShow = true;
+        } else {
+            if((int)((double)qi / (double)questions.size() * 100) != finishRate) {
+                isShow = false;
+            }
+        }
+        bool canUseQuestionFlag = true;
+        int answerIndex = questions[qi]._answerIndex;
+        Constraint answerConstraint = questions[qi]._constraints[answerIndex];
+        
+        vector<Constraint> hitConstraints;
+        for(int n=0;n<annotationConstraints.size();n++) {
+            if(isSameConstraint(answerConstraint, annotationConstraints[n])) {
+                hitConstraints.push_back(annotationConstraints[n]);
+            }
+        }
+        if(hitConstraints.size() <= 0) {
+            // cout << "error: not found annotationConstraints @solveFourChoiceQuestions" << endl;
+            continue;
+        }
+        
+        double maxVal = -0.1;
+        vector<int> maxIndexs;
+        vector<double> values;
+        for(unsigned int ci=0;ci<questions[qi]._constraints.size();ci++) {
+            //cout << hitConstraints.size() << endl;
+            for(unsigned int hi=0;hi<hitConstraints.size();hi++) {
+                char fileChara[40];
+                if(Cp >= 0) {
+                    sprintf(fileChara,"%s-%d-%3.2f",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id,Cp);
+                } else {
+                    sprintf(fileChara,"%s-%d",(hitConstraints[hi]._placeName).c_str(),hitConstraints[hi]._id);
+                }
+                string filename = fileChara;
+                
+                char playoutChara[10];
+                sprintf(playoutChara, "%d",playout);
+                string playoutString = playoutChara;
+                string annealingString = "",annealingString2 = "";
+                if(isAnnealed) {
+                    char iter[30];
+                    sprintf(iter, "%d",annealingIter);
+                    string iterString = iter;
+                    annealingString = "/top1/annealingAll" + iterString;
+                    annealingString2 = "-Annealing";
+                }
+                double val = -1;
+                if(isAnnotation) {
+                    val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], "./playoutsAnnotation/" + playoutString + annealingString + "/wikipediaEpisodes" + filename + annealingString2 + ".txt");
+                } else {
+                    val = getCorrectRateWithConstraintAndEpisodeFile(questions[qi]._constraints[ci], "./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/playouts/" + playoutString + annealingString + "/wikipediaEpisodes" + filename + annealingString2 + ".txt");
+                    if(isFirstQuestion) {
+                        isFirstQuestion = false;
+                        cout << "using episode file :" << "./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/playouts/" << playoutString << annealingString << "/wikipediaEpisodes" << filename << annealingString2 << ".txt" << endl;
+                    }
+                }
+                if(val < 0) {
+                    canUseQuestionFlag = false;
+                    break;
+                }
+                values.push_back(val);
+                cout << ci << ":" << val << endl;
+                questions[qi]._constraints[ci].show();
+                if(ci != answerIndex) {
+                    missCount++;
+                    if(val == 0) missZeroCorrect++;
+                }
+                if(val >= maxVal) {
+                    if(val != maxVal) {
+                        maxIndexs.clear();
+                    }
+                    maxVal = val;
+                    maxIndexs.push_back(ci);
+                }
+            }
+            if(!canUseQuestionFlag) break;
+        }
+        if(!canUseQuestionFlag) continue;
+        int maxIndex = maxIndexs[xor128() % maxIndexs.size()];
+        
+        cout << answerIndex << endl;
+        cout << values[answerIndex] << endl;
+        count++;
+        if(maxIndex == answerIndex) {
+            //正解
+            correct++;
+            
+        } else {
+            //不正解
+            
+        }
+    }
+    double correctRate = (double)correct / (double)count;
+    cout << "correct:" << correct << " count:" << count << endl;
+    cout << "correctRate:" << correctRate << endl;
+    
+    cout << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    cout << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
+    
+    double sigma = sqrt( count * correctRate * (1 - correctRate) ) / count;
+    cout << "95%confidence: " << correctRate - 2*sigma << " - " << correctRate + 2*sigma << endl;
+    cout << "sigma:" << sigma << endl;
+    
+    
+    time_t now = time(NULL);
+    struct tm *pnow = localtime(&now);
+    char dateChara[100];
+    sprintf(dateChara, "./../../../../data/local/murakami/alexanderTmp/result/result%04d%02d%02d-%02d%02d%02d-annealedAll-rule-iter%d.txt",pnow->tm_year+1900
+            ,pnow->tm_mon+1
+            ,pnow->tm_mday
+            ,pnow->tm_hour
+            ,pnow->tm_min
+            ,pnow->tm_sec
+            ,annealingIter);
+    string dateString = dateChara;
+    string outputFilename = dateString;
+    
+    ofstream ofs(outputFilename.c_str());
+    
+    ofs << "playouts:" << playout << endl;
+    if(isAnnotation) {
+        ofs << "ANNOTATION" << endl;
+    } else {
+        ofs << "RULE BASE" << endl;
+    }
+    if(isAnnealed) {
+        ofs << "ANNEALED" << endl;
+        char iter[30];
+        sprintf(iter, "%d",annealingIter);
+        string iterString = iter;
+        ofs << "maxIter:" << iterString << endl;
+    }
+    ofs << "correct:" << correct << " count:" << count << endl;
+    ofs << "correctRate:" << correctRate << endl;
+    
+    ofs << "missZeroCorrect:" << missZeroCorrect << " missCount:" << missCount << endl;
+    ofs << "missCorrectRate:" << (double)missZeroCorrect/(double)missCount << endl;
+    
+    ofs << "95%confidence: " << correctRate - 2*sigma << " - " << correctRate + 2*sigma << endl;
+    ofs << "sigma:" << sigma << endl;
+    
+    ofs.close();
+}
+
+
+

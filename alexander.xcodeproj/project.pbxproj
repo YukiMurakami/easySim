@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6DF8DBC1AA5A65F00ED60AF /* annealing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6DF8DBA1AA5A65F00ED60AF /* annealing.cpp */; };
 		B6EDC0CD19503B30004A19EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC0CC19503B30004A19EF /* main.cpp */; };
 		B6EDC0CF19503B30004A19EF /* easySimu.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6EDC0CE19503B30004A19EF /* easySimu.1 */; };
 		B6EDC0D719503CF6004A19EF /* place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDC0D519503CF6004A19EF /* place.cpp */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6DF8DBA1AA5A65F00ED60AF /* annealing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = annealing.cpp; sourceTree = "<group>"; };
+		B6DF8DBB1AA5A65F00ED60AF /* annealing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = annealing.h; sourceTree = "<group>"; };
 		B6EDC0C919503B30004A19EF /* alexander */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alexander; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EDC0CC19503B30004A19EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B6EDC0CE19503B30004A19EF /* easySimu.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = easySimu.1; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				B6EDC0D819503D37004A19EF /* person.cpp */,
 				B6EDC115195AA0B9004A19EF /* utility.h */,
 				B6EDC114195AA0B9004A19EF /* utility.cpp */,
+				B6DF8DBB1AA5A65F00ED60AF /* annealing.h */,
+				B6DF8DBA1AA5A65F00ED60AF /* annealing.cpp */,
 				B6EDC0CE19503B30004A19EF /* easySimu.1 */,
 			);
 			path = alexander;
@@ -149,6 +154,7 @@
 				B6EDC11C195AA826004A19EF /* episode.cpp in Sources */,
 				B6EDC116195AA0B9004A19EF /* utility.cpp in Sources */,
 				B6EDC0DA19503D37004A19EF /* person.cpp in Sources */,
+				B6DF8DBC1AA5A65F00ED60AF /* annealing.cpp in Sources */,
 				B6EDC0CD19503B30004A19EF /* main.cpp in Sources */,
 				B6EDC119195AA2DB004A19EF /* constraints.cpp in Sources */,
 				B6EDC0D719503CF6004A19EF /* place.cpp in Sources */,

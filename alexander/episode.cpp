@@ -12,6 +12,8 @@
 
 #include <fstream>
 
+#include "utility.h"
+
 Episode::Episode(int time,map<string,Person> persons, map<string,Place> places) {
     _persons = persons;
     _places = places;
@@ -121,9 +123,9 @@ vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess) {
 }
 
 void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,double score,int maxDepth) {
-    cout << "output episode : '" << filename << "'" << endl;
+  //  cout << "output episode : '" << filename << "'" << endl;
     ofstream ofs(filename.c_str(),ios::app );
-
+    
 
     ofs << "newPlayout ----------------------------------------------" << endl;
     for (int i=0; i<(int)episodes.size(); i++) {
@@ -134,6 +136,116 @@ void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,
     ofs << "score:" << score << " maxDepth:" << maxDepth << endl;
     ofs << "playoutEnd ----------------------------------------------" << endl;
     ofs.close();
+}
+
+vector< pair< vector<Episode>,vector<Constraint> > > readEpisodesAndConstraintsFromEpisodeFile(string filename,string initPlaceFilename) {
+    map<string,Place> places;
+    
+    ifstream ifs2(initPlaceFilename.c_str());
+    string buf;
+    if(!ifs2) {
+        cout << "not found initialize file" << endl;
+        exit(0);
+    }
+    vector<string> placeVector;
+    while(getline(ifs2,buf)) {
+        if(buf == "<area_start>") {
+            while(getline(ifs2,buf)) {
+                if(buf == "<area_end>") break;
+                vector<string> out2 = SpritString(buf, ":");
+                int placeIndex = atoi(out2[0].c_str());
+                vector<string> out3 = SpritString(out2[1], ",");
+                if(places.find(placeVector[placeIndex]) != places.end()) {
+                    for(int i=0;i<(int)out3.size();i++) {
+                        int nextIndex = atoi(out3[i].c_str());
+                        if(places.find(placeVector[nextIndex]) != places.end()) {
+                            places[placeVector[placeIndex]]._nextPlaces.push_back(placeVector[nextIndex]);
+                        }
+                    }
+                }
+            }
+        }
+        if(buf == "<area_end>") {
+            continue;
+        }
+        
+        vector<string> out = SpritString(buf, ":");
+        if(out[0] == "place") {
+            placeVector = SpritString(out[1],",");
+            for(int i=0;i<(int)placeVector.size();i++) {
+                Place place;
+                place._name = placeVector[i];
+                places.insert(make_pair(place._name, place));
+            }
+        }
+    }
+    ifs2.close();
+    
+    
+    
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @readEpisodesAndConstraintsFromEpisodeFile" << endl;
+        exit(0);
+    }
+
+    vector< pair< vector<Episode>,vector<Constraint> > > episodes;
+    
+    bool isSelectedConstraintsSection = false;
+    
+    while (getline(ifs,buf)) {
+        vector<string> out = SpritString(buf, " ");
+        if(out[0] == "newPlayout") {
+            vector<Episode> episode;
+            vector<Constraint> constraints;
+            episodes.push_back(make_pair(episode, constraints));
+            
+        } else if(out[0] == "playoutEnd") {
+            
+        } else if(out[0] == "score") {
+            
+        } else if(out[0] == "selectedConstraintsStart") {
+            isSelectedConstraintsSection = true;
+        } else if(out[0] == "selectedConstraintsEnd") {
+            isSelectedConstraintsSection = false;
+        } else if(out.size() >= 3) {
+            int time = atoi(out[0].c_str());
+            string personName = out[1];
+            string placeName = "";
+            for(unsigned int i=0;i<out.size() - 2;i++) {
+                placeName += out[i+2];
+                if(i != out.size()-3) {
+                    placeName += " ";
+                }
+            }
+            
+            Person person(personName,placeName,0);
+            map<string,Person> persons;
+            persons.insert(make_pair(personName, person));
+            
+            map<string,Place> copyPlaces(places);
+            copyPlaces[placeName]._persons.push_back(person);
+            Episode epi(time,persons,copyPlaces);
+            
+            episodes[episodes.size()-1].first.push_back(epi);
+            
+        } else if(isSelectedConstraintsSection) {
+            vector<string> out2 = SpritString(buf, ":");
+            if(out2[0] == "constraint") {
+                int beginTime = atoi(out2[1].c_str());
+                int endTime = atoi(out2[2].c_str());
+                string personName = out2[3];
+                string placeName = out2[4];
+                CONSTRAINT con = getEnumFromString(out2[5]);
+                int id = atoi(out2[6].c_str());
+                
+                Constraint constraint(beginTime,endTime,personName,placeName,con,id);
+                episodes[episodes.size()-1].second.push_back(constraint);
+            }
+        }
+    }
+    
+    return episodes;
 }
 
 bool isSameEpisodesAlexander(vector<Episode> &a,vector<Episode> &b) {

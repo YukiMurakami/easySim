@@ -1,0 +1,105 @@
+correct:6760 count:10000
+correctRate:0.676
+missZeroCorrect:20412 missCount:30000
+missCorrectRate:0.6804
+95%confidence: 0.66664 - 0.68536
+sigma: 0.00468
+playouts:1000000 isAnnotation:0 isAnnealing:1
+
+correct:6658 count:10000
+correctRate:0.6658
+missZeroCorrect:20492 missCount:30000
+missCorrectRate:0.683067
+95%confidence: 0.656366 - 0.675234
+sigma: 0.0047171
+playouts:500000 isAnnotation:0 isAnnealing:1
+
+correct:6447 count:10000
+correctRate:0.6447
+missZeroCorrect:12693 missCount:30000
+missCorrectRate:0.4231
+95%confidence: 0.635128 - 0.654272
+sigma: 0.00478604
+playouts:200000 isAnnotation:0 isAnnealing:1
+
+
+correct:6222 count:10000
+correctRate:0.6222
+missZeroCorrect:12211 missCount:30000
+missCorrectRate:0.407033
+95%confidence: 0.612503 - 0.631897
+sigma: 0.00484837
+playouts:100000 isAnnotation:0 isAnnealing:1
+
+
+correct:6267 count:10000
+correctRate:0.6267
+missZeroCorrect:11525 missCount:30000
+missCorrectRate:0.384167
+95%confidence: 0.617026 - 0.636374
+sigma: 0.00483681
+playouts:50000 isAnnotation:0 isAnnealing:1
+
+
+correct:6205 count:10000
+correctRate:0.6205
+missZeroCorrect:10979 missCount:30000
+missCorrectRate:0.365967
+95%confidence: 0.610795 - 0.630205
+sigma: 0.00485263
+playouts:20000 isAnnotation:0 isAnnealing:1
+
+
+correct:6248 count:10000
+correctRate:0.6248
+missZeroCorrect:11506 missCount:30000
+missCorrectRate:0.383533
+95%confidence: 0.615117 - 0.634483
+sigma: 0.00484175
+playouts:10000 isAnnotation:0 isAnnealing:1
+
+correct:6223 count:10000
+correctRate:0.6223
+missZeroCorrect:10813 missCount:30000
+missCorrectRate:0.360433
+95%confidence: 0.612604 - 0.631996
+sigma: 0.00484812
+playouts:5000 isAnnotation:0 isAnnealing:1
+
+
+correct:6171 count:10000
+correctRate:0.6171
+missZeroCorrect:11126 missCount:30000
+missCorrectRate:0.370867
+95%confidence: 0.607378 - 0.626822
+sigma: 0.00486094
+playouts:2000 isAnnotation:0 isAnnealing:1
+
+
+correct:6023 count:10000
+correctRate:0.6023
+missZeroCorrect:11589 missCount:30000
+missCorrectRate:0.3863
+95%confidence: 0.592512 - 0.612088
+sigma: 0.00489423
+playouts:1000 isAnnotation:0 isAnnealing:1
+
+
+
+
+
+correct:6023 count:10000
+correctRate:0.6023
+missZeroCorrect:11589 missCount:30000
+missCorrectRate:0.3863
+95%confidence: 0.592512 - 0.612088
+sigma: 0.00489423
+playouts:1000 isAnnotation:0 isAnnealing:1
+
+correct:6757 count:10000
+correctRate:0.6757
+missZeroCorrect:11173 missCount:30000
+missCorrectRate:0.372433
+95%confidence: 0.666338 - 0.685062
+sigma: 0.00468113
+playouts:1 isAnnotation:1 isAnnealing:1

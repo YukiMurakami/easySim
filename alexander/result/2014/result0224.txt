@@ -1,0 +1,90 @@
+Yuki-no-MacBook-Pro:alexander Yuki$ ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+playouts:10000
+RULE BASE
+correct:2418 count:10000
+correctRate:0.2418
+missZeroCorrect:8994 missCount:30000
+missCorrectRate:0.2998
+playouts:20000
+RULE BASE
+correct:3102 count:10000
+correctRate:0.3102
+missZeroCorrect:8819 missCount:30000
+missCorrectRate:0.293967
+playouts:50000
+RULE BASE
+correct:3447 count:10000
+correctRate:0.3447
+missZeroCorrect:12473 missCount:30000
+missCorrectRate:0.415767
+playouts:100000
+RULE BASE
+correct:2462 count:10000
+correctRate:0.2462
+missZeroCorrect:13523 missCount:30000
+missCorrectRate:0.450767
+playouts:200000
+RULE BASE
+correct:2597 count:10000
+correctRate:0.2597
+missZeroCorrect:14963 missCount:30000
+missCorrectRate:0.498767
+playouts:500000
+RULE BASE
+correct:4754 count:10000
+correctRate:0.4754
+missZeroCorrect:23533 missCount:30000
+missCorrectRate:0.784433
+playouts:1000000
+RULE BASE
+correct:4614 count:10000
+correctRate:0.4614
+missZeroCorrect:25350 missCount:30000
+missCorrectRate:0.845
+playouts:10000
+ANNOTATION
+correct:2549 count:10000
+correctRate:0.2549
+missZeroCorrect:8890 missCount:30000
+missCorrectRate:0.296333
+playouts:20000
+ANNOTATION
+correct:3630 count:10000
+correctRate:0.363
+missZeroCorrect:9458 missCount:30000
+missCorrectRate:0.315267
+playouts:50000
+ANNOTATION
+correct:2542 count:10000
+correctRate:0.2542
+missZeroCorrect:13302 missCount:30000
+missCorrectRate:0.4434
+playouts:100000
+ANNOTATION
+correct:2357 count:10000
+correctRate:0.2357
+missZeroCorrect:13754 missCount:30000
+missCorrectRate:0.458467
+playouts:200000
+ANNOTATION
+correct:4155 count:10000
+correctRate:0.4155
+missZeroCorrect:18255 missCount:30000
+missCorrectRate:0.6085
+playouts:500000
+ANNOTATION
+correct:4745 count:10000
+correctRate:0.4745
+missZeroCorrect:24089 missCount:30000
+missCorrectRate:0.802967
+playouts:1000000
+ANNOTATION
+correct:4868 count:10000
+correctRate:0.4868
+missZeroCorrect:26531 missCount:30000
+missCorrectRate:0.884367
+Abort trap: 6

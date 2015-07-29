@@ -1,0 +1,39 @@
+共参照解析結果
+Bactriaが抜けているのが不自然だったので、追加して再実験 2015.5.31
+
+(SA iter=100000のみの結果 ）
+Gedrosia
+constraint:54:59:Alexander:the area:there_is:0
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:2975
+A Carmania:2592
+Babylon:0
+Bactra:1
+Bela:3115
+
+the area is Bela
+
+
+(SA iter=50000のみの結果 ）
+Gedrosia
+constraint:54:59:Alexander:the area:there_is:0
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:2417
+A Carmania:2390
+Babylon:19
+Bactra:4
+Bela:3042
+
+the area is Bela

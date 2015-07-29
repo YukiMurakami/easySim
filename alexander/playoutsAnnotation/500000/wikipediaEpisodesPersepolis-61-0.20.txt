@@ -1,0 +1,5856 @@
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander A Indus
+50 Alexander A Indus
+51 Alexander A Indus
+52 Alexander A Indus
+53 Alexander A Indus
+54 Alexander A Indus
+55 Alexander Nicaea
+56 Alexander Nicaea
+57 Alexander Aornos
+58 Alexander Aornos
+59 Alexander A Caucasus
+60 Alexander Bactra
+61 Alexander Bactra
+62 Alexander A Caucasus
+63 Alexander A Arachosia
+64 Alexander A Indus
+65 Alexander Nicaea
+66 Alexander Nicaea
+67 Alexander Aornos
+68 Alexander Aornos
+69 Alexander A Caucasus
+70 Alexander Aornos
+71 Alexander Aornos
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Gaugamela:there_is:62
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander Bactra
+54 Alexander A Caucasus
+55 Alexander A Arachosia
+56 Alexander Hecatompylos
+57 Alexander Hecatompylos
+58 Alexander Hecatompylos
+59 Alexander Ecbatana
+60 Alexander Ecbatana
+61 Alexander Persepolis
+62 Alexander Susa
+63 Alexander Arbela
+64 Alexander Babylon
+65 Alexander Arbela
+66 Alexander Susa
+67 Alexander Babylon
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Babylon
+71 Alexander Arbela
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:2:2:Alexander:Granicus:there_is:196
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Sagala
+52 Alexander Sagala
+53 Alexander Sagala
+54 Alexander Nicaea
+55 Alexander Sagala
+56 Alexander Nicaea
+57 Alexander Nicaea
+58 Alexander Nicaea
+59 Alexander Sagala
+60 Alexander Sagala
+61 Alexander Sagala
+62 Alexander Sagala
+63 Alexander Sagala
+64 Alexander Nicaea
+65 Alexander Nicaea
+66 Alexander Nicaea
+67 Alexander A Indus
+68 Alexander Patala
+69 Alexander Bela
+70 Alexander Bela
+71 Alexander A Carmania
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:A Eschate:there_is:478
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander Sagala
+53 Alexander Nicaea
+54 Alexander Nicaea
+55 Alexander Sagala
+56 Alexander Nicaea
+57 Alexander A Indus
+58 Alexander A Indus
+59 Alexander A Indus
+60 Alexander A Indus
+61 Alexander A Arachosia
+62 Alexander A Carmania
+63 Alexander A Carmania
+64 Alexander Bela
+65 Alexander Bela
+66 Alexander Bela
+67 Alexander Bela
+68 Alexander Bela
+69 Alexander Patala
+70 Alexander Patala
+71 Alexander Patala
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:30:35:Alexander:Bactra:there_is:88
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Nicaea
+50 Alexander A Indus
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander A Indus
+54 Alexander A Arachosia
+55 Alexander A Arachosia
+56 Alexander Hecatompylos
+57 Alexander Ecbatana
+58 Alexander Ecbatana
+59 Alexander Ecbatana
+60 Alexander Persepolis
+61 Alexander Ecbatana
+62 Alexander Hecatompylos
+63 Alexander A Arachosia
+64 Alexander A Caucasus
+65 Alexander Bactra
+66 Alexander Samarkand
+67 Alexander Samarkand
+68 Alexander Bactra
+69 Alexander Bactra
+70 Alexander A Caucasus
+71 Alexander Bactra
+score:0.709677 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:66:71:Alexander:Babylon:there_is:19
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Issus
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander A Caucasus
+52 Alexander Bactra
+53 Alexander Samarkand
+54 Alexander A Eschate
+55 Alexander A Eschate
+56 Alexander Samarkand
+57 Alexander Samarkand
+58 Alexander A Eschate
+59 Alexander A Eschate
+60 Alexander A Eschate
+61 Alexander Samarkand
+62 Alexander A Eschate
+63 Alexander A Eschate
+64 Alexander A Eschate
+65 Alexander A Eschate
+66 Alexander Samarkand
+67 Alexander Bactra
+68 Alexander Bactra
+69 Alexander Samarkand
+70 Alexander A Eschate
+71 Alexander A Eschate
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:6:11:Alexander:Ankara:there_is:356
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander Nicaea
+53 Alexander Nicaea
+54 Alexander Aornos
+55 Alexander Nicaea
+56 Alexander A Indus
+57 Alexander A Indus
+58 Alexander Nicaea
+59 Alexander Nicaea
+60 Alexander Nicaea
+61 Alexander Sagala
+62 Alexander Sagala
+63 Alexander Sagala
+64 Alexander Sagala
+65 Alexander Sagala
+66 Alexander Sagala
+67 Alexander Sagala
+68 Alexander Sagala
+69 Alexander Sagala
+70 Alexander Nicaea
+71 Alexander Aornos
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Gaugamela:there_is:62
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Caucasus
+52 Alexander Bactra
+53 Alexander Bactra
+54 Alexander Bactra
+55 Alexander Bactra
+56 Alexander A Caucasus
+57 Alexander A Arachosia
+58 Alexander A Arachosia
+59 Alexander Hecatompylos
+60 Alexander Ecbatana
+61 Alexander Hecatompylos
+62 Alexander A Arachosia
+63 Alexander A Arachosia
+64 Alexander A Arachosia
+65 Alexander A Caucasus
+66 Alexander Bactra
+67 Alexander A Caucasus
+68 Alexander Aornos
+69 Alexander Nicaea
+70 Alexander Nicaea
+71 Alexander A Indus
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Sagala:there_is:103
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander Nicaea
+53 Alexander A Indus
+54 Alexander Nicaea
+55 Alexander Nicaea
+56 Alexander Sagala
+57 Alexander Nicaea
+58 Alexander A Indus
+59 Alexander Patala
+60 Alexander A Indus
+61 Alexander A Arachosia
+62 Alexander A Caucasus
+63 Alexander Bactra
+64 Alexander Bactra
+65 Alexander Samarkand
+66 Alexander Bactra
+67 Alexander A Caucasus
+68 Alexander Aornos
+69 Alexander Nicaea
+70 Alexander Nicaea
+71 Alexander Nicaea
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Issus:there_is:372
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Nicaea
+51 Alexander Aornos
+52 Alexander Aornos
+53 Alexander Aornos
+54 Alexander Aornos
+55 Alexander A Caucasus
+56 Alexander A Caucasus
+57 Alexander A Caucasus
+58 Alexander A Arachosia
+59 Alexander A Indus
+60 Alexander A Arachosia
+61 Alexander A Carmania
+62 Alexander Persepolis
+63 Alexander Persepolis
+64 Alexander A Carmania
+65 Alexander Bela
+66 Alexander Patala
+67 Alexander Patala
+68 Alexander Patala
+69 Alexander Patala
+70 Alexander Patala
+71 Alexander A Indus
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:42:47:Alexander:Nicaea:there_is:422
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Nicaea
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander A Caucasus
+54 Alexander A Caucasus
+55 Alexander Aornos
+56 Alexander Aornos
+57 Alexander Nicaea
+58 Alexander Sagala
+59 Alexander Sagala
+60 Alexander Nicaea
+61 Alexander A Indus
+62 Alexander A Indus
+63 Alexander A Indus
+64 Alexander Nicaea
+65 Alexander Sagala
+66 Alexander Nicaea
+67 Alexander Sagala
+68 Alexander Sagala
+69 Alexander Nicaea
+70 Alexander A Indus
+71 Alexander A Arachosia
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:24:29:Alexander:Ecbatana:there_is:174
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander Aornos
+53 Alexander Nicaea
+54 Alexander Nicaea
+55 Alexander A Indus
+56 Alexander A Arachosia
+57 Alexander Hecatompylos
+58 Alexander Ecbatana
+59 Alexander Persepolis
+60 Alexander Persepolis
+61 Alexander Persepolis
+62 Alexander Susa
+63 Alexander Arbela
+64 Alexander Babylon
+65 Alexander Arbela
+66 Alexander Gaugamela
+67 Alexander Arbela
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Susa
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:0:5:Alexander:Alexandria:there_is:173
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander A Caucasus
+54 Alexander Aornos
+55 Alexander Aornos
+56 Alexander Aornos
+57 Alexander Aornos
+58 Alexander Nicaea
+59 Alexander A Indus
+60 Alexander A Arachosia
+61 Alexander A Arachosia
+62 Alexander A Indus
+63 Alexander A Indus
+64 Alexander Patala
+65 Alexander Patala
+66 Alexander Patala
+67 Alexander A Indus
+68 Alexander A Indus
+69 Alexander Nicaea
+70 Alexander Nicaea
+71 Alexander Nicaea
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:2:2:Alexander:Granicus:there_is:196
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander A Caucasus
+52 Alexander A Caucasus
+53 Alexander A Arachosia
+54 Alexander Hecatompylos
+55 Alexander Hecatompylos
+56 Alexander Hecatompylos
+57 Alexander Hecatompylos
+58 Alexander Hecatompylos
+59 Alexander Ecbatana
+60 Alexander Ecbatana
+61 Alexander Ecbatana
+62 Alexander Ecbatana
+63 Alexander Hecatompylos
+64 Alexander A Arachosia
+65 Alexander Hecatompylos
+66 Alexander Hecatompylos
+67 Alexander Ecbatana
+68 Alexander Ecbatana
+69 Alexander Persepolis
+70 Alexander Ecbatana
+71 Alexander Ecbatana
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:42:47:Alexander:Nicaea:there_is:422
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander A Indus
+50 Alexander Nicaea
+51 Alexander Sagala
+52 Alexander Nicaea
+53 Alexander Nicaea
+54 Alexander Sagala
+55 Alexander Sagala
+56 Alexander Sagala
+57 Alexander Sagala
+58 Alexander Sagala
+59 Alexander Nicaea
+60 Alexander Aornos
+61 Alexander Aornos
+62 Alexander Nicaea
+63 Alexander Nicaea
+64 Alexander Aornos
+65 Alexander Nicaea
+66 Alexander A Indus
+67 Alexander Patala
+68 Alexander Bela
+69 Alexander Patala
+70 Alexander A Indus
+71 Alexander A Indus
+score:0.709677 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:42:47:Alexander:Sagala:there_is:103
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander Nicaea
+53 Alexander A Indus
+54 Alexander A Arachosia
+55 Alexander A Arachosia
+56 Alexander Hecatompylos
+57 Alexander Ecbatana
+58 Alexander Persepolis
+59 Alexander A Carmania
+60 Alexander A Arachosia
+61 Alexander Hecatompylos
+62 Alexander Hecatompylos
+63 Alexander Ecbatana
+64 Alexander Persepolis
+65 Alexander Susa
+66 Alexander Susa
+67 Alexander Susa
+68 Alexander Arbela
+69 Alexander Babylon
+70 Alexander Arbela
+71 Alexander Susa
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:2:2:Alexander:Granicus:there_is:196
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander A Indus
+54 Alexander A Indus
+55 Alexander A Indus
+56 Alexander Patala
+57 Alexander Bela
+58 Alexander Patala
+59 Alexander Bela
+60 Alexander A Carmania
+61 Alexander A Arachosia
+62 Alexander A Arachosia
+63 Alexander Hecatompylos
+64 Alexander Hecatompylos
+65 Alexander Ecbatana
+66 Alexander Persepolis
+67 Alexander Susa
+68 Alexander Susa
+69 Alexander Persepolis
+70 Alexander A Carmania
+71 Alexander Persepolis
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:60:65:Alexander:Susa:there_is:455
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:60:65:Alexander:Susa:there_is:455
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander Patala
+54 Alexander Bela
+55 Alexander Patala
+56 Alexander Bela
+57 Alexander A Carmania
+58 Alexander Persepolis
+59 Alexander Susa
+60 Alexander Babylon
+61 Alexander Babylon
+62 Alexander Susa
+63 Alexander Persepolis
+64 Alexander Susa
+65 Alexander Arbela
+66 Alexander Arbela
+67 Alexander Susa
+68 Alexander Susa
+69 Alexander Persepolis
+70 Alexander Persepolis
+71 Alexander Susa
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Babylon:there_is:436
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander A Indus
+52 Alexander A Arachosia
+53 Alexander A Arachosia
+54 Alexander A Arachosia
+55 Alexander Hecatompylos
+56 Alexander A Arachosia
+57 Alexander Hecatompylos
+58 Alexander Ecbatana
+59 Alexander Ecbatana
+60 Alexander Ecbatana
+61 Alexander Hecatompylos
+62 Alexander Hecatompylos
+63 Alexander A Arachosia
+64 Alexander A Carmania
+65 Alexander Persepolis
+66 Alexander Ecbatana
+67 Alexander Hecatompylos
+68 Alexander Hecatompylos
+69 Alexander Hecatompylos
+70 Alexander A Arachosia
+71 Alexander A Arachosia
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:2:2:Alexander:Granicus:there_is:196
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Sagala
+51 Alexander Sagala
+52 Alexander Nicaea
+53 Alexander Sagala
+54 Alexander Nicaea
+55 Alexander A Indus
+56 Alexander A Arachosia
+57 Alexander Hecatompylos
+58 Alexander Ecbatana
+59 Alexander Ecbatana
+60 Alexander Persepolis
+61 Alexander Persepolis
+62 Alexander Susa
+63 Alexander Arbela
+64 Alexander Babylon
+65 Alexander Babylon
+66 Alexander Arbela
+67 Alexander Arbela
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Babylon
+71 Alexander Babylon
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:66:71:Alexander:Babylon:there_is:19
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Aornos
+52 Alexander Aornos
+53 Alexander A Caucasus
+54 Alexander Bactra
+55 Alexander Bactra
+56 Alexander A Caucasus
+57 Alexander A Caucasus
+58 Alexander Aornos
+59 Alexander A Caucasus
+60 Alexander Bactra
+61 Alexander A Caucasus
+62 Alexander A Arachosia
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander Hecatompylos
+66 Alexander Hecatompylos
+67 Alexander A Arachosia
+68 Alexander A Indus
+69 Alexander Patala
+70 Alexander Bela
+71 Alexander Bela
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander A Caucasus
+53 Alexander A Caucasus
+54 Alexander Aornos
+55 Alexander Nicaea
+56 Alexander Aornos
+57 Alexander Aornos
+58 Alexander Aornos
+59 Alexander Aornos
+60 Alexander Nicaea
+61 Alexander Sagala
+62 Alexander Nicaea
+63 Alexander Aornos
+64 Alexander A Caucasus
+65 Alexander Bactra
+66 Alexander Samarkand
+67 Alexander A Eschate
+68 Alexander A Eschate
+69 Alexander A Eschate
+70 Alexander A Eschate
+71 Alexander A Eschate
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:60:65:Alexander:Susa:there_is:455
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander A Caucasus
+52 Alexander Bactra
+53 Alexander Samarkand
+54 Alexander A Eschate
+55 Alexander A Eschate
+56 Alexander Samarkand
+57 Alexander Samarkand
+58 Alexander Bactra
+59 Alexander Bactra
+60 Alexander Samarkand
+61 Alexander A Eschate
+62 Alexander A Eschate
+63 Alexander Samarkand
+64 Alexander Samarkand
+65 Alexander A Eschate
+66 Alexander A Eschate
+67 Alexander A Eschate
+68 Alexander A Eschate
+69 Alexander Samarkand
+70 Alexander A Eschate
+71 Alexander Samarkand
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Memphis:there_is:5
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander A Arachosia
+54 Alexander A Indus
+55 Alexander Patala
+56 Alexander Bela
+57 Alexander Bela
+58 Alexander Patala
+59 Alexander Patala
+60 Alexander A Indus
+61 Alexander Nicaea
+62 Alexander Nicaea
+63 Alexander Sagala
+64 Alexander Sagala
+65 Alexander Sagala
+66 Alexander Sagala
+67 Alexander Sagala
+68 Alexander Sagala
+69 Alexander Nicaea
+70 Alexander Nicaea
+71 Alexander A Indus
+score:0.806452 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:0:5:Alexander:Sardis:there_is:201
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander Aornos
+53 Alexander Aornos
+54 Alexander A Caucasus
+55 Alexander Bactra
+56 Alexander A Caucasus
+57 Alexander Bactra
+58 Alexander A Caucasus
+59 Alexander Bactra
+60 Alexander Samarkand
+61 Alexander A Eschate
+62 Alexander Samarkand
+63 Alexander A Eschate
+64 Alexander A Eschate
+65 Alexander A Eschate
+66 Alexander A Eschate
+67 Alexander Samarkand
+68 Alexander Samarkand
+69 Alexander Bactra
+70 Alexander A Caucasus
+71 Alexander Bactra
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Alexandria:there_is:203
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander Aornos
+52 Alexander Nicaea
+53 Alexander Aornos
+54 Alexander A Caucasus
+55 Alexander A Arachosia
+56 Alexander A Carmania
+57 Alexander Persepolis
+58 Alexander Ecbatana
+59 Alexander Hecatompylos
+60 Alexander Hecatompylos
+61 Alexander Hecatompylos
+62 Alexander Hecatompylos
+63 Alexander A Arachosia
+64 Alexander Hecatompylos
+65 Alexander A Arachosia
+66 Alexander A Caucasus
+67 Alexander Aornos
+68 Alexander A Caucasus
+69 Alexander A Arachosia
+70 Alexander Hecatompylos
+71 Alexander Hecatompylos
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Tyre:there_is:30
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Nicaea
+51 Alexander A Indus
+52 Alexander Patala
+53 Alexander Patala
+54 Alexander A Indus
+55 Alexander A Arachosia
+56 Alexander Hecatompylos
+57 Alexander Ecbatana
+58 Alexander Persepolis
+59 Alexander Susa
+60 Alexander Babylon
+61 Alexander Susa
+62 Alexander Babylon
+63 Alexander Arbela
+64 Alexander Susa
+65 Alexander Persepolis
+66 Alexander Persepolis
+67 Alexander Ecbatana
+68 Alexander Persepolis
+69 Alexander Susa
+70 Alexander Susa
+71 Alexander Arbela
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Memphis:there_is:297
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Nicaea
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander Bactra
+54 Alexander A Caucasus
+55 Alexander Bactra
+56 Alexander Samarkand
+57 Alexander Bactra
+58 Alexander Samarkand
+59 Alexander Samarkand
+60 Alexander A Eschate
+61 Alexander A Eschate
+62 Alexander Samarkand
+63 Alexander Bactra
+64 Alexander Samarkand
+65 Alexander Bactra
+66 Alexander A Caucasus
+67 Alexander A Caucasus
+68 Alexander A Caucasus
+69 Alexander A Caucasus
+70 Alexander Bactra
+71 Alexander Bactra
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Gaugamela:there_is:62
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Aornos
+52 Alexander Aornos
+53 Alexander Nicaea
+54 Alexander Aornos
+55 Alexander A Caucasus
+56 Alexander A Arachosia
+57 Alexander A Indus
+58 Alexander Nicaea
+59 Alexander Aornos
+60 Alexander Aornos
+61 Alexander A Caucasus
+62 Alexander Bactra
+63 Alexander Bactra
+64 Alexander Samarkand
+65 Alexander A Eschate
+66 Alexander A Eschate
+67 Alexander A Eschate
+68 Alexander A Eschate
+69 Alexander A Eschate
+70 Alexander Samarkand
+71 Alexander Bactra
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Alexandria:there_is:413
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander Patala
+54 Alexander Patala
+55 Alexander A Indus
+56 Alexander Patala
+57 Alexander Bela
+58 Alexander Patala
+59 Alexander A Indus
+60 Alexander Nicaea
+61 Alexander Aornos
+62 Alexander A Caucasus
+63 Alexander Bactra
+64 Alexander Samarkand
+65 Alexander A Eschate
+66 Alexander A Eschate
+67 Alexander A Eschate
+68 Alexander Samarkand
+69 Alexander A Eschate
+70 Alexander A Eschate
+71 Alexander A Eschate
+score:0.806452 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:66:71:Alexander:Babylon:there_is:19
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander A Caucasus
+52 Alexander A Arachosia
+53 Alexander A Indus
+54 Alexander A Indus
+55 Alexander A Indus
+56 Alexander Nicaea
+57 Alexander Sagala
+58 Alexander Sagala
+59 Alexander Nicaea
+60 Alexander Aornos
+61 Alexander Aornos
+62 Alexander Nicaea
+63 Alexander Aornos
+64 Alexander Nicaea
+65 Alexander A Indus
+66 Alexander A Arachosia
+67 Alexander A Arachosia
+68 Alexander A Arachosia
+69 Alexander A Arachosia
+70 Alexander A Carmania
+71 Alexander A Carmania
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Samarkand:there_is:158
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander A Indus
+50 Alexander A Arachosia
+51 Alexander A Arachosia
+52 Alexander A Arachosia
+53 Alexander A Carmania
+54 Alexander A Arachosia
+55 Alexander A Indus
+56 Alexander A Indus
+57 Alexander Nicaea
+58 Alexander Sagala
+59 Alexander Nicaea
+60 Alexander Aornos
+61 Alexander A Caucasus
+62 Alexander Aornos
+63 Alexander Aornos
+64 Alexander Aornos
+65 Alexander Aornos
+66 Alexander Nicaea
+67 Alexander Nicaea
+68 Alexander Aornos
+69 Alexander A Caucasus
+70 Alexander Aornos
+71 Alexander Aornos
+score:0.709677 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:6:11:Alexander:Gordion:there_is:45
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:48:53:Alexander:Aornos:there_is:414
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander Nicaea
+53 Alexander Aornos
+54 Alexander Aornos
+55 Alexander Aornos
+56 Alexander Aornos
+57 Alexander Nicaea
+58 Alexander Sagala
+59 Alexander Sagala
+60 Alexander Nicaea
+61 Alexander Sagala
+62 Alexander Sagala
+63 Alexander Nicaea
+64 Alexander Aornos
+65 Alexander A Caucasus
+66 Alexander A Arachosia
+67 Alexander A Caucasus
+68 Alexander A Caucasus
+69 Alexander Bactra
+70 Alexander A Caucasus
+71 Alexander A Arachosia
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander Bactra
+54 Alexander Samarkand
+55 Alexander A Eschate
+56 Alexander Samarkand
+57 Alexander A Eschate
+58 Alexander A Eschate
+59 Alexander A Eschate
+60 Alexander A Eschate
+61 Alexander A Eschate
+62 Alexander A Eschate
+63 Alexander A Eschate
+64 Alexander Samarkand
+65 Alexander Samarkand
+66 Alexander Bactra
+67 Alexander Samarkand
+68 Alexander A Eschate
+69 Alexander Samarkand
+70 Alexander A Eschate
+71 Alexander A Eschate
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:0:5:Alexander:Miletus:there_is:146
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander A Caucasus
+52 Alexander Bactra
+53 Alexander A Caucasus
+54 Alexander Bactra
+55 Alexander Bactra
+56 Alexander Bactra
+57 Alexander Bactra
+58 Alexander Bactra
+59 Alexander Samarkand
+60 Alexander Bactra
+61 Alexander A Caucasus
+62 Alexander Bactra
+63 Alexander Bactra
+64 Alexander Samarkand
+65 Alexander Bactra
+66 Alexander Bactra
+67 Alexander A Caucasus
+68 Alexander Aornos
+69 Alexander A Caucasus
+70 Alexander A Caucasus
+71 Alexander A Caucasus
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Alexandria:there_is:173
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander Nicaea
+53 Alexander A Indus
+54 Alexander A Indus
+55 Alexander A Indus
+56 Alexander A Arachosia
+57 Alexander Hecatompylos
+58 Alexander Hecatompylos
+59 Alexander Hecatompylos
+60 Alexander Hecatompylos
+61 Alexander Ecbatana
+62 Alexander Ecbatana
+63 Alexander Persepolis
+64 Alexander Susa
+65 Alexander Arbela
+66 Alexander Babylon
+67 Alexander Susa
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Arbela
+71 Alexander Gaugamela
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:2:2:Alexander:Granicus:there_is:196
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Nicaea
+51 Alexander Sagala
+52 Alexander Sagala
+53 Alexander Nicaea
+54 Alexander Aornos
+55 Alexander Aornos
+56 Alexander A Caucasus
+57 Alexander Aornos
+58 Alexander Nicaea
+59 Alexander Nicaea
+60 Alexander A Indus
+61 Alexander Patala
+62 Alexander Bela
+63 Alexander Patala
+64 Alexander Bela
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Persepolis
+68 Alexander Ecbatana
+69 Alexander Ecbatana
+70 Alexander Ecbatana
+71 Alexander Ecbatana
+score:0.709677 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Nicaea
+50 Alexander Sagala
+51 Alexander Sagala
+52 Alexander Sagala
+53 Alexander Nicaea
+54 Alexander A Indus
+55 Alexander Patala
+56 Alexander Patala
+57 Alexander Patala
+58 Alexander A Indus
+59 Alexander A Indus
+60 Alexander Nicaea
+61 Alexander A Indus
+62 Alexander Patala
+63 Alexander Patala
+64 Alexander Patala
+65 Alexander Bela
+66 Alexander Bela
+67 Alexander Bela
+68 Alexander Bela
+69 Alexander Bela
+70 Alexander Bela
+71 Alexander Patala
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Miletus:there_is:146
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:48:53:Alexander:Aornos:there_is:414
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander Sagala
+53 Alexander Nicaea
+54 Alexander Aornos
+55 Alexander Aornos
+56 Alexander Nicaea
+57 Alexander A Indus
+58 Alexander A Indus
+59 Alexander A Arachosia
+60 Alexander A Arachosia
+61 Alexander A Carmania
+62 Alexander Persepolis
+63 Alexander Susa
+64 Alexander Persepolis
+65 Alexander Persepolis
+66 Alexander Persepolis
+67 Alexander Ecbatana
+68 Alexander Ecbatana
+69 Alexander Hecatompylos
+70 Alexander Ecbatana
+71 Alexander Persepolis
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Arbela:there_is:378
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Sagala
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander Aornos
+53 Alexander Aornos
+54 Alexander A Caucasus
+55 Alexander A Arachosia
+56 Alexander A Arachosia
+57 Alexander A Indus
+58 Alexander Nicaea
+59 Alexander Nicaea
+60 Alexander Aornos
+61 Alexander A Caucasus
+62 Alexander A Caucasus
+63 Alexander A Arachosia
+64 Alexander A Arachosia
+65 Alexander A Carmania
+66 Alexander Persepolis
+67 Alexander Persepolis
+68 Alexander Susa
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Babylon
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Sardis:there_is:201
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Issus
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Sagala
+52 Alexander Nicaea
+53 Alexander A Indus
+54 Alexander A Arachosia
+55 Alexander A Carmania
+56 Alexander A Carmania
+57 Alexander A Arachosia
+58 Alexander A Arachosia
+59 Alexander A Arachosia
+60 Alexander A Indus
+61 Alexander A Indus
+62 Alexander Patala
+63 Alexander Patala
+64 Alexander Bela
+65 Alexander Bela
+66 Alexander Bela
+67 Alexander A Carmania
+68 Alexander A Arachosia
+69 Alexander A Carmania
+70 Alexander Persepolis
+71 Alexander Persepolis
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:0:5:Alexander:Miletus:there_is:146
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander Sagala
+53 Alexander Nicaea
+54 Alexander Aornos
+55 Alexander A Caucasus
+56 Alexander Aornos
+57 Alexander A Caucasus
+58 Alexander Bactra
+59 Alexander Bactra
+60 Alexander A Caucasus
+61 Alexander Aornos
+62 Alexander Nicaea
+63 Alexander Nicaea
+64 Alexander Sagala
+65 Alexander Sagala
+66 Alexander Nicaea
+67 Alexander Nicaea
+68 Alexander A Indus
+69 Alexander Patala
+70 Alexander Bela
+71 Alexander Bela
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:12:17:Alexander:Tyre:there_is:30
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander Bactra
+54 Alexander A Caucasus
+55 Alexander Bactra
+56 Alexander A Caucasus
+57 Alexander A Caucasus
+58 Alexander A Arachosia
+59 Alexander Hecatompylos
+60 Alexander Ecbatana
+61 Alexander Hecatompylos
+62 Alexander Ecbatana
+63 Alexander Persepolis
+64 Alexander Susa
+65 Alexander Susa
+66 Alexander Arbela
+67 Alexander Arbela
+68 Alexander Babylon
+69 Alexander Susa
+70 Alexander Susa
+71 Alexander Persepolis
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander A Indus
+50 Alexander Nicaea
+51 Alexander Aornos
+52 Alexander A Caucasus
+53 Alexander A Caucasus
+54 Alexander A Caucasus
+55 Alexander Bactra
+56 Alexander A Caucasus
+57 Alexander Aornos
+58 Alexander A Caucasus
+59 Alexander Bactra
+60 Alexander Bactra
+61 Alexander A Caucasus
+62 Alexander A Caucasus
+63 Alexander Bactra
+64 Alexander Bactra
+65 Alexander Samarkand
+66 Alexander A Eschate
+67 Alexander A Eschate
+68 Alexander A Eschate
+69 Alexander Samarkand
+70 Alexander Bactra
+71 Alexander Samarkand
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Miletus:there_is:146
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:54:59:Alexander:A Indus:there_is:179
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Nicaea
+50 Alexander A Indus
+51 Alexander Nicaea
+52 Alexander Aornos
+53 Alexander Nicaea
+54 Alexander Nicaea
+55 Alexander Nicaea
+56 Alexander Nicaea
+57 Alexander A Indus
+58 Alexander Patala
+59 Alexander A Indus
+60 Alexander A Arachosia
+61 Alexander A Indus
+62 Alexander A Indus
+63 Alexander A Indus
+64 Alexander Nicaea
+65 Alexander A Indus
+66 Alexander A Indus
+67 Alexander Patala
+68 Alexander A Indus
+69 Alexander A Indus
+70 Alexander A Indus
+71 Alexander A Indus
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Alexandria:there_is:413
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Babylon:there_is:436
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Aornos
+52 Alexander Nicaea
+53 Alexander Nicaea
+54 Alexander A Indus
+55 Alexander Nicaea
+56 Alexander A Indus
+57 Alexander A Arachosia
+58 Alexander A Indus
+59 Alexander A Indus
+60 Alexander A Indus
+61 Alexander Patala
+62 Alexander Bela
+63 Alexander Bela
+64 Alexander A Carmania
+65 Alexander Persepolis
+66 Alexander Susa
+67 Alexander Arbela
+68 Alexander Babylon
+69 Alexander Babylon
+70 Alexander Susa
+71 Alexander Arbela
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:48:53:Alexander:Aornos:there_is:414
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander A Caucasus
+51 Alexander A Arachosia
+52 Alexander Hecatompylos
+53 Alexander A Arachosia
+54 Alexander A Caucasus
+55 Alexander A Caucasus
+56 Alexander A Caucasus
+57 Alexander A Arachosia
+58 Alexander A Arachosia
+59 Alexander A Caucasus
+60 Alexander A Arachosia
+61 Alexander A Arachosia
+62 Alexander A Arachosia
+63 Alexander Hecatompylos
+64 Alexander Ecbatana
+65 Alexander Ecbatana
+66 Alexander Ecbatana
+67 Alexander Persepolis
+68 Alexander Susa
+69 Alexander Susa
+70 Alexander Babylon
+71 Alexander Babylon
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:48:53:Alexander:Aornos:there_is:414
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Nicaea
+51 Alexander Aornos
+52 Alexander Nicaea
+53 Alexander Nicaea
+54 Alexander A Indus
+55 Alexander Nicaea
+56 Alexander Sagala
+57 Alexander Nicaea
+58 Alexander A Indus
+59 Alexander Patala
+60 Alexander Patala
+61 Alexander Patala
+62 Alexander Bela
+63 Alexander Bela
+64 Alexander Bela
+65 Alexander Bela
+66 Alexander Patala
+67 Alexander Patala
+68 Alexander A Indus
+69 Alexander A Indus
+70 Alexander Nicaea
+71 Alexander Sagala
+score:0.774194 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:0:5:Alexander:Granicus:there_is:136
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:66:71:Alexander:Babylon:there_is:19
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Issus
+11 Alexander Sidon
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Siwa
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Nicaea
+49 Alexander Aornos
+50 Alexander Aornos
+51 Alexander Nicaea
+52 Alexander Nicaea
+53 Alexander A Indus
+54 Alexander Nicaea
+55 Alexander Aornos
+56 Alexander Aornos
+57 Alexander Nicaea
+58 Alexander Nicaea
+59 Alexander Sagala
+60 Alexander Sagala
+61 Alexander Sagala
+62 Alexander Sagala
+63 Alexander Sagala
+64 Alexander Sagala
+65 Alexander Sagala
+66 Alexander Sagala
+67 Alexander Nicaea
+68 Alexander Nicaea
+69 Alexander A Indus
+70 Alexander A Arachosia
+71 Alexander Hecatompylos
+score:0.741935 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:6:11:Alexander:Ankara:there_is:356
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------
+newPlayout ----------------------------------------------
+0 Alexander Pella
+1 Alexander Pella
+2 Alexander Granicus
+3 Alexander Sardis
+4 Alexander Miletus
+5 Alexander Side
+6 Alexander Gordion
+7 Alexander Ankara
+8 Alexander Tarsus
+9 Alexander Issus
+10 Alexander Sidon
+11 Alexander Issus
+12 Alexander Issus
+13 Alexander Sidon
+14 Alexander Tyre
+15 Alexander Memphis
+16 Alexander Alexandria
+17 Alexander Alexandria
+18 Alexander Memphis
+19 Alexander Alexandria
+20 Alexander Memphis
+21 Alexander Tyre
+22 Alexander Damascus
+23 Alexander Gaugamela
+24 Alexander Arbela
+25 Alexander Susa
+26 Alexander Persepolis
+27 Alexander Ecbatana
+28 Alexander Hecatompylos
+29 Alexander A Arachosia
+30 Alexander A Caucasus
+31 Alexander Bactra
+32 Alexander Samarkand
+33 Alexander A Eschate
+34 Alexander A Eschate
+35 Alexander A Eschate
+36 Alexander A Eschate
+37 Alexander A Eschate
+38 Alexander A Eschate
+39 Alexander A Eschate
+40 Alexander A Eschate
+41 Alexander A Eschate
+42 Alexander Samarkand
+43 Alexander Bactra
+44 Alexander A Caucasus
+45 Alexander Aornos
+46 Alexander Nicaea
+47 Alexander Sagala
+48 Alexander Sagala
+49 Alexander Nicaea
+50 Alexander Nicaea
+51 Alexander Nicaea
+52 Alexander A Indus
+53 Alexander A Indus
+54 Alexander Nicaea
+55 Alexander Aornos
+56 Alexander A Caucasus
+57 Alexander A Caucasus
+58 Alexander A Caucasus
+59 Alexander Bactra
+60 Alexander A Caucasus
+61 Alexander Bactra
+62 Alexander Samarkand
+63 Alexander Samarkand
+64 Alexander Bactra
+65 Alexander A Caucasus
+66 Alexander Aornos
+67 Alexander Nicaea
+68 Alexander Aornos
+69 Alexander Aornos
+70 Alexander A Caucasus
+71 Alexander A Arachosia
+score:0.709677 maxDepth:59
+playoutEnd ----------------------------------------------
+selectedConstraintsStart --------
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:2:2:Alexander:Granicus:there_is:196
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Granicus:there_is:136
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraint:0:5:Alexander:Alexandria:there_is:173
+selectedConstraintsEnd ---------
+outputStart -------
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:0:5:Alexander:Alexandria:there_is:173
+outputEnd --------

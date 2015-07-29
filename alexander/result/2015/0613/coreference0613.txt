@@ -1,0 +1,112 @@
+共参照解析結果
+Bactriaは制約として入ってしまっているので、削除
+さらに、初期解をランダム1000個にして、SAによるトップ１のみにして実験 2015.6.13
+
+
+
+
+(SA iter=100000の場合)
+constraint:54:59:Alexander:the area:there_is:32553
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:651
+A Carmania:640
+Babylon:1
+Bactra:4
+Bela:745
+
+the area is Bela
+
+(SA iter=10000の場合)
+constraint:54:59:Alexander:the area:there_is:32650
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:404
+A Carmania:454
+Babylon:8
+Bactra:2
+Bela:547
+
+the area is Bela
+
+(SA iter=1000の場合)
+constraint:54:59:Alexander:the area:there_is:32557
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:154
+A Carmania:210
+Babylon:35
+Bactra:3
+Bela:247
+
+the area is Bela
+
+
+///ここから下はBactriaとCarmaniaの制約条件が入ってしまったままの結果のためボツ
+(SA iter=100000のみの結果 ）
+
+constraint:54:59:Alexander:the area:there_is:32626
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:572
+A Carmania:532
+Babylon:0
+Bactra:0
+Bela:697
+
+the area is Bela
+
+
+(SA iter=10000の場合)
+constraint:54:59:Alexander:the area:there_is:32604
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:361
+A Carmania:396
+Babylon:11
+Bactra:1
+Bela:517
+
+the area is Bela
+
+(SA iter=1000の場合)
+constraint:54:59:Alexander:the area:there_is:32667
+Bela,A Arachosia,A Carmania,Babylon,Bactra
+Bela
+A Arachosia
+A Carmania
+Babylon
+Bactra
+
+A Arachosia:157
+A Carmania:167
+Babylon:27
+Bactra:1
+Bela:229
+
+the area is Bela

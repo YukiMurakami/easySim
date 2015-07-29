@@ -1,0 +1,29 @@
+questionId:22
+0:0.339
+constraint:6:11:Alexander:Tyre:there_is:32767
+1:0.0002
+constraint:36:41:Alexander:Pella:there_is:32767
+2:0.6286
+constraint:18:23:Alexander:Arbela:there_is:378
+3:0.121
+constraint:36:41:Alexander:A Eschate:there_is:32767
+2
+0.6286
+
+
+
+共参照解析結果（SA iter=100000のみの結果 ）
+Gedrosia
+constraint:54:59:Alexander:the area:there_is:0
+Bela,A Arachosia,A Carmania,Babylon
+Bela
+A Arachosia
+A Carmania
+Babylon
+
+A Arachosia:2975
+A Carmania:2592
+Babylon:0
+Bela:3115
+
+the area is Bela

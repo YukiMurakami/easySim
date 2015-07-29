@@ -14,6 +14,7 @@
 
 #include "person.h"
 #include "place.h"
+#include "constraints.h"
 
 using namespace std;
 
@@ -30,6 +31,7 @@ vector<Episode> findEpisodeFromTime(int beginTime,int endTime,vector<Episode> ep
 vector<Episode> getOnlyPersonEpisode(string name,vector<Episode> episodes);
 vector<Episode> getFusionEpisode(vector <vector<Episode> > episodess);
 void EpisodesOutput(vector<Episode> &episodes,string filename,string personName,double score,int maxDepth);
+vector< pair< vector<Episode>,vector<Constraint> > > readEpisodesAndConstraintsFromEpisodeFile(string filename,string initPlaceFilename);
 
 bool isSameEpisodesAlexander(vector<Episode> &a,vector<Episode> &b);
 #endif /* defined(__easySimu__history__) */

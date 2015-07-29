@@ -1,0 +1,85 @@
+Yuki-no-MacBook-Pro:alexander Yuki$ ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+playouts:10000
+correct:31 count:100
+correctRate:0.31
+missZeroCorrect:92 missCount:300
+missCorrectRate:0.306667
+playouts:20000
+correct:32 count:100
+correctRate:0.32
+missZeroCorrect:92 missCount:300
+missCorrectRate:0.306667
+playouts:50000
+correct:26 count:100
+correctRate:0.26
+missZeroCorrect:125 missCount:300
+missCorrectRate:0.416667
+playouts:100000
+correct:20 count:100
+correctRate:0.2
+missZeroCorrect:136 missCount:300
+missCorrectRate:0.453333
+playouts:200000
+correct:22 count:100
+correctRate:0.22
+missZeroCorrect:147 missCount:300
+missCorrectRate:0.49
+playouts:500000
+correct:50 count:100
+correctRate:0.5
+missZeroCorrect:240 missCount:300
+missCorrectRate:0.8
+playouts:1000000
+correct:56 count:100
+correctRate:0.56
+missZeroCorrect:253 missCount:300
+missCorrectRate:0.843333
+
+
+
+Annotations
+
+Yuki-no-MacBook-Pro:alexander Yuki$ ./alexander 
+initAgent: 'initialize0110.txt'
+0
+makeConstraintsFromConstraintFile 'constraint0114.txt' begin:1 end:32
+32
+playouts:10000
+correct:30 count:100
+correctRate:0.3
+missZeroCorrect:107 missCount:300
+missCorrectRate:0.356667
+playouts:20000
+correct:31 count:100
+correctRate:0.31
+missZeroCorrect:108 missCount:300
+missCorrectRate:0.36
+playouts:50000
+correct:23 count:100
+correctRate:0.23
+missZeroCorrect:129 missCount:300
+missCorrectRate:0.43
+playouts:100000
+correct:18 count:100
+correctRate:0.18
+missZeroCorrect:136 missCount:300
+missCorrectRate:0.453333
+playouts:200000
+correct:42 count:100
+correctRate:0.42
+missZeroCorrect:178 missCount:300
+missCorrectRate:0.593333
+playouts:500000
+correct:51 count:100
+correctRate:0.51
+missZeroCorrect:246 missCount:300
+missCorrectRate:0.82
+playouts:1000000
+correct:55 count:100
+correctRate:0.55
+missZeroCorrect:276 missCount:300
+missCorrectRate:0.92

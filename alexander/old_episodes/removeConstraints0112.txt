@@ -1,0 +1,27 @@
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:24:29:Alexander:A Caucasus:there_is:27
+constraint:6:11:Alexander:Gordion:there_is:44
+constraint:24:29:Alexander:Persepolis:there_is:60
+constraint:42:47:Alexander:Bactra:there_is:62
+constraint:66:71:Alexander:Bactra:there_is:80
+constraint:30:35:Alexander:Bactra:there_is:87
+constraint:6:11:Alexander:Issus:there_is:89
+constraint:42:47:Alexander:Sagala:there_is:102
+constraint:2:2:Alexander:Granicus:there_is:133
+constraint:0:5:Alexander:Miletus:there_is:143
+constraint:54:59:Alexander:Babylon:there_is:145
+constraint:42:47:Alexander:Samarkand:there_is:155
+constraint:0:5:Alexander:Alexandria:there_is:170
+constraint:24:29:Alexander:Ecbatana:there_is:171
+constraint:54:59:Alexander:A Indus:there_is:175
+constraint:0:5:Alexander:Granicus:there_is:176
+constraint:18:23:Alexander:Alexandria:there_is:305
+constraint:12:17:Alexander:Sidon:there_is:335
+constraint:12:17:Alexander:Issus:there_is:365
+constraint:18:23:Alexander:Arbela:there_is:371
+constraint:12:17:Alexander:Alexandria:there_is:406
+constraint:48:53:Alexander:Aornos:there_is:407
+constraint:18:23:Alexander:Babylon:there_is:428
+constraint:60:65:Alexander:Susa:there_is:447

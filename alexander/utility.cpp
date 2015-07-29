@@ -17,12 +17,59 @@
 
 #include <stdio.h>
 
+#include <dirent.h>
+
+#include <sys/stat.h>
+
 using namespace std;
 
 int ENDSTEP2 = 71;
 
 #pragma mark -
 #pragma mark initalize
+
+void initPlace(map<string,Place> &places,string filename) {
+    places.clear();
+    ifstream ifs2(filename.c_str());
+    string buf;
+    if(!ifs2) {
+        cout << "not found initialize file" << endl;
+        exit(0);
+    }
+    vector<string> placeVector;
+    while(getline(ifs2,buf)) {
+        if(buf == "<area_start>") {
+            while(getline(ifs2,buf)) {
+                if(buf == "<area_end>") break;
+                vector<string> out2 = SpritString(buf, ":");
+                int placeIndex = atoi(out2[0].c_str());
+                vector<string> out3 = SpritString(out2[1], ",");
+                if(places.find(placeVector[placeIndex]) != places.end()) {
+                    for(int i=0;i<(int)out3.size();i++) {
+                        int nextIndex = atoi(out3[i].c_str());
+                        if(places.find(placeVector[nextIndex]) != places.end()) {
+                            places[placeVector[placeIndex]]._nextPlaces.push_back(placeVector[nextIndex]);
+                        }
+                    }
+                }
+            }
+        }
+        if(buf == "<area_end>") {
+            continue;
+        }
+        
+        vector<string> out = SpritString(buf, ":");
+        if(out[0] == "place") {
+            placeVector = SpritString(out[1],",");
+            for(int i=0;i<(int)placeVector.size();i++) {
+                Place place;
+                place._name = placeVector[i];
+                places.insert(make_pair(place._name, place));
+            }
+        }
+    }
+    ifs2.close();
+}
 
 void initAgent(map<string,Person> &persons,map<string,Place> &places,string filename) {
     cout << "initAgent: '" << filename << "'" << endl;
@@ -339,6 +386,46 @@ vector<string> SpritString(const string &src,const string &delim) {
 }
 
 
+#pragma mark - finder
+
+vector<string> getFilenamesByFilelistname(string listName) {
+    cout << "get filenames from listname '" << listName << "'" << endl;
+    ifstream ifs(listName.c_str());
+    if(!ifs) {
+        cout << "error: not found listname '" << listName << "' @getFilenamesByFilelistname" << endl;
+        exit(0);
+    }
+    string buf;
+    vector<string> filenames;
+    //int i=0;
+    while(getline(ifs,buf)) {
+        filenames.push_back(buf);
+        //cout << "id:" << i+1 << " " << buf << endl;
+    }
+    return filenames;
+}
+
+vector<string> getFilenamesByFoldername(string folderName) {
+    cout << "get filenames in folder" << endl;
+    vector<string> filenames;
+    DIR *dir;
+    struct dirent *dp;
+    dir = opendir(folderName.c_str());
+    for(dp = readdir(dir);dp != NULL;dp = readdir(dir)) {
+        string filename = string(dp->d_name);
+        if(filename.length() <= 4) continue;
+        if(filename.substr(filename.length()-4) == ".txt") {
+            filenames.push_back(filename);
+        }
+    }
+    return filenames;
+}
+
+void makeDirectory(string path,string folderName) {
+    cout << "makeDirectory" << endl;
+    mkdir((path + "/" + folderName).c_str(), 0755);
+}
+
 #pragma mark -
 #pragma mark Action
 
@@ -415,6 +502,87 @@ void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &place
         }
     }
 }
+
+
+void doActionWithHeuristicsAndShortest(map<string,Person> &persons,map<string,Place> &places,map<string, map<string,int> > &shortestInfo,vector<Constraint> constraints,int nowTime) {
+    
+ //   double shortestRate = 0.1;
+    
+    for(map<string,Person>::iterator it = persons.begin();it != persons.end();it++) {
+        Person person = (*it).second;
+        Place place = places[person._nowPlace];
+        int nextSize = (int)place._nextPlaces.size();
+        
+       // vector<double> scores;
+        
+        double scores[nextSize+1];
+        
+        double sumScore = 0.0;
+        for(int i=0;i<nextSize+1;i++) {
+            string nextPlace = "";
+            if(i==nextSize) {
+                nextPlace = place._name;
+            } else {
+                nextPlace = place._nextPlaces[i];
+            }
+            
+            double score = 0.0;
+            for(unsigned int j=0;j<constraints.size();j++) {
+                if(constraints[j]._endTime > nowTime) {
+                    double timeWidth = constraints[j]._endTime - nowTime;
+                    double length = shortestInfo[nextPlace][constraints[j]._placeName];
+                    score += (timeWidth / (ENDSTEP2 - nowTime)) * length;
+                }
+            }
+            scores[i] = score;
+            sumScore += score;
+        }
+        
+        for(unsigned int i=0;i<nextSize+1;i++) {
+            if(sumScore != 0) {
+                scores[i] = scores[i] / sumScore;
+            } else {
+                scores[i] = 999999;
+            }
+        }
+        
+        vector< pair<string, double> > actions;
+        double tmpScore = 0.0;
+        for(unsigned int i=0;i<nextSize+1;i++) {
+            string actionString;
+            if(i==nextSize) {
+                actionString = "nothing";
+            } else {
+                actionString = "move:" + place._nextPlaces[i];
+            }
+            tmpScore += scores[i];
+            actions.push_back(make_pair(actionString, tmpScore));
+        }
+        
+        double selectValue = xor128() % 10000 / 10000.0;
+        int index = -1;
+        double tmpScore1 = 0.0;
+        double tmpScore2 = 0.0;
+        for(unsigned int i=0;i<nextSize+1;i++) {
+            tmpScore2 += scores[i];
+            if(selectValue >= tmpScore1 && selectValue < tmpScore2) {
+                index = i;
+            }
+            tmpScore1 += scores[i];
+        }
+        
+        
+        string action = actions[index].first;
+        if(action == "nothing") {
+            //do nothing
+        }
+        if(action.substr(0,5) == "move:") {
+            string nextPlaceString = action.substr(5);
+            move(person,persons,places,places[nextPlaceString]);
+        }
+    }
+}
+
 
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes) {
     //１ステップ分の行動を原始モンテカルロで決定し、処理する。
@@ -687,11 +855,15 @@ void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Con
     return;
 }
 
+
+
 int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp) {
     
     cout << "start mcts" << endl;
     clock_t start,end;
     start = clock();
+    
+    vector< pair<int, double> > values;
     
     map<string,Person> nowPersons(persons);
     map<string,Place> nowPlaces(places);
@@ -733,10 +905,10 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         MCTREE *current = &root;
         
-        int playout = 1000000;
+        int playout = 1;
         double finishRate = 0.98;
         
-        
+        cout << "playout:" << playout << endl;
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
@@ -907,6 +1079,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                 double time = (double)(end-start)/CLOCKS_PER_SEC / round;
                 cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
                 // outputAverageReward("averageReward1202", round, getVal);
+                
+                values.push_back(make_pair(round, getVal));
             }
         }
 
@@ -919,12 +1093,18 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         
         EpisodesOutput(completeEpisodes,outputFilename,person._name,score,maxDepth);
         
-        checkEpisodePersonAndOutput(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, outputFilename, true);
+        checkEpisodePersonAndOutput(getOnlyPersonEpisode(person._name, completeEpisodes), constraints, person._name, outputFilename, false);
         
         //showTree(&root);
         
         deleteTree(&root);
     }
+    
+    ofstream ofs("dataEschate.txt",ios::app);
+    for(unsigned int i=0;i<values.size();i++) {
+        ofs << values[i].first << "," << values[i].second << endl;
+    }
+    ofs.close();
     
     //vector<Episode> resultEpisode = getFusionEpisode(completeEpisodess);
     //showEpisode(resultEpisode);
@@ -933,13 +1113,13 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
 
 
 
-int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp) {
+int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp,map<string, map<string,int> > &shortestInfo) {
     
     cout << "start mcts" << endl;
     clock_t start,end;
     start = clock();
     
-    int highRanker = 100;
+    int highRanker = 1000;
     
     vector< pair< vector<Episode>  , double> > topEpisodesList;
     for(int i=0;i<highRanker;i++) {
@@ -1098,7 +1278,8 @@ int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,v
                     while(time < endTime) {
                         time++;
                         
-                        doActionWithHeuristics(randomPersons, randomPlaces);
+                        //doActionWithHeuristics(randomPersons, randomPlaces);
+                        doActionWithHeuristicsAndShortest(randomPersons, randomPlaces, shortestInfo, constraints, time);
                         
                         episodes[I]._persons = randomPersons;
                         episodes[I]._places = randomPlaces;
@@ -1133,7 +1314,7 @@ int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,v
                             if(!sameFlag) {
                             
                                 topEpisodesList.insert(topEpisodesList.begin() + ei, make_pair(TreeEpisodes, getVal));
-                                topEpisodesList.erase(topEpisodesList.end());
+                                topEpisodesList.erase(topEpisodesList.end() - 1);
                         
                             }
                             break;
@@ -1270,6 +1451,38 @@ bool checkQuestion(vector<Episode> episodes,Question question) {
     return flag;
 }
 
+bool isEpisodeSatisfyWithConstraint(vector<Episode> &episode,Constraint constraint) {
+    
+    int beginTime = constraint._beginTime;
+    int endTime = constraint._endTime;
+    string personName = constraint._personName;
+    string placeName = constraint._placeName;
+    CONSTRAINT con = constraint._constraint;
+    
+    bool isCorrect = false;
+    if(con == there_is_no) isCorrect = true;
+    
+    for(int t=0;t<(int)episode.size();t++) {
+        Episode state = episode[t];
+        if(state._time < beginTime || state._time > endTime) continue;
+        
+        if(con == there_is) {
+            if(state._persons[personName]._nowPlace == placeName) {
+                isCorrect = true;
+                break;
+            }
+        }
+        if(con == there_is_no) {
+            if(state._persons[personName]._nowPlace == placeName) {
+                isCorrect = false;
+                break;
+            }
+        }
+    }
+    
+    return isCorrect;
+}
+
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints) {
     double val = 0;
     int count = (int)constraints.size();
@@ -1393,6 +1606,81 @@ void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> con
     ofs.close();
     
     return;
+}
+
+double checkEpisodePersonWithActions(vector<string> actions,vector<Constraint> &constraints,string _personName,string firstPlace,bool isShowConstraints) {
+    double val = 0;
+    int count = (int)constraints.size();
+    int correct = 0;
+    int hitCount = 0;
+    
+    vector<string> episodePlaces;
+    string nowPlace = firstPlace;
+    episodePlaces.push_back(nowPlace);
+    for(unsigned int i=0;i<ENDSTEP2;i++) {
+        if(actions[i].substr(0,5) == "move:") {
+            nowPlace = actions[i].substr(5);
+            episodePlaces.push_back(nowPlace);
+        }
+        if(actions[i] == "nothing") {
+            episodePlaces.push_back(nowPlace);
+        }
+    }
+    
+    
+    for(int i=0;i<count;i++) {
+        int beginTime = constraints[i]._beginTime;
+        int endTime = constraints[i]._endTime;
+        string personName = constraints[i]._personName;
+        if(personName != _personName) {
+            continue;
+        }
+        
+        hitCount++;
+        
+        string placeName = constraints[i]._placeName;
+        CONSTRAINT constraint = constraints[i]._constraint;
+        
+        bool okFlag = false;
+        
+        for(int j=beginTime;j<=endTime;j++) {
+            string nowPlace = episodePlaces[j];
+            
+            if(constraint == there_is) {
+                if(nowPlace == placeName) {
+                    okFlag = true;
+                    if(isShowConstraints) {
+                        constraints[i].show();
+                        cout << "ok" << endl;
+                    }
+                    break;
+                }
+            }
+            if(constraint == there_is_no) {
+                if(nowPlace != placeName) {
+                    okFlag = true;
+                    if(isShowConstraints) {
+                        constraints[i].show();
+                        cout << "ok" << endl;
+                    }
+                    break;
+                }
+            }
+        }
+        
+        if(constraint == there_is && okFlag) {
+            correct++;
+        }
+        if(constraint == there_is_no && !okFlag) {
+            correct++;
+        }
+    }
+    
+    //cout << "this episode's result are " << correct << "/" << count << endl;
+    if(hitCount == 0) return 1.0;
+    val = (double)correct / (double)hitCount ;
+    
+    return val;
 }
 
 double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName,bool isShowConstraints) {
@@ -1598,14 +1886,14 @@ string removeOrthographicalVariantString(string &a) {
     dic += "Hecatompylos,Qumis,Hekatompylos,Saddarvazeh/";
     dic += "Herat,A Areion/";
     dic += "A Prophthasia,A Drangiana/";
-    dic += "A Arachosia,A Arakhosia/";
-    dic += "A Caucasus,Cabul,Kabul/";
+    dic += "A Arachosia,A Arakhosia,Arachosia/";
+    dic += "A Caucasus/";
     dic += "Drapsaca,Drapsaka/";
     dic += "Bactra,Baktra,Bactria/";
-    dic += "Samarkand,Maracanda/";
+    dic += "Samarkand,Samarqand,Samarcand,Maracanda/";
     dic += "A Eschate,A Eskhate/";
     dic += "Ai Khanoum,Ai-Khanoum,Ay Khanoum,Ay-Khanoum,A Oxus/";
-    dic += "A Carmania,A Karmania/";
+    dic += "A Carmania,A Karmania,Carmania/";
     dic += "Bela,A Rhambacia/";
     dic += "Patala,Thatta/";
     dic += "A Indus/";
@@ -1780,32 +2068,39 @@ void showConstraintsPlaceDistribution(vector<Constraint> &constraints) {
 }
 
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c) {
-    int completeCount = 0;
-    int notCompleteCount = 0;
-    int onlyACount = 0;
-    int onlyCCount = 0;
+    vector<Constraint> correctConstraints;
+    vector<Constraint> incorrectConstraints;
+    vector<Constraint> missConstraints;
+    vector<Constraint> extraConstraints;
+    
     unsigned int ia=0,ic=0;
     while(ia < a.size() && ic < c.size()) {
         if(a[ia]._id == c[ic]._id) {
             if(a[ia]._beginTime == c[ic]._beginTime && a[ia]._endTime == c[ic]._endTime && a[ia]._personName == c[ic]._personName && a[ia]._personName == c[ic]._personName && a[ia]._constraint == c[ic]._constraint) {
-                completeCount++;
+                correctConstraints.push_back(a[ia]);
             } else {
-                notCompleteCount++;
+                incorrectConstraints.push_back(a[ia]);
             }
             ia++;
             ic++;
         } else {
             if(a[ia]._id < c[ic]._id) {
+                missConstraints.push_back(a[ia]);
                 ia++;
-                onlyACount++;
             } else {
+                extraConstraints.push_back(c[ic]);
                 ic++;
-                onlyCCount++;
             }
         }
     }
-    
-    cout << "completeCount:" << completeCount << "notCompleteCount:" << notCompleteCount << " onlyRuleCount:" << onlyACount << " onlyAnnotateCount:" << onlyCCount << endl;
+    cout << "correctConstraints " << correctConstraints.size() << endl;
+    showConstraints(correctConstraints);
+    cout << "incorrectConstraints " << incorrectConstraints.size() << endl;
+    showConstraints(incorrectConstraints);
+    cout << "missConstraints " << missConstraints.size() << endl;
+    showConstraints(missConstraints);
+    cout << "extraConstraints " << extraConstraints.size() << endl;
+    showConstraints(extraConstraints);
 }
 
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints) {
@@ -1930,6 +2225,10 @@ int getMonthFromString(string mString) {
     }
     
     return month;
+}
+
+double getRandomZeroToOne() {
+    return xor128()%1000001/1000000.0;
 }
 
 #pragma mark - getShortestLength

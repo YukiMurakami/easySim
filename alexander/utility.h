@@ -37,22 +37,25 @@ void allSearchAction(map<string,Person> &persons,map<string,Place> &places,vecto
 void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Constraint> &constraints,vector<Episode>episodes,bool &isFinish,string action,Person person,int step,vector<Episode> &answerEpisodes);
 void doAction(map<string,Person> &persons,map<string,Place> &places);
 void doActionWithHeuristics(map<string,Person> &persons,map<string,Place> &places);
+void doActionWithHeuristicsAndShortest(map<string,Person> &persons,map<string,Place> &places,map<string, map<string,int> > &shortestInfo,vector<Constraint> constraints,int nowTime);
 void doActionUCB(map<string,Person> &persons,map<string,Place> &places,int nowTime,int endTime,vector<Constraint> &constraints,vector<Episode> &episodes);
 //木を作成しながらシミュレーションを繰り返す
 //総プレイアウト回数を返す
 int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename,double Cp);
 
 //プレイアウト回数で打ち切るまでまわし、そのなかで報酬値が高かったものトップ１０のエピソードを出力する
-int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp);
+int doActionMCTSWithRank(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp,map<string, map<string,int> > &shortestInfo);
 
 //移動アクションの処理
 void move(Person &person,map<string,Person> &persons,map<string,Place> &places,Place &nextplace);
 
 //エージェントの初期化
 void initAgent(map<string,Person> &persons,map<string,Place> &places,string filename);
+void initPlace(map<string,Place> &places,string filename);
 //エピソードの評価
+bool isEpisodeSatisfyWithConstraint(vector<Episode> &episode,Constraint constraint);
 double checkEpisode(vector<Episode> episodes,vector<Constraint> constraints);
-double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personNamebool ,bool isShowConstraints);
+double checkEpisodePerson(vector<Episode> episodes,vector<Constraint> constraints,string _personName ,bool isShowConstraints);
 
 void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> constraints,string _personName,string filename,bool isShowConstraints);
 
@@ -72,6 +75,7 @@ bool checkQuestion(vector<Episode> episodes,Question question);
 //エピソードの表示
 void showEpisode(vector<Episode> episodes);
 void showEpisodeWithPerson(vector<Episode> episodes);
+double checkEpisodePersonWithActions(vector<string> actions,vector<Constraint> &constraints,string _personName,string firstPlace,bool isShowConstraints);
 //エージェントの表示
 void showPersons(map<string,Person> &persons);
 //制約条件の地名分布を表示
@@ -86,6 +90,7 @@ double calcUcb1(double sumVal,int n,int N,double c);
 
 //xorshift乱数生成
 uint32_t xor128(void) ;
+double getRandomZeroToOne();
 
 //時代換算関数  {紀元前年、月} 例{332,6}
 vector<int> getBCfromTime(int time);
@@ -144,5 +149,10 @@ void showErrorConstraintsFromEpisodeFiles(vector<string> episodeFileNames);
 map<string, map<string,int> > getShortestLengthToNextConstraint(map<string,Place> &places) ;
 void enqueue(vector< vector<string> > &queue,vector<string> &data);
 vector<string> dequeue(vector< vector<string> > &queue);
+
+//ファイル操作
+void makeDirectory(string path,string folderName) ;
+vector<string> getFilenamesByFoldername(string folderName);
+vector<string> getFilenamesByFilelistname(string listName);
 
 #endif /* defined(__easySimu__utility__) */

@@ -1,0 +1,101 @@
+Bela hits 3752
+A Arachosia hits 2955
+A Carmania hits 3116
+Babylon hits 0
+Bactra hits 30
+the area is Bela
+
+
+
+correct:6891 count:10000
+correctRate:0.6891
+missZeroCorrect:21311 missCount:30000
+missCorrectRate:0.710367
+95%confidence: 0.679843 - 0.698357
+sigma: 0.00462862
+playouts:1000000 isAnnotation:1 isAnnealing:1
+
+
+correct:6713 count:10000
+correctRate:0.6713
+missZeroCorrect:19899 missCount:30000
+missCorrectRate:0.6633
+95%confidence: 0.661905 - 0.680695
+sigma: 0.00469741
+playouts:500000 isAnnotation:1 isAnnealing:1
+
+
+correct:6827 count:10000
+correctRate:0.6827
+missZeroCorrect:19327 missCount:30000
+missCorrectRate:0.644233
+95%confidence: 0.673391 - 0.692009
+sigma: 0.00465425
+playouts:200000 isAnnotation:1 isAnnealing:1
+
+
+correct:6522 count:10000
+correctRate:0.6522
+missZeroCorrect:11796 missCount:30000
+missCorrectRate:0.3932
+95%confidence: 0.642675 - 0.661725
+sigma: 0.00476272
+playouts:100000 isAnnotation:1 isAnnealing:1
+
+
+correct:6492 count:10000
+correctRate:0.6492
+missZeroCorrect:12558 missCount:30000
+missCorrectRate:0.4186
+95%confidence: 0.639656 - 0.658744
+sigma: 0.0047722
+playouts:50000 isAnnotation:1 isAnnealing:1
+
+
+correct:6598 count:10000
+correctRate:0.6598
+missZeroCorrect:10960 missCount:30000
+missCorrectRate:0.365333
+95%confidence: 0.650324 - 0.669276
+sigma: 0.00473776
+playouts:20000 isAnnotation:1 isAnnealing:1
+
+
+correct:6828 count:10000
+correctRate:0.6828
+missZeroCorrect:10817 missCount:30000
+missCorrectRate:0.360567
+95%confidence: 0.673492 - 0.692108
+sigma: 0.00465386
+playouts:10000 isAnnotation:1 isAnnealing:1
+
+
+correct:6767 count:10000
+correctRate:0.6767
+missZeroCorrect:11354 missCount:30000
+missCorrectRate:0.378467
+95%confidence: 0.667345 - 0.686055
+sigma: 0.00467736
+playouts:5000 isAnnotation:1 isAnnealing:1
+
+
+
+correct:6737 count:10000
+correctRate:0.6737
+missZeroCorrect:11601 missCount:30000
+missCorrectRate:0.3867
+95%confidence: 0.664323 - 0.683077
+sigma: 0.00468859
+playouts:2000 isAnnotation:1 isAnnealing:1
+
+
+
+correct:6587 count:10000
+correctRate:0.6587
+missZeroCorrect:11429 missCount:30000
+missCorrectRate:0.380967
+95%confidence: 0.649217 - 0.668183
+sigma: 0.00474146
+playouts:1000 isAnnotation:1 isAnnealing:1
+
+
