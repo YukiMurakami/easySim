@@ -2101,6 +2101,11 @@ void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c) {
     showConstraints(missConstraints);
     cout << "extraConstraints " << extraConstraints.size() << endl;
     showConstraints(extraConstraints);
+    
+    double P = (double)correctConstraints.size() / (double)c.size();
+    double R = (double)correctConstraints.size() / (double)a.size();
+    double F = 2*P*R/(P+R);
+    cout << "P:" << P << " R:" << R << " F:" << F << endl;
 }
 
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints) {

@@ -741,6 +741,33 @@ void solveCoreference(Coreference coreference,string episodeFileName) {
     cout << coreference._constraint._placeName << " is " << maxPlace << endl;
 }
 
+vector<Constraint> makeConstraintsFromConstraintFile(string filename) {
+    cout << "makeConstraintsFromConstraintFile '" << filename << endl;
+    vector<Constraint> result;
+    
+    ifstream ifs(filename.c_str());
+    if(!ifs) {
+        cout << "error: not found file '" << filename << "' @makeConstraintsFromConstraintFile" << endl;
+        exit(0);
+    }
+    
+    string buf;
+    int count = 0;
+    while(getline(ifs,buf)) {
+        count++;
+        vector<string> out = SpritString(buf, ":");
+        int beginTime = atoi(out[1].c_str());
+        int endTime = atoi(out[2].c_str());
+        string personName = out[3];
+        string placeName = out[4];
+        CONSTRAINT constraint = getEnumFromString(out[5]);
+        int id = atoi(out[6].c_str());
+        Constraint con(beginTime,endTime,personName,placeName,constraint,id);
+        result.push_back(con);
+    }
+    return result;
+}
+
 vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLine,int endLine) {
     cout << "makeConstraintsFromConstraintFile '" << filename << "' begin:" << beginLine << " end:" << endLine << endl;
     vector<Constraint> result;

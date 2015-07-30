@@ -73,6 +73,7 @@ vector<Coreference> makeCoreferencesFromTextfile(string filename);
 void solveCoreference(Coreference coreference,string episodeFileName);
 
 vector<Constraint> makeConstraintsFromConstraintFile(string filename,int beginLine,int endLine);
+vector<Constraint> makeConstraintsFromConstraintFile(string filename);
 
 
 class FourChoiceQuestion {

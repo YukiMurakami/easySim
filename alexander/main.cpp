@@ -115,7 +115,8 @@ int main(int argc, const char * argv[])
     
     
     vector<Constraint> constraints;
-    constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
+    //constraints = makeConstraintsFromTestfile("alexander_wikipedia_bc.txt", personVector, placeVector,true);
+    constraints = makeConstraintsFromConstraintFile("constraint20150730.txt");
     //constraints = makeConstraintsFromConstraintFile("constraint0114.txt", 1, 32); //annotationConstraints
 //    initConstraintsFromAnnotation(constraints, "annotation.txt",personVector,placeVector,true);
     showConstraints(constraints);
@@ -126,15 +127,11 @@ int main(int argc, const char * argv[])
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
      */
-    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("constraint0114.txt",1,32);
+    
+    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("annotationConstraint20150730.txt",1,32);
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
     
-    showDifferentConstraints(annotationConstraints,constraints);
-    return 0;
-    
-    
-    return 0;
     
     // vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(10000, annotationConstraints, placeVector);
     
@@ -201,7 +198,7 @@ int main(int argc, const char * argv[])
     answerPlaceFromTimeConstraintWithBaseline(annotationConstraints, constraints);
     return 0;
     */
-    
+    /*
     int iters2[7] = {1000,2000,5000,10000,20000,50000,100000};
     int iters0[6] = {10,20,50,100,200,500};
     
@@ -209,13 +206,14 @@ int main(int argc, const char * argv[])
         answerPlaceFromTimeConstraint("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/top1/", iters2[i], annotationConstraints, initializeFilename, placeVector);
         //answerPlaceFromTimeConstraintByEpisode("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/top1/", iters2[i], annotationConstraints, initializeFilename, placeVector);
     }
+     */
      
     /*
     for(int i=0;i<6;i++) {
         answerPlaceFromTimeConstraint("./../../../../data/local/murakami/alexanderTmp/annealingEpisodes/random1000/top1/", iters0[i], annotationConstraints, initializeFilename, placeVector);
     }
     */
-    return 0;
+   // return 0;
     
     
     //出現頻度問題評価
@@ -317,7 +315,7 @@ int main(int argc, const char * argv[])
         sprintf(fileChara,"%s-%d-%3.2f",(annotationConstraints[n]._placeName).c_str(),annotationConstraints[n]._id,cp);
         string filename = fileChara;
         
-        for(int i=0;i<5000;i++) {
+        for(int i=0;i<1000;i++) {
         //    cout << filename << ":" << (i+1) << "/20 round" << endl;
             vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 1.0);
             cout << tmpConstraints.size() << endl;
@@ -326,7 +324,7 @@ int main(int argc, const char * argv[])
             episodes.clear();
             
         
-            doActionMCTS(persons, places, tmpConstraints,71,"./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/wikipediaEpisodes" + filename + ".txt",cp);
+            doActionMCTS(persons, places, tmpConstraints,71,"./../../../../data/local/murakami/alexanderTmp/episodes/20150730/random1000/wikipediaEpisodes" + filename + ".txt",cp);
       //  doActionMCTSWithRank(persons, places, tmpConstraints, 71, "wikipediaEpisodes" + filename + ".txt", cp,shortestInfo);
 
         }
