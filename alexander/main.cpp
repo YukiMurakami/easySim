@@ -128,7 +128,7 @@ int main(int argc, const char * argv[])
     cout << annotationConstraints.size() << endl;
      */
     
-    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("annotationConstraint20150730.txt",1,32);
+    vector<Constraint> annotationConstraints = makeConstraintsFromConstraintFile("annotationConstraint20150730.txt",startId,endId);
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
     
