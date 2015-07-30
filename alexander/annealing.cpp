@@ -158,7 +158,10 @@ void makeAnnealingEpisodeFileFromNormalEpisodeFile(string episodeFilename, strin
 
 vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector<Constraint> &constraints,string initializeFilename,int getCount,double &bestScore,int endIter) {
     
-    bool isDebug = true;
+    bool isDebug = false;
+    
+    int badTransitionCount = 0;
+    int badTransitionCount10 = 0;
     
     map<string,Place> places;
     initPlace(places, initializeFilename);
@@ -218,6 +221,15 @@ vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector
             if(isDebug) {
                 cout << "iter=" << iter << " state transition: now:" << nowVal << " next:" << nextVal << "prob(" << random << "," << prob << ")" << endl;
             }
+            if(prob < 1.0) {
+                badTransitionCount++;
+                if(iter < endIter*0.1) {
+                    badTransitionCount10++;
+                }
+                if(isDebug) {
+                    cout << "badTransitionCount = " << badTransitionCount << endl;
+                }
+            }
             nowVal = nextVal;
             //cout << "actions.size() = " << actions.size() << endl;
             //cout << "bestActions.size() = " << bestActions.size() << " bestScore = " << bestVal << endl;
@@ -250,7 +262,8 @@ vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector
         selectedEpisodes.push_back(episodes);
     }
     
-    
+    cout << "badTransitionCount = " << badTransitionCount << endl;
+    cout << "badTransitionCount(10%%) = " << badTransitionCount10 << endl;
     
     return selectedEpisodes;
 }
