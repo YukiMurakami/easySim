@@ -62,6 +62,7 @@ void checkEpisodePersonAndOutput(vector<Episode> episodes,vector<Constraint> con
 //生成された制約条件とアノテーションデータとの比較
 void checkConstraintGenerator(string testFilename,vector<Constraint> &constraints);
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c);
+void showDifferentConstraintsWithoutId(vector<Constraint> a,vector<Constraint> c);
 void showAndOutputUnknownPlaceFromAnnotation(string filename,vector<string> &persons,vector<string> &places,string outputFileName);
 //制約条件の初期化
 void initConstraints(vector<Constraint> &constraints,string filename);

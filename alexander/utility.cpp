@@ -2073,6 +2073,28 @@ void showConstraintsPlaceDistribution(vector<Constraint> &constraints) {
     }
 }
 
+void showDifferentConstraintsWithoutId(vector<Constraint> a,vector<Constraint> c) {
+    int point = 0;
+    
+    for(unsigned int i=0;i<c.size();i++) {
+        bool isHit = false;
+        for(unsigned int j=0;j<a.size();j++) {
+            if(isSameConstraint(a[j], c[i])) {
+                isHit = true;
+                break;
+            }
+        }
+        if(isHit) {
+            point++;
+        }
+    }
+    
+    double P = (double)point / (double)c.size();
+    double R = (double)point / (double)a.size();
+    double F = 2*P*R/(P+R);
+    cout << "P:" << P << " R:" << R << " F:" << F << endl;
+}
+
 void showDifferentConstraints(vector<Constraint> &a,vector<Constraint> &c) {
     vector<Constraint> correctConstraints;
     vector<Constraint> incorrectConstraints;

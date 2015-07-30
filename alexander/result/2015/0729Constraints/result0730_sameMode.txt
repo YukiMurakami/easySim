@@ -1,5 +1,7 @@
-made 39 constraints
-personOk:482 placeOk:115 timeOk:252 allOk:39 all:482
+dhcp33:alexander Yuki$ ./alexander 
+1 32
+initAgent: 'initialize0110.txt'
+makeConstraintsFromConstraintFile 'constraint20150730.txt
 constraints show ------
 constraint:12:17:Alexander:Memphis:there_is:5
 constraint:19:19:Alexander:Alexandria:there_is:11
@@ -42,6 +44,7 @@ constraint:54:59:Alexander:Patala:there_is:462
 constraint:30:35:Alexander:A Eschate:there_is:478
 constraints show end ---
 39
+makeConstraintsFromConstraintFile 'annotationConstraint20150730.txt' begin:1 end:32
 constraints show ------
 constraint:12:17:Alexander:Memphis:there_is:5
 constraint:19:19:Alexander:Alexandria:there_is:11
@@ -77,58 +80,4 @@ constraint:54:59:Alexander:Patala:there_is:462
 constraint:30:35:Alexander:A Eschate:there_is:478
 constraints show end ---
 32
-correctConstraints 29
-constraints show ------
-constraint:12:17:Alexander:Memphis:there_is:5
-constraint:19:19:Alexander:Alexandria:there_is:11
-constraint:66:71:Alexander:Babylon:there_is:19
-constraint:12:17:Alexander:Tyre:there_is:30
-constraint:6:11:Alexander:Gordion:there_is:45
-constraint:68:68:Alexander:Babylon:there_is:52
-constraint:24:29:Alexander:Persepolis:there_is:61
-constraint:30:35:Alexander:Bactra:there_is:88
-constraint:42:47:Alexander:Sagala:there_is:103
-constraint:2:2:Alexander:Granicus:there_is:136
-constraint:0:5:Alexander:Miletus:there_is:146
-constraint:42:47:Alexander:Samarkand:there_is:158
-constraint:0:5:Alexander:Alexandria:there_is:173
-constraint:24:29:Alexander:Ecbatana:there_is:174
-constraint:54:59:Alexander:A Indus:there_is:179
-constraint:0:5:Alexander:Granicus:there_is:180
-constraint:0:5:Alexander:Sardis:there_is:201
-constraint:18:23:Alexander:Alexandria:there_is:203
-constraint:12:17:Alexander:Sidon:there_is:341
-constraint:6:11:Alexander:Ankara:there_is:356
-constraint:12:17:Alexander:Issus:there_is:372
-constraint:18:23:Alexander:Arbela:there_is:378
-constraint:12:17:Alexander:Alexandria:there_is:413
-constraint:48:53:Alexander:Aornos:there_is:414
-constraint:42:47:Alexander:Nicaea:there_is:422
-constraint:18:23:Alexander:Babylon:there_is:436
-constraint:60:65:Alexander:Susa:there_is:455
-constraint:54:59:Alexander:Patala:there_is:462
-constraint:30:35:Alexander:A Eschate:there_is:478
-constraints show end ---
-incorrectConstraints 0
-constraints show ------
-constraints show end ---
-missConstraints 3
-constraints show ------
-constraint:18:23:Alexander:Gaugamela:there_is:62
-constraint:6:11:Alexander:Issus:there_is:121
-constraint:18:23:Alexander:Memphis:there_is:297
-constraints show end ---
-extraConstraints 10
-constraints show ------
-constraint:18:23:Alexander:Gaugamela:there_is:33*
-constraint:42:47:Alexander:Bactra:there_is:63
-constraint:66:71:Alexander:Bactra:there_is:81
-constraint:6:11:Alexander:Issus:there_is:90*
-constraint:54:59:Alexander:Babylon:there_is:148
-constraint:66:71:Alexander:Memphis:there_is:268*
-constraint:48:53:Alexander:A Carmania:there_is:284
-constraint:18:23:Alexander:Alexandria:there_is:311*
-constraint:12:17:Alexander:Babylon:there_is:352
-constraint:18:23:Alexander:Persepolis:there_is:396
-constraints show end ---
-P:0.74359 R:0.90625 F:0.816901
+P:0.820513 R:1 F:0.901408

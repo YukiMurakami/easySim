@@ -129,6 +129,10 @@ int main(int argc, const char * argv[])
     showConstraints(annotationConstraints);
     cout << annotationConstraints.size() << endl;
     
+    showDifferentConstraintsWithoutId(annotationConstraints, constraints);
+    
+    return 0;
+    
     
     // vector<FourChoiceQuestion> questions = makeFourChoiceQuestionsWithCount(10000, annotationConstraints, placeVector);
     
