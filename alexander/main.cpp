@@ -72,25 +72,22 @@ int main(int argc, const char * argv[])
     */
     
 
-    
     /*
-    int endIter[1] = {200000};
+    
+    int endIter[1] = {100000};
+    
     //makeAnnealingEpisodes("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/", initializeFilename, 1);//TOP1
     
     makeAnnealingEpisodesWithFolder(initializeFilename, 1,
-                                    "./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/",
-                                    "./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/top1/",
+                                    "./../../../../data/local/murakami/alexanderTmp/episodes/20150730/random1000/",
+                                    "./../../../../data/local/murakami/alexanderTmp/episodes/20150730/SA/",
                                     endIter,1, 1000,startId,endId); //crane2
     
-     makeAnnealingEpisodesWithFolder(initializeFilename, 1,
-     "./../../../../data/local/murakami/alexanderTmp/randomEpisodes5000/",
-     "./../../../../data/local/murakami/alexanderTmp/annealingEpisodes/random1000/top1/",
-     endIter,1, 1000,startId,endId); //crane0
     
     return 0;
+    
+    
     */
-    
-    
     /*
     makeAnnealingEpisodeFileFromNormalEpisodeFileWithFolder("wikipediaEpisodesRandomWithoutBabylonAndBactraAndCarmania1000.txt"
                                                             , initializeFilename
@@ -306,8 +303,9 @@ int main(int argc, const char * argv[])
         
         vector<string> placeNames;
         placeNames.push_back(annotationConstraints[n]._placeName);
-        vector<Constraint> constraints2 = removeConstraintsWithPlaceName(constraints, placeNames);
-        //showConstraints(constraints2);
+        //vector<Constraint> constraints2 = removeConstraintsWithPlaceName(constraints, placeNames);
+        vector<Constraint> constraints2 = removeConstraintsWithPlaceAndTimeCondition(constraints, annotationConstraints[n]);
+        showConstraints(constraints2);
         cout << constraints2.size() << endl;
         
         double cp = 0.2;
@@ -317,8 +315,9 @@ int main(int argc, const char * argv[])
         
         for(int i=0;i<1000;i++) {
         //    cout << filename << ":" << (i+1) << "/20 round" << endl;
-            vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 1.0);
-            cout << tmpConstraints.size() << endl;
+            //vector<Constraint> tmpConstraints = selectRandomConstraintsWithRate(constraints2, 1.0);
+            vector<Constraint> tmpConstraints = constraints2;
+            //cout << tmpConstraints.size() << endl;
             round++;
             vector<Episode> episodes;
             episodes.clear();

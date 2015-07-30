@@ -859,7 +859,11 @@ void subAllSearch(map<string,Person> persons,map<string,Place> places,vector<Con
 
 int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Constraint> &constraints,int endTime,string outputFilename, double Cp) {
     
-    cout << "start mcts" << endl;
+    bool isDegug = false;
+    
+    if(isDegug) {
+        cout << "start mcts" << endl;
+    }
     clock_t start,end;
     start = clock();
     
@@ -870,6 +874,8 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
  //   vector<Episode> nowEpisodes;
     Episode episode(0,nowPersons,nowPlaces);
  //   nowEpisodes.push_back(episode);
+    
+    
  
     int maxDepth = 0;
     
@@ -878,7 +884,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
     //double cp = 0.2;
     double cp = Cp;
     
-    cout << "cp:" << cp << endl;
+    if(isDegug) cout << "cp:" << cp << endl;
     
     vector< vector<Episode> >completeEpisodess;
     
@@ -908,7 +914,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
         int playout = 1;
         double finishRate = 0.98;
         
-        cout << "playout:" << playout << endl;
+        if(isDegug) cout << "playout:" << playout << endl;
         
         for(int round=0;round<playout;round++) {
             sumPlayout++;
@@ -1077,7 +1083,7 @@ int doActionMCTS(map<string,Person> &persons,map<string,Place> &places,vector<Co
                  */
                 end = clock();
                 double time = (double)(end-start)/CLOCKS_PER_SEC / round;
-                cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
+                if(isDegug) cout << round << ":" << getVal << "/" << time << "/" << 1.0/time << "/depth:" << nowDepth << endl;
                 // outputAverageReward("averageReward1202", round, getVal);
                 
                 values.push_back(make_pair(round, getVal));

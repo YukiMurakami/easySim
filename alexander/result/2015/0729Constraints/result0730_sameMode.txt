@@ -120,14 +120,14 @@ constraint:18:23:Alexander:Memphis:there_is:297
 constraints show end ---
 extraConstraints 10
 constraints show ------
-constraint:18:23:Alexander:Gaugamela:there_is:33
+constraint:18:23:Alexander:Gaugamela:there_is:33*
 constraint:42:47:Alexander:Bactra:there_is:63
 constraint:66:71:Alexander:Bactra:there_is:81
-constraint:6:11:Alexander:Issus:there_is:90
+constraint:6:11:Alexander:Issus:there_is:90*
 constraint:54:59:Alexander:Babylon:there_is:148
-constraint:66:71:Alexander:Memphis:there_is:268
+constraint:66:71:Alexander:Memphis:there_is:268*
 constraint:48:53:Alexander:A Carmania:there_is:284
-constraint:18:23:Alexander:Alexandria:there_is:311
+constraint:18:23:Alexander:Alexandria:there_is:311*
 constraint:12:17:Alexander:Babylon:there_is:352
 constraint:18:23:Alexander:Persepolis:there_is:396
 constraints show end ---

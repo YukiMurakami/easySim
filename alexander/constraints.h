@@ -43,6 +43,9 @@ CONSTRAINT getEnumFromString(string constraint);
 string getStringFromEnum(CONSTRAINT constraint);
 
 bool isSameConstraint(Constraint a,Constraint b);
+//上は時間条件もきっかり一致するかどうか
+//下は時間条件に共通部分があるかどうか
+bool isCoverConstraint(Constraint a,Constraint b);
 
 //isSameModeはtrue　で　全く同じ制約条件を一つと見なすモードになる　falseで通常モード
 vector<Constraint> makeConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places,bool isSameMode);
@@ -54,6 +57,7 @@ void showConstraints(vector<Constraint> &constraints);
 
 vector<Constraint> selectRandomConstraintsWithRate(vector<Constraint> constraints,double rate);
 vector<Constraint> removeConstraintsWithPlaceName(vector<Constraint> constraints,vector<string> removePlaceName);
+vector<Constraint> removeConstraintsWithPlaceAndTimeCondition(vector<Constraint> constraints,Constraint c);
 
 double getCorrectRateWithConstraintAndEpisodeFile(Constraint con,string episodeFileName);
 

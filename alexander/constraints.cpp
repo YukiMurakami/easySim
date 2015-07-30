@@ -65,6 +65,10 @@ bool isSameConstraint(Constraint a,Constraint b) {
     return (a._beginTime == b._beginTime) && (a._endTime == b._endTime) && (a._personName == b._personName) && (a._placeName == b._placeName) && (a._constraint == b._constraint);
 }
 
+bool isCoverConstraint(Constraint a,Constraint b) {
+    return (a._beginTime <= b._endTime) && (a._endTime >= b._endTime) && (a._personName == b._personName) && (a._placeName == b._placeName) && (a._constraint == b._constraint);
+}
+
 vector<Constraint> makeAllConstraintsFromTestfile(string filename,vector<string> &persons,vector<string> &places) {
     cout << "now making constraints from file '" << filename << "'" << endl;
     vector<Constraint> result;
@@ -337,6 +341,19 @@ vector<Coreference> makeCoreferencesFromTextfile(string filename) {
     
     return coreferences;
 }
+
+//対象の制約条件と時間条件、場所条件が重なるものを削除する。
+vector<Constraint> removeConstraintsWithPlaceAndTimeCondition(vector<Constraint> constraints,Constraint c) {
+    vector<Constraint> result;
+    
+    for(unsigned int i=0;i<constraints.size();i++) {
+        if(!isCoverConstraint(constraints[i], c)) {
+            result.push_back(constraints[i]);
+        }
+    }
+    return result;
+}
+
 
 vector<Constraint> removeConstraintsWithPlaceName(vector<Constraint> constraints,vector<string> removePlaceName) {
     vector<Constraint> result;

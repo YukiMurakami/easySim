@@ -158,7 +158,7 @@ void makeAnnealingEpisodeFileFromNormalEpisodeFile(string episodeFilename, strin
 
 vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector<Constraint> &constraints,string initializeFilename,int getCount,double &bestScore,int endIter) {
     
-    bool isDebug = false;
+    bool isDebug = true;
     
     map<string,Place> places;
     initPlace(places, initializeFilename);
@@ -192,7 +192,7 @@ vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector
     double nowVal = bestVal;
  
     for(int iter=0;iter<endIter;iter++) {
-        vector<string> nextActions = getNeighbor(actions, isDebug, firstPlace, places, loops);
+        vector<string> nextActions = getNeighbor(actions, false, firstPlace, places, loops);
         double nextVal = checkEpisodePersonWithActions(nextActions, constraints, personName, firstPlace, false);
         
         
@@ -215,8 +215,9 @@ vector< vector<Episode> > getAnnealingEpisodes( vector<Episode> &episode ,vector
             if(actions != nextActions) {
                 //cout << "error" << endl;
             }
-            
-            //cout << "iter=" << iter << " state transition: now:" << nowVal << " next:" << nextVal << "prob(" << random << "," << prob << ")" << endl;
+            if(isDebug) {
+                cout << "iter=" << iter << " state transition: now:" << nowVal << " next:" << nextVal << "prob(" << random << "," << prob << ")" << endl;
+            }
             nowVal = nextVal;
             //cout << "actions.size() = " << actions.size() << endl;
             //cout << "bestActions.size() = " << bestActions.size() << " bestScore = " << bestVal << endl;
