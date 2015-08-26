@@ -73,20 +73,20 @@ int main(int argc, const char * argv[])
     
 
     
-    
-    int endIter[1] = {100000};
+    /*
+    int endIter[1] = {100};
     
     //makeAnnealingEpisodes("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/", initializeFilename, 1);//TOP1
     
     makeAnnealingEpisodesWithFolder(initializeFilename, 1,
                                     "./../../../../data/local/murakami/alexanderTmp/episodes/20150730/random1000/",
-                                    "./../../../../data/local/murakami/alexanderTmp/episodes/20150730/SA/",
+                                    "./../../../../data/local/murakami/alexanderTmp/episodes/20150805/SA/",
                                     endIter,1, 1000,startId,endId); //crane2
     
     
     return 0;
     
-    
+    */
     
     /*
     makeAnnealingEpisodeFileFromNormalEpisodeFileWithFolder("wikipediaEpisodesRandomWithoutBabylonAndBactraAndCarmania1000.txt"
@@ -194,19 +194,21 @@ int main(int argc, const char * argv[])
     return 0;
      */
     
-    /*　ベースラインによる各アノテーションデータの地名を答えるテスト
+    //ベースラインによる各アノテーションデータの地名を答えるテスト
+    /*
     answerPlaceFromTimeConstraintWithBaseline(annotationConstraints, constraints);
     return 0;
     */
-    /*
-    int iters2[7] = {1000,2000,5000,10000,20000,50000,100000};
-    int iters0[6] = {10,20,50,100,200,500};
     
-    for(int i=6;i<7;i++) {
-        answerPlaceFromTimeConstraint("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/top1/", iters2[i], annotationConstraints, initializeFilename, placeVector);
+    //int iters2[7] = {1000,2000,5000,10000,20000,50000,100000};
+    //int iters0[6] = {10,20,50,100,200,500};
+    int iters[4] = {100,1000,10000,100000};
+    
+    for(int i=0;i<4;i++) {
+        answerPlaceFromTimeConstraint("./../../../../data/local/murakami/alexanderTmp/episodes/20150805/SA/", iters[i], annotationConstraints, initializeFilename, placeVector);
         //answerPlaceFromTimeConstraintByEpisode("./../../../../data/local/murakami/alexanderTmp/episodesByPlayout/random5000/top1/", iters2[i], annotationConstraints, initializeFilename, placeVector);
     }
-     */
+    return 0;
      
     /*
     for(int i=0;i<6;i++) {

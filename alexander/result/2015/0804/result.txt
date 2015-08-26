@@ -1,0 +1,60 @@
+maxIter=100
+result: rank=1 :1/32 rate:0.03125
+result: rank=2 :4/32 rate:0.125
+result: rank=3 :5/32 rate:0.15625
+result: rank=4 :6/32 rate:0.1875
+result: rank=5 :6/32 rate:0.1875
+result: rank=6 :6/32 rate:0.1875
+result: rank=7 :6/32 rate:0.1875
+result: rank=8 :6/32 rate:0.1875
+result: rank=9 :7/32 rate:0.21875
+result: rank=10 :8/32 rate:0.25
+
+maxIter=1000
+result: rank=1 :1/32 rate:0.03125
+result: rank=2 :3/32 rate:0.09375
+result: rank=3 :7/32 rate:0.21875
+result: rank=4 :9/32 rate:0.28125
+result: rank=5 :9/32 rate:0.28125
+result: rank=6 :10/32 rate:0.3125
+result: rank=7 :11/32 rate:0.34375
+result: rank=8 :13/32 rate:0.40625
+result: rank=9 :13/32 rate:0.40625
+result: rank=10 :14/32 rate:0.4375
+
+maxIter=10000
+result: rank=1 :2/32 rate:0.0625
+result: rank=2 :5/32 rate:0.15625
+result: rank=3 :11/32 rate:0.34375
+result: rank=4 :15/32 rate:0.46875
+result: rank=5 :15/32 rate:0.46875
+result: rank=6 :19/32 rate:0.59375
+result: rank=7 :21/32 rate:0.65625
+result: rank=8 :21/32 rate:0.65625
+result: rank=9 :22/32 rate:0.6875
+result: rank=10 :23/32 rate:0.71875
+
+maxIter=100000
+result: rank=1 :2/32 rate:0.0625
+result: rank=2 :2/32 rate:0.0625
+result: rank=3 :6/32 rate:0.1875
+result: rank=4 :10/32 rate:0.3125
+result: rank=5 :14/32 rate:0.4375
+result: rank=6 :16/32 rate:0.5
+result: rank=7 :20/32 rate:0.625
+result: rank=8 :23/32 rate:0.71875
+result: rank=9 :24/32 rate:0.75
+result: rank=10 :25/32 rate:0.78125
+
+
+Baseline
+result: rank=1 :2/32 rate:0.0625
+result: rank=2 :3/32 rate:0.09375
+result: rank=3 :3/32 rate:0.09375
+result: rank=4 :3/32 rate:0.09375
+result: rank=5 :5/32 rate:0.15625
+result: rank=6 :6/32 rate:0.1875
+result: rank=7 :6/32 rate:0.1875
+result: rank=8 :10/32 rate:0.3125
+result: rank=9 :10/32 rate:0.3125
+result: rank=10 :11/32 rate:0.34375

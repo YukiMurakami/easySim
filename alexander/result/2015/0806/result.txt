@@ -1,0 +1,1534 @@
+murakami@crane2:~/2015/cr1000$ ./alexander 
+1 32
+initAgent: 'initialize0110.txt'
+makeConstraintsFromConstraintFile 'constraint20150730.txt
+constraints show ------
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:18:23:Alexander:Gaugamela:there_is:33
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:24:29:Alexander:Persepolis:there_is:61
+constraint:42:47:Alexander:Bactra:there_is:63
+constraint:66:71:Alexander:Bactra:there_is:81
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:6:11:Alexander:Issus:there_is:90
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:2:2:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:54:59:Alexander:Babylon:there_is:148
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Granicus:there_is:180
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Memphis:there_is:203
+constraint:66:71:Alexander:Memphis:there_is:268
+constraint:48:53:Alexander:A Carmania:there_is:284
+constraint:18:23:Alexander:Alexandria:there_is:311
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:12:17:Alexander:Babylon:there_is:352
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:18:23:Alexander:Persepolis:there_is:396
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraints show end ---
+39
+makeConstraintsFromConstraintFile 'annotationConstraint20150730.txt' begin:1 end:32
+constraints show ------
+constraint:12:17:Alexander:Memphis:there_is:5
+constraint:19:19:Alexander:Alexandria:there_is:11
+constraint:66:71:Alexander:Babylon:there_is:19
+constraint:12:17:Alexander:Tyre:there_is:30
+constraint:6:11:Alexander:Gordion:there_is:45
+constraint:68:68:Alexander:Babylon:there_is:52
+constraint:24:29:Alexander:Persepolis:there_is:61
+constraint:18:23:Alexander:Gaugamela:there_is:62
+constraint:30:35:Alexander:Bactra:there_is:88
+constraint:42:47:Alexander:Sagala:there_is:103
+constraint:6:11:Alexander:Issus:there_is:121
+constraint:2:2:Alexander:Granicus:there_is:136
+constraint:0:5:Alexander:Miletus:there_is:146
+constraint:42:47:Alexander:Samarkand:there_is:158
+constraint:0:5:Alexander:Alexandria:there_is:173
+constraint:24:29:Alexander:Ecbatana:there_is:174
+constraint:54:59:Alexander:A Indus:there_is:179
+constraint:0:5:Alexander:Granicus:there_is:180
+constraint:0:5:Alexander:Sardis:there_is:201
+constraint:18:23:Alexander:Alexandria:there_is:203
+constraint:18:23:Alexander:Memphis:there_is:297
+constraint:12:17:Alexander:Sidon:there_is:341
+constraint:6:11:Alexander:Ankara:there_is:356
+constraint:12:17:Alexander:Issus:there_is:372
+constraint:18:23:Alexander:Arbela:there_is:378
+constraint:12:17:Alexander:Alexandria:there_is:413
+constraint:48:53:Alexander:Aornos:there_is:414
+constraint:42:47:Alexander:Nicaea:there_is:422
+constraint:18:23:Alexander:Babylon:there_is:436
+constraint:60:65:Alexander:Susa:there_is:455
+constraint:54:59:Alexander:Patala:there_is:462
+constraint:30:35:Alexander:A Eschate:there_is:478
+constraints show end ---
+32
+constraint:12:17:Alexander:Memphis:there_is:5
+Sardis:625
+Granicus:619
+Tarsus:550
+Issus:512is included in annotation data
+Side:494
+Ankara:473
+Comana:443
+Gordion:421
+Miletus:371
+Pella:351
+constraint:19:19:Alexander:Alexandria:there_is:11
+Granicus:114
+Sardis:94
+Side:85
+Ankara:77
+Gordion:70
+Comana:67
+Miletus:61
+Gaugamela:61
+Tarsus:57
+Pella:50
+constraint:66:71:Alexander:Babylon:there_is:19
+Memphis:424
+Sardis:392
+Gordion:333
+Side:298
+Ankara:297
+Tarsus:293
+Miletus:277
+Granicus:265
+Tyre:254
+Sidon:244
+constraint:12:17:Alexander:Tyre:there_is:30
+Sardis:620
+Granicus:617
+Tarsus:597
+Gordion:534
+Issus:523is included in annotation data
+Ankara:517
+Side:500
+Comana:424
+Miletus:351
+Pella:347
+constraint:6:11:Alexander:Gordion:there_is:45
+Ankara:1125is included in annotation data
+Tarsus:921
+Gordion:904is included in annotation data
+Side:735
+Sardis:467
+Granicus:450
+Pella:426
+Issus:377is included in annotation data
+Miletus:259
+Comana:233
+constraint:68:68:Alexander:Babylon:there_is:52
+Memphis:72
+Gordion:61
+Ankara:59
+Miletus:54
+Side:51
+Sardis:50
+Tarsus:46
+Issus:46
+Granicus:44
+Sidon:41
+constraint:24:29:Alexander:Persepolis:there_is:61
+Sardis:541
+Granicus:527
+Ankara:511
+Side:499
+Gordion:496
+Tarsus:478
+Miletus:359
+Comana:334
+Issus:319
+Tyre:302
+constraint:18:23:Alexander:Gaugamela:there_is:62
+Granicus:671
+Sardis:550
+Gordion:499
+Ankara:493
+Side:488
+Tarsus:413
+Pella:370
+Miletus:341
+Comana:282
+Issus:235
+constraint:30:35:Alexander:Bactra:there_is:88
+Sardis:547
+Gordion:510
+Side:492
+Ankara:489
+Tarsus:470
+Granicus:434
+Miletus:353
+Issus:343
+Tyre:328
+Comana:300
+constraint:42:47:Alexander:Sagala:there_is:103
+Gordion:465
+Ankara:448
+Sardis:447
+Side:430
+Tarsus:416
+Granicus:339
+Miletus:329
+Tyre:304
+Issus:293
+Comana:274
+constraint:6:11:Alexander:Issus:there_is:121
+Ankara:1240is included in annotation data
+Gordion:1209is included in annotation data
+Side:805
+Tarsus:739
+Granicus:453
+Sardis:449
+Pella:446
+Miletus:268
+Comana:211
+Issus:111is included in annotation data
+constraint:2:2:Alexander:Granicus:there_is:136
+Granicus:512is included in annotation data
+Sardis:256
+Pella:232
+Tyre:0
+Tarsus:0
+Susa:0
+Siwa:0
+Sidon:0
+Side:0
+Samarkand:0
+constraint:0:5:Alexander:Miletus:there_is:146
+Pella:2008
+Granicus:1882is included in annotation data
+Sardis:1181is included in annotation data
+Miletus:362is included in annotation data
+Gordion:309
+Side:222
+Tarsus:18
+Ankara:18
+Tyre:0
+Susa:0
+constraint:42:47:Alexander:Samarkand:there_is:158
+Gordion:509
+Ankara:493
+Tarsus:486
+Side:480
+Sardis:471
+Miletus:335
+Tyre:285
+Issus:270
+Granicus:266
+Gaugamela:246
+constraint:0:5:Alexander:Alexandria:there_is:173
+Pella:1939
+Granicus:1785is included in annotation data
+Sardis:1079is included in annotation data
+Miletus:801is included in annotation data
+Side:316
+Gordion:64
+Tarsus:14
+Ankara:2
+Tyre:0
+Susa:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+Sardis:538
+Granicus:513
+Side:506
+Ankara:491
+Tarsus:475
+Gordion:461
+Miletus:358
+Issus:325
+Pella:302
+Comana:296
+constraint:54:59:Alexander:A Indus:there_is:179
+Side:451
+Sardis:404
+Tarsus:389
+Gordion:388
+Ankara:367
+Miletus:338
+Gaugamela:263
+Granicus:257
+Tyre:254
+Arbela:242
+constraint:0:5:Alexander:Granicus:there_is:180
+Pella:2005
+Granicus:1761is included in annotation data
+Sardis:1062is included in annotation data
+Miletus:790is included in annotation data
+Side:332
+Gordion:32
+Tarsus:14
+Ankara:3
+Comana:1
+Tyre:0
+constraint:0:5:Alexander:Sardis:there_is:201
+Pella:2187
+Granicus:1866is included in annotation data
+Sardis:896is included in annotation data
+Miletus:710is included in annotation data
+Side:292
+Gordion:37
+Tarsus:10
+Ankara:2
+Tyre:0
+Susa:0
+constraint:18:23:Alexander:Alexandria:there_is:203
+Granicus:600
+Sardis:520
+Gordion:505
+Ankara:494
+Side:439
+Tarsus:420
+Gaugamela:364is included in annotation data
+Pella:333
+Comana:327
+Miletus:315
+constraint:18:23:Alexander:Memphis:there_is:297
+Granicus:662
+Sardis:609
+Gordion:496
+Side:447
+Tarsus:430
+Ankara:428
+Pella:416
+Gaugamela:348is included in annotation data
+Comana:328
+Miletus:315
+constraint:12:17:Alexander:Sidon:there_is:341
+Sardis:645
+Granicus:584
+Tarsus:580
+Ankara:531
+Side:530
+Gordion:481
+Issus:457is included in annotation data
+Comana:409
+Miletus:407
+Pella:380
+constraint:6:11:Alexander:Ankara:there_is:356
+Gordion:1211is included in annotation data
+Side:844
+Ankara:828is included in annotation data
+Sardis:666
+Tarsus:659
+Granicus:449
+Pella:394
+Issus:352is included in annotation data
+Miletus:309
+Comana:189
+constraint:12:17:Alexander:Issus:there_is:372
+Sardis:702
+Granicus:646
+Side:562
+Gordion:546
+Ankara:480
+Tarsus:449
+Miletus:439
+Comana:412
+Pella:339
+Sidon:319is included in annotation data
+constraint:18:23:Alexander:Arbela:there_is:378
+Granicus:631
+Sardis:555
+Gordion:457
+Tarsus:430
+Side:428
+Pella:428
+Ankara:418
+Gaugamela:360is included in annotation data
+Comana:338
+Miletus:325
+constraint:12:17:Alexander:Alexandria:there_is:413
+Granicus:626
+Sardis:609
+Issus:585is included in annotation data
+Tarsus:554
+Side:497
+Ankara:439
+Gordion:423
+Sidon:365is included in annotation data
+Comana:362
+Miletus:353
+constraint:48:53:Alexander:Aornos:there_is:414
+Gordion:480
+Side:451
+Ankara:450
+Sardis:426
+Tarsus:425
+Miletus:325
+Tyre:315
+Issus:279
+Comana:254
+Gaugamela:236
+constraint:42:47:Alexander:Nicaea:there_is:422
+Gordion:508
+Tarsus:507
+Side:507
+Ankara:450
+Sardis:445
+Miletus:340
+Tyre:298
+Granicus:295
+Issus:267
+Comana:264
+constraint:18:23:Alexander:Babylon:there_is:436
+Granicus:596
+Sardis:554
+Ankara:487
+Gordion:473
+Side:467
+Tarsus:425
+Gaugamela:368is included in annotation data
+Comana:355
+Miletus:315
+Pella:314
+constraint:60:65:Alexander:Susa:there_is:455
+Ankara:387
+Sardis:366
+Gordion:347
+Tarsus:327
+Side:323
+Gaugamela:308
+Miletus:298
+Tyre:264
+Memphis:263
+Issus:251
+constraint:54:59:Alexander:Patala:there_is:462
+Ankara:430
+Tarsus:407
+Gordion:406
+Side:389
+Sardis:316
+Gaugamela:308
+Miletus:305
+Granicus:259
+Babylon:248
+Tyre:240
+constraint:30:35:Alexander:A Eschate:there_is:478
+Sardis:530
+Side:520
+Gordion:518
+Tarsus:488
+Ankara:485
+Granicus:454
+Issus:353
+Miletus:318
+Tyre:275
+Gaugamela:258
+maxIter=100
+result: rank=1 :1/32 rate:0.03125
+result: rank=2 :2/32 rate:0.0625
+result: rank=3 :5/32 rate:0.15625
+result: rank=4 :6/32 rate:0.1875
+result: rank=5 :6/32 rate:0.1875
+result: rank=6 :6/32 rate:0.1875
+result: rank=7 :6/32 rate:0.1875
+result: rank=8 :6/32 rate:0.1875
+result: rank=9 :6/32 rate:0.1875
+result: rank=10 :7/32 rate:0.21875
+constraint:12:17:Alexander:Memphis:there_is:5
+Issus:1053is included in annotation data
+Sidon:1007is included in annotation data
+Tyre:664is included in annotation data
+Tarsus:560
+Comana:340
+Ankara:337
+Gaugamela:288
+Side:235
+Gordion:206
+Memphis:200is included in annotation data
+constraint:19:19:Alexander:Alexandria:there_is:11
+Gaugamela:137
+Tyre:102
+Arbela:100
+Memphis:97
+Tarsus:63
+Issus:57
+Ankara:54
+Side:48
+Comana:48
+Gordion:43
+constraint:66:71:Alexander:Babylon:there_is:19
+Memphis:465
+Sardis:361
+Gordion:358
+Babylon:343is included in annotation data
+Side:312
+Ankara:291
+Miletus:287
+Tarsus:257
+Granicus:243
+Arbela:234
+constraint:12:17:Alexander:Tyre:there_is:30
+Issus:1171is included in annotation data
+Sidon:888is included in annotation data
+Tarsus:665
+Ankara:470
+Comana:349
+Tyre:293is included in annotation data
+Side:290
+Gaugamela:266
+Gordion:262
+Memphis:216is included in annotation data
+constraint:6:11:Alexander:Gordion:there_is:45
+Ankara:1269is included in annotation data
+Tarsus:1210
+Gordion:1082is included in annotation data
+Issus:915is included in annotation data
+Side:699
+Comana:285
+Miletus:160
+Sidon:154
+Gaugamela:81
+Sardis:70
+constraint:68:68:Alexander:Babylon:there_is:52
+Memphis:76
+Gordion:60
+Side:55
+Miletus:55
+Ankara:55
+Tarsus:49
+Sardis:49
+Granicus:45
+Gaugamela:44
+Tyre:41
+constraint:24:29:Alexander:Persepolis:there_is:61
+Tarsus:484
+Ankara:446
+Side:439
+Gordion:408
+Sardis:397
+Gaugamela:338
+Tyre:330
+Comana:307
+Issus:301
+Granicus:295
+constraint:18:23:Alexander:Gaugamela:there_is:62
+Alexandria:523is included in annotation data
+Memphis:449is included in annotation data
+Tarsus:437
+Side:379
+Gordion:369
+Issus:361
+Tyre:344
+Sardis:319
+Ankara:308
+Susa:288
+constraint:30:35:Alexander:Bactra:there_is:88
+Gordion:523
+Side:510
+Ankara:505
+Sardis:488
+Tarsus:457
+Miletus:368
+Granicus:332
+Issus:290
+Comana:286
+Gaugamela:210
+constraint:42:47:Alexander:Sagala:there_is:103
+Side:483
+Gordion:477
+Tarsus:462
+Ankara:461
+Sardis:419
+Miletus:374
+Granicus:316
+Issus:282
+Comana:276
+Nicaea:266is included in annotation data
+constraint:6:11:Alexander:Issus:there_is:121
+Ankara:1446is included in annotation data
+Gordion:1416is included in annotation data
+Side:1066
+Tarsus:883
+Miletus:326
+Comana:297
+Issus:211is included in annotation data
+Sardis:154
+Gaugamela:100
+Sidon:36
+constraint:2:2:Alexander:Granicus:there_is:136
+Sardis:579
+Granicus:325is included in annotation data
+Pella:96
+Tyre:0
+Tarsus:0
+Susa:0
+Siwa:0
+Sidon:0
+Side:0
+Samarkand:0
+constraint:0:5:Alexander:Miletus:there_is:146
+Granicus:1840is included in annotation data
+Pella:1600
+Sardis:1422is included in annotation data
+Miletus:444is included in annotation data
+Side:338
+Gordion:336
+Ankara:18
+Tarsus:2
+Tyre:0
+Susa:0
+constraint:42:47:Alexander:Samarkand:there_is:158
+Ankara:489
+Tarsus:468
+Gordion:436
+Side:427
+Sardis:424
+Miletus:370
+Nicaea:305is included in annotation data
+Comana:278
+Granicus:273
+Issus:272
+constraint:0:5:Alexander:Alexandria:there_is:173
+Granicus:1597is included in annotation data
+Pella:1529
+Sardis:1171is included in annotation data
+Miletus:1142is included in annotation data
+Side:543
+Gordion:13
+Tarsus:5
+Tyre:0
+Susa:0
+Siwa:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+Tarsus:430
+Gordion:430
+Ankara:414
+Side:404
+Sardis:392
+Tyre:335
+Persepolis:310is included in annotation data
+Issus:310
+Miletus:295
+Granicus:293
+constraint:54:59:Alexander:A Indus:there_is:179
+Sardis:467
+Side:424
+Gordion:401
+Ankara:381
+Tarsus:365
+Miletus:332
+Patala:272is included in annotation data
+Arbela:271
+Babylon:270
+A Indus:226is included in annotation data
+constraint:0:5:Alexander:Granicus:there_is:180
+Granicus:1633is included in annotation data
+Pella:1470
+Sardis:1199is included in annotation data
+Miletus:1116is included in annotation data
+Side:561
+Gordion:16
+Tarsus:5
+Tyre:0
+Susa:0
+Siwa:0
+constraint:0:5:Alexander:Sardis:there_is:201
+Granicus:1633is included in annotation data
+Pella:1530
+Sardis:1173is included in annotation data
+Miletus:1092is included in annotation data
+Side:545
+Gordion:26
+Tarsus:1
+Tyre:0
+Susa:0
+Siwa:0
+constraint:18:23:Alexander:Alexandria:there_is:203
+Gaugamela:535is included in annotation data
+Memphis:448is included in annotation data
+Arbela:437is included in annotation data
+Alexandria:385is included in annotation data
+Tarsus:360
+Tyre:356
+Babylon:355is included in annotation data
+Ankara:328
+Comana:290
+Issus:283
+constraint:18:23:Alexander:Memphis:there_is:297
+Gaugamela:507is included in annotation data
+Arbela:423is included in annotation data
+Tarsus:397
+Alexandria:380is included in annotation data
+Gordion:352
+Babylon:345is included in annotation data
+Ankara:340
+Side:326
+Issus:321
+Comana:309
+constraint:12:17:Alexander:Sidon:there_is:341
+Issus:920is included in annotation data
+Tarsus:806
+Ankara:518
+Sidon:493is included in annotation data
+Tyre:394is included in annotation data
+Side:385
+Gordion:375
+Comana:370
+Gaugamela:275
+Memphis:242is included in annotation data
+constraint:6:11:Alexander:Ankara:there_is:356
+Gordion:1233is included in annotation data
+Ankara:1136is included in annotation data
+Tarsus:1028
+Side:839
+Issus:837is included in annotation data
+Miletus:244
+Comana:201
+Sardis:193
+Sidon:121
+Gaugamela:82
+constraint:12:17:Alexander:Issus:there_is:372
+Sidon:750is included in annotation data
+Tyre:660is included in annotation data
+Issus:511is included in annotation data
+Tarsus:414
+Comana:401
+Ankara:371
+Memphis:342is included in annotation data
+Gordion:335
+Gaugamela:330
+Side:307
+constraint:18:23:Alexander:Arbela:there_is:378
+Alexandria:488is included in annotation data
+Gaugamela:462is included in annotation data
+Memphis:458is included in annotation data
+Tarsus:382
+Tyre:362
+Comana:344
+Issus:325
+Gordion:320
+Ankara:307
+Side:292
+constraint:12:17:Alexander:Alexandria:there_is:413
+Sidon:1027is included in annotation data
+Issus:1026is included in annotation data
+Tyre:721is included in annotation data
+Tarsus:512
+Comana:395
+Memphis:355is included in annotation data
+Ankara:339
+Gaugamela:237
+Side:224
+Gordion:221
+constraint:48:53:Alexander:Aornos:there_is:414
+Ankara:420
+Side:413
+Tarsus:394
+Gordion:382
+A Carmania:361
+Sardis:352
+Miletus:336
+Comana:285
+A Arachosia:261
+Gaugamela:231
+constraint:42:47:Alexander:Nicaea:there_is:422
+Ankara:530
+Gordion:501
+Side:483
+Tarsus:457
+Sardis:446
+Miletus:364
+Comana:331
+Granicus:294
+Issus:257
+Gaugamela:187
+constraint:18:23:Alexander:Babylon:there_is:436
+Alexandria:540is included in annotation data
+Gaugamela:505is included in annotation data
+Memphis:459is included in annotation data
+Tyre:404
+Arbela:374is included in annotation data
+Tarsus:359
+Gordion:313
+Ankara:296
+Siwa:292
+Sardis:289
+constraint:60:65:Alexander:Susa:there_is:455
+Ankara:386
+Gordion:365
+Sardis:335
+Side:332
+Miletus:307
+Tarsus:293
+Memphis:285
+Gaugamela:273
+Issus:228
+Granicus:220
+constraint:54:59:Alexander:Patala:there_is:462
+Tarsus:432
+Side:375
+Gordion:331
+Ankara:328
+Miletus:326
+Sardis:306
+A Indus:301is included in annotation data
+Babylon:284
+Arbela:259
+Granicus:225
+constraint:30:35:Alexander:A Eschate:there_is:478
+Gordion:537
+Side:511
+Ankara:503
+Sardis:498
+Tarsus:479
+Miletus:373
+Issus:308
+Granicus:303
+Comana:267
+Gaugamela:215
+maxIter=1000
+result: rank=1 :1/32 rate:0.03125
+result: rank=2 :3/32 rate:0.09375
+result: rank=3 :6/32 rate:0.1875
+result: rank=4 :10/32 rate:0.3125
+result: rank=5 :10/32 rate:0.3125
+result: rank=6 :11/32 rate:0.34375
+result: rank=7 :12/32 rate:0.375
+result: rank=8 :12/32 rate:0.375
+result: rank=9 :12/32 rate:0.375
+result: rank=10 :14/32 rate:0.4375
+constraint:12:17:Alexander:Memphis:there_is:5
+Sidon:1118is included in annotation data
+Tyre:873is included in annotation data
+Issus:829is included in annotation data
+Memphis:543is included in annotation data
+Alexandria:507is included in annotation data
+Tarsus:366
+Ankara:293
+Arbela:271
+Siwa:231
+Gaugamela:212
+constraint:19:19:Alexander:Alexandria:there_is:11
+Tyre:357
+Gaugamela:270
+Memphis:123
+Arbela:78
+Siwa:62
+Alexandria:47is included in annotation data
+Persepolis:21
+Ankara:21
+Susa:7
+Babylon:3
+constraint:66:71:Alexander:Babylon:there_is:19
+Babylon:923is included in annotation data
+Arbela:689
+Susa:603
+Memphis:401
+Gaugamela:314
+Tyre:246
+Sardis:231
+Persepolis:209
+Gordion:206
+Tarsus:177
+constraint:12:17:Alexander:Tyre:there_is:30
+Sidon:949is included in annotation data
+Issus:946is included in annotation data
+Tyre:572is included in annotation data
+Memphis:533is included in annotation data
+Tarsus:526
+Alexandria:454is included in annotation data
+Ankara:428
+Arbela:268
+Comana:264
+Siwa:236
+constraint:6:11:Alexander:Gordion:there_is:45
+Tarsus:1352
+Ankara:1164is included in annotation data
+Issus:1062is included in annotation data
+Gordion:973is included in annotation data
+Side:454
+Sidon:293
+Tyre:180
+Comana:170
+Miletus:109
+Gaugamela:109
+constraint:68:68:Alexander:Babylon:there_is:52
+Memphis:65
+A Arachosia:63
+Tyre:58
+Gaugamela:52
+A Caucasus:45
+Gordion:42
+Ankara:41
+Tarsus:40
+Susa:40
+Comana:39
+constraint:24:29:Alexander:Persepolis:there_is:61
+Ecbatana:643is included in annotation data
+Hecatompylos:506
+Tyre:476
+Persepolis:443is included in annotation data
+Susa:399
+A Arachosia:388
+Sidon:352
+Memphis:326
+Issus:282
+Tarsus:236
+constraint:18:23:Alexander:Gaugamela:there_is:62
+Alexandria:1210is included in annotation data
+Memphis:1062is included in annotation data
+Siwa:710
+Tyre:513
+Susa:450
+Arbela:436is included in annotation data
+Babylon:428is included in annotation data
+Persepolis:328
+Gaugamela:266is included in annotation data
+Damascus:174
+constraint:30:35:Alexander:Bactra:there_is:88
+A Arachosia:458
+Persepolis:396
+Tarsus:351
+Susa:319
+Hecatompylos:296
+A Carmania:282
+Issus:281
+Side:260
+Arbela:256
+Ecbatana:237
+constraint:42:47:Alexander:Sagala:there_is:103
+Bactra:591
+Nicaea:569is included in annotation data
+A Caucasus:525
+Aornos:442
+A Indus:339
+Samarkand:330is included in annotation data
+Tarsus:289
+Sardis:231
+Side:230
+Ankara:227
+constraint:6:11:Alexander:Issus:there_is:121
+Gordion:1394is included in annotation data
+Ankara:1376is included in annotation data
+Tarsus:834
+Side:758
+Comana:337
+Issus:289is included in annotation data
+Miletus:249
+Gaugamela:249
+Tyre:118
+Sardis:107
+constraint:2:2:Alexander:Granicus:there_is:136
+Sardis:666
+Granicus:181is included in annotation data
+Pella:153
+Tyre:0
+Tarsus:0
+Susa:0
+Siwa:0
+Sidon:0
+Side:0
+Samarkand:0
+constraint:0:5:Alexander:Miletus:there_is:146
+Granicus:2022is included in annotation data
+Pella:1728
+Sardis:1373is included in annotation data
+Miletus:300is included in annotation data
+Gordion:276
+Side:237
+Ankara:63
+Tarsus:1
+Tyre:0
+Susa:0
+constraint:42:47:Alexander:Samarkand:there_is:158
+Nicaea:899is included in annotation data
+Sagala:556is included in annotation data
+A Caucasus:522
+Aornos:396
+Bactra:336
+A Indus:314
+Tarsus:263
+Side:247
+Ankara:232
+Gordion:225
+constraint:0:5:Alexander:Alexandria:there_is:173
+Granicus:1553is included in annotation data
+Pella:1514
+Sardis:1108is included in annotation data
+Miletus:1082is included in annotation data
+Side:729
+Gordion:12
+Tarsus:2
+Tyre:0
+Susa:0
+Siwa:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+Persepolis:641is included in annotation data
+Susa:623
+Tyre:501
+Sidon:412
+A Carmania:377
+Memphis:325
+A Arachosia:318
+Issus:307
+Arbela:297
+Tarsus:237
+constraint:54:59:Alexander:A Indus:there_is:179
+Patala:645is included in annotation data
+Bela:488
+A Indus:470is included in annotation data
+A Carmania:356
+Persepolis:344
+Susa:336
+A Arachosia:319
+Babylon:307
+Side:276
+Ankara:229
+constraint:0:5:Alexander:Granicus:there_is:180
+Granicus:1564is included in annotation data
+Pella:1482
+Sardis:1148is included in annotation data
+Miletus:1081is included in annotation data
+Side:709
+Gordion:14
+Tarsus:2
+Tyre:0
+Susa:0
+Siwa:0
+constraint:0:5:Alexander:Sardis:there_is:201
+Granicus:1563is included in annotation data
+Pella:1498
+Sardis:1144is included in annotation data
+Miletus:1066is included in annotation data
+Side:708
+Gordion:16
+Tarsus:4
+Ankara:1
+Tyre:0
+Susa:0
+constraint:18:23:Alexander:Alexandria:there_is:203
+Memphis:770is included in annotation data
+Arbela:737is included in annotation data
+Gaugamela:694is included in annotation data
+Alexandria:678is included in annotation data
+Babylon:662is included in annotation data
+Tyre:469
+Susa:457
+Siwa:396
+Persepolis:380
+Damascus:326
+constraint:18:23:Alexander:Memphis:there_is:297
+Alexandria:940is included in annotation data
+Memphis:699is included in annotation data
+Gaugamela:647is included in annotation data
+Arbela:624is included in annotation data
+Babylon:569is included in annotation data
+Susa:512
+Siwa:474
+Persepolis:444
+Tyre:407
+Damascus:261
+constraint:12:17:Alexander:Sidon:there_is:341
+Issus:780is included in annotation data
+Sidon:730is included in annotation data
+Tyre:714is included in annotation data
+Memphis:682is included in annotation data
+Alexandria:549is included in annotation data
+Tarsus:489
+Ankara:377
+Siwa:292
+Arbela:269
+Gaugamela:221
+constraint:6:11:Alexander:Ankara:there_is:356
+Gordion:1165is included in annotation data
+Tarsus:1114
+Ankara:1097is included in annotation data
+Issus:960is included in annotation data
+Side:550
+Sidon:285
+Tyre:178
+Comana:163
+Gaugamela:140
+Miletus:125
+constraint:12:17:Alexander:Issus:there_is:372
+Tyre:894is included in annotation data
+Sidon:817is included in annotation data
+Memphis:817is included in annotation data
+Alexandria:644is included in annotation data
+Siwa:509
+Arbela:372
+Babylon:284
+Gaugamela:283
+Issus:268is included in annotation data
+Susa:244
+constraint:18:23:Alexander:Arbela:there_is:378
+Alexandria:1257is included in annotation data
+Memphis:998is included in annotation data
+Siwa:628
+Gaugamela:563is included in annotation data
+Tyre:518
+Arbela:353is included in annotation data
+Susa:338
+Babylon:321is included in annotation data
+Persepolis:294
+Damascus:289
+constraint:12:17:Alexander:Alexandria:there_is:413
+Sidon:1174is included in annotation data
+Tyre:1036is included in annotation data
+Issus:988is included in annotation data
+Memphis:819is included in annotation data
+Tarsus:406
+Ankara:268
+Siwa:251
+Arbela:228
+Babylon:165
+Gaugamela:160
+constraint:48:53:Alexander:Aornos:there_is:414
+A Carmania:804
+A Arachosia:670
+A Indus:350
+Bela:328
+Nicaea:327
+Persepolis:325
+A Caucasus:322
+Tarsus:203
+Gordion:202
+Side:190
+constraint:42:47:Alexander:Nicaea:there_is:422
+Bactra:563
+A Caucasus:502
+Samarkand:333is included in annotation data
+Nicaea:316is included in annotation data
+A Arachosia:282
+Tarsus:269
+Ankara:260
+Susa:236
+Side:222
+Gordion:218
+constraint:18:23:Alexander:Babylon:there_is:436
+Alexandria:1074is included in annotation data
+Memphis:915is included in annotation data
+Gaugamela:670is included in annotation data
+Tyre:570
+Siwa:537
+Arbela:511is included in annotation data
+Susa:431
+Damascus:348
+Persepolis:326
+Comana:214
+constraint:60:65:Alexander:Susa:there_is:455
+A Carmania:646
+Persepolis:580
+Susa:446is included in annotation data
+A Arachosia:429
+Bela:319
+Ecbatana:254
+Gordion:253
+Ankara:234
+Hecatompylos:221
+Side:219
+constraint:54:59:Alexander:Patala:there_is:462
+A Indus:675is included in annotation data
+A Arachosia:550
+Persepolis:364
+Susa:351
+A Carmania:348
+Babylon:338
+Patala:292is included in annotation data
+Nicaea:266
+Side:223
+Bela:205
+constraint:30:35:Alexander:A Eschate:there_is:478
+A Caucasus:587
+A Arachosia:518
+Bactra:415is included in annotation data
+Tarsus:316
+Gordion:273
+Issus:247
+Side:239
+Hecatompylos:238
+Ankara:228
+Tyre:216
+maxIter=10000
+result: rank=1 :2/32 rate:0.0625
+result: rank=2 :5/32 rate:0.15625
+result: rank=3 :10/32 rate:0.3125
+result: rank=4 :16/32 rate:0.5
+result: rank=5 :16/32 rate:0.5
+result: rank=6 :19/32 rate:0.59375
+result: rank=7 :20/32 rate:0.625
+result: rank=8 :20/32 rate:0.625
+result: rank=9 :22/32 rate:0.6875
+result: rank=10 :22/32 rate:0.6875
+constraint:12:17:Alexander:Memphis:there_is:5
+Sidon:1283is included in annotation data
+Tyre:961is included in annotation data
+Issus:844is included in annotation data
+Memphis:568is included in annotation data
+Alexandria:488is included in annotation data
+Tarsus:404
+Siwa:388
+Ankara:384
+Babylon:116
+Arbela:94
+constraint:19:19:Alexander:Alexandria:there_is:11
+Tyre:527
+Gaugamela:229
+Ankara:122
+Memphis:63
+Persepolis:35
+Arbela:12
+Tarsus:3
+Siwa:3
+A Carmania:2
+Susa:1
+constraint:66:71:Alexander:Babylon:there_is:19
+Babylon:1311is included in annotation data
+Susa:1085
+Arbela:979
+Persepolis:456
+Gaugamela:381
+Memphis:342
+Tyre:270
+Damascus:212
+Alexandria:152
+Siwa:146
+constraint:12:17:Alexander:Tyre:there_is:30
+Sidon:929is included in annotation data
+Issus:876is included in annotation data
+Memphis:870is included in annotation data
+Tyre:799is included in annotation data
+Alexandria:502is included in annotation data
+Tarsus:404
+Ankara:389
+Siwa:365
+Arbela:164
+Babylon:138
+constraint:6:11:Alexander:Gordion:there_is:45
+Tarsus:1211
+Ankara:1074is included in annotation data
+Issus:951is included in annotation data
+Gordion:728is included in annotation data
+Sidon:555
+Tyre:387
+Comana:259
+Gaugamela:244
+Side:226
+Damascus:156
+constraint:68:68:Alexander:Babylon:there_is:52
+A Carmania:139
+A Arachosia:119
+A Caucasus:110
+Hecatompylos:85
+Tyre:82
+Memphis:71
+Damascus:67
+Gaugamela:56
+Nicaea:48
+Bactra:39
+constraint:24:29:Alexander:Persepolis:there_is:61
+Ecbatana:928is included in annotation data
+Hecatompylos:786
+A Arachosia:674
+Persepolis:672is included in annotation data
+Susa:671
+Arbela:264
+A Caucasus:229
+A Carmania:205
+Bela:134
+Patala:131
+constraint:18:23:Alexander:Gaugamela:there_is:62
+Memphis:890is included in annotation data
+Alexandria:721is included in annotation data
+Siwa:652
+Tyre:556
+Arbela:506is included in annotation data
+Babylon:496is included in annotation data
+Gaugamela:450is included in annotation data
+Damascus:370
+Susa:320
+Persepolis:296
+constraint:30:35:Alexander:Bactra:there_is:88
+Susa:880
+Persepolis:782
+Arbela:625
+Babylon:505
+A Arachosia:401
+A Carmania:343
+Samarkand:313
+Bactra:268is included in annotation data
+Hecatompylos:246
+A Caucasus:232
+constraint:42:47:Alexander:Sagala:there_is:103
+Bactra:1476
+Nicaea:938is included in annotation data
+A Caucasus:922
+Aornos:900
+Samarkand:890is included in annotation data
+A Indus:280
+A Arachosia:78
+Granicus:47
+Gordion:41
+Ankara:40
+constraint:6:11:Alexander:Issus:there_is:121
+Ankara:1211is included in annotation data
+Gordion:1188is included in annotation data
+Tarsus:663
+Comana:512
+Gaugamela:466
+Tyre:389
+Side:374
+Damascus:308
+Issus:299is included in annotation data
+Sidon:219
+constraint:2:2:Alexander:Granicus:there_is:136
+Sardis:731
+Pella:161
+Granicus:108is included in annotation data
+Tyre:0
+Tarsus:0
+Susa:0
+Siwa:0
+Sidon:0
+Side:0
+Samarkand:0
+constraint:0:5:Alexander:Miletus:there_is:146
+Granicus:2055is included in annotation data
+Pella:1785
+Sardis:1339is included in annotation data
+Gordion:327
+Miletus:202is included in annotation data
+Side:184
+Ankara:108
+Tyre:0
+Tarsus:0
+Susa:0
+constraint:42:47:Alexander:Samarkand:there_is:158
+Nicaea:1279is included in annotation data
+A Caucasus:1271
+Sagala:949is included in annotation data
+Bactra:876
+Aornos:785
+A Indus:200
+A Arachosia:179
+Samarkand:45is included in annotation data
+Ankara:43
+A Carmania:31
+constraint:0:5:Alexander:Alexandria:there_is:173
+Granicus:1509is included in annotation data
+Pella:1494
+Sardis:1070is included in annotation data
+Miletus:1047is included in annotation data
+Side:845
+Gordion:32
+Tarsus:3
+Tyre:0
+Susa:0
+Siwa:0
+constraint:24:29:Alexander:Ecbatana:there_is:174
+Susa:1055
+Persepolis:988is included in annotation data
+A Carmania:630
+A Arachosia:565
+Arbela:465
+Ecbatana:303is included in annotation data
+Babylon:264
+Hecatompylos:263
+A Caucasus:243
+Tyre:127
+constraint:54:59:Alexander:A Indus:there_is:179
+Susa:817
+Persepolis:787
+Patala:761is included in annotation data
+Babylon:650
+Bela:626
+A Carmania:574
+A Indus:418is included in annotation data
+A Arachosia:341
+Arbela:309
+Ecbatana:178
+constraint:0:5:Alexander:Granicus:there_is:180
+Granicus:1525is included in annotation data
+Pella:1493
+Sardis:1081is included in annotation data
+Miletus:1058is included in annotation data
+Side:819
+Gordion:23
+Tarsus:1
+Tyre:0
+Susa:0
+Siwa:0
+constraint:0:5:Alexander:Sardis:there_is:201
+Granicus:1523is included in annotation data
+Pella:1487
+Sardis:1072is included in annotation data
+Miletus:1045is included in annotation data
+Side:839
+Gordion:33
+Tarsus:1
+Tyre:0
+Susa:0
+Siwa:0
+constraint:18:23:Alexander:Alexandria:there_is:203
+Gaugamela:950is included in annotation data
+Arbela:949is included in annotation data
+Babylon:864is included in annotation data
+Memphis:595is included in annotation data
+Tyre:550
+Damascus:527
+Susa:342
+Comana:341
+Persepolis:327
+Siwa:149
+constraint:18:23:Alexander:Memphis:there_is:297
+Gaugamela:914is included in annotation data
+Arbela:847is included in annotation data
+Babylon:806is included in annotation data
+Susa:531
+Memphis:476is included in annotation data
+Persepolis:457
+Damascus:417
+Tyre:416
+Comana:363
+Alexandria:306is included in annotation data
+constraint:12:17:Alexander:Sidon:there_is:341
+Memphis:985is included in annotation data
+Tyre:857is included in annotation data
+Sidon:655is included in annotation data
+Issus:655is included in annotation data
+Alexandria:592is included in annotation data
+Siwa:482
+Tarsus:297
+Ankara:272
+Arbela:188
+Gaugamela:187
+constraint:6:11:Alexander:Ankara:there_is:356
+Tarsus:1044
+Gordion:1017is included in annotation data
+Ankara:999is included in annotation data
+Issus:882is included in annotation data
+Sidon:527
+Tyre:429
+Side:307
+Comana:225
+Gaugamela:217
+Damascus:161
+constraint:12:17:Alexander:Issus:there_is:372
+Memphis:1103is included in annotation data
+Tyre:1022is included in annotation data
+Sidon:851is included in annotation data
+Siwa:742
+Alexandria:724is included in annotation data
+Issus:245is included in annotation data
+Babylon:191
+Arbela:183
+Ankara:161
+Tarsus:144
+constraint:18:23:Alexander:Arbela:there_is:378
+Memphis:903is included in annotation data
+Gaugamela:855is included in annotation data
+Alexandria:752is included in annotation data
+Tyre:627
+Damascus:536
+Siwa:496
+Arbela:353is included in annotation data
+Babylon:340is included in annotation data
+Susa:275
+Comana:269
+constraint:12:17:Alexander:Alexandria:there_is:413
+Sidon:1221is included in annotation data
+Tyre:1011is included in annotation data
+Memphis:959is included in annotation data
+Issus:925is included in annotation data
+Tarsus:441
+Siwa:429
+Ankara:317
+Babylon:109
+Alexandria:109is included in annotation data
+Arbela:85
+constraint:48:53:Alexander:Aornos:there_is:414
+A Carmania:1119
+A Arachosia:1021
+A Caucasus:585
+Nicaea:517
+A Indus:455
+Bactra:439
+Bela:389
+Persepolis:360
+Patala:227
+Susa:153
+constraint:42:47:Alexander:Nicaea:there_is:422
+Bactra:1324
+A Caucasus:1092
+Samarkand:928is included in annotation data
+Aornos:440
+Nicaea:411is included in annotation data
+Sagala:380is included in annotation data
+A Arachosia:380
+Hecatompylos:123
+A Carmania:83
+Arbela:59
+constraint:18:23:Alexander:Babylon:there_is:436
+Gaugamela:926is included in annotation data
+Memphis:865is included in annotation data
+Alexandria:700is included in annotation data
+Tyre:637
+Damascus:586
+Arbela:522is included in annotation data
+Siwa:381
+Susa:353
+Comana:309
+Persepolis:253
+constraint:60:65:Alexander:Susa:there_is:455
+A Carmania:1034
+Persepolis:949
+Susa:698is included in annotation data
+A Arachosia:679
+Bela:467
+Ecbatana:350
+Hecatompylos:314
+A Indus:313
+Patala:241
+Arbela:200
+constraint:54:59:Alexander:Patala:there_is:462
+A Indus:883is included in annotation data
+A Arachosia:781
+Susa:672
+Persepolis:653
+A Carmania:548
+Babylon:520
+Patala:348is included in annotation data
+Nicaea:250
+Bela:242
+Arbela:227
+constraint:30:35:Alexander:A Eschate:there_is:478
+A Caucasus:1047
+A Arachosia:834
+Bactra:763is included in annotation data
+Susa:384
+A Carmania:344
+Persepolis:334
+Arbela:298
+Hecatompylos:247
+Babylon:216
+Bela:187
+maxIter=100000
+result: rank=1 :2/32 rate:0.0625
+result: rank=2 :2/32 rate:0.0625
+result: rank=3 :7/32 rate:0.21875
+result: rank=4 :11/32 rate:0.34375
+result: rank=5 :14/32 rate:0.4375
+result: rank=6 :16/32 rate:0.5
+result: rank=7 :20/32 rate:0.625
+result: rank=8 :22/32 rate:0.6875
+result: rank=9 :24/32 rate:0.75
+result: rank=10 :24/32 rate:0.75
